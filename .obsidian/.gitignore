@@ -1,0 +1,19 @@
+# Ignore temporary files
+*.tmp
+*.log
+.DS_Store
+trash/
+
+# Ignore daily notes not in wiki/
+daily-notes/
+
+# Ignore plugins not in approved list
+plugins/
+
+# Cache
+cache/
+data.json
+
+# Workspace
+.workspace
+*.workspace

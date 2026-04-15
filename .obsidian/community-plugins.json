@@ -1,0 +1,7 @@
+{
+  "enabledPlugins": [
+    "dataview",
+    "obsidian-git",
+    "recent-files-ignored"
+  ]
+}

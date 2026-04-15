@@ -1,0 +1,56 @@
+{
+  "agent": {
+    "enable": true,
+    "EnableAutoSuffix": true,
+    "agentPath": "scripts"
+  },
+  "appearance": {
+    "theme": "obsidian",
+    "accentColor": "#7c3aed",
+    "translucent": true
+  },
+  "attachment": {
+    "folder": "raw/assets",
+    "createImageAttachmentOnPaste": true
+  },
+  "core": {
+    "autoLivePreview": true,
+    "defaultViewMode": "source",
+    "foldHeading": true,
+    "newLinkFormat": "shortest",
+    "useMarkdownLinks": false,
+    "showInlineTitle": true,
+    "showTabLine": true,
+    "allowDuplicateLinksOnSameLine": false,
+    "enableTrash": true,
+    "trashOption": "local",
+    "spellcheck": true
+  },
+  "fileExplorer": {
+    "sortOrder": "byName",
+    "showHidden": false
+  },
+  "graph": {
+    "showTags": true,
+    "showAttachments": true,
+    "showExistingLinksOnly": true,
+    "showOrphans": true,
+    "collapseColorGroups": true
+  },
+  "leftRibbon": {
+    "nav": true,
+    "search": true,
+    "graph": true,
+    "backlinks": true
+  },
+  "plugins": {
+    "dataview": {
+      "enable": true,
+      "maxLimit": 20
+    }
+  },
+  "tags": {
+    "collapse": true,
+    "highlight": true
+  }
+}

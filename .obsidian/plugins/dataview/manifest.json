@@ -1,0 +1,9 @@
+{
+  "id": "dataview",
+  "name": "Dataview",
+  "version": "0.5.65",
+  "minAppVersion": "0.16.0",
+  "description": "Indexes all markdown pages and provide simple queries",
+  "author": "blacksmithgu",
+  "authorUrl": "https://github.com/blacksmithgu"
+}
