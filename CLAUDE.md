@@ -59,14 +59,29 @@ raw/                          # 原始资料（只读）
 └── books/                    # 书籍摘录
 
 wiki/                         # LLM 维护的知识库
-├── index.md                 # 内容索引（按类别组织）
+├── index.md                 # 内容索引（紧凑列表，只列有内容的类别）
 ├── log.md                   # 操作日志（追加式）
-├── entities/                # 实体页：人物/地点/产品/公司
-├── concepts/                # 概念页：术语/理论/方法
-├── sources/                 # 源摘要页：每个原始资料的摘要
+├── sources/                 # 源摘要页：忠于原文的提取
+│   ├── articles/
+│   ├── papers/
+│   └── books/
+├── concepts/                # 概念页：跨源的活知识
+│   ├── ai/
+│   ├── programming/
+│   └── business/
+├── entities/                # 实体页：事实卡片
+│   ├── persons/
+│   ├── organizations/
+│   ├── products/
+│   └── locations/
 ├── synthesis/               # 综合分析页：跨资料的主题分析
 └── questions/               # 优秀问答存档
 ```
+
+### 空目录规则
+
+- 子目录在**首次有文件放入时创建**，不预建空目录
+- `synthesis/` 和 `questions/` 在首次使用时才创建
 
 ## 页面格式规范
 
@@ -74,17 +89,35 @@ wiki/                         # LLM 维护的知识库
 
 每个 wiki 页面必须包含：
 
-```markdown
+```yaml
 ---
 title: 页面标题
+type: concept              # source | concept | entity | synthesis | question
+subtype: ai                # 细分类别（如 article/paper/person/product）
 tags: [标签1, 标签2]
-category: 类别路径（如 entities/persons 或 concepts/ai）
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
-sources: [../raw/sources/file.md]  # 相关源文档路径
+sources:                   # 相关 raw 文件路径（列表格式）
+  - ../../raw/articles/example.md
 ---
+```
 
+源摘要页额外字段：
+
+```yaml
+author: 作者名
+url: 原文链接
+date: YYYY-MM              # 原文发布日期
+```
+
+### 页面开头格式
+
+标题下紧跟一句话定义（`>` 引用格式），让人类一眼看出页面是什么：
+
+```markdown
 # 页面标题
+
+> 一句话定义或摘要。
 ```
 
 ### 双向链接
@@ -101,6 +134,43 @@ sources: [../raw/sources/file.md]  # 相关源文档路径
 ```markdown
 源文档：[[../raw/articles/example.md|示例文章]]
 ```
+
+## 页面角色定义
+
+三种核心页面各有明确边界，避免内容重复：
+
+### 源摘要页 (sources/)
+
+**定位**：忠于原文的提取，"冷冻的"——原文说了什么就是什么。
+
+内容包含：
+- 核心论点（3-5 句话）
+- 关键摘录（原文金句、数据、案例，带引用标记）
+- 提到的实体（链接到 entities/）
+- 提到的概念（链接到 concepts/）
+
+**不包含**：跨源综合、个人评论、架构图解释。
+
+### 概念页 (concepts/)
+
+**定位**：跨源的活知识，"活的"——随新资料不断更新。
+
+内容包含：
+- 用自己的话解释（不依赖单一来源）
+- 关键特征/要素
+- 开放问题（还不清楚的、有争议的）
+- 来源列表（哪些源摘要页贡献了信息）
+
+**与源摘要页的区别**：源摘要页回答"这篇文章说了什么"，概念页回答"这个概念是什么"。
+
+### 实体页 (entities/)
+
+**定位**：事实卡片，图谱的连接枢纽。
+
+内容包含：
+- 一句话介绍
+- 与本 wiki 的关联（做了什么、提出了什么）
+- 出现在哪些源摘要中
 
 ## Ingest 工作流
 
@@ -145,7 +215,10 @@ wiki/concepts/ai-safety.md
 ```
 
 ### 步骤 6：更新 index.md
-在 index.md 的相应类别下添加新页面条目。
+在 index.md 的相应类别下添加新页面条目。规则：
+- 只展示有内容的类别（无内容的类别不出现）
+- 使用列表格式：`- [[页面名]] — 一句话描述`
+- 头部统计行：`> N 个概念 · N 个实体 · N 个源摘要 — 共 N 页`
 
 ### 步骤 7：追加到 log.md
 ```markdown

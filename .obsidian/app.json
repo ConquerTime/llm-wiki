@@ -52,5 +52,8 @@
   "tags": {
     "collapse": true,
     "highlight": true
-  }
+  },
+  "newFileLocation": "folder",
+  "newFileFolderPath": "raw",
+  "attachmentFolderPath": "raw"
 }
