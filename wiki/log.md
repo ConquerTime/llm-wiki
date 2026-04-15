@@ -95,3 +95,19 @@
   - entities/products/autogpt.md
   - concepts/ai/mcp.md
 - 修复后 wiki 规模：16 页（8 概念 · 6 实体 · 2 源摘要）
+
+## [2026-04-15] lint | 每日健康检查
+
+- 类型：lint
+- 概览：wiki 健康，无新增问题
+- 检查结果：
+  - 孤儿页面：0（所有 wiki 页面均有入站引用）
+  - 孤立页面：2（`sources/` 页面靠 frontmatter sources 字段引用，非 wikilink，符合设计）
+  - 断链：1（`entities/products/obsidian.md` 中 `[[page]]` 为语法示例，非真实链接）
+  - frontmatter：16/16 完整
+  - 过时页面：0
+  - 超大页面：0
+- 修复：
+  - 为 `obsidian.md` 增加 `[[llm-wiki]]` 出站链接，提升页面互联度
+- wiki 规模：16 页（8 概念 · 6 实体 · 2 源摘要）
+- 提交：76d34b1
