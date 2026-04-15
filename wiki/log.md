@@ -111,3 +111,20 @@
   - 为 `obsidian.md` 增加 `[[llm-wiki]]` 出站链接，提升页面互联度
 - wiki 规模：16 页（8 概念 · 6 实体 · 2 源摘要）
 - 提交：76d34b1
+
+## [2026-04-15] ingest | 晨报 2026-04-15 — AI Skills 生态爆发
+
+- 类型：morning-brief
+- 来源：raw/morning-briefs/2026-04-15.md
+- 新增页面：
+  - sources/morning-briefs/2026-04-15.md（源摘要）
+  - concepts/ai/ai-skills.md（AI Skills 生态概念页）
+  - entities/products/mempalace.md（AI memory system，46K Stars）
+  - entities/products/caveman-skill.md（Token 优化技能，32K Stars）
+  - entities/products/graphify.md（知识图谱构建技能，27K Stars）
+  - entities/products/career-ops.md（AI 求职系统，33K Stars）
+  - entities/products/nuwa-skill.md（思维蒸馏技能，11K Stars）
+  - entities/products/gbrain.md（OpenClaw/Hermes Brain，8K Stars）
+  - entities/products/zhangxuefeng-skill.md（职业规划思维框架，5.9K Stars）
+  - entities/products/khazix-skills.md（AI Skills 合集，4.6K Stars）
+- 备注：GitHub Trending 显示 AI Coding Skills 生态爆发，caveman/graphify/nuwa-skill 等项目进入视野，国产 Skills 开始崛起
