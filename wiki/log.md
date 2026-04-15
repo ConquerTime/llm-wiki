@@ -65,3 +65,33 @@
   - 新增 entities/products/obsidian.md
 - 删除：旧路径概念页、空 sources/papers/ 目录
 - 共 6 个 wiki 页面
+
+## [2026-04-15] ingest | OpenClaw + AI Agent 面试八股文
+
+- 类型：article
+- 来源：raw/articles/OpenClaw + AI Agent 面试八股文：背完这篇，你懂的比面试官还多！.md
+- 原文链接：https://zhuanlan.zhihu.com/p/2013536456132554764
+- 作者：王几行XING（知乎）
+- 新增页面：
+  - sources/articles/openclaw-ai-agent-interview.md（源摘要）
+  - concepts/ai/ai-agent.md（AI Agent 四大组件概念页）
+  - concepts/ai/react-framework.md（ReAct 框架概念页）
+  - concepts/ai/function-calling.md（Function Calling 工具调用概念页）
+  - concepts/ai/multi-agent.md（Multi-Agent 系统与 MCP/A2A 协议概念页）
+  - entities/products/openclaw.md（OpenClaw 实体页）
+  - entities/persons/peter-steinberger.md（Peter Steinberger 实体页）
+- 备注：以 OpenClaw 框架为主线的 AI Agent 工程师面试系统性八股文，覆盖五大核心组件、ReAct 框架、Function Calling、Multi-Agent 协议（MCP/A2A）、安全防护等 8 大主题，160+ 道分级面试题（入门→源码级）
+
+## [2026-04-15] lint | Wiki 健康检查
+
+- 类型：lint
+- 检查项目：孤儿引用、孤立页面、frontmatter 完整性
+- 结果：
+  - 孤立页面：0（全部页面均有入站引用）
+  - frontmatter 完整性：13/13 内容页字段齐全
+  - 孤儿引用：3 处（`langchain`、`autogpt`、`mcp` 缺少对应页面）
+- 修复：创建 3 个缺失页面
+  - entities/products/langchain.md
+  - entities/products/autogpt.md
+  - concepts/ai/mcp.md
+- 修复后 wiki 规模：16 页（8 概念 · 6 实体 · 2 源摘要）
