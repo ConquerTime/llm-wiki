@@ -176,6 +176,24 @@ date: YYYY-MM              # 原文发布日期
 
 当被要求摄入新资料时，执行以下步骤：
 
+### 步骤 0：获取原始内容（输入为 URL 时）
+
+**原则：raw/ 必须存放原文，不能写翻译或总结。**
+
+- **GitHub 仓库**：优先用 `gh` 工具下载源文件
+  ```bash
+  # 获取 README 原文
+  gh api repos/{owner}/{repo}/readme --jq '.content' | base64 -d
+
+  # 获取指定文件
+  gh api repos/{owner}/{repo}/contents/{path} --jq '.content' | base64 -d
+
+  # 列出文件树
+  gh api repos/{owner}/{repo}/git/trees/HEAD --jq '.tree[].path'
+  ```
+- **普通网页 / 文章**：用 WebFetch 抓取完整内容，提示词要求返回原文全文，不做摘要
+- 将抓取到的原文（英文保持英文，不翻译）完整写入 `raw/` 对应文件
+
 ### 步骤 1：读取源文档
 ```bash
 cat raw/articles/example.md
@@ -345,6 +363,3 @@ review/*    — 待审核
 - 查看操作历史：`wiki/log.md`
 - LLM 维护的所有页面：`wiki/`
 
-## 更新日志
-
-- 2026-04-14: 初始化 CLAUDE.md

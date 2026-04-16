@@ -133,6 +133,33 @@
   - wiki/index.md（新增源摘要条目，修复合并冲突，更新统计）
 - 备注：深度摄入 nuwa-skill 仓库。核心创新——Agentic 回答工作流（先研究再回答）和六路Agent并行调研+三重验证的思维蒸馏流水线
 
+## [2026-04-16] ingest | karpathy/autoresearch — 自主 ML 研究框架
+
+- 类型：article (GitHub repo)
+- 来源：raw/articles/karpathy-autoresearch.md
+- 原文链接：https://github.com/karpathy/autoresearch
+- 作者：Andrej Karpathy
+- 新增页面：
+  - sources/articles/karpathy-autoresearch.md（源摘要）
+  - concepts/ai/autonomous-research.md（自主 ML 研究概念页）
+  - entities/products/autoresearch.md（autoresearch 实体页）
+- 更新页面：
+  - entities/persons/andrej-karpathy.md（添加 autoresearch 关联）
+  - wiki/index.md（新增条目，统计更新至 16概念·15实体·5源摘要）
+- 备注：极简三文件设计（prepare.py 只读 / train.py agent 修改 / program.md 人类指令）。核心创新——固定时间预算（5分钟/次）让实验跨硬件可比，单一指标 val_bpb 让 agent 聚焦目标，markdown 文件作为人类→agent 的编程接口
+
+## [2026-04-16] learn | Open Redirect（开放重定向漏洞）
+- 来源项目：horizon-web-commerce
+- 页面：concepts/security/open-redirect.md
+- 操作：新增
+- 备注：公共支付页设计中，query params 传递 returnPath/cancelPath 引出的安全问题。记录了三种防护方法及项目中采用的 isInternalPath 方案
+
+## [2026-04-16] learn | 统一支付路由设计
+- 来源项目：horizon-web-commerce
+- 页面：concepts/programming/unified-payment-route.md
+- 操作：新增
+- 备注：从 CoursePaymentPage 抽取公共支付路由的架构设计。重点记录了 4 个关键决策点的权衡逻辑：入参协议（双通道）、鉴权策略（轻量断言）、商品展示（固定模板）、returnUrl 指向（必须回支付页自身而非业务成功页）
+
 ## [2026-04-15] ingest | 晨报 2026-04-15 — AI Skills 生态爆发
 
 - 类型：morning-brief

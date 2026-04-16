@@ -1,6 +1,6 @@
 ># 知识库索引
 
-> 15 个概念 · 14 个实体 · 4 个源摘要 — 共 33 页 | 更新于 2026-04-16
+> 18 个概念 · 15 个实体 · 5 个源摘要 — 共 38 页 | 更新于 2026-04-16
 
 ---
 
@@ -15,10 +15,15 @@
 - [[multi-agent|Multi-Agent 系统与协议]] — 多 Agent 协作系统及 MCP/A2A 协议标准化
 - [[mcp|MCP（Model Context Protocol）]] — Anthropic 提出的 Agent-工具连接标准协议
 - [[ai-skills|AI Skills 生态]] — 2026 年 AI Coding Skills 生态爆发，涵盖知识管理/职业规划/思维蒸馏
+- [[autonomous-research|自主 ML 研究]] — AI agent 无人值守自主运行 ML 实验的范式（autoresearch）
 
 ### 编程
 - [[karpathy-guidelines|Karpathy Guidelines]] — LLM 编程行为四准则：思考→简单→精准→验证
 - [[message-queue|消息队列（BullMQ）]] — 异步任务队列、Outbox Pattern、幂等性、SELECT FOR UPDATE SKIP LOCKED
+- [[unified-payment-route|统一支付路由设计]] — 从业务支付页抽取公共支付路由的架构模式与关键决策
+
+### 安全
+- [[open-redirect|Open Redirect]] — URL 参数跳转目标未校验导致的重定向漏洞及防护方法
 
 ---
 
@@ -41,6 +46,7 @@
 - [[gbrain|gbrain]] — Garry's OpenClaw/Hermes Agent Brain，8K Stars
 - [[zhangxuefeng-skill|zhangxuefeng-skill]] — 高考/考研/职业规划思维框架，5.9K Stars
 - [[khazix-skills|khazix-skills]] — 数字生命卡兹克的 AI Skills 合集，4.6K Stars
+- [[autoresearch|autoresearch]] — Karpathy 的自主 ML 研究框架，一夜跑 ~100 次实验
 
 ---
 
@@ -52,6 +58,9 @@
 
 ### GitHub 仓库
 - [[sources/articles/nuwa-skill|nuwa-skill（女娲·Skill造人术）]] — 思维蒸馏 Skill 系统，六路Agent并行+三重验证 (2026-04)
+
+### GitHub 仓库（续）
+- [[sources/articles/karpathy-autoresearch|karpathy/autoresearch]] — 自主 ML 研究框架，三文件极简设计，固定时间预算 (2026-04)
 
 ### 晨报
 - [[sources/morning-briefs/2026-04-15|晨报 2026-04-15]] — Hacker News / GitHub Trending 日报，Skills 生态爆发趋势
