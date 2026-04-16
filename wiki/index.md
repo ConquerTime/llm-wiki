@@ -1,6 +1,6 @@
 # 知识库索引
 
-> 8 个概念 · 6 个实体 · 2 个源摘要 — 共 16 页 | 更新于 2026-04-15
+> 9 个概念 · 6 个实体 · 2 个源摘要 — 共 17 页 | 更新于 2026-04-15
 
 ---
 
@@ -17,6 +17,7 @@
 
 ### 编程
 - [[karpathy-guidelines|Karpathy Guidelines]] — LLM 编程行为四准则：思考→简单→精准→验证
+- [[message-queue|消息队列（BullMQ）]] — 异步任务队列、Outbox Pattern、幂等性、SELECT FOR UPDATE SKIP LOCKED
 
 ---
 

@@ -16,6 +16,12 @@
 
 ## 历史记录
 
+## [2026-04-15] learn | 消息队列（BullMQ）
+- 来源项目：kaigao
+- 页面：concepts/programming/message-queue.md
+- 操作：新增
+- 备注：基于 kaigao 项目中 BullMQ 的完整实战，覆盖 Outbox Pattern、幂等性、SELECT FOR UPDATE SKIP LOCKED、Repeatable Job 等核心工程模式
+
 ## [2026-04-14] init | 初始化 LLM Wiki 仓库
 
 - 类型：init
