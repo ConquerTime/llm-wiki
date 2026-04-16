@@ -101,3 +101,51 @@
   - entities/products/autogpt.md
   - concepts/ai/mcp.md
 - 修复后 wiki 规模：16 页（8 概念 · 6 实体 · 2 源摘要）
+
+## [2026-04-15] lint | 每日健康检查
+
+- 类型：lint
+- 概览：wiki 健康，无新增问题
+- 检查结果：
+  - 孤儿页面：0（所有 wiki 页面均有入站引用）
+  - 孤立页面：2（`sources/` 页面靠 frontmatter sources 字段引用，非 wikilink，符合设计）
+  - 断链：1（`entities/products/obsidian.md` 中 `[[page]]` 为语法示例，非真实链接）
+  - frontmatter：16/16 完整
+  - 过时页面：0
+  - 超大页面：0
+- 修复：
+  - 为 `obsidian.md` 增加 `[[llm-wiki]]` 出站链接，提升页面互联度
+- wiki 规模：16 页（8 概念 · 6 实体 · 2 源摘要）
+- 提交：76d34b1
+
+## [2026-04-16] ingest | nuwa-skill（女娲·Skill造人术）GitHub 仓库
+
+- 类型：article (GitHub repo)
+- 来源：raw/articles/nuwa-skill-github.md
+- 原文链接：https://github.com/alchaincyf/nuwa-skill
+- 作者：花叔 (alchaincyf)
+- 新增页面：
+  - sources/articles/nuwa-skill.md（源摘要）
+- 更新页面：
+  - entities/products/nuwa-skill.md（丰富实体信息：五层认知提取、五阶段流水线、预置Skills等）
+  - concepts/ai/ai-skills.md（更新 nuwa-skill Stars 和描述）
+  - concepts/ai/ai-agent.md（添加 nuwa-skill 作为 Multi-Agent 实战案例）
+  - wiki/index.md（新增源摘要条目，修复合并冲突，更新统计）
+- 备注：深度摄入 nuwa-skill 仓库。核心创新——Agentic 回答工作流（先研究再回答）和六路Agent并行调研+三重验证的思维蒸馏流水线
+
+## [2026-04-15] ingest | 晨报 2026-04-15 — AI Skills 生态爆发
+
+- 类型：morning-brief
+- 来源：raw/morning-briefs/2026-04-15.md
+- 新增页面：
+  - sources/morning-briefs/2026-04-15.md（源摘要）
+  - concepts/ai/ai-skills.md（AI Skills 生态概念页）
+  - entities/products/mempalace.md（AI memory system，46K Stars）
+  - entities/products/caveman-skill.md（Token 优化技能，32K Stars）
+  - entities/products/graphify.md（知识图谱构建技能，27K Stars）
+  - entities/products/career-ops.md（AI 求职系统，33K Stars）
+  - entities/products/nuwa-skill.md（思维蒸馏技能，11K Stars）
+  - entities/products/gbrain.md（OpenClaw/Hermes Brain，8K Stars）
+  - entities/products/zhangxuefeng-skill.md（职业规划思维框架，5.9K Stars）
+  - entities/products/khazix-skills.md（AI Skills 合集，4.6K Stars）
+- 备注：GitHub Trending 显示 AI Coding Skills 生态爆发，caveman/graphify/nuwa-skill 等项目进入视野，国产 Skills 开始崛起

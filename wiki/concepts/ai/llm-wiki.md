@@ -48,3 +48,7 @@ Raw Sources (不可变)  →  Wiki (LLM 维护)  →  Schema (CLAUDE.md)
 ## 来源
 
 - 首次提出：[[sources/articles/llm-wiki-by-karpathy|Karpathy 2026]]
+
+## 相关概念
+
+- [[ai-skills|AI Skills 生态]] — Skills 是 LLM Wiki 能力封装化的延伸趋势
