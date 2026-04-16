@@ -7,7 +7,7 @@ created: 2026-04-15
 updated: 2026-04-16
 sources:
   - ../../raw/morning-briefs/2026-04-15.md
-  - ../../raw/articles/nuwa-skill-github.md
+  - ../../../raw/articles/nuwa-skill-github.md
 ---
 
 # nuwa-skill（女娲·Skill造人术）
@@ -60,5 +60,5 @@ sources:
 ## 来源
 
 - [[../../raw/morning-briefs/2026-04-15.md|晨报 2026-04-15]]
-- [[../../raw/articles/nuwa-skill-github.md|nuwa-skill GitHub 仓库]]
+- [[../../../raw/articles/nuwa-skill-github.md|nuwa-skill GitHub 仓库]]
 - [[sources/articles/nuwa-skill|源摘要：nuwa-skill]]

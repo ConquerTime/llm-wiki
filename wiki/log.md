@@ -109,7 +109,7 @@
 - 检查结果：
   - 孤儿页面：0（所有 wiki 页面均有入站引用）
   - 孤立页面：2（`sources/` 页面靠 frontmatter sources 字段引用，非 wikilink，符合设计）
-  - 断链：1（`entities/products/obsidian.md` 中 `[[page]]` 为语法示例，非真实链接）
+  - 断链：1（`entities/products/obsidian.md` 中 `[page]` 为语法示例，非真实链接）
   - frontmatter：16/16 完整
   - 过时页面：0
   - 超大页面：0
