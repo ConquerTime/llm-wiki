@@ -83,3 +83,4 @@ sources:
 - [[clean-code|Clean Code]] — 整洁代码原则
 - [[solid-principles|SOLID 原则]] — 面向对象设计五原则
 - [[refactoring|重构]] — 改善既有代码设计
+- [[unified-payment-route|统一支付路由]] — 设计模式在实际业务系统（电商支付）中的应用案例

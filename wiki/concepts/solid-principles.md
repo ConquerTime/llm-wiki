@@ -66,3 +66,4 @@ sources:
 - [[clean-code|Clean Code]] — 整洁代码原则
 - [[design-patterns|设计模式]] — GoF 23种模式
 - [[refactoring|重构]] — 改善既有代码设计
+- [[factory-method|工厂方法]] — 开闭原则的典型实现，通过工厂方法而非修改创建者代码来引入新产品

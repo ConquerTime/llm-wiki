@@ -176,3 +176,37 @@
   - entities/products/zhangxuefeng-skill.md（职业规划思维框架，5.9K Stars）
   - entities/products/khazix-skills.md（AI Skills 合集，4.6K Stars）
 - 备注：GitHub Trending 显示 AI Coding Skills 生态爆发，caveman/graphify/nuwa-skill 等项目进入视野，国产 Skills 开始崛起
+
+## [2026-04-16] ingest | 工厂方法 — RefactoringGuru 设计模式
+
+- 类型：article (clippings)
+- 来源：raw/articles/工厂方法.md
+- 新增页面：
+  - concepts/programming/factory-method.md（工厂方法模式概念页）
+- 更新页面：
+  - concepts/design-patterns.md（添加工厂方法到创建型模式表格，添加统一支付路由链接）
+- 备注：创建型模式第一条，补充了工厂方法的概念定义、结构、适用场景和优缺点
+
+## [2026-04-16] ingest | 晨报 2026-04-16 — Ollama争议 / AI推理优化
+
+- 类型：morning-brief
+- 来源：raw/morning-briefs/2026-04-16.md
+- 新增页面：
+  - sources/morning-briefs/2026-04-16.md（晨报源摘要）
+  - entities/products/andrej-karpathy-skills.md（Claude Code 行为改进配置）
+  - entities/products/superpowers.md（Agentic 技能框架）
+- 更新页面：
+  - concepts/ai/ai-skills.md（新增 andrej-karpathy-skills 和 superpowers 到生态表格）
+- 备注：HN 热门话题 Ollama 争议、Darkbloom 私有推理；GitHub Trending 新上榜 Skills 项目
+
+## [2026-04-16] lint | 修复孤立页面 + 统计健康度
+
+- 修复孤立页面：
+  - concepts/ai/autonomous-research.md — 从 ai-agent.md 添加 inbound link
+  - concepts/programming/unified-payment-route.md — 从 design-patterns.md 添加 inbound link
+- 健康统计：
+  - 总页面：48 wiki pages
+  - 孤立页面：0（修复后）
+  - 断链：0（之前误报，sources/articles/* 路径链接正确）
+  - 源摘要页：7 个
+  - 超大页面（>200行）：1 个（message-queue.md 278行，建议拆分）

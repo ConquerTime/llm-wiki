@@ -1,6 +1,6 @@
 ># 知识库索引
 
-> 22 个概念 · 15 个实体 · 6 个源摘要 — 共 43 页 | 更新于 2026-04-16
+> 24 个概念 · 17 个实体 · 7 个源摘要 — 共 48 页 | 更新于 2026-04-16
 
 ---
 
@@ -25,6 +25,7 @@
 - [[clean-code|整洁代码]] — SOLID原则、DRY/KISS/YAGNI 编程实践
 - [[refactoring|重构]] — 不改变外在行为的前提下改善代码内部结构
 - [[solid-principles|SOLID 原则]] — 面向对象设计五原则：S/O/L/I/D
+- [[factory-method|工厂方法]] — 创建型模式，父类定义创建接口子类决定具体类型
 
 ### 安全
 - [[open-redirect|Open Redirect]] — URL 参数跳转目标未校验导致的重定向漏洞及防护方法
@@ -51,6 +52,8 @@
 - [[zhangxuefeng-skill|zhangxuefeng-skill]] — 高考/考研/职业规划思维框架，5.9K Stars
 - [[khazix-skills|khazix-skills]] — 数字生命卡兹克的 AI Skills 合集，4.6K Stars
 - [[autoresearch|autoresearch]] — Karpathy 的自主 ML 研究框架，一夜跑 ~100 次实验
+- [[andrej-karpathy-skills|andrej-karpathy-skills]] — Claude Code 行为改进的 CLAUDE.md 文件，GitHub Trending
+- [[superpowers|superpowers]] — Agentic 技能框架与软件开发方法论，GitHub Trending
 
 ---
 
@@ -69,6 +72,7 @@
 
 ### 晨报
 - [[sources/morning-briefs/2026-04-15|晨报 2026-04-15]] — Hacker News / GitHub Trending 日报，Skills 生态爆发趋势
+- [[sources/morning-briefs/2026-04-16|晨报 2026-04-16]] — Stop Using Ollama / AI 推理优化 / IPv6 里程碑
 
 ---
 

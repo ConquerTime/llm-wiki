@@ -66,3 +66,4 @@ sources:
 - [[design-patterns|设计模式]] — GoF 23种模式
 - [[solid-principles|SOLID 原则]] — 面向对象设计五原则
 - [[refactoring|重构]] — 改善既有代码设计
+- [[factory-method|工厂方法]] — SOLID 原则中"开闭原则"的典型应用场景
