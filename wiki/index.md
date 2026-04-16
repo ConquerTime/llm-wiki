@@ -1,6 +1,6 @@
 ># 知识库索引
 
-> 18 个概念 · 15 个实体 · 5 个源摘要 — 共 38 页 | 更新于 2026-04-16
+> 22 个概念 · 15 个实体 · 6 个源摘要 — 共 43 页 | 更新于 2026-04-16
 
 ---
 
@@ -21,6 +21,10 @@
 - [[karpathy-guidelines|Karpathy Guidelines]] — LLM 编程行为四准则：思考→简单→精准→验证
 - [[message-queue|消息队列（BullMQ）]] — 异步任务队列、Outbox Pattern、幂等性、SELECT FOR UPDATE SKIP LOCKED
 - [[unified-payment-route|统一支付路由设计]] — 从业务支付页抽取公共支付路由的架构模式与关键决策
+- [[design-patterns|设计模式]] — GoF 23种模式，创建型/结构型/行为型三大类
+- [[clean-code|整洁代码]] — SOLID原则、DRY/KISS/YAGNI 编程实践
+- [[refactoring|重构]] — 不改变外在行为的前提下改善代码内部结构
+- [[solid-principles|SOLID 原则]] — 面向对象设计五原则：S/O/L/I/D
 
 ### 安全
 - [[open-redirect|Open Redirect]] — URL 参数跳转目标未校验导致的重定向漏洞及防护方法
@@ -55,6 +59,7 @@
 ### 文章
 - [[sources/articles/llm-wiki-by-karpathy|LLM Wiki — Karpathy]] — Karpathy 的 LLM Wiki Gist (2026-04)
 - [[sources/articles/openclaw-ai-agent-interview|OpenClaw + AI Agent 面试八股文]] — OpenClaw 架构、ReAct、Function Calling、MCP/A2A 全面讲解 (2026-03)
+- [[sources/articles/software-engineering-knowledge|软件工程知识资料]] — 代码质量/重构/设计模式/SOLID/DDD 优质资源整理 (2026-04)
 
 ### GitHub 仓库
 - [[sources/articles/nuwa-skill|nuwa-skill（女娲·Skill造人术）]] — 思维蒸馏 Skill 系统，六路Agent并行+三重验证 (2026-04)
