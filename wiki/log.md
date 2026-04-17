@@ -210,3 +210,19 @@
   - 断链：0（之前误报，sources/articles/* 路径链接正确）
   - 源摘要页：7 个
   - 超大页面（>200行）：1 个（message-queue.md 278行，建议拆分）
+
+
+## [2026-04-17] lint | 健康检查（每日 cron）
+
+- 类型：lint
+- 日期：2026-04-17 23:00 (cron每日任务)
+- 健康统计：
+  - 总页面：48 wiki pages
+  - 孤立页面：0 ✅
+  - 断链：1（误报，nuwa-skill.md 的 `../../../raw/articles/nuwa-skill-github.md` 路径正确，但 lint.py 仅检测 `../raw` 未检测多层 `../../`/`../../../` 前缀）
+  - 源摘要页：6 个（sources/）
+  - 超大页面（>200行）：1 个（message-queue.md 278行，建议拆分）
+- 备注：
+  - Git pull 拉取新 commit: `69923ca feat: 添加后端架构与云服务部署资料`
+  - 该 commit 已包含完整的 ingest（backend-architecture.md → sources + concepts/），无需重复 ingest
+  - 直接进行 lint 健康检查
