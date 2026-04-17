@@ -1,6 +1,6 @@
 ># 知识库索引
 
-> 24 个概念 · 17 个实体 · 7 个源摘要 — 共 48 页 | 更新于 2026-04-16
+> 27 个概念 · 17 个实体 · 8 个源摘要 — 共 52 页 | 更新于 2026-04-16
 
 ---
 
@@ -26,6 +26,9 @@
 - [[refactoring|重构]] — 不改变外在行为的前提下改善代码内部结构
 - [[solid-principles|SOLID 原则]] — 面向对象设计五原则：S/O/L/I/D
 - [[factory-method|工厂方法]] — 创建型模式，父类定义创建接口子类决定具体类型
+- [[backend-architecture|后端架构]] — 分层/Clean/Hexagonal/CQRS 等核心架构模式
+- [[cloud-deployment|云服务部署]] — Docker/K8s/IaC/CICD/可观测性
+- [[microservices|微服务架构]] — 服务拆分/通信/API Gateway/Saga 模式
 
 ### 安全
 - [[open-redirect|Open Redirect]] — URL 参数跳转目标未校验导致的重定向漏洞及防护方法
@@ -62,7 +65,8 @@
 ### 文章
 - [[sources/articles/llm-wiki-by-karpathy|LLM Wiki — Karpathy]] — Karpathy 的 LLM Wiki Gist (2026-04)
 - [[sources/articles/openclaw-ai-agent-interview|OpenClaw + AI Agent 面试八股文]] — OpenClaw 架构、ReAct、Function Calling、MCP/A2A 全面讲解 (2026-03)
-- [[sources/articles/software-engineering-knowledge|软件工程知识资料]] — 代码质量/重构/设计模式/SOLID/DDD 优质资源整理 (2026-04)
+- [[sources/articles/software-engineering-knowledge|软件工程知识资料]] — 代码质量/重构/设计模式/SOLID/DDD 优质资源 (2026-04)
+- [[sources/articles/backend-architecture|后端架构知识资料]] — 微服务/云部署/DevOps/IaC/CQRS 优质资源 (2026-04)
 
 ### GitHub 仓库
 - [[sources/articles/nuwa-skill|nuwa-skill（女娲·Skill造人术）]] — 思维蒸馏 Skill 系统，六路Agent并行+三重验证 (2026-04)
