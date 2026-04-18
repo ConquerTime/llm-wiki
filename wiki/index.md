@@ -1,6 +1,6 @@
 ># 知识库索引
 
-> 27 个概念 · 17 个实体 · 8 个源摘要 — 共 52 页 | 更新于 2026-04-16
+>> 27 个概念 · 17 个实体 · 9 个源摘要 — 共 53 页 | 更新于 2026-04-18
 
 ---
 
@@ -77,6 +77,7 @@
 ### 晨报
 - [[sources/morning-briefs/2026-04-15|晨报 2026-04-15]] — Hacker News / GitHub Trending 日报，Skills 生态爆发趋势
 - [[sources/morning-briefs/2026-04-16|晨报 2026-04-16]] — Stop Using Ollama / AI 推理优化 / IPv6 里程碑
+- [[sources/morning-briefs/2026-04-18|晨报 2026-04-18]] — Claude Design 引热议 / Claude 4.7 Tokenizer 成本分析 / GitHub Trending
 
 ---
 

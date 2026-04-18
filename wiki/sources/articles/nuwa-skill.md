@@ -62,11 +62,11 @@ sources:
 
 ## 提到的实体
 
-- [[../../wiki/entities/products/nuwa-skill|nuwa-skill]] — 本项目
+- [[../../entities/products/nuwa-skill|nuwa-skill]] — 本项目
 - 花叔 (alchaincyf) — 独立 AI 开发者，项目作者
 - colleague-skill (titanwings) — 灵感来源项目
 
 ## 提到的概念
 
-- [[../../wiki/concepts/ai/ai-skills|AI Skills 生态]] — nuwa-skill 是 Skills 生态的代表性项目
-- [[../../wiki/concepts/ai/ai-agent|AI Agent]] — 六路 Agent 并行调研 + 双 Agent 精炼是 Multi-Agent 实践
+- [[../../concepts/ai/ai-skills|AI Skills 生态]] — nuwa-skill 是 Skills 生态的代表性项目
+- [[../../concepts/ai/ai-agent|AI Agent]] — 六路 Agent 并行调研 + 双 Agent 精炼是 Multi-Agent 实践

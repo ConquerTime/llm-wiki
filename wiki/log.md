@@ -226,3 +226,28 @@
   - Git pull 拉取新 commit: `69923ca feat: 添加后端架构与云服务部署资料`
   - 该 commit 已包含完整的 ingest（backend-architecture.md → sources + concepts/），无需重复 ingest
   - 直接进行 lint 健康检查
+
+## [2026-04-18] lint | 健康检查（每日 cron）
+
+- 类型：lint
+- 日期：2026-04-18 23:00 (cron每日任务)
+- 健康统计：
+  - 总页面：53 wiki pages
+  - 孤立页面：1（concepts/backend-architecture.md，无入站 wikilinks）
+  - 断链：0 ✅（使用正确的 Obsidian 路径解析逻辑）
+  - 源摘要页：9 个（sources/）
+  - 超大页面（>200行）：1 个（message-queue.md 278行，建议拆分）
+- 修复：
+  - 修复 nuwa-skill.md 的错误路径 `../../wiki/entities/` → `../../entities/`
+- 备注：
+  - 晨报 2026-04-18 已摄入（Claude Design / Claude 4.7 Tokenizer / GitHub Trending）
+  - index.md 链接解析正常（title-only 格式可正确解析到各概念/实体页）
+  - source pages 使用 `../` 相对路径到 raw/ 正常
+
+## [2026-04-18] ingest | 晨报 2026-04-18
+
+- 类型：morning-brief
+- 来源：raw/morning-briefs/2026-04-18.md
+- 新增页面：sources/morning-briefs/2026-04-18.md
+- 摘要：HN Top 话题 Claude Design（1009分）、Claude 4.7 Tokenizer成本分析（597分）；GitHub Trending 新项目 GenericAgent、dive-into-llms
+
