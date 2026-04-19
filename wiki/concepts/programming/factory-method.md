@@ -1,12 +1,13 @@
 ---
 title: 工厂方法模式
 created: 2026-04-16
-updated: 2026-04-16
+updated: 2026-04-19
 type: concept
 subtype: programming
 tags: [design-patterns, factory-method, gof, creational, solid]
 sources:
   - ../../raw/articles/工厂方法.md
+  - ../sources/articles/factory-method-refactoring-guru.md
 ---
 
 # 工厂方法模式

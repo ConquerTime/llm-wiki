@@ -227,6 +227,21 @@
   - 该 commit 已包含完整的 ingest（backend-architecture.md → sources + concepts/），无需重复 ingest
   - 直接进行 lint 健康检查
 
+## [2026-04-19] lint | 健康检查（每日 cron）
+
+- 类型：lint
+- 日期：2026-04-19 23:00 (cron每日任务)
+- 健康统计：
+  - 总页面：51 wiki pages
+  - 孤立页面：0 ✅（backend-architecture.md 已从 design-patterns.md 添加 inbound link）
+  - 断链：0 ✅
+  - 源摘要页：11 个（sources/）
+  - 超大页面（>200行）：1 个（message-queue.md 278行，建议拆分）
+- 修复：
+  - backend-architecture.md orphan 已修复（从 design-patterns.md 添加 inbound link）
+- 已知局限：
+  - factory-method 链接冲突：basename `factory-method` 同时被 `sources/articles/factory-method.md` 和 `concepts/programming/factory-method.md` 共享，Obsidian 解析到前者（按字母序）。建议重命名源摘要页为 `factory-method-refactoring-guru.md` 以避免歧义。
+
 ## [2026-04-18] lint | 健康检查（每日 cron）
 
 - 类型：lint
@@ -243,6 +258,18 @@
   - 晨报 2026-04-18 已摄入（Claude Design / Claude 4.7 Tokenizer / GitHub Trending）
   - index.md 链接解析正常（title-only 格式可正确解析到各概念/实体页）
   - source pages 使用 `../` 相对路径到 raw/ 正常
+
+## [2026-04-19] ingest | 晨报 2026-04-19 + 工厂方法
+
+- 类型：morning-brief, article
+- 新增源摘要：
+  - wiki/sources/morning-briefs/2026-04-19.md
+  - wiki/sources/articles/factory-method.md
+- 更新页面：
+  - concepts/programming/factory-method.md（添加 Refactoring Guru 源摘要）
+  - concepts/backend-architecture.md（修复 orphan，添加工厂方法链接）
+- index.md 更新：+2 源摘要（53→55页）
+- 晨报摘要：Opus 4.7 模型对比 / 日本铁路 / B-52 星跟踪器 / OpenAI Agents Python / DeepGEMM / Dive into LLMs
 
 ## [2026-04-18] ingest | 晨报 2026-04-18
 

@@ -85,3 +85,4 @@ Robert C. Martin 提出的同心圆架构：
 
 - [[design-patterns|设计模式]] — 软件设计模式
 - [[clean-code|Clean Code]] — 整洁代码原则
+- [[factory-method|工厂方法]] — 创建型模式，在本架构中用于解耦对象创建
