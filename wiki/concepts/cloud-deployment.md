@@ -6,7 +6,7 @@ tags: [cloud, deployment, aws, azure, gcp, docker, kubernetes, iac]
 created: 2026-04-16
 updated: 2026-04-16
 sources:
-  - ../sources/articles/backend-architecture.md
+  - ../sources/articles/backend-architecture-article.md
 ---
 
 # 云服务部署
@@ -121,3 +121,4 @@ Code → Build → Test → Security Scan → Deploy
 ## 相关概念
 
 - [[backend-architecture|后端架构]] — 核心架构模式
+- [[microservices|微服务架构]] — 服务拆分与通信模式

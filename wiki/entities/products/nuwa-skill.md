@@ -4,21 +4,22 @@ type: entity
 subtype: product
 tags: [mind-model, ai-skill, thinking-distillation, claude-code, multi-agent, chinese]
 created: 2026-04-15
-updated: 2026-04-16
+updated: 2026-04-20
 sources:
   - ../../raw/morning-briefs/2026-04-15.md
+  - ../../raw/morning-briefs/2026-04-20.md
   - ../../../raw/articles/nuwa-skill-github.md
 ---
 
 # nuwa-skill（女娲·Skill造人术）
 
-> 蒸馏任何人的思维框架为可运行 Claude Code Skill——六路 Agent 并行调研、三重验证、Agentic 回答工作流，11.3K Stars
+> 蒸馏任何人的思维框架为可运行 Claude Code Skill——六路 Agent 并行调研、三重验证、Agentic 回答工作流，13K Stars
 
 ## 基本信息
 
 - **GitHub**: alchaincyf/nuwa-skill
 - **作者**: 花叔 (alchaincyf)，独立 AI 开发者
-- **Stars**: 11.3K | **Forks**: 1.9K
+- **Stars**: 13,000+ (2026-04-20)，较早期的 11.3K 持续增长 | **Forks**: 1.9K+
 - **License**: MIT
 - **语言**: Python (88.9%), Shell (11.1%)
 - **安装**: `npx skills add alchaincyf/nuwa-skill`
@@ -60,5 +61,6 @@ sources:
 ## 来源
 
 - [[../../raw/morning-briefs/2026-04-15.md|晨报 2026-04-15]]
+- [[../../raw/morning-briefs/2026-04-20.md|晨报 2026-04-20]]
 - [[../../../raw/articles/nuwa-skill-github.md|nuwa-skill GitHub 仓库]]
-- [[sources/articles/nuwa-skill|源摘要：nuwa-skill]]
+- [[sources/articles/nuwa-skill-github|源摘要：nuwa-skill]]

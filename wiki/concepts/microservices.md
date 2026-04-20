@@ -6,7 +6,7 @@ tags: [microservices, api-gateway, service-mesh, distributed-systems, cqrs]
 created: 2026-04-16
 updated: 2026-04-16
 sources:
-  - ../sources/articles/backend-architecture.md
+  - ../sources/articles/backend-architecture-article.md
 ---
 
 # 微服务架构

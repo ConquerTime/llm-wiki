@@ -278,3 +278,36 @@
 - 新增页面：sources/morning-briefs/2026-04-18.md
 - 摘要：HN Top 话题 Claude Design（1009分）、Claude 4.7 Tokenizer成本分析（597分）；GitHub Trending 新项目 GenericAgent、dive-into-llms
 
+
+## [2026-04-20] ingest | 晨报 2026-04-20 + Stars 更新
+
+- 类型：morning-brief, update
+- 来源：raw/morning-briefs/2026-04-20.md
+- 新增页面：
+  - wiki/sources/morning-briefs/2026-04-20.md（Vercel 安全事件 / caveman 39K / MemPalace 48K / graphify 31K）
+- 更新页面（Stars 刷新）：
+  - entities/products/mempalace.md（46K→48K）
+  - entities/products/nuwa-skill.md（11.3K→13K）
+  - entities/products/zhangxuefeng-skill.md（5.9K→6.2K）
+  - entities/products/graphify.md（27K→31K）
+  - entities/products/career-ops.md（33K→37K）
+- 修复：
+  - concepts/backend-architecture.md 添加微服务链路（microservices.md、cloud-deployment.md）
+- index.md 更新：+1 源摘要（55→56页），Stars 数据全部刷新
+- 备注：Vercel 4月安全事件（718分）成当日 HN Top1，Skills 生态持续强劲增长
+
+## [2026-04-20] lint | 健康检查
+
+- 类型：lint
+- 总页面：51 wiki pages（不含 sources/）
+- 孤立页面：1（concepts/backend-architecture.md，已修复）
+- 断链：0 ✅（正确的 Obsidian 路径解析逻辑）
+- 源摘要页：12 个（sources/）
+- 超大页面（>200行）：
+  - log.md: 280 行（日志累积，正常）
+  - concepts/programming/message-queue.md: 278 行（建议拆分）
+- 修复：
+  - concepts/backend-architecture.md 添加来自 microservices.md 和 cloud-deployment.md 的入站链接
+  - index.md Stars 数据与 2026-04-20 GitHub Trending 对齐
+- 备注：断链检测使用完整 .md 后缀剥离 + title/basename 双重解析，无误报
+
