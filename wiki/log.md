@@ -311,3 +311,24 @@
   - index.md Stars 数据与 2026-04-20 GitHub Trending 对齐
 - 备注：断链检测使用完整 .md 后缀剥离 + title/basename 双重解析，无误报
 
+## [2026-04-21] ingest | 晨报 2026-04-21
+
+- 类型：morning-brief
+- 来源：raw/morning-briefs/2026-04-21.md
+- 新增页面：
+  - wiki/sources/morning-briefs/2026-04-21.md（Apple CEO 交接 / Qwen3.6 / OpenClaw Claude CLI 复活 / OpenAI agents-python 905 Stars）
+- 更新页面：
+  - concepts/ai/multi-agent.md（补充 openai-agents-python 框架 + sources/morning-briefs/2026-04-21 链接）
+- index.md 更新：+1 源摘要（56→57页）
+- 备注：Anthropic 重新允许 OpenClaw-style Claude CLI（HN 140分），OpenAI 发布 multi-agent Python 框架（905 Stars）
+
+## [2026-04-21] lint | 健康检查
+
+- 类型：lint
+- 总页面：53 wiki pages（不含 sources/）
+- 孤立页面：0 ✅
+- 断链：0 ✅
+- 源摘要页：13 个（sources/）
+- 超大页面（>200行）：0 ✅
+- frontmatter 缺失：0 ✅
+- 备注：健康
