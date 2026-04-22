@@ -332,3 +332,25 @@
 - 超大页面（>200行）：0 ✅
 - frontmatter 缺失：0 ✅
 - 备注：健康
+
+## [2026-04-22] ingest | 晨报 2026-04-22
+
+- 类型：morning-brief
+- 来源：raw/morning-briefs/2026-04-22.md
+- 新增页面：
+  - wiki/sources/morning-briefs/2026-04-22.md（SpaceX $600亿收购Cursor / ChatGPT Images 2.0 / 软件工程定律 956分）
+- index.md 更新：+1 源摘要（57→58页）
+- 备注：SpaceX 以 $600 亿收购 Cursor 创 AI 工具收购纪录；ChatGPT Images 2.0 发布；Laws of Software Engineering 引 HN 热议（956分）；Vercel OAuth 供应链攻击安全反思
+
+## [2026-04-22] lint | 健康检查
+
+- 类型：lint
+- 日期：2026-04-22 23:00 (cron每日任务)
+- 健康统计：
+  - 总页面：54 wiki pages（含 sources/）
+  - 孤立页面：0 ✅
+  - 断链：0 ✅
+  - 源摘要页：14 个（sources/）
+  - 超大页面（>200行）：0 ✅
+  - frontmatter 缺失：0 ✅
+- 备注：健康

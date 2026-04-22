@@ -1,6 +1,6 @@
 ># 知识库索引
 
->- 27 个概念 · 17 个实体 · 13 个源摘要 — 共 57 页 | 更新于 2026-04-21
+>- 27 个概念 · 17 个实体 · 14 个源摘要 — 共 58 页 | 更新于 2026-04-22
 
 ---
 
@@ -82,6 +82,7 @@
 - [[sources/morning-briefs/2026-04-19|晨报 2026-04-19]] — Opus 4.7 模型对比 / 日本铁路 / B-52 星跟踪器 / OpenAI Agents Python (2026-04-19)
 - [[sources/morning-briefs/2026-04-20|晨报 2026-04-20]] — Vercel 安全事件 / caveman Token 压缩 / MemPalace 48K / graphify 31K (2026-04-20)
 - [[sources/morning-briefs/2026-04-21|晨报 2026-04-21]] — Apple CEO 交接 / Qwen3.6 / OpenClaw Claude CLI 复活 / OpenAI agents-python (2026-04-21)
+- [[sources/morning-briefs/2026-04-22|晨报 2026-04-22]] — SpaceX $600亿收购Cursor / ChatGPT Images 2.0 / 软件工程定律 (2026-04-22)
 
 ---
 
