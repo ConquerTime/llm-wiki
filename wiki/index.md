@@ -1,6 +1,6 @@
 ># 知识库索引
 
-> 22 个概念 · 15 个实体 · 6 个源摘要 — 共 43 页 | 更新于 2026-04-16
+> 27 个概念 · 15 个实体 · 7 个源摘要 — 共 49 页 | 更新于 2026-04-23
 
 ---
 
@@ -25,8 +25,14 @@
 - [[clean-code|整洁代码]] — SOLID原则、DRY/KISS/YAGNI 编程实践
 - [[refactoring|重构]] — 不改变外在行为的前提下改善代码内部结构
 - [[solid-principles|SOLID 原则]] — 面向对象设计五原则：S/O/L/I/D
+- [[monolith-async-worker|Monolith with Async Worker]] — 单体 + 异步 Worker 架构模式，微服务演进第一步
+- [[programming/observer-pattern|观察者模式（Observer）]] — 发布者状态变化自动通知所有订阅者，一对多依赖解耦
+- [[programming/read-after-write|写后读问题（Read-After-Write）]] — 分布式系统主从复制延迟导致用户读不到自己刚写入数据的一致性问题
+- [[programming/canary-deployment|金丝雀部署（Canary Deployment）]] — 新版本先承载小比例流量，监控指标正常后渐进扩大的安全发布策略
+- [[programming/spa-history-fallback|SPA History 路由与服务端 Fallback]] — BrowserRouter 使用 History API，服务端必须配置 fallback 否则刷新 404
 
 ### 安全
+- [[oauth-state-parameter|OAuth state 参数（微信网页授权）]] — OAuth2/微信回调透传参数，用于 CSRF 防护与短期上下文绑定
 - [[open-redirect|Open Redirect]] — URL 参数跳转目标未校验导致的重定向漏洞及防护方法
 
 ---
@@ -60,6 +66,7 @@
 - [[sources/articles/llm-wiki-by-karpathy|LLM Wiki — Karpathy]] — Karpathy 的 LLM Wiki Gist (2026-04)
 - [[sources/articles/openclaw-ai-agent-interview|OpenClaw + AI Agent 面试八股文]] — OpenClaw 架构、ReAct、Function Calling、MCP/A2A 全面讲解 (2026-03)
 - [[sources/articles/software-engineering-knowledge|软件工程知识资料]] — 代码质量/重构/设计模式/SOLID/DDD 优质资源整理 (2026-04)
+- [[sources/articles/observer-pattern|观察者模式 — Refactoring.Guru]] — GoF Observer 结构解析、伪代码、优缺点及与 Mediator 对比 (2025-01)
 
 ### GitHub 仓库
 - [[sources/articles/nuwa-skill|nuwa-skill（女娲·Skill造人术）]] — 思维蒸馏 Skill 系统，六路Agent并行+三重验证 (2026-04)

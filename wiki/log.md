@@ -16,6 +16,43 @@
 
 ## 历史记录
 
+## [2026-04-23] learn | OAuth state 参数（微信网页授权）
+- 来源项目：megrez-shop
+- 页面：concepts/security/oauth-state-parameter.md
+- 操作：新增（对话汇总 `/learn summarize`）
+- 备注：涵盖 state 含义、CSRF 场景、服务端随机串校验流程、Mermaid 时序图；项目实践指向 WechatH5.tsx 当前未带 state、通过 fenbiUrl 回跳
+
+## [2026-04-17] ingest | 观察者模式 — Refactoring.Guru
+- 类型：article
+- 来源：raw/观察者.md
+- 新增页面：sources/articles/observer-pattern.md, concepts/programming/observer-pattern.md
+- 更新页面：concepts/design-patterns.md（Observer 行补充链接）, wiki/index.md
+- 备注：GoF 行为型模式之一，重点记录订阅机制三要素、EventManager 委派模式、与 Mediator/Pub-Sub 的区别
+
+## [2026-04-23] learn | SPA History 路由与服务端 Fallback
+- 来源项目：horizon-admin-web-commerce
+- 页面：concepts/programming/spa-history-fallback.md
+- 操作：新增
+- 备注：对比 admin-growth（BrowserRouter）与 admin-commerce（HashRouter），记录 nginx/Apache/Express/Netlify/Vercel 各平台 fallback 配置方式
+
+## [2026-04-18] learn | 金丝雀部署（Canary Deployment）
+- 来源项目：llm-wiki
+- 页面：concepts/programming/canary-deployment.md
+- 操作：新增
+- 备注：渐进式发布架构专题，含流量切分原理、K8s 实现方案（原生/Argo Rollouts/Istio）、常见陷阱
+
+## [2026-04-18] learn | 写后读问题（Read-After-Write Consistency）
+- 来源项目：llm-wiki
+- 页面：concepts/programming/read-after-write.md
+- 操作：新增
+- 备注：分布式主从复制延迟导致的一致性问题，涵盖5种解决方案和决策框架
+
+## [2026-04-17] learn | Monolith with Async Worker
+- 来源项目：llm-wiki
+- 页面：concepts/programming/monolith-async-worker.md
+- 操作：新增
+- 备注：单体 + 异步 Worker 架构模式，对话中解释后沉淀为概念页
+
 ## [2026-04-15] learn | 消息队列（BullMQ）
 - 来源项目：kaigao
 - 页面：concepts/programming/message-queue.md
