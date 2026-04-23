@@ -1,6 +1,8 @@
 ># 知识库索引
 
-> 27 个概念 · 15 个实体 · 7 个源摘要 — 共 49 页 | 更新于 2026-04-23
+
+>- 27 个概念 · 17 个实体 · 14 个源摘要 — 共 58 页 | 更新于 2026-04-22
+
 
 ---
 
@@ -30,6 +32,10 @@
 - [[programming/read-after-write|写后读问题（Read-After-Write）]] — 分布式系统主从复制延迟导致用户读不到自己刚写入数据的一致性问题
 - [[programming/canary-deployment|金丝雀部署（Canary Deployment）]] — 新版本先承载小比例流量，监控指标正常后渐进扩大的安全发布策略
 - [[programming/spa-history-fallback|SPA History 路由与服务端 Fallback]] — BrowserRouter 使用 History API，服务端必须配置 fallback 否则刷新 404
+- [[factory-method|工厂方法]] — 创建型模式，父类定义创建接口子类决定具体类型
+- [[backend-architecture|后端架构]] — 分层/Clean/Hexagonal/CQRS 等核心架构模式
+- [[cloud-deployment|云服务部署]] — Docker/K8s/IaC/CICD/可观测性
+- [[microservices|微服务架构]] — 服务拆分/通信/API Gateway/Saga 模式
 
 ### 安全
 - [[oauth-state-parameter|OAuth state 参数（微信网页授权）]] — OAuth2/微信回调透传参数，用于 CSRF 防护与短期上下文绑定
@@ -48,15 +54,17 @@
 - [[openclaw|OpenClaw]] — 开源本地优先的自主 AI Agent 框架，270K+ GitHub Stars
 - [[langchain|LangChain]] — AI 应用开发积木框架，适合企业级 RAG 和复杂 AI 流水线
 - [[autogpt|AutoGPT]] — 早期自主 Agent 实验项目，适合概念验证和学术研究
-- [[mempalace|MemPalace]] — 开源 AI memory system，46K Stars，Benchmark 表现最佳
-- [[caveman-skill|caveman]] — Claude Code 技能，用原始人语言降低 65% token，32K Stars
-- [[graphify|graphify]] — 将代码/文档转为知识图谱的 AI 技能，27K Stars
-- [[career-ops|career-ops]] — 基于 Claude Code 的 AI 求职系统，33K Stars
-- [[nuwa-skill|nuwa-skill]] — 蒸馏思维方式的 AI 技能，11K Stars
+- [[mempalace|MemPalace]] — 开源 AI memory system，48K Stars，Benchmark 表现最佳
+- [[caveman-skill|caveman]] — Claude Code 技能，用原始人语言降低 65% token，39K Stars
+- [[graphify|graphify]] — 将代码/文档转为知识图谱的 AI 技能，31K Stars
+- [[career-ops|career-ops]] — 基于 Claude Code 的 AI 求职系统，37K Stars
+- [[nuwa-skill|nuwa-skill]] — 蒸馏思维方式的 AI 技能，六路Agent并行+三重验证，13K Stars
 - [[gbrain|gbrain]] — Garry's OpenClaw/Hermes Agent Brain，8K Stars
-- [[zhangxuefeng-skill|zhangxuefeng-skill]] — 高考/考研/职业规划思维框架，5.9K Stars
+- [[zhangxuefeng-skill|zhangxuefeng-skill]] — 高考/考研/职业规划思维框架，6.2K Stars
 - [[khazix-skills|khazix-skills]] — 数字生命卡兹克的 AI Skills 合集，4.6K Stars
 - [[autoresearch|autoresearch]] — Karpathy 的自主 ML 研究框架，一夜跑 ~100 次实验
+- [[andrej-karpathy-skills|andrej-karpathy-skills]] — Claude Code 行为改进的 CLAUDE.md 文件，GitHub Trending
+- [[superpowers|superpowers]] — Agentic 技能框架与软件开发方法论，GitHub Trending
 
 ---
 
@@ -67,15 +75,23 @@
 - [[sources/articles/openclaw-ai-agent-interview|OpenClaw + AI Agent 面试八股文]] — OpenClaw 架构、ReAct、Function Calling、MCP/A2A 全面讲解 (2026-03)
 - [[sources/articles/software-engineering-knowledge|软件工程知识资料]] — 代码质量/重构/设计模式/SOLID/DDD 优质资源整理 (2026-04)
 - [[sources/articles/observer-pattern|观察者模式 — Refactoring.Guru]] — GoF Observer 结构解析、伪代码、优缺点及与 Mediator 对比 (2025-01)
+- [[sources/articles/backend-architecture-article|后端架构知识资料]] — 微服务/云部署/DevOps/IaC/CQRS 优质资源 (2026-04)
+- [[sources/articles/factory-method-refactoring-guru|工厂方法 — Refactoring Guru]] — 工厂方法模式：父类定义创建接口，子类决定具体类型 (2025-01)
 
 ### GitHub 仓库
-- [[sources/articles/nuwa-skill|nuwa-skill（女娲·Skill造人术）]] — 思维蒸馏 Skill 系统，六路Agent并行+三重验证 (2026-04)
+- [[sources/articles/nuwa-skill-github|nuwa-skill（女娲·Skill造人术）]] — 思维蒸馏 Skill 系统，六路Agent并行+三重验证 (2026-04)
 
 ### GitHub 仓库（续）
 - [[sources/articles/karpathy-autoresearch|karpathy/autoresearch]] — 自主 ML 研究框架，三文件极简设计，固定时间预算 (2026-04)
 
 ### 晨报
 - [[sources/morning-briefs/2026-04-15|晨报 2026-04-15]] — Hacker News / GitHub Trending 日报，Skills 生态爆发趋势
+- [[sources/morning-briefs/2026-04-16|晨报 2026-04-16]] — Stop Using Ollama / AI 推理优化 / IPv6 里程碑
+- [[sources/morning-briefs/2026-04-18|晨报 2026-04-18]] — Claude Design 引热议 / Claude 4.7 Tokenizer 成本分析 / GitHub Trending
+- [[sources/morning-briefs/2026-04-19|晨报 2026-04-19]] — Opus 4.7 模型对比 / 日本铁路 / B-52 星跟踪器 / OpenAI Agents Python (2026-04-19)
+- [[sources/morning-briefs/2026-04-20|晨报 2026-04-20]] — Vercel 安全事件 / caveman Token 压缩 / MemPalace 48K / graphify 31K (2026-04-20)
+- [[sources/morning-briefs/2026-04-21|晨报 2026-04-21]] — Apple CEO 交接 / Qwen3.6 / OpenClaw Claude CLI 复活 / OpenAI agents-python (2026-04-21)
+- [[sources/morning-briefs/2026-04-22|晨报 2026-04-22]] — SpaceX $600亿收购Cursor / ChatGPT Images 2.0 / 软件工程定律 (2026-04-22)
 
 ---
 

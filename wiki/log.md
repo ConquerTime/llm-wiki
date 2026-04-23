@@ -213,3 +213,181 @@
   - entities/products/zhangxuefeng-skill.md（职业规划思维框架，5.9K Stars）
   - entities/products/khazix-skills.md（AI Skills 合集，4.6K Stars）
 - 备注：GitHub Trending 显示 AI Coding Skills 生态爆发，caveman/graphify/nuwa-skill 等项目进入视野，国产 Skills 开始崛起
+
+## [2026-04-16] ingest | 工厂方法 — RefactoringGuru 设计模式
+
+- 类型：article (clippings)
+- 来源：raw/articles/工厂方法.md
+- 新增页面：
+  - concepts/programming/factory-method.md（工厂方法模式概念页）
+- 更新页面：
+  - concepts/design-patterns.md（添加工厂方法到创建型模式表格，添加统一支付路由链接）
+- 备注：创建型模式第一条，补充了工厂方法的概念定义、结构、适用场景和优缺点
+
+## [2026-04-16] ingest | 晨报 2026-04-16 — Ollama争议 / AI推理优化
+
+- 类型：morning-brief
+- 来源：raw/morning-briefs/2026-04-16.md
+- 新增页面：
+  - sources/morning-briefs/2026-04-16.md（晨报源摘要）
+  - entities/products/andrej-karpathy-skills.md（Claude Code 行为改进配置）
+  - entities/products/superpowers.md（Agentic 技能框架）
+- 更新页面：
+  - concepts/ai/ai-skills.md（新增 andrej-karpathy-skills 和 superpowers 到生态表格）
+- 备注：HN 热门话题 Ollama 争议、Darkbloom 私有推理；GitHub Trending 新上榜 Skills 项目
+
+## [2026-04-16] lint | 修复孤立页面 + 统计健康度
+
+- 修复孤立页面：
+  - concepts/ai/autonomous-research.md — 从 ai-agent.md 添加 inbound link
+  - concepts/programming/unified-payment-route.md — 从 design-patterns.md 添加 inbound link
+- 健康统计：
+  - 总页面：48 wiki pages
+  - 孤立页面：0（修复后）
+  - 断链：0（之前误报，sources/articles/* 路径链接正确）
+  - 源摘要页：7 个
+  - 超大页面（>200行）：1 个（message-queue.md 278行，建议拆分）
+
+
+## [2026-04-17] lint | 健康检查（每日 cron）
+
+- 类型：lint
+- 日期：2026-04-17 23:00 (cron每日任务)
+- 健康统计：
+  - 总页面：48 wiki pages
+  - 孤立页面：0 ✅
+  - 断链：1（误报，nuwa-skill.md 的 `../../../raw/articles/nuwa-skill-github.md` 路径正确，但 lint.py 仅检测 `../raw` 未检测多层 `../../`/`../../../` 前缀）
+  - 源摘要页：6 个（sources/）
+  - 超大页面（>200行）：1 个（message-queue.md 278行，建议拆分）
+- 备注：
+  - Git pull 拉取新 commit: `69923ca feat: 添加后端架构与云服务部署资料`
+  - 该 commit 已包含完整的 ingest（backend-architecture.md → sources + concepts/），无需重复 ingest
+  - 直接进行 lint 健康检查
+
+## [2026-04-19] lint | 健康检查（每日 cron）
+
+- 类型：lint
+- 日期：2026-04-19 23:00 (cron每日任务)
+- 健康统计：
+  - 总页面：51 wiki pages
+  - 孤立页面：0 ✅（backend-architecture.md 已从 design-patterns.md 添加 inbound link）
+  - 断链：0 ✅
+  - 源摘要页：11 个（sources/）
+  - 超大页面（>200行）：1 个（message-queue.md 278行，建议拆分）
+- 修复：
+  - backend-architecture.md orphan 已修复（从 design-patterns.md 添加 inbound link）
+- 已知局限：
+  - factory-method 链接冲突：basename `factory-method` 同时被 `sources/articles/factory-method.md` 和 `concepts/programming/factory-method.md` 共享，Obsidian 解析到前者（按字母序）。建议重命名源摘要页为 `factory-method-refactoring-guru.md` 以避免歧义。
+
+## [2026-04-18] lint | 健康检查（每日 cron）
+
+- 类型：lint
+- 日期：2026-04-18 23:00 (cron每日任务)
+- 健康统计：
+  - 总页面：53 wiki pages
+  - 孤立页面：1（concepts/backend-architecture.md，无入站 wikilinks）
+  - 断链：0 ✅（使用正确的 Obsidian 路径解析逻辑）
+  - 源摘要页：9 个（sources/）
+  - 超大页面（>200行）：1 个（message-queue.md 278行，建议拆分）
+- 修复：
+  - 修复 nuwa-skill.md 的错误路径 `../../wiki/entities/` → `../../entities/`
+- 备注：
+  - 晨报 2026-04-18 已摄入（Claude Design / Claude 4.7 Tokenizer / GitHub Trending）
+  - index.md 链接解析正常（title-only 格式可正确解析到各概念/实体页）
+  - source pages 使用 `../` 相对路径到 raw/ 正常
+
+## [2026-04-19] ingest | 晨报 2026-04-19 + 工厂方法
+
+- 类型：morning-brief, article
+- 新增源摘要：
+  - wiki/sources/morning-briefs/2026-04-19.md
+  - wiki/sources/articles/factory-method.md
+- 更新页面：
+  - concepts/programming/factory-method.md（添加 Refactoring Guru 源摘要）
+  - concepts/backend-architecture.md（修复 orphan，添加工厂方法链接）
+- index.md 更新：+2 源摘要（53→55页）
+- 晨报摘要：Opus 4.7 模型对比 / 日本铁路 / B-52 星跟踪器 / OpenAI Agents Python / DeepGEMM / Dive into LLMs
+
+## [2026-04-18] ingest | 晨报 2026-04-18
+
+- 类型：morning-brief
+- 来源：raw/morning-briefs/2026-04-18.md
+- 新增页面：sources/morning-briefs/2026-04-18.md
+- 摘要：HN Top 话题 Claude Design（1009分）、Claude 4.7 Tokenizer成本分析（597分）；GitHub Trending 新项目 GenericAgent、dive-into-llms
+
+
+## [2026-04-20] ingest | 晨报 2026-04-20 + Stars 更新
+
+- 类型：morning-brief, update
+- 来源：raw/morning-briefs/2026-04-20.md
+- 新增页面：
+  - wiki/sources/morning-briefs/2026-04-20.md（Vercel 安全事件 / caveman 39K / MemPalace 48K / graphify 31K）
+- 更新页面（Stars 刷新）：
+  - entities/products/mempalace.md（46K→48K）
+  - entities/products/nuwa-skill.md（11.3K→13K）
+  - entities/products/zhangxuefeng-skill.md（5.9K→6.2K）
+  - entities/products/graphify.md（27K→31K）
+  - entities/products/career-ops.md（33K→37K）
+- 修复：
+  - concepts/backend-architecture.md 添加微服务链路（microservices.md、cloud-deployment.md）
+- index.md 更新：+1 源摘要（55→56页），Stars 数据全部刷新
+- 备注：Vercel 4月安全事件（718分）成当日 HN Top1，Skills 生态持续强劲增长
+
+## [2026-04-20] lint | 健康检查
+
+- 类型：lint
+- 总页面：51 wiki pages（不含 sources/）
+- 孤立页面：1（concepts/backend-architecture.md，已修复）
+- 断链：0 ✅（正确的 Obsidian 路径解析逻辑）
+- 源摘要页：12 个（sources/）
+- 超大页面（>200行）：
+  - log.md: 280 行（日志累积，正常）
+  - concepts/programming/message-queue.md: 278 行（建议拆分）
+- 修复：
+  - concepts/backend-architecture.md 添加来自 microservices.md 和 cloud-deployment.md 的入站链接
+  - index.md Stars 数据与 2026-04-20 GitHub Trending 对齐
+- 备注：断链检测使用完整 .md 后缀剥离 + title/basename 双重解析，无误报
+
+## [2026-04-21] ingest | 晨报 2026-04-21
+
+- 类型：morning-brief
+- 来源：raw/morning-briefs/2026-04-21.md
+- 新增页面：
+  - wiki/sources/morning-briefs/2026-04-21.md（Apple CEO 交接 / Qwen3.6 / OpenClaw Claude CLI 复活 / OpenAI agents-python 905 Stars）
+- 更新页面：
+  - concepts/ai/multi-agent.md（补充 openai-agents-python 框架 + sources/morning-briefs/2026-04-21 链接）
+- index.md 更新：+1 源摘要（56→57页）
+- 备注：Anthropic 重新允许 OpenClaw-style Claude CLI（HN 140分），OpenAI 发布 multi-agent Python 框架（905 Stars）
+
+## [2026-04-21] lint | 健康检查
+
+- 类型：lint
+- 总页面：53 wiki pages（不含 sources/）
+- 孤立页面：0 ✅
+- 断链：0 ✅
+- 源摘要页：13 个（sources/）
+- 超大页面（>200行）：0 ✅
+- frontmatter 缺失：0 ✅
+- 备注：健康
+
+## [2026-04-22] ingest | 晨报 2026-04-22
+
+- 类型：morning-brief
+- 来源：raw/morning-briefs/2026-04-22.md
+- 新增页面：
+  - wiki/sources/morning-briefs/2026-04-22.md（SpaceX $600亿收购Cursor / ChatGPT Images 2.0 / 软件工程定律 956分）
+- index.md 更新：+1 源摘要（57→58页）
+- 备注：SpaceX 以 $600 亿收购 Cursor 创 AI 工具收购纪录；ChatGPT Images 2.0 发布；Laws of Software Engineering 引 HN 热议（956分）；Vercel OAuth 供应链攻击安全反思
+
+## [2026-04-22] lint | 健康检查
+
+- 类型：lint
+- 日期：2026-04-22 23:00 (cron每日任务)
+- 健康统计：
+  - 总页面：54 wiki pages（含 sources/）
+  - 孤立页面：0 ✅
+  - 断链：0 ✅
+  - 源摘要页：14 个（sources/）
+  - 超大页面（>200行）：0 ✅
+  - frontmatter 缺失：0 ✅
+- 备注：健康

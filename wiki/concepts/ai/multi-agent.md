@@ -4,7 +4,7 @@ type: concept
 subtype: ai
 tags: [multi-agent, mcp, a2a, protocol, distributed-ai]
 created: 2026-04-15
-updated: 2026-04-15
+updated: 2026-04-21
 sources:
   - ../../raw/articles/OpenClaw + AI Agent 面试八股文：背完这篇，你懂的比面试官还多！.md
 ---
@@ -68,6 +68,14 @@ MCP Server/Client 模型：
 
 **安全模型**：OpenClaw 不将一个 Gateway 建模为多租户对抗性边界。推荐模式：一个用户一台机器/VPS，一个 Gateway，多个 Agent。
 
+## 主要 Multi-Agent 框架（2026）
+
+|| 框架 | 提出方 | 特点 |
+|------|------|--------|------|
+| [[openclaw|OpenClaw]] | OpenClaw | 本地优先、多 Agent 隔离运行 | 270K+ GitHub Stars |
+| LangChain | LangChain | 企业级 RAG 和复杂 AI 流水线 | 成熟生态 |
+| openai-agents-python | OpenAI | A lightweight, powerful framework for multi-agent workflows | 905 Stars，2026-04-21 |
+
 ## Gartner 预测
 
 预测到 2026 年，几乎每个商业应用都会有 AI 助手，其中 40% 会在次年集成任务特定的 Agent。
@@ -75,3 +83,4 @@ MCP Server/Client 模型：
 ## 来源
 
 - [[sources/articles/openclaw-ai-agent-interview|OpenClaw + AI Agent 面试八股文]]
+- [[sources/morning-briefs/2026-04-21|晨报 2026-04-21]]
