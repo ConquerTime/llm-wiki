@@ -57,7 +57,7 @@ sources:
 | Iterator | 提供一种方法顺序访问集合元素而不暴露底层表示 |
 | Mediator | 用一个中介对象来封装一系列对象交互 |
 | Memento | 在不破坏封装性的前提下捕获对象内部状态 |
-| [[programming/observer-pattern\|Observer]] | 定义对象间的一种一对多依赖关系，发布者状态变化自动通知所有订阅者 |
+| [[concepts/programming/observer-pattern|Observer]] | 定义对象间的一种一对多依赖关系，发布者状态变化自动通知所有订阅者 |
 | State | 允许对象在其内部状态改变时改变行为 |
 | Strategy | 定义一系列算法，把它们一个个封装起来 |
 | Template Method | 定义算法骨架，将一些步骤延迟到子类 |

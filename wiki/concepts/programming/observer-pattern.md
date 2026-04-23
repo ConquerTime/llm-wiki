@@ -57,9 +57,9 @@ class Editor:
 
 | 模式 | 区别 |
 |------|------|
-| [[mediator|Mediator（中介者）]] | Mediator 消除多对多依赖（双向），Observer 建立一对多单向通知 |
+| [[design-patterns|Mediator（中介者）]] | Mediator 消除多对多依赖（双向），Observer 建立一对多单向通知 |
 | Pub/Sub | Observer 订阅者直接引用发布者；Pub/Sub 通常通过消息中间件解耦，发布者和订阅者完全不认识彼此 |
-| [[chain-of-responsibility|责任链]] | 责任链只有一个接收者处理请求；Observer 通知所有订阅者 |
+| [[design-patterns|责任链]] | 责任链只有一个接收者处理请求；Observer 通知所有订阅者 |
 
 ## 来源
 

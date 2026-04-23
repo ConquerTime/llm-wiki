@@ -1,7 +1,7 @@
 ># 知识库索引
 
 
->- 27 个概念 · 17 个实体 · 14 个源摘要 — 共 58 页 | 更新于 2026-04-22
+>- 27 个概念 · 17 个实体 · 15 个源摘要 — 共 59 页 | 更新于 2026-04-23
 
 
 ---
@@ -28,10 +28,10 @@
 - [[refactoring|重构]] — 不改变外在行为的前提下改善代码内部结构
 - [[solid-principles|SOLID 原则]] — 面向对象设计五原则：S/O/L/I/D
 - [[monolith-async-worker|Monolith with Async Worker]] — 单体 + 异步 Worker 架构模式，微服务演进第一步
-- [[programming/observer-pattern|观察者模式（Observer）]] — 发布者状态变化自动通知所有订阅者，一对多依赖解耦
-- [[programming/read-after-write|写后读问题（Read-After-Write）]] — 分布式系统主从复制延迟导致用户读不到自己刚写入数据的一致性问题
-- [[programming/canary-deployment|金丝雀部署（Canary Deployment）]] — 新版本先承载小比例流量，监控指标正常后渐进扩大的安全发布策略
-- [[programming/spa-history-fallback|SPA History 路由与服务端 Fallback]] — BrowserRouter 使用 History API，服务端必须配置 fallback 否则刷新 404
+- [[concepts/programming/observer-pattern|观察者模式（Observer）]] — 发布者状态变化自动通知所有订阅者，一对多依赖解耦
+- [[concepts/programming/read-after-write|写后读问题（Read-After-Write）]] — 分布式系统主从复制延迟导致用户读不到自己刚写入数据的一致性问题
+- [[concepts/programming/canary-deployment|金丝雀部署（Canary Deployment）]] — 新版本先承载小比例流量，监控指标正常后渐进扩大的安全发布策略
+- [[concepts/programming/spa-history-fallback|SPA History 路由与服务端 Fallback]] — BrowserRouter 使用 History API，服务端必须配置 fallback 否则刷新 404
 - [[factory-method|工厂方法]] — 创建型模式，父类定义创建接口子类决定具体类型
 - [[backend-architecture|后端架构]] — 分层/Clean/Hexagonal/CQRS 等核心架构模式
 - [[cloud-deployment|云服务部署]] — Docker/K8s/IaC/CICD/可观测性
@@ -92,6 +92,7 @@
 - [[sources/morning-briefs/2026-04-20|晨报 2026-04-20]] — Vercel 安全事件 / caveman Token 压缩 / MemPalace 48K / graphify 31K (2026-04-20)
 - [[sources/morning-briefs/2026-04-21|晨报 2026-04-21]] — Apple CEO 交接 / Qwen3.6 / OpenClaw Claude CLI 复活 / OpenAI agents-python (2026-04-21)
 - [[sources/morning-briefs/2026-04-22|晨报 2026-04-22]] — SpaceX $600亿收购Cursor / ChatGPT Images 2.0 / 软件工程定律 (2026-04-22)
+- [[sources/morning-briefs/2026-04-23|晨报 2026-04-23]] — Apple 删除消息漏洞修复 / Firefox Tor 隐私问题 / Over-editing 讨论 (2026-04-23)
 
 ---
 

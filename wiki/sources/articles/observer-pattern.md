@@ -62,5 +62,4 @@ date: 2025-01
 
 ## 提到的概念
 
-- [[../../../wiki/concepts/design-patterns|设计模式]] — GoF 23种模式
-- [[observer|观察者模式]] — 本页主题
+- [[../../concepts/design-patterns|设计模式]] — GoF 23种模式
