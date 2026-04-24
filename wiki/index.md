@@ -1,7 +1,7 @@
 ># 知识库索引
 
 
->- 27 个概念 · 17 个实体 · 15 个源摘要 — 共 59 页 | 更新于 2026-04-23
+>- 27 个概念 · 17 个实体 · 16 个源摘要 — 共 60 页 | 更新于 2026-04-24
 
 
 ---
@@ -93,6 +93,7 @@
 - [[sources/morning-briefs/2026-04-21|晨报 2026-04-21]] — Apple CEO 交接 / Qwen3.6 / OpenClaw Claude CLI 复活 / OpenAI agents-python (2026-04-21)
 - [[sources/morning-briefs/2026-04-22|晨报 2026-04-22]] — SpaceX $600亿收购Cursor / ChatGPT Images 2.0 / 软件工程定律 (2026-04-22)
 - [[sources/morning-briefs/2026-04-23|晨报 2026-04-23]] — Apple 删除消息漏洞修复 / Firefox Tor 隐私问题 / Over-editing 讨论 (2026-04-23)
+- [[sources/morning-briefs/2026-04-24|晨报 2026-04-24]] — DeepSeek v4 / GPT-5.5 / Bitwarden CLI 供应链攻击 / Meta 裁员 (2026-04-24)
 
 ---
 

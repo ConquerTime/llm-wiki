@@ -396,3 +396,26 @@
   - concepts/programming/spa-history-fallback.md：programming/canary-deployment → concepts/programming/canary-deployment（1处）
   - sources/articles/observer-pattern.md：../../../wiki/concepts/ → ../../concepts/（1处），删除 [[../observer-pattern]] 自引用（1处）
 - 备注：健康
+
+
+## [2026-04-24] ingest | 晨报 2026-04-24
+
+- 类型：morning-brief
+- 来源：raw/morning-briefs/2026-04-24.md
+- 新增页面：wiki/sources/morning-briefs/2026-04-24.md（DeepSeek v4 / GPT-5.5 / Bitwarden CLI 供应链攻击 / Meta 裁员）
+- index.md 更新：+1 源摘要（59→60页）
+- 备注：DeepSeek v4 位列 HN 榜首；GPT-5.5 发布（1334分）；Bitwarden CLI 遭遇供应链攻击；Meta 宣布裁员 10%
+
+## [2026-04-24] lint | 健康检查
+
+- 类型：lint
+- 日期：2026-04-24 23:00 (cron每日任务)
+- 健康统计：
+  - 总页面：63 wiki pages（含 sources/）
+  - 孤立页面：0 ✅
+  - 断链：0 ✅
+  - 源摘要页：16 个（sources/）
+  - 超大页面（>200行）：4（log.md 398行 / canary-deployment 333行 / message-queue 278行 / read-after-write 213行）
+  - frontmatter 缺失：0 ✅
+  - 过期页面（>90天）：0 ✅
+- 备注：健康
