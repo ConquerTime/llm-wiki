@@ -419,3 +419,25 @@
   - frontmatter 缺失：0 ✅
   - 过期页面（>90天）：0 ✅
 - 备注：健康
+
+## [2026-04-25] ingest | 晨报 2026-04-25
+
+- 类型：morning-brief
+- 来源：raw/morning-briefs/2026-04-25.md
+- 新增页面：wiki/sources/morning-briefs/2026-04-25.md（Google $40B 投资 Anthropic / Hugging Face ml-intern 开源 / free-claude-code）
+- index.md 更新：+1 源摘要（60→61页）
+- 备注：本周最大新闻 Google-Anthropic 投资；ml-intern 作为开源 ML Agent 新标杆；free-claude-code 引发 Claude Code 免费化讨论
+
+## [2026-04-25] lint | 健康检查
+
+- 类型：lint
+- 日期：2026-04-25 23:00 (cron每日任务)
+- 健康统计：
+  - 总页面：64 wiki pages（含 sources/）
+  - 孤立页面：0 ✅
+  - 断链：0 ✅
+  - 源摘要页：17 个（sources/）
+  - 超大页面（>200行）：4（log.md 421行 / canary-deployment 333行 / message-queue 278行 / read-after-write 213行）
+  - frontmatter 缺失：0 ✅
+  - 过期页面（>90天）：0 ✅
+- 备注：健康
