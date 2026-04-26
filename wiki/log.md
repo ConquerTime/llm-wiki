@@ -441,3 +441,30 @@
   - frontmatter 缺失：0 ✅
   - 过期页面（>90天）：0 ✅
 - 备注：健康
+
+## [2026-04-26] ingest | 晨报 2026-04-26
+
+- 类型：morning-brief
+- 来源：raw/morning-briefs/2026-04-26.md
+- 新增页面：
+  - wiki/sources/morning-briefs/2026-04-26.md
+  - wiki/entities/products/deepep.md
+  - wiki/entities/products/roo-code.md
+- 更新页面：
+  - concepts/ai/multi-agent.md（添加 Roo-Code 到框架表格）
+  - wiki/index.md（+2 实体，+1 源摘要，统计更新至 64 页）
+- 备注：ChatGPT 解决 Erdős 问题（AI for Science 里程碑）；DeepEP（DeepSeek MoE 通信库）；Roo-Code（VS Code AI 多智能体团队）
+
+## [2026-04-26] lint | 健康检查
+
+- 类型：lint
+- 日期：2026-04-26 23:00 (cron每日任务)
+- 健康统计：
+  - 总页面：67 wiki pages（含 sources/）
+  - 孤立页面：0 ✅
+  - 断链：0 ✅
+  - 源摘要页：19 个（sources/）
+  - 超大页面（>200行）：4（log.md 446行 / canary-deployment 333行 / message-queue 278行 / read-after-write 213行）
+  - frontmatter 缺失：0 ✅
+  - 过期页面（>90天）：0 ✅
+- 备注：健康

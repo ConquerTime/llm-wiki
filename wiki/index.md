@@ -1,7 +1,7 @@
 ># 知识库索引
 
 
->- 27 个概念 · 17 个实体 · 17 个源摘要 — 共 61 页 | 更新于 2026-04-25
+>- 27 个概念 · 19 个实体 · 18 个源摘要 — 共 64 页 | 更新于 2026-04-26
 
 
 ---
@@ -65,6 +65,8 @@
 - [[autoresearch|autoresearch]] — Karpathy 的自主 ML 研究框架，一夜跑 ~100 次实验
 - [[andrej-karpathy-skills|andrej-karpathy-skills]] — Claude Code 行为改进的 CLAUDE.md 文件，GitHub Trending
 - [[superpowers|superpowers]] — Agentic 技能框架与软件开发方法论，GitHub Trending
+- [[deepep|DeepEP]] — DeepSeek 的高效专家并行通信库，MoE 训练必备
+- [[roo-code|Roo-Code]] — VS Code 中的 AI 多智能体开发团队
 
 ---
 
@@ -95,6 +97,7 @@
 - [[sources/morning-briefs/2026-04-23|晨报 2026-04-23]] — Apple 删除消息漏洞修复 / Firefox Tor 隐私问题 / Over-editing 讨论 (2026-04-23)
 - [[sources/morning-briefs/2026-04-24|晨报 2026-04-24]] — DeepSeek v4 / GPT-5.5 / Bitwarden CLI 供应链攻击 / Meta 裁员 (2026-04-24)
 - [[sources/morning-briefs/2026-04-25|晨报 2026-04-25]] — Google $40B 投资 Anthropic / Hugging Face ml-intern / free-claude-code (2026-04-25)
+- [[sources/morning-briefs/2026-04-26|晨报 2026-04-26]] — AI 编码工具持续火热 / ChatGPT 解决 Erdős 问题 / DeepEP / Roo-Code (2026-04-26)
 
 ---
 
