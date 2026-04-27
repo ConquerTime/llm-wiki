@@ -468,3 +468,28 @@
   - frontmatter 缺失：0 ✅
   - 过期页面（>90天）：0 ✅
 - 备注：健康
+
+## [2026-04-27] ingest | 晨报 2026-04-27
+- 类型：morning-brief
+- 来源：raw/morning-briefs/2026-04-27.md
+- 新增页面：
+  - wiki/sources/morning-briefs/2026-04-27.md
+  - wiki/entities/products/mattpocock-skills.md
+  - wiki/entities/products/posthog.md
+  - wiki/entities/products/typescript-go.md
+- 更新页面：
+  - concepts/ai/ai-skills.md（添加 mattpocock/skills 到项目一览表）
+  - wiki/index.md（+3 实体，+1 源摘要，统计更新至 67 页）
+- 备注：mattpocock/skills（Claude Code 技能目录开源）、PostHog（产品分析平台持续在榜）、typescript-go（微软官方 TS→Go 转译）
+
+## [2026-04-27] lint | 健康检查
+- 日期：2026-04-27 23:00 (cron每日任务)
+- 健康统计：
+  - 总页面：71 wiki pages（含 sources/）
+  - 孤立页面：0 ✅
+  - 断链：0 ✅
+  - 源摘要页：20 个（sources/）
+  - 超大页面（>200行）：3（canary-deployment 333行 / message-queue 278行 / read-after-write 213行）
+  - frontmatter 缺失：0 ✅
+  - 过期页面（>90天）：0 ✅
+- 备注：健康

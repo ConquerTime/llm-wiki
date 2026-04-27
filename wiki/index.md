@@ -1,7 +1,7 @@
 ># 知识库索引
 
 
->- 27 个概念 · 19 个实体 · 18 个源摘要 — 共 64 页 | 更新于 2026-04-26
+>- 27 个概念 · 22 个实体 · 19 个源摘要 — 共 67 页 | 更新于 2026-04-27
 
 
 ---
@@ -67,6 +67,9 @@
 - [[superpowers|superpowers]] — Agentic 技能框架与软件开发方法论，GitHub Trending
 - [[deepep|DeepEP]] — DeepSeek 的高效专家并行通信库，MoE 训练必备
 - [[roo-code|Roo-Code]] — VS Code 中的 AI 多智能体开发团队
+- [[mattpocock-skills|mattpocock/skills]] — Agent Skills for real engineers，Claude Code 技能目录开源
+- [[posthog|PostHog]] — 开源产品分析平台，AI 能力整合
+- [[typescript-go|typescript-go]] — 微软官方 TypeScript→Go 转译工具
 
 ---
 
@@ -98,6 +101,7 @@
 - [[sources/morning-briefs/2026-04-24|晨报 2026-04-24]] — DeepSeek v4 / GPT-5.5 / Bitwarden CLI 供应链攻击 / Meta 裁员 (2026-04-24)
 - [[sources/morning-briefs/2026-04-25|晨报 2026-04-25]] — Google $40B 投资 Anthropic / Hugging Face ml-intern / free-claude-code (2026-04-25)
 - [[sources/morning-briefs/2026-04-26|晨报 2026-04-26]] — AI 编码工具持续火热 / ChatGPT 解决 Erdős 问题 / DeepEP / Roo-Code (2026-04-26)
+- [[sources/morning-briefs/2026-04-27|晨报 2026-04-27]] — mattpocock/skills 开源 / PostHog 产品分析 / typescript-go 微软转译工具 (2026-04-27)
 
 ---
 
