@@ -2,11 +2,11 @@
 title: "Roo-Code"
 type: entity
 subtype: product
-tags: [open-source, ai-agents, vscode, multi-agent]
+tags: [tool, ai-agent, vscode, multi-agent]
 created: 2026-04-26
 updated: 2026-04-26
 sources:
-  - ../../raw/morning-briefs/2026-04-26.md
+  - "[[raw/morning-briefs/2026-04-26.md|晨报 2026-04-26]]"
 ---
 
 # Roo-Code

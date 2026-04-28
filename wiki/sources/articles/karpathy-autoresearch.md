@@ -6,7 +6,7 @@ tags: [ai, ai-agent, autonomous, karpathy]
 created: 2026-04-16
 updated: 2026-04-16
 sources:
-  - ../../../raw/articles/karpathy-autoresearch.md
+  - "[[raw/articles/karpathy-autoresearch.md|autoresearch]]"
 author: Andrej Karpathy
 url: https://github.com/karpathy/autoresearch
 date: 2026-04

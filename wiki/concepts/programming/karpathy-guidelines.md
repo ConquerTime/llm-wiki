@@ -6,7 +6,7 @@ tags: [programming, clean-code, karpathy]
 created: 2026-04-14
 updated: 2026-04-15
 sources:
-  - ../../raw/articles/llm-wiki-by-karpathy.md
+  - "[[raw/articles/llm-wiki-by-karpathy.md|llm-wiki-by-karpathy]]"
 ---
 
 # Karpathy Guidelines

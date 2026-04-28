@@ -6,7 +6,7 @@ tags: [ai, context-engineering, multi-agent]
 created: 2026-04-24
 updated: 2026-04-24
 sources:
-  - ../../raw/articles/get-shit-done-github.md
+  - "[[raw/articles/get-shit-done-github.md|get-shit-done-github]]"
 ---
 
 # Context Engineering（上下文工程）

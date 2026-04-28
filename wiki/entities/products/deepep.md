@@ -2,11 +2,11 @@
 title: "DeepEP"
 type: entity
 subtype: product
-tags: [deepseek, open-source, moe, distributed-training]
+tags: [tool, moe, distributed-training, open-source]
 created: 2026-04-26
 updated: 2026-04-26
 sources:
-  - ../../raw/morning-briefs/2026-04-26.md
+  - "[[raw/morning-briefs/2026-04-26.md|晨报 2026-04-26]]"
 ---
 
 # DeepEP

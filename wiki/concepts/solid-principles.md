@@ -6,7 +6,7 @@ tags: [programming, solid, clean-code]
 created: 2026-04-16
 updated: 2026-04-16
 sources:
-  - ../sources/articles/software-engineering-knowledge.md
+  - "[[wiki/sources/articles/software-engineering-knowledge.md|软件工程知识资料]]"
 ---
 
 # SOLID 原则

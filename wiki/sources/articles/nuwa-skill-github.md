@@ -9,7 +9,7 @@ author: 花叔 (alchaincyf)
 url: https://github.com/alchaincyf/nuwa-skill
 date: 2026-04
 sources:
-  - ../../raw/articles/nuwa-skill-github.md
+  - "[[raw/articles/nuwa-skill-github.md|nuwa-skill-github]]"
 ---
 
 # nuwa-skill（女娲·Skill造人术）

@@ -6,8 +6,8 @@ tags: [tool, ai-skill, github-trending]
 created: 2026-04-15
 updated: 2026-04-20
 sources:
-  - ../../raw/morning-briefs/2026-04-15.md
-  - ../../raw/morning-briefs/2026-04-20.md
+  - "[[raw/morning-briefs/2026-04-15.md|晨报 2026-04-15]]"
+  - "[[raw/morning-briefs/2026-04-20.md|晨报 2026-04-20]]"
 ---
 
 # zhangxuefeng-skill

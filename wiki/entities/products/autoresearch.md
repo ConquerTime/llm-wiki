@@ -6,7 +6,7 @@ tags: [tool, ai-agent, autonomous, karpathy]
 created: 2026-04-16
 updated: 2026-04-16
 sources:
-  - ../../../raw/articles/karpathy-autoresearch.md
+  - "[[raw/articles/karpathy-autoresearch.md|autoresearch]]"
 ---
 
 # autoresearch

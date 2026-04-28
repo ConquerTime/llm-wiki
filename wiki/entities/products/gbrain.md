@@ -6,7 +6,7 @@ tags: [tool, ai-agent, github-trending]
 created: 2026-04-15
 updated: 2026-04-15
 sources:
-  - ../../raw/morning-briefs/2026-04-15.md
+  - "[[raw/morning-briefs/2026-04-15.md|晨报 2026-04-15]]"
 ---
 
 # gbrain

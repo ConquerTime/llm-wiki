@@ -6,8 +6,8 @@ type: concept
 subtype: programming
 tags: [programming, design-patterns, solid]
 sources:
-  - ../../raw/articles/工厂方法.md
-  - ../sources/articles/factory-method-refactoring-guru.md
+  - "[[raw/articles/工厂方法.md|工厂方法]]"
+  - "[[wiki/sources/articles/factory-method-refactoring-guru.md|工厂方法 — Refactoring Guru]]"
 ---
 
 # 工厂方法模式

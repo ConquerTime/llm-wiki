@@ -6,7 +6,7 @@ tags: [ai, ai-agent, multi-agent, mcp, function-calling]
 created: 2026-04-15
 updated: 2026-04-15
 sources:
-  - ../../../raw/articles/OpenClaw + AI Agent 面试八股文：背完这篇，你懂的比面试官还多！.md
+  - "[[raw/articles/OpenClaw + AI Agent 面试八股文：背完这篇，你懂的比面试官还多！.md|OpenClaw + AI Agent 面试八股文：背完这篇，你懂的比面试官还多！]]"
 author: 王几行XING
 url: https://zhuanlan.zhihu.com/p/2013536456132554764
 date: 2026-03

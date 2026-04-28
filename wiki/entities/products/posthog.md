@@ -2,12 +2,12 @@
 title: "PostHog"
 type: entity
 subtype: product
-tags: [open-source, product-analytics, developer-tools, ai-integrated]
+tags: [tool, product-analytics, developer-tools, open-source]
 created: 2026-04-27
 updated: 2026-04-27
 sources:
-  - ../../raw/morning-briefs/2026-04-26.md
-  - ../../raw/morning-briefs/2026-04-27.md
+  - "[[raw/morning-briefs/2026-04-26.md|晨报 2026-04-26]]"
+  - "[[raw/morning-briefs/2026-04-27.md|晨报 2026-04-27]]"
 ---
 
 # PostHog

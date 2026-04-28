@@ -6,7 +6,7 @@ tags: [programming, design-patterns]
 created: 2026-04-17
 updated: 2026-04-17
 sources:
-  - ../../../raw/观察者.md
+  - "[[raw/观察者.md|观察者]]"
 author: Refactoring.Guru
 url: https://refactoringguru.cn/design-patterns/observer
 date: 2025-01

@@ -6,7 +6,7 @@ tags: [programming, backend, architecture, microservices]
 created: 2026-04-16
 updated: 2026-04-16
 sources:
-  - ../../raw/articles/backend-architecture.md
+  - "[[raw/articles/backend-architecture.md|backend-architecture]]"
 ---
 
 # 后端架构知识资料

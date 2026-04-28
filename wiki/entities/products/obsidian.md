@@ -6,7 +6,7 @@ tags: [tool, pkm, knowledge-management]
 created: 2026-04-15
 updated: 2026-04-15
 sources:
-  - ../../raw/articles/llm-wiki-by-karpathy.md
+  - "[[raw/articles/llm-wiki-by-karpathy.md|llm-wiki-by-karpathy]]"
 ---
 
 # Obsidian

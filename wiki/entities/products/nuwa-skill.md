@@ -6,9 +6,9 @@ tags: [tool, ai-skill, claude-code, multi-agent]
 created: 2026-04-15
 updated: 2026-04-20
 sources:
-  - ../../raw/morning-briefs/2026-04-15.md
-  - ../../raw/morning-briefs/2026-04-20.md
-  - ../../../raw/articles/nuwa-skill-github.md
+  - "[[raw/morning-briefs/2026-04-15.md|晨报 2026-04-15]]"
+  - "[[raw/morning-briefs/2026-04-20.md|晨报 2026-04-20]]"
+  - "[[raw/articles/nuwa-skill-github.md|nuwa-skill (女娲·Skill造人术)]]"
 ---
 
 # nuwa-skill（女娲·Skill造人术）

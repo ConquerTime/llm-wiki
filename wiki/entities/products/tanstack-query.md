@@ -6,7 +6,7 @@ tags: [tool, programming, frontend, server-state, open-source]
 created: 2026-04-23
 updated: 2026-04-24
 sources:
-  - ../../sources/articles/react-query-vs-swr-server-state-source-compare.md
+  - "[[wiki/sources/articles/react-query-vs-swr-server-state-source-compare.md|React Query vs SWR：服务端状态管理源码对比]]"
 ---
 
 # TanStack Query（React Query）

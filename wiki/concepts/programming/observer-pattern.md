@@ -6,7 +6,7 @@ tags: [programming, design-patterns]
 created: 2026-04-17
 updated: 2026-04-17
 sources:
-  - ../../sources/articles/observer-pattern.md
+  - "[[wiki/sources/articles/observer-pattern.md|观察者模式 — Refactoring.Guru]]"
 ---
 
 # 观察者模式（Observer）

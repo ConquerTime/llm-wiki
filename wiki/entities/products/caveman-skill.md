@@ -6,7 +6,7 @@ tags: [tool, claude-code, ai-skill, open-source, github-trending]
 created: 2026-04-20
 updated: 2026-05-04
 sources:
-  - ../../raw/morning-briefs/2026-04-20.md
+  - "[[raw/morning-briefs/2026-04-20.md|晨报 2026-04-20]]"
 ---
 
 # caveman
@@ -28,7 +28,7 @@ caveman 的核心思路是语言压缩——通过使用极简、粗犷的语言
 
 - 属于 [[ai-skills]] 生态中的 Token 优化方向
 - 与 [[nuwa-skill]] 同为 Claude Code 技能，但侧重点不同（nuwa 侧重思维蒸馏，caveman 侧重语言压缩）
-- 参见 [[caveman-skill]]（[[caveman]]）与 [[graphify]] 对比，两者均面向 AI 效率优化
+- 与 [[graphify]] 同属 AI 效率优化方向，但切入角度不同（graphify 侧重知识图谱）
 - 集成于 Claude Code 生态，参见 [[openclaw]]
 
 ## 来源

@@ -6,7 +6,7 @@ tags: [programming, clean-code, design-patterns, solid, refactoring]
 created: 2026-04-16
 updated: 2026-04-16
 sources:
-  - ../../raw/articles/software-engineering-knowledge.md
+  - "[[raw/articles/software-engineering-knowledge.md|software-engineering-knowledge]]"
 ---
 
 # 软件工程知识资料

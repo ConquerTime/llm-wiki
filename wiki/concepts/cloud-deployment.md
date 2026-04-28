@@ -6,7 +6,7 @@ tags: [programming, deployment, devops]
 created: 2026-04-16
 updated: 2026-04-16
 sources:
-  - ../sources/articles/backend-architecture-article.md
+  - "[[wiki/sources/articles/backend-architecture-article.md|后端架构知识资料]]"
 ---
 
 # 云服务部署

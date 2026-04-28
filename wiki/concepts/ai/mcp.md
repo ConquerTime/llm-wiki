@@ -6,7 +6,7 @@ tags: [ai, mcp, tool-use]
 created: 2026-04-15
 updated: 2026-04-15
 sources:
-  - ../../raw/articles/OpenClaw + AI Agent 面试八股文：背完这篇，你懂的比面试官还多！.md
+  - "[[raw/articles/OpenClaw + AI Agent 面试八股文：背完这篇，你懂的比面试官还多！.md|OpenClaw + AI Agent 面试八股文：背完这篇，你懂的比面试官还多！]]"
 ---
 
 # MCP（Model Context Protocol）

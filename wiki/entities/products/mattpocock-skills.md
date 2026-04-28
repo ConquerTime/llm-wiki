@@ -2,11 +2,11 @@
 title: "mattpocock/skills"
 type: entity
 subtype: product
-tags: [open-source, ai-agents, claude-code, skills, trending]
+tags: [tool, ai-skill, claude-code, open-source]
 created: 2026-04-27
 updated: 2026-04-27
 sources:
-  - ../../raw/morning-briefs/2026-04-27.md
+  - "[[raw/morning-briefs/2026-04-27.md|晨报 2026-04-27]]"
 ---
 
 # mattpocock/skills

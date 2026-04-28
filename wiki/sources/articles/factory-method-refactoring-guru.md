@@ -9,7 +9,7 @@ date: 2025-01-01
 created: 2026-04-19
 updated: 2026-04-19
 sources:
-  - ../../raw/articles/工厂方法.md
+  - "[[raw/articles/工厂方法.md|工厂方法]]"
 ---
 
 # 工厂方法 — Refactoring Guru

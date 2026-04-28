@@ -2,11 +2,11 @@
 title: "typescript-go"
 type: entity
 subtype: product
-tags: [open-source, microsoft, typescript, go, transpiler, developer-tools]
+tags: [tool, typescript, transpiler, developer-tools, open-source]
 created: 2026-04-27
 updated: 2026-04-27
 sources:
-  - ../../raw/morning-briefs/2026-04-27.md
+  - "[[raw/morning-briefs/2026-04-27.md|晨报 2026-04-27]]"
 ---
 
 # typescript-go

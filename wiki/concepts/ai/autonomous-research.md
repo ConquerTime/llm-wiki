@@ -6,7 +6,7 @@ tags: [ai, ai-agent, autonomous]
 created: 2026-04-16
 updated: 2026-04-16
 sources:
-  - ../../../raw/articles/karpathy-autoresearch.md
+  - "[[raw/articles/karpathy-autoresearch.md|autoresearch]]"
 ---
 
 # 自主 ML 研究（Autonomous ML Research）
