@@ -29,6 +29,9 @@ Thumbs.db
 !.obsidian/hotkeys.json
 !.obsidian/.gitignore
 
+# Claudian
+.claudian/
+
 # Temporary files
 tmp/
 temp/
