@@ -4,7 +4,7 @@ type: concept
 subtype: ai
 tags: [ai, multi-agent, mcp]
 created: 2026-04-15
-updated: 2026-04-21
+updated: 2026-04-26
 sources:
   - ../../raw/articles/OpenClaw + AI Agent 面试八股文：背完这篇，你懂的比面试官还多！.md
 ---
@@ -75,7 +75,11 @@ MCP Server/Client 模型：
 | [[openclaw|OpenClaw]] | OpenClaw | 本地优先、多 Agent 隔离运行 | 270K+ GitHub Stars |
 | LangChain | LangChain | 企业级 RAG 和复杂 AI 流水线 | 成熟生态 |
 | openai-agents-python | OpenAI | A lightweight, powerful framework for multi-agent workflows | 905 Stars，2026-04-21 |
+<<<<<<< HEAD
 | [[gsd|GSD（Get Shit Done）]] | TÂCHES | context engineering + spec-driven，Wave 并行执行，每 plan 独立上下文 | 56K+ Stars |
+=======
+| [[roo-code|Roo-Code]] | RooCodeInc | VS Code 中的 AI 多智能体开发团队 | TypeScript，2026-04-26 |
+>>>>>>> origin/main
 
 ## Gartner 预测
 

@@ -1,7 +1,11 @@
 ># 知识库索引
 
 
+<<<<<<< HEAD
 >- 33 个概念 · 22 个实体 · 19 个源摘要 — 共 74 页 | 更新于 2026-04-28
+=======
+>- 27 个概念 · 22 个实体 · 19 个源摘要 — 共 67 页 | 更新于 2026-04-27
+>>>>>>> origin/main
 
 
 ---
@@ -37,6 +41,7 @@
 - [[refactoring|重构]] — 不改变外在行为的前提下改善代码内部结构
 - [[solid-principles|SOLID 原则]] — 面向对象设计五原则：S/O/L/I/D
 - [[monolith-async-worker|Monolith with Async Worker]] — 单体 + 异步 Worker 架构模式，微服务演进第一步
+<<<<<<< HEAD
 - [[programming/observer-pattern|观察者模式（Observer）]] — 发布者状态变化自动通知所有订阅者，一对多依赖解耦
 - [[programming/read-after-write|写后读问题（Read-After-Write）]] — 分布式系统主从复制延迟导致用户读不到自己刚写入数据的一致性问题
 - [[programming/canary-deployment|金丝雀部署（Canary Deployment）]] — 新版本先承载小比例流量，监控指标正常后渐进扩大的安全发布策略
@@ -46,6 +51,12 @@
 - [[programming/feature-based-architecture|Feature-Based 架构]] — 按业务特性组织代码 + ESLint 强制单向依赖（shared → features → app），来自 Bulletproof React
 - [[programming/react-classic-antipatterns|React 经典反模式（组件层）]] — Props in Initial State / Mutating State / Index as Key / render 里新建引用等 7+1 个反模式词典（Class → Hooks 对照）
 - [[programming/react-state-categories|React 状态五分类]] — Component / Application / Server Cache / Form / URL 五类状态按来源组织，指导工具选型与识别页面反模式
+=======
+- [[concepts/programming/observer-pattern|观察者模式（Observer）]] — 发布者状态变化自动通知所有订阅者，一对多依赖解耦
+- [[concepts/programming/read-after-write|写后读问题（Read-After-Write）]] — 分布式系统主从复制延迟导致用户读不到自己刚写入数据的一致性问题
+- [[concepts/programming/canary-deployment|金丝雀部署（Canary Deployment）]] — 新版本先承载小比例流量，监控指标正常后渐进扩大的安全发布策略
+- [[concepts/programming/spa-history-fallback|SPA History 路由与服务端 Fallback]] — BrowserRouter 使用 History API，服务端必须配置 fallback 否则刷新 404
+>>>>>>> origin/main
 - [[factory-method|工厂方法]] — 创建型模式，父类定义创建接口子类决定具体类型
 - [[backend-architecture|后端架构]] — 分层/Clean/Hexagonal/CQRS 等核心架构模式
 - [[cloud-deployment|云服务部署]] — Docker/K8s/IaC/CICD/可观测性
@@ -82,8 +93,16 @@
 - [[swr|SWR]] — Vercel 出品的极简 Stale-While-Revalidate 数据获取 hook 库
 - [[andrej-karpathy-skills|andrej-karpathy-skills]] — Claude Code 行为改进的 CLAUDE.md 文件，GitHub Trending
 - [[superpowers|superpowers]] — Agentic 技能框架与软件开发方法论，GitHub Trending
+<<<<<<< HEAD
 - [[gsd|GSD（Get Shit Done）]] — context engineering + spec-driven 开发系统，解决 context rot，56K+ Stars
 - [[bulletproof-react|Bulletproof React]] — React 生产级架构指南与示例应用，GitHub 35K+ Stars
+=======
+- [[deepep|DeepEP]] — DeepSeek 的高效专家并行通信库，MoE 训练必备
+- [[roo-code|Roo-Code]] — VS Code 中的 AI 多智能体开发团队
+- [[mattpocock-skills|mattpocock/skills]] — Agent Skills for real engineers，Claude Code 技能目录开源
+- [[posthog|PostHog]] — 开源产品分析平台，AI 能力整合
+- [[typescript-go|typescript-go]] — 微软官方 TypeScript→Go 转译工具
+>>>>>>> origin/main
 
 ---
 
@@ -115,6 +134,11 @@
 - [[sources/morning-briefs/2026-04-20|晨报 2026-04-20]] — Vercel 安全事件 / caveman Token 压缩 / MemPalace 48K / graphify 31K (2026-04-20)
 - [[sources/morning-briefs/2026-04-21|晨报 2026-04-21]] — Apple CEO 交接 / Qwen3.6 / OpenClaw Claude CLI 复活 / OpenAI agents-python (2026-04-21)
 - [[sources/morning-briefs/2026-04-22|晨报 2026-04-22]] — SpaceX $600亿收购Cursor / ChatGPT Images 2.0 / 软件工程定律 (2026-04-22)
+- [[sources/morning-briefs/2026-04-23|晨报 2026-04-23]] — Apple 删除消息漏洞修复 / Firefox Tor 隐私问题 / Over-editing 讨论 (2026-04-23)
+- [[sources/morning-briefs/2026-04-24|晨报 2026-04-24]] — DeepSeek v4 / GPT-5.5 / Bitwarden CLI 供应链攻击 / Meta 裁员 (2026-04-24)
+- [[sources/morning-briefs/2026-04-25|晨报 2026-04-25]] — Google $40B 投资 Anthropic / Hugging Face ml-intern / free-claude-code (2026-04-25)
+- [[sources/morning-briefs/2026-04-26|晨报 2026-04-26]] — AI 编码工具持续火热 / ChatGPT 解决 Erdős 问题 / DeepEP / Roo-Code (2026-04-26)
+- [[sources/morning-briefs/2026-04-27|晨报 2026-04-27]] — mattpocock/skills 开源 / PostHog 产品分析 / typescript-go 微软转译工具 (2026-04-27)
 
 ---
 

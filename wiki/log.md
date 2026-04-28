@@ -389,26 +389,128 @@
 - frontmatter 缺失：0 ✅
 - 备注：健康
 
-## [2026-04-22] ingest | 晨报 2026-04-22
+## [2026-04-23] ingest | 晨报 2026-04-23
 
 - 类型：morning-brief
-- 来源：raw/morning-briefs/2026-04-22.md
-- 新增页面：
-  - wiki/sources/morning-briefs/2026-04-22.md（SpaceX $600亿收购Cursor / ChatGPT Images 2.0 / 软件工程定律 956分）
-- index.md 更新：+1 源摘要（57→58页）
-- 备注：SpaceX 以 $600 亿收购 Cursor 创 AI 工具收购纪录；ChatGPT Images 2.0 发布；Laws of Software Engineering 引 HN 热议（956分）；Vercel OAuth 供应链攻击安全反思
+- 来源：raw/morning-briefs/2026-04-23.md
+- 新增页面：wiki/sources/morning-briefs/2026-04-23.md（Apple 删除消息漏洞修复 / Firefox Tor 隐私问题 / Over-editing 讨论）
+- index.md 更新：+1 源摘要（58→59页）
+- 备注：Apple iPhone 删除消息提取漏洞已修复；Firefox Tor 隐私标识符问题引发关注；无技术 tractors 创业受热议（1697分）；AI Over-editing 行为讨论升温
 
-## [2026-04-22] lint | 健康检查
+## [2026-04-23] lint | 健康检查与修复
 
 - 类型：lint
-- 日期：2026-04-22 23:00 (cron每日任务)
+- 日期：2026-04-23 23:00 (cron每日任务)
 - 健康统计：
-  - 总页面：54 wiki pages（含 sources/）
+  - 总页面：62 wiki pages（含 sources/）
+  - 孤立页面：0 ✅
+  - 断链：0 ✅（修复了 9 个断链：index.md 路径修正、sources 路径修正、mediator/chain-of-responsibility 指向 design-patterns）
+  - 源摘要页：15 个（sources/）
+  - 超大页面（>200行）：4（log.md 393行 / canary-deployment 333行 / message-queue 278行 / read-after-write 213行）
+  - frontmatter 缺失：0 ✅
+- 修复内容：
+  - index.md：programming/X → concepts/programming/X（4处）
+  - concepts/design-patterns.md：programming/observer-pattern\ → concepts/programming/observer-pattern（1处，修复尾部反斜杠）
+  - concepts/programming/observer-pattern.md：mediator/chain-of-responsibility → design-patterns（2处）
+  - concepts/programming/spa-history-fallback.md：programming/canary-deployment → concepts/programming/canary-deployment（1处）
+  - sources/articles/observer-pattern.md：../../../wiki/concepts/ → ../../concepts/（1处），删除 [[../observer-pattern]] 自引用（1处）
+- 备注：健康
+
+
+## [2026-04-24] ingest | 晨报 2026-04-24
+
+- 类型：morning-brief
+- 来源：raw/morning-briefs/2026-04-24.md
+- 新增页面：wiki/sources/morning-briefs/2026-04-24.md（DeepSeek v4 / GPT-5.5 / Bitwarden CLI 供应链攻击 / Meta 裁员）
+- index.md 更新：+1 源摘要（59→60页）
+- 备注：DeepSeek v4 位列 HN 榜首；GPT-5.5 发布（1334分）；Bitwarden CLI 遭遇供应链攻击；Meta 宣布裁员 10%
+
+## [2026-04-24] lint | 健康检查
+
+- 类型：lint
+- 日期：2026-04-24 23:00 (cron每日任务)
+- 健康统计：
+  - 总页面：63 wiki pages（含 sources/）
   - 孤立页面：0 ✅
   - 断链：0 ✅
-  - 源摘要页：14 个（sources/）
-  - 超大页面（>200行）：0 ✅
+  - 源摘要页：16 个（sources/）
+  - 超大页面（>200行）：4（log.md 398行 / canary-deployment 333行 / message-queue 278行 / read-after-write 213行）
   - frontmatter 缺失：0 ✅
+  - 过期页面（>90天）：0 ✅
+- 备注：健康
+
+## [2026-04-25] ingest | 晨报 2026-04-25
+
+- 类型：morning-brief
+- 来源：raw/morning-briefs/2026-04-25.md
+- 新增页面：wiki/sources/morning-briefs/2026-04-25.md（Google $40B 投资 Anthropic / Hugging Face ml-intern 开源 / free-claude-code）
+- index.md 更新：+1 源摘要（60→61页）
+- 备注：本周最大新闻 Google-Anthropic 投资；ml-intern 作为开源 ML Agent 新标杆；free-claude-code 引发 Claude Code 免费化讨论
+
+## [2026-04-25] lint | 健康检查
+
+- 类型：lint
+- 日期：2026-04-25 23:00 (cron每日任务)
+- 健康统计：
+  - 总页面：64 wiki pages（含 sources/）
+  - 孤立页面：0 ✅
+  - 断链：0 ✅
+  - 源摘要页：17 个（sources/）
+  - 超大页面（>200行）：4（log.md 421行 / canary-deployment 333行 / message-queue 278行 / read-after-write 213行）
+  - frontmatter 缺失：0 ✅
+  - 过期页面（>90天）：0 ✅
+- 备注：健康
+
+## [2026-04-26] ingest | 晨报 2026-04-26
+
+- 类型：morning-brief
+- 来源：raw/morning-briefs/2026-04-26.md
+- 新增页面：
+  - wiki/sources/morning-briefs/2026-04-26.md
+  - wiki/entities/products/deepep.md
+  - wiki/entities/products/roo-code.md
+- 更新页面：
+  - concepts/ai/multi-agent.md（添加 Roo-Code 到框架表格）
+  - wiki/index.md（+2 实体，+1 源摘要，统计更新至 64 页）
+- 备注：ChatGPT 解决 Erdős 问题（AI for Science 里程碑）；DeepEP（DeepSeek MoE 通信库）；Roo-Code（VS Code AI 多智能体团队）
+
+## [2026-04-26] lint | 健康检查
+
+- 类型：lint
+- 日期：2026-04-26 23:00 (cron每日任务)
+- 健康统计：
+  - 总页面：67 wiki pages（含 sources/）
+  - 孤立页面：0 ✅
+  - 断链：0 ✅
+  - 源摘要页：19 个（sources/）
+  - 超大页面（>200行）：4（log.md 446行 / canary-deployment 333行 / message-queue 278行 / read-after-write 213行）
+  - frontmatter 缺失：0 ✅
+  - 过期页面（>90天）：0 ✅
+- 备注：健康
+
+## [2026-04-27] ingest | 晨报 2026-04-27
+- 类型：morning-brief
+- 来源：raw/morning-briefs/2026-04-27.md
+- 新增页面：
+  - wiki/sources/morning-briefs/2026-04-27.md
+  - wiki/entities/products/mattpocock-skills.md
+  - wiki/entities/products/posthog.md
+  - wiki/entities/products/typescript-go.md
+- 更新页面：
+  - concepts/ai/ai-skills.md（添加 mattpocock/skills 到项目一览表）
+  - wiki/index.md（+3 实体，+1 源摘要，统计更新至 67 页）
+- 备注：mattpocock/skills（Claude Code 技能目录开源）、PostHog（产品分析平台持续在榜）、typescript-go（微软官方 TS→Go 转译）
+
+## [2026-04-27] lint | 健康检查
+- 日期：2026-04-27 23:00 (cron每日任务)
+- 健康统计：
+  - 总页面：71 wiki pages（含 sources/）
+  - 孤立页面：0 ✅
+  - 断链：0 ✅
+  - 源摘要页：20 个（sources/）
+  - 超大页面（>200行）：3（canary-deployment 333行 / message-queue 278行 / read-after-write 213行）
+  - frontmatter 缺失：0 ✅
+  - 过期页面（>90天）：0 ✅
 - 备注：健康
 
 ## [2026-04-23] create | 电商支付弹窗 Excalidraw 原型图

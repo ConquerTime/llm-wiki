@@ -98,4 +98,4 @@ app.get('*', (req, res) => {
 
 ## 相关概念
 
-- [[programming/canary-deployment|金丝雀部署]] — 同属部署相关概念
+- [[concepts/programming/canary-deployment|金丝雀部署]] — 同属部署相关概念
