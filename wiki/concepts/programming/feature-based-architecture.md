@@ -6,7 +6,7 @@ tags: [programming, react, architecture]
 created: 2026-04-27
 updated: 2026-04-27
 sources:
-  - "[[wiki/sources/articles/bulletproof-react-github.md|Bulletproof React]]"
+  - "[[../../sources/articles/bulletproof-react-github|Bulletproof React]]"
 ---
 
 # Feature-Based 架构
@@ -164,4 +164,4 @@ feature 的本质是"对外暴露的 API 边界"，不是"一堆文件的集合"
 
 ## 来源
 
-- [[wiki/sources/articles/bulletproof-react-github.md|Bulletproof React]]
+- [[../../sources/articles/bulletproof-react-github|BulletProof React]]

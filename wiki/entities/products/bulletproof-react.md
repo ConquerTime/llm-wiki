@@ -6,7 +6,7 @@ tags: [tool, react, architecture]
 created: 2026-04-27
 updated: 2026-04-27
 sources:
-  - "[[wiki/sources/articles/bulletproof-react-github.md|Bulletproof React 源摘要]]"
+  - "[[../../sources/articles/bulletproof-react-github|Bulletproof React 源摘要]]"
 ---
 
 # Bulletproof React
@@ -37,4 +37,4 @@ sources:
 
 ## 出现在
 
-- [[wiki/sources/articles/bulletproof-react-github.md|Bulletproof React 源摘要]]
+- [[../../sources/articles/bulletproof-react-github|Bulletproof React 源摘要]]

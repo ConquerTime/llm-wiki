@@ -14,7 +14,7 @@
 
 | 项目 | 目标 | 状态 | 启动 |
 |------|------|------|------|
-| [[projects/2026-04-kaigao/README.md\|2026-04-kaigao]] | 开稿 KaiGao — AI 论文写作助手的知识与产出管理 | active | 2026-04-28 |
+| [[projects/2026-04-kaigao/README|2026-04-kaigao]] | 开稿 KaiGao — AI 论文写作助手的知识与产出管理 | active | 2026-04-28 |
 
 ---
 
@@ -40,7 +40,9 @@
 - [[clean-code|整洁代码]] — SOLID原则、DRY/KISS/YAGNI 编程实践
 - [[refactoring|重构]] — 不改变外在行为的前提下改善代码内部结构
 - [[solid-principles|SOLID 原则]] — 面向对象设计五原则：S/O/L/I/D
-- [[monolith-async-worker|Monolith with Async Worker]] — 单体 + 异步 Worker 架构模式，微服务演进第一步
+- [[monolith-async-worker|Monolith with Async Worker]]
+- [[concepts/programming/spec-driven-development|Spec-Driven Development]] — 先写规格再写代码，多 Agent 协作的通信协议
+ — 单体 + 异步 Worker 架构模式，微服务演进第一步
 <<<<<<< HEAD
 - [[programming/observer-pattern|观察者模式（Observer）]] — 发布者状态变化自动通知所有订阅者，一对多依赖解耦
 - [[programming/read-after-write|写后读问题（Read-After-Write）]] — 分布式系统主从复制延迟导致用户读不到自己刚写入数据的一致性问题

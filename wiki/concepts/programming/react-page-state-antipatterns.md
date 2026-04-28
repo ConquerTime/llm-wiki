@@ -6,7 +6,7 @@ tags: [programming, react, state-management, antipatterns]
 created: 2026-04-27
 updated: 2026-04-27
 sources:
-  - "[[wiki/sources/articles/bulletproof-react-github.md|Bulletproof React]]"
+  - "[[../../sources/articles/bulletproof-react-github|Bulletproof React]]"
 ---
 
 # React 页面状态管理反模式与重构

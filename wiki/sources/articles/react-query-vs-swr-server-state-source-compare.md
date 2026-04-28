@@ -6,7 +6,7 @@ tags: [programming, frontend, server-state]
 created: 2026-04-23
 updated: 2026-04-23
 sources:
-  - "[[raw/frontend/react/react-query-vs-swr-server-state-source-compare|原文]]"
+  - "[[../../raw/frontend/react/react-query-vs-swr-server-state-source-compare|原文]]"
 ---
 
 # React Query vs SWR：服务端状态管理源码对比
@@ -34,7 +34,7 @@ sources:
 ## 提到的概念
 
 - [[server-state-management|服务端状态管理]]
-- [[programming/observer-pattern|观察者模式]] — Observer/订阅模型
+- [[../../concepts/programming/observer-pattern|观察者模式]] — Observer/订阅模型
 - React `useSyncExternalStore` — 并发安全外部 store 订阅
 - Stale-While-Revalidate — HTTP 缓存策略，SWR 命名来源
 

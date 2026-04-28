@@ -288,6 +288,8 @@ date: YYYY-MM              # 原文发布日期
 | `person` | 人物实体 |
 | `news` | 每日资讯、Morning Brief |
 | `pkm` | 个人知识管理方法论 |
+| `security` | 安全相关概念（OAuth、CSRF、重定向等） |
+| `business` | 商业模式、商业分析、支付路由等业务架构 |
 
 #### 使用规则
 - 第一层大类 tag 必须是固定词表中的词，仅在必要时新增

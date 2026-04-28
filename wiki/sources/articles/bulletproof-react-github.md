@@ -9,16 +9,16 @@ author: Alan Alickovic
 url: https://github.com/alan2207/bulletproof-react
 date: 2026-04
 sources:
-  - "[[raw/articles/bulletproof-react/README.md|Bulletproof React README]]"
-  - "[[raw/articles/bulletproof-react/project-structure.md|Project Structure]]"
-  - "[[raw/articles/bulletproof-react/state-management.md|State Management]]"
-  - "[[raw/articles/bulletproof-react/components-and-styling.md|Components and Styling]]"
-  - "[[raw/articles/bulletproof-react/api-layer.md|API Layer]]"
-  - "[[raw/articles/bulletproof-react/project-standards.md|Project Standards]]"
-  - "[[raw/articles/bulletproof-react/error-handling.md|Error Handling]]"
-  - "[[raw/articles/bulletproof-react/performance.md|Performance]]"
-  - "[[raw/articles/bulletproof-react/testing.md|Testing]]"
-  - "[[raw/articles/bulletproof-react/security.md|Security]]"
+  - "[[../../raw/articles/bulletproof-react/README.md|Bulletproof React README]]"
+  - "[[../../raw/articles/bulletproof-react/project-structure.md|Project Structure]]"
+  - "[[../../raw/articles/bulletproof-react/state-management.md|State Management]]"
+  - "[[../../raw/articles/bulletproof-react/components-and-styling.md|Components and Styling]]"
+  - "[[../../raw/articles/bulletproof-react/api-layer.md|API Layer]]"
+  - "[[../../raw/articles/bulletproof-react/project-standards.md|Project Standards]]"
+  - "[[../../raw/articles/bulletproof-react/error-handling.md|Error Handling]]"
+  - "[[../../raw/articles/bulletproof-react/performance.md|Performance]]"
+  - "[[../../raw/articles/bulletproof-react/testing.md|Testing]]"
+  - "[[../../raw/articles/bulletproof-react/security.md|Security]]"
 ---
 
 # Bulletproof React — 生产级 React 架构指南
@@ -37,7 +37,7 @@ sources:
 
 ## 关键摘录
 
-### 项目结构（来自 [[raw/articles/bulletproof-react/project-structure.md|Project Structure]]）
+### 项目结构（来自 [[../../raw/articles/bulletproof-react/project-structure.md|Project Structure]]）
 
 > For easy scalability and maintenance, organize most of the code within the features folder. Each feature folder should contain code specific to that feature, keeping things neatly separated.
 
@@ -66,13 +66,13 @@ sources:
 
 值得注意：作者**反对 barrel file**，与多数 React 样板的建议相反。
 
-### 状态五分类（来自 [[raw/articles/bulletproof-react/state-management.md|State Management]]）
+### 状态五分类（来自 [[../../raw/articles/bulletproof-react/state-management.md|State Management]]）
 
 | 分类 | 工具建议 |
 |------|---------|
 | **Component State** — 组件私有 | `useState` / `useReducer` |
 | **Application State** — 跨组件全局 | Context+hooks / Redux Toolkit / Zustand / Jotai / XState |
-| **Server Cache State** — 来自 API 的远端数据 | [[products/tanstack-query\|React Query]] / [[products/swr\|SWR]] / Apollo / urql / RTK Query |
+| **Server Cache State** — 来自 API 的远端数据 | [[products/tanstack-query|React Query]] / [[products/swr|SWR]] / Apollo / urql / RTK Query |
 | **Form State** — 表单字段 | React Hook Form / Formik / Final Form，配合 zod/yup 校验 |
 | **URL State** — URL 参数/查询串 | react-router-dom |
 
@@ -82,7 +82,7 @@ sources:
 
 > The Server Cache State refers to the data retrieved from the server that is stored locally on the client-side for future use. While it is feasible to cache remote data within a state management store like Redux, there exist more optimal solutions to this practice.
 
-### API 层（来自 [[raw/articles/bulletproof-react/api-layer.md|API Layer]]）
+### API 层（来自 [[../../raw/articles/bulletproof-react/api-layer.md|API Layer]]）
 
 每个 API 请求的三件套：
 
@@ -90,7 +90,7 @@ sources:
 - fetcher function（调用预配置的单一 API client 实例）
 - hook（基于 react-query / swr 管理缓存）
 
-### 性能优化（来自 [[raw/articles/bulletproof-react/performance.md|Performance]]）
+### 性能优化（来自 [[../../raw/articles/bulletproof-react/performance.md|Performance]]）
 
 > The `children` prop is the most basic and easiest way to optimize your components. When applied properly, it eliminates a lot of unnecessary rerenders.
 
@@ -121,17 +121,17 @@ const [state, setState] = useState(() => myExpensiveFn());
 
 > Do not rush with context and global state. Context is often used as the "golden tool" for props drilling, whereas in many scenarios you may satisfy your needs by lifting the state up or a proper composition of components.
 
-### 安全（来自 [[raw/articles/bulletproof-react/security.md|Security]]）
+### 安全（来自 [[../../raw/articles/bulletproof-react/security.md|Security]]）
 
 > Storing authentication tokens in localStorage can pose a security risk, especially in the context of Cross-Site Scripting (XSS) vulnerabilities. Opting to store tokens in cookies, configured with the `HttpOnly` attribute, can enhance security as they are inaccessible to client-side JavaScript.
 
 授权模型推荐 RBAC + PBAC 混用：RBAC 做粗粒度角色门槛，PBAC 做细粒度所有权检查（如"只有评论作者能删除自己的评论"）。
 
-### 错误处理（来自 [[raw/articles/bulletproof-react/error-handling.md|Error Handling]]）
+### 错误处理（来自 [[../../raw/articles/bulletproof-react/error-handling.md|Error Handling]]）
 
 > Instead of having only one error boundary for the entire app, consider placing multiple error boundaries in different areas. This way, if an error occurs, it can be contained and managed locally without disrupting the entire application's functionality.
 
-### 测试（来自 [[raw/articles/bulletproof-react/testing.md|Testing]]）
+### 测试（来自 [[../../raw/articles/bulletproof-react/testing.md|Testing]]）
 
 > The efficacy of testing lies in the comprehensive coverage provided by integration and e2e tests.
 

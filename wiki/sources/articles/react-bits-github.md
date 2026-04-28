@@ -9,15 +9,15 @@ author: Vasa (vasanthk)
 url: https://github.com/vasanthk/react-bits
 date: 2017
 sources:
-  - "[[raw/articles/react-bits/README.md|React Bits README]]"
-  - "[[raw/articles/react-bits/anti-patterns/01.props-in-initial-state.md|Props in Initial State]]"
-  - "[[raw/articles/react-bits/anti-patterns/02.findDOMNode.md|findDOMNode]]"
-  - "[[raw/articles/react-bits/anti-patterns/03.mixins.md|Mixins]]"
-  - "[[raw/articles/react-bits/anti-patterns/04.setState-in-componentWillMount.md|setState in componentWillMount]]"
-  - "[[raw/articles/react-bits/anti-patterns/05.mutating-state.md|Mutating State]]"
-  - "[[raw/articles/react-bits/anti-patterns/06.using-indexes-as-key.md|Using Indexes as Key]]"
-  - "[[raw/articles/react-bits/anti-patterns/07.spreading-props-dom.md|Spreading Props on DOM]]"
-  - "[[raw/articles/react-bits/gotchas/01.pure-render-checks.md|Pure Render Checks]]"
+  - "[[../../raw/articles/react-bits/README.md|React Bits README]]"
+  - "[[../../raw/articles/react-bits/anti-patterns/01.props-in-initial-state.md|Props in Initial State]]"
+  - "[[../../raw/articles/react-bits/anti-patterns/02.findDOMNode.md|findDOMNode]]"
+  - "[[../../raw/articles/react-bits/anti-patterns/03.mixins.md|Mixins]]"
+  - "[[../../raw/articles/react-bits/anti-patterns/04.setState-in-componentWillMount.md|setState in componentWillMount]]"
+  - "[[../../raw/articles/react-bits/anti-patterns/05.mutating-state.md|Mutating State]]"
+  - "[[../../raw/articles/react-bits/anti-patterns/06.using-indexes-as-key.md|Using Indexes as Key]]"
+  - "[[../../raw/articles/react-bits/anti-patterns/07.spreading-props-dom.md|Spreading Props on DOM]]"
+  - "[[../../raw/articles/react-bits/gotchas/01.pure-render-checks.md|Pure Render Checks]]"
 ---
 
 # React Bits — React 模式、反模式与技巧合集

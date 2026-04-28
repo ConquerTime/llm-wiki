@@ -590,3 +590,18 @@
 - 外部关联：/Users/zhouyangdong/Documents/projects/kaigao
 - 骨架：README / brief / log / retro / raw / notes / deliverables 全部就位
 - 备注：brief.md 的"目标 / 非目标 / 范围 / 交付物 / 里程碑"五节为占位，等待与用户首次讨论后补齐
+
+
+## [2026-04-28] lint | 1 broken link (projects cross-dir), 0 orphans, 0 missing-from-index, 0 stale, 5 large-pages
+- 类型：lint
+- 发现并修复的断链：
+  - `wiki/sources/` 前缀的 wikilink（共 7 处）→ 改为 `../../sources/` 相对路径
+  - `raw/` 前缀的 wikilink（3 处 sources 页面）→ 改为正确的 `../../../raw/` 相对路径
+  - `[[products/tanstack-query\|...]]` Unicode 转义 → 修复为 `[[products/tanstack-query]]`
+  - `[[raw/articles/...]]` 未使用 `../../raw/` 而非 `raw/` 的路径
+  - index.md 中的 git merge conflict marker → 已清理
+  - 修复 index.md 中的 `[[programming/X]]` → `[[concepts/programming/X]]` 路径修正
+- 断链状态：1 个可接受的跨目录断链（`[[projects/2026-04-kaigao/README]]` — projects 在 wiki 外）
+- 新增页面：`concepts/programming/spec-driven-development.md`（GSD 工作流概念）
+- 大页面（>200行）：log.md(593), canary-deployment(334), message-queue(279), react-page-state-antipatterns(331), read-after-write(214)
+- CLAUDE.md Tag Taxonomy 已补充 `security` 和 `business` 大类

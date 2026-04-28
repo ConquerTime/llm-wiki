@@ -6,7 +6,7 @@ tags: [tool, claude-code, context-engineering, multi-agent]
 created: 2026-04-24
 updated: 2026-04-24
 sources:
-  - [[raw/articles/get-shit-done-github|原文]]
+  - "[[../../raw/articles/get-shit-done-github|原文]]"
 ---
 
 # GSD（Get Shit Done）

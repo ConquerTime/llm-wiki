@@ -6,8 +6,8 @@ tags: [programming, frontend, server-state]
 created: 2026-04-23
 updated: 2026-04-27
 sources:
-  - "[[wiki/sources/articles/react-query-vs-swr-server-state-source-compare.md|React Query vs SWR 对比]]"
-  - "[[wiki/sources/articles/bulletproof-react-github.md|Bulletproof React]]"
+  - "[[../../sources/articles/react-query-vs-swr-server-state-source-compare|React Query vs SWR 对比]]"
+  - "[[../../sources/articles/bulletproof-react-github|Bulletproof React]]"
 ---
 
 # 服务端状态管理（Server State Management）
@@ -31,7 +31,7 @@ resource = data + metadata + in-flight + observers
 
 ## 两大主流方案对比
 
-| 维度 | [[tanstack-query\|TanStack Query]] | [[swr\|SWR]] |
+| 维度 | [[tanstack-query|TanStack Query]] | [[swr|SWR]] |
 |---|---|---|
 | 核心抽象 | `Query`/`QueryObserver`（资源实例 + 状态机） | `cache` Map + `useSWR` hook |
 | 缓存容器 | `QueryCache`（以 Query 实例为单位） | cache provider（key -> value） |

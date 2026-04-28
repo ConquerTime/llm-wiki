@@ -6,7 +6,7 @@ tags: [ai, context-engineering, multi-agent, claude-code]
 created: 2026-04-24
 updated: 2026-04-24
 sources:
-  - [[raw/articles/get-shit-done-github|原文]]
+  - [[../../../raw/articles/get-shit-done-github|原文]]
 author: TÂCHES
 url: https://github.com/gsd-build/get-shit-done
 date: 2026-04
@@ -35,7 +35,7 @@ date: 2026-04
 ## 提到的实体
 
 - [[gsd|GSD（Get Shit Done）]] — 本工具
-- [[taches|TÂCHES]] — 原作者
+- TÂCHES — 原作者
 
 ## 提到的概念
 

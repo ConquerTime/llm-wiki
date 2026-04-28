@@ -6,7 +6,7 @@ tags: [programming, react, antipatterns]
 created: 2026-04-28
 updated: 2026-04-28
 sources:
-  - "[[wiki/sources/articles/react-bits-github.md|React Bits]]"
+  - "[[../../sources/articles/react-bits-github|React Bits]]"
 ---
 
 # React 经典反模式（组件层）
@@ -194,4 +194,4 @@ function Parent() {
 
 ## 来源
 
-- [[wiki/sources/articles/react-bits-github.md|React Bits]]（2017 年汇编，反模式命名的经典源头）
+- [[../../sources/articles/react-bits-github|React Bits]]（2017 年汇编，反模式命名的经典源头）

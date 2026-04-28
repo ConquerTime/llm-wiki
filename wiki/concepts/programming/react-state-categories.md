@@ -6,7 +6,7 @@ tags: [programming, react, state-management]
 created: 2026-04-28
 updated: 2026-04-28
 sources:
-  - "[[wiki/sources/articles/bulletproof-react-github.md|Bulletproof React]]"
+  - "[[../../raw/articles/bulletproof-react|原文]]"
 ---
 
 # React 状态五分类
@@ -21,7 +21,7 @@ sources:
 |------|----------|---------|
 | **Component State** | 组件私有变量 | `useState` / `useReducer` |
 | **Application State** | 跨组件共享的客户端状态 | Context + hooks / Zustand / Jotai / Redux Toolkit / XState |
-| **Server Cache State** | 远端 API 的响应 | [[products/tanstack-query\|TanStack Query]] / [[products/swr\|SWR]] / Apollo / urql |
+| **Server Cache State** | 远端 API 的响应 | [[products/tanstack-query|TanStack Query]] / [[products/swr|SWR]] / Apollo / urql |
 | **Form State** | 表单字段 | React Hook Form / Formik / Final Form（配合 zod/yup） |
 | **URL State** | URL path / query / hash | react-router / Next.js router |
 
@@ -186,4 +186,4 @@ Context 适合**低频、低速度**的数据（主题、用户信息）。高�
 
 ## 来源
 
-- [[wiki/sources/articles/bulletproof-react-github.md|Bulletproof React]] — 最早把五分类清晰化的公共文档之一
+- [[../../raw/articles/bulletproof-react|Bulletproof React]] — 最早把五分类清晰化的公共文档之一
