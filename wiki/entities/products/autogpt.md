@@ -2,7 +2,7 @@
 title: AutoGPT
 type: entity
 subtype: product
-tags: [ai-agent, autonomous, open-source, experimental]
+tags: [tool, ai-agent, autonomous, open-source]
 created: 2026-04-15
 updated: 2026-04-15
 sources:

@@ -2,7 +2,7 @@
 title: 设计模式
 type: concept
 subtype: programming
-tags: [design-patterns, gof, architecture, clean-code]
+tags: [programming, design-patterns, clean-code]
 created: 2026-04-16
 updated: 2026-04-16
 sources:

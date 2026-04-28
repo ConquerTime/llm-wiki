@@ -55,5 +55,8 @@
   },
   "newFileLocation": "folder",
   "newFileFolderPath": "raw",
-  "attachmentFolderPath": "raw"
+  "attachmentFolderPath": "raw",
+  "readableLineLength": false,
+  "showUnsupportedFiles": true,
+  "alwaysUpdateLinks": true
 }

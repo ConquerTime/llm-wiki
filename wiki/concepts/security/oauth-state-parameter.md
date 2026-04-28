@@ -2,7 +2,7 @@
 title: OAuth state 参数（微信网页授权）
 type: concept
 subtype: security
-tags: [oauth2, csrf, wechat, snsapi_base, megrez-shop]
+tags: [programming, security, oauth2]
 created: 2026-04-23
 updated: 2026-04-23
 sources: []

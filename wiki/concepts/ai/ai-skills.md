@@ -2,7 +2,7 @@
 title: "AI Skills 生态"
 type: concept
 subtype: ai
-tags: [ai-agent, skill, ecosystem, trending]
+tags: [ai, ai-skill]
 created: 2026-04-15
 updated: 2026-04-20
 sources:

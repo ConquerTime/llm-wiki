@@ -2,7 +2,7 @@
 title: RAG (Retrieval-Augmented Generation)
 type: concept
 subtype: ai
-tags: [rag, llm, retrieval]
+tags: [ai, rag, llm]
 created: 2026-04-15
 updated: 2026-04-15
 sources:

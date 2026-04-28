@@ -2,7 +2,7 @@
 title: 后端架构知识资料
 type: source
 subtype: article
-tags: [backend, architecture, cloud, microservices, devops, iac, cqrs]
+tags: [programming, backend, architecture, microservices]
 created: 2026-04-16
 updated: 2026-04-16
 sources:

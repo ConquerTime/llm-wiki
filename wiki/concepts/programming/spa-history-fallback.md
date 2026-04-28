@@ -2,7 +2,7 @@
 title: SPA History 路由与服务端 Fallback
 type: concept
 subtype: programming
-tags: [spa, react-router, browser-router, nginx, deployment, horizon-admin-web-commerce]
+tags: [programming, frontend, deployment]
 created: 2026-04-23
 updated: 2026-04-23
 sources: []

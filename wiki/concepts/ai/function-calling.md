@@ -2,7 +2,7 @@
 title: Function Calling（工具调用）
 type: concept
 subtype: ai
-tags: [function-calling, tool-use, llm, agent, json, structured-output]
+tags: [ai, function-calling, tool-use, llm]
 created: 2026-04-15
 updated: 2026-04-15
 sources:

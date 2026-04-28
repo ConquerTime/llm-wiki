@@ -2,7 +2,7 @@
 title: 观察者模式 — Refactoring.Guru
 type: source
 subtype: article
-tags: [design-patterns, observer, behavioral, gof]
+tags: [programming, design-patterns]
 created: 2026-04-17
 updated: 2026-04-17
 sources:

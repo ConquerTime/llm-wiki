@@ -2,7 +2,7 @@
 title: autoresearch
 type: entity
 subtype: product
-tags: [karpathy, ai-agent, ml-research, github]
+tags: [tool, ai-agent, autonomous, karpathy]
 created: 2026-04-16
 updated: 2026-04-16
 sources:

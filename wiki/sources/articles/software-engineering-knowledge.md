@@ -2,7 +2,7 @@
 title: 软件工程知识资料
 type: source
 subtype: article
-tags: [software-engineering, clean-code, design-patterns, refactoring, solid, ddd]
+tags: [programming, clean-code, design-patterns, solid, refactoring]
 created: 2026-04-16
 updated: 2026-04-16
 sources:

@@ -2,7 +2,7 @@
 title: "graphify"
 type: entity
 subtype: product
-tags: [knowledge-graph, ai-coding, skill, github-trending]
+tags: [tool, ai-skill, github-trending]
 created: 2026-04-15
 updated: 2026-04-20
 sources:

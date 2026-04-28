@@ -1,0 +1,23 @@
+{
+  "id": "conv-1777306198491-zyq22fx9w",
+  "providerId": "claude",
+  "title": "关于我当前的知识库，我感觉还有一些欠缺。",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1777306198497,
+  "updatedAt": 1777307951803,
+  "lastResponseAt": 1777307951803,
+  "sessionId": "777e9c3b-f3bc-4816-bbea-0204ca31a02f",
+  "providerState": {
+    "providerSessionId": "777e9c3b-f3bc-4816-bbea-0204ca31a02f"
+  },
+  "usage": {
+    "model": "opus",
+    "inputTokens": 1,
+    "cacheCreationInputTokens": 433,
+    "cacheReadInputTokens": 73077,
+    "contextWindow": 200000,
+    "contextTokens": 73511,
+    "percentage": 37,
+    "contextWindowIsAuthoritative": true
+  }
+}

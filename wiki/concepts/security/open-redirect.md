@@ -2,7 +2,7 @@
 title: Open Redirect（开放重定向漏洞）
 type: concept
 subtype: security
-tags: [open-redirect, web-security, owasp, horizon-web-commerce]
+tags: [programming, security]
 created: 2026-04-16
 updated: 2026-04-16
 sources: []

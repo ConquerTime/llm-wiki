@@ -2,7 +2,7 @@
 title: 观察者模式（Observer）
 type: concept
 subtype: programming
-tags: [design-patterns, observer, behavioral, gof, event, pub-sub]
+tags: [programming, design-patterns]
 created: 2026-04-17
 updated: 2026-04-17
 sources:

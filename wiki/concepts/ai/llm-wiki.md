@@ -2,7 +2,7 @@
 title: LLM Wiki
 type: concept
 subtype: ai
-tags: [llm, knowledge-base, wiki, personal-knowledge-management]
+tags: [pkm, llm, knowledge-base]
 created: 2026-04-14
 updated: 2026-04-15
 sources:

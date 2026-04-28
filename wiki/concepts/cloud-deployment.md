@@ -2,7 +2,7 @@
 title: 云服务部署
 type: concept
 subtype: programming
-tags: [cloud, deployment, aws, azure, gcp, docker, kubernetes, iac]
+tags: [programming, deployment, devops]
 created: 2026-04-16
 updated: 2026-04-16
 sources:

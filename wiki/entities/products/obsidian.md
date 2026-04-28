@@ -2,7 +2,7 @@
 title: Obsidian
 type: entity
 subtype: product
-tags: [obsidian, tool, knowledge-management]
+tags: [tool, pkm, knowledge-management]
 created: 2026-04-15
 updated: 2026-04-15
 sources:

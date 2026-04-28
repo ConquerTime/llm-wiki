@@ -2,7 +2,7 @@
 title: "nuwa-skill（女娲·Skill造人术）"
 type: source
 subtype: article
-tags: [thinking-distillation, mind-model, ai-skill, claude-code, multi-agent]
+tags: [ai, ai-skill, claude-code, multi-agent]
 created: 2026-04-16
 updated: 2026-04-16
 author: 花叔 (alchaincyf)

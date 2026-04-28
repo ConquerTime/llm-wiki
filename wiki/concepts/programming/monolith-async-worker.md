@@ -2,7 +2,7 @@
 title: Monolith with Async Worker
 type: concept
 subtype: programming
-tags: [architecture, monolith, async-worker, message-queue, llm-wiki]
+tags: [programming, architecture, message-queue]
 created: 2026-04-17
 updated: 2026-04-17
 sources: []

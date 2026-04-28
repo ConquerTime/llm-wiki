@@ -2,7 +2,7 @@
 title: "khazix-skills"
 type: entity
 subtype: product
-tags: [ai-skills, open-source, github-trending, chinese]
+tags: [tool, ai-skill, open-source, github-trending]
 created: 2026-04-15
 updated: 2026-04-15
 sources:

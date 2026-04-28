@@ -2,7 +2,7 @@
 title: 消息队列（Message Queue）
 type: concept
 subtype: programming
-tags: [message-queue, bullmq, redis, outbox-pattern, idempotency, kaigao]
+tags: [programming, message-queue, distributed-systems]
 created: 2026-04-15
 updated: 2026-04-15
 sources: []

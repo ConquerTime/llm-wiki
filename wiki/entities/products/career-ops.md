@@ -2,7 +2,7 @@
 title: "career-ops"
 type: entity
 subtype: product
-tags: [job-search, ai-agent, claude-code, github-trending]
+tags: [tool, ai-skill, claude-code, github-trending]
 created: 2026-04-15
 updated: 2026-04-20
 sources:

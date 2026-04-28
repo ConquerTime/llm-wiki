@@ -9,6 +9,7 @@
 1. **Ingest** — 摄入新资料，构建和维护 wiki
 2. **Query** — 回答问题，综合已有知识
 3. **Lint** — 定期检查 wiki 健康状况
+4. **Project** — 为用户启动工作项目，收集资料、协作产出、复盘回流知识到 wiki
 
 ## 核心原则
 
@@ -50,6 +51,20 @@
   2. [步骤] → 验证: [检查点]
   ```
 
+## 工作流路由
+
+三大工作流的**详细步骤**拆分到了 skill 中，按场景触发：
+
+| 场景 | Skill |
+|------|-------|
+| 摄入新资料（文章 / 论文 / URL / GitHub 仓库） | `wiki-ingest`（本项目 `.claude/skills/`） |
+| 查询 wiki 已有知识 | `wiki-query`（全局 `~/.claude/skills/`） |
+| 健康检查 / 体检 / 找矛盾死链 | `wiki-lint`（本项目 `.claude/skills/`） |
+| 启动一个新的工作项目 | `project-start`（本项目 `.claude/skills/`） |
+| 项目阶段性复盘 / 结束回流知识到 wiki | `project-retro`（本项目 `.claude/skills/`） |
+
+本文件只保留**跨 skill 共享的"宪法"**（目录规范、页面格式、页面角色定义、命名规范）。skill 在执行流程时会引用本文件。
+
 ## 目录规范
 
 ```
@@ -83,6 +98,86 @@ wiki/                         # LLM 维护的知识库
 - 子目录在**首次有文件放入时创建**，不预建空目录
 - `synthesis/` 和 `questions/` 在首次使用时才创建
 
+## 项目工作流（projects/）
+
+`projects/` 与 `raw/`、`wiki/` **平级**，是时间有边界、交付物导向的"工作台"。wiki/ 是博物馆（稳定知识），projects/ 是车间（活跃工作）。
+
+### 目录结构
+
+```
+projects/
+└── YYYY-MM-short-name/      # 一个项目 = 一个目录（命名：启动年月 + 连字符短名）
+    ├── README.md           # 入口：一句话目标 + 当前状态（active/paused/done）
+    ├── brief.md            # 项目简报：背景/目标/范围/交付物/里程碑
+    ├── raw/                # 项目专属资料（会议记录、参考文档、截图等原文）
+    ├── notes/              # 调研笔记、决策（ADR）、草稿
+    ├── deliverables/       # 稳定产出（最终文档、大纲、代码片段、PPT 纲要）
+    ├── log.md              # 项目活动日志（追加式）
+    └── retro.md            # 复盘（节点 / 结束时写；未到阶段时保留占位）
+```
+
+**项目目录是项目自己的沙盒**：项目 `raw/` 和项目 `log.md` 只服务本项目，不与顶层 `raw/`、`wiki/log.md` 共享。顶层 `raw/` 依旧只收"**通用性**公共资料"（文章、论文、书籍）。
+
+### 项目命名
+
+- 格式：`YYYY-MM-short-name`，例如 `2026-04-kaigao`、`2026-05-annual-review`
+- 月份取**启动月**，不随进度变动；即使跨月、跨季度也不改名
+- short-name 小写连字符，1–3 个词
+
+### 生命周期
+
+| 阶段 | README.md 中 status | 触发 skill |
+|------|---------------------|-----------|
+| 启动 | `active` | `project-start` |
+| 进行中 | `active` | 日常 Edit，定期追加 log.md |
+| 阶段复盘 | `active` | `project-retro`（partial） |
+| 暂停 | `paused` | 手动改 README |
+| 完成 | `done` | `project-retro`（final），执行知识回流 |
+| 归档 | `done` | 保留目录不删，wiki/index 从"活跃项目"表格摘掉 |
+
+### 页面角色（projects/ 内）
+
+- **README.md**：项目的门脸。1 句话目标 + 状态 + 到 brief/deliverables 的链接。改动频率低。
+- **brief.md**：定义"成功长什么样"。包含背景、目标、非目标、范围、里程碑、交付清单。启动时写，中途变更需更新。
+- **notes/**：思考过程、调研草稿、技术决策。鼓励多写、允许杂乱。
+- **deliverables/**：产出物本身。稳定、可对外、可直接使用的版本。
+- **log.md**：按天追加的活动流水。格式与 `wiki/log.md` 类似。
+- **retro.md**：阶段 / 结束复盘。驱动知识回流到 wiki。
+
+### 知识回流机制
+
+这是项目工作流的**核心**：防止"做过的项目沉没为目录里的尸体"。
+
+复盘时识别四类可回流物，按下表归档到 wiki：
+
+| 从项目中抽出的 | 回流到 wiki 的 | 例子 |
+|--------------|--------------|------|
+| 可复用的**方法/流程/技能** | `wiki/concepts/`（大类 tag 依领域） | "做竞品分析的 5 步法" |
+| 通用的**经验教训/模式** | `wiki/synthesis/` | "远程协作中对齐目标的三种失败模式" |
+| 涉及的**工具/人/产品** | `wiki/entities/` | 新 SaaS 工具、新合作方 |
+| **项目本身**作为事实卡片（大项目可选） | `wiki/entities/projects/` | "2026-04 kaigao 项目复盘卡" |
+
+回流时遵循：**只抽"离开这个项目仍然有用"的东西**。项目内部的具体决策、临时草稿不回流，留在 `projects/` 目录里。
+
+### Project 页面 Frontmatter
+
+项目内部的 `brief.md`、`retro.md` 等用轻量 frontmatter（不走 wiki/ 的那一套）：
+
+```yaml
+---
+project: 2026-04-kaigao
+status: active           # active | paused | done
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+---
+```
+
+回流到 `wiki/` 的页面必须遵守 wiki 的 frontmatter 规范。
+
+### wiki/index.md 中的活跃项目
+
+`wiki/index.md` 顶部维护"**活跃项目**"表格，只列 `status=active` 的项目。`done` 的项目从表格摘除，可在"已归档项目"小节以简短列表保留（按需）。
+
 ## 页面格式规范
 
 ### Frontmatter（必须）
@@ -97,8 +192,8 @@ subtype: ai                # 细分类别（如 article/paper/person/product）
 tags: [标签1, 标签2]
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
-sources:                   # 相关 raw 文件路径（列表格式）
-  - ../../raw/articles/example.md
+sources:                   # 相关 raw 文件路径（列表格式，用 wikilink）
+  - "[[raw/articles/example.md|原文]]"
 ---
 ```
 
@@ -125,14 +220,14 @@ date: YYYY-MM              # 原文发布日期
 使用 `[[pagename]]` 或 `[[pagename|显示文字]]` 进行页面间链接。
 
 ```markdown
-参见 [[另一个页面]] 
+参见 [[另一个页面]]
 参见 [[另一个页面|自定义显示]]
 ```
 
 ### 链接到源文档
 
 ```markdown
-源文档：[[../raw/articles/example.md|示例文章]]
+源文档：[[raw/articles/example.md|示例文章]]
 ```
 
 ## 页面角色定义
@@ -172,146 +267,6 @@ date: YYYY-MM              # 原文发布日期
 - 与本 wiki 的关联（做了什么、提出了什么）
 - 出现在哪些源摘要中
 
-## Ingest 工作流
-
-当被要求摄入新资料时，执行以下步骤：
-
-### 步骤 0：获取原始内容（输入为 URL 时）
-
-**原则：raw/ 必须存放原文，不能写翻译或总结。**
-
-- **GitHub 仓库**：优先用 `gh` 工具下载源文件
-  ```bash
-  # 获取 README 原文
-  gh api repos/{owner}/{repo}/readme --jq '.content' | base64 -d
-
-  # 获取指定文件
-  gh api repos/{owner}/{repo}/contents/{path} --jq '.content' | base64 -d
-
-  # 列出文件树
-  gh api repos/{owner}/{repo}/git/trees/HEAD --jq '.tree[].path'
-  ```
-- **普通网页 / 文章**：用 WebFetch 抓取完整内容，提示词要求返回原文全文，不做摘要
-- 将抓取到的原文（英文保持英文，不翻译）完整写入 `raw/` 对应文件
-
-### 步骤 1：读取源文档
-```bash
-cat raw/articles/example.md
-```
-
-### 步骤 2：分析并与用户讨论
-- 识别关键实体（人物、组织、地点）
-- 识别核心概念（术语、理论、方法）
-- 识别主要观点和论据
-- 标注潜在矛盾或新观点
-
-### 步骤 3：创建源摘要页
-在 `wiki/sources/` 创建以源文档命名的页面：
-```bash
-wiki/sources/example-article.md
-```
-
-包含：
-- 文档标题、来源、日期
-- 核心摘要（3-5 句话）
-- 关键要点列表（5-10 条）
-- 主要发现/观点
-
-### 步骤 4：创建/更新实体页
-检查是否已存在相关实体页，如无则创建：
-```bash
-wiki/entities/person-x.md
-wiki/entities/org-y.md
-```
-
-如已存在，更新它，添加新信息并标注来源。
-
-### 步骤 5：创建/更新概念页
-检查是否已存在相关概念页，如无则创建：
-```bash
-wiki/concepts/ai-safety.md
-```
-
-### 步骤 6：更新 index.md
-在 index.md 的相应类别下添加新页面条目。规则：
-- 只展示有内容的类别（无内容的类别不出现）
-- 使用列表格式：`- [[页面名]] — 一句话描述`
-- 头部统计行：`> N 个概念 · N 个实体 · N 个源摘要 — 共 N 页`
-
-### 步骤 7：追加到 log.md
-```markdown
-## [YYYY-MM-DD] ingest | 文档标题
-- 类型：article/paper/book
-- 来源：raw/path/to/file.md
-- 新增页面：sources/..., entities/..., concepts/...
-- 备注：...
-```
-
-## Query 工作流
-
-当被问到问题时：
-
-### 步骤 1：读取 index.md
-了解 wiki 当前结构，找到相关页面。
-
-### 步骤 2：读取相关页面
-读取与问题相关的 entity/concept/synthesis 页面。
-
-### 步骤 3：综合回答
-- 综合多个页面的信息
-- 标注信息来源（使用链接）
-- 指出信息缺口（如有）
-
-### 步骤 4：（可选）存档优质回答
-如果回答质量特别高，建议：
-```markdown
-这个回答很好，建议存档到 wiki/questions/q-xxx.md
-```
-
-## Lint 工作流
-
-当被要求检查 wiki 健康时：
-
-### 检查项目
-
-1. **矛盾检测** — 同一事实在不同页面的描述是否一致
-2. **过时检测** — 是否有被新资料更新的旧观点
-3. **孤立页面** — 是否有没有任何页面引用的页面
-4. **孤儿引用** — 是否引用了不存在的页面
-5. **缺失链接** — 重要概念是否缺少独立页面
-
-### 执行 lint
-
-```bash
-# 列出所有 wiki 页面
-find wiki -name "*.md" | head -50
-
-# 检查孤立页面（无入站链接）
-grep -r "wiki/entities/" wiki/ | grep -v "\.md:" | wc -l
-
-# 检查引用完整性
-grep -o '\[\[.*\]\]' wiki/*.md | sort | uniq
-```
-
-### 输出格式
-
-```markdown
-## Lint Report — YYYY-MM-DD
-
-### 矛盾
-- page-A 与 page-B 在 X 事实上的描述矛盾
-
-### 过时
-- page-C 的内容可被 newer-source.md 更新
-
-### 孤立页面
-- wiki/concepts/orphaned.md 无任何页面引用
-
-### 建议
-- 考虑为 X 概念创建独立页面
-- 补充 page-D 对 page-E 的引用
-```
-
 ## 命名规范
 
 ### 页面命名
@@ -320,9 +275,26 @@ grep -o '\[\[.*\]\]' wiki/*.md | sort | uniq
 - 保持简洁（不超过 3 个词）
 
 ### 标签规范
-- 使用小写
-- 优先使用已有的标签
-- 每个页面 2-5 个标签
+
+采用两层体系：每页必须有 **1 个大类 tag**（第一层），可附若干**主题 tag**（第二层）。
+
+已有大类
+
+| 大类 tag | 适用内容 |
+|----------|---------|
+| `ai` | AI 概念、LLM、Agent、RAG、MCP 等 AI 领域知识 |
+| `programming` | 编程概念、设计模式、架构、安全、部署、前端后端 |
+| `tool` | 具体工具/产品实体（Claude Code、Obsidian、LangChain 等） |
+| `person` | 人物实体 |
+| `news` | 每日资讯、Morning Brief |
+| `pkm` | 个人知识管理方法论 |
+
+#### 使用规则
+- 第一层大类 tag 必须是固定词表中的词，仅在必要时新增
+- 第二层主题 tag 优先使用上表词汇；确需新词时保持小写连字符格式
+- 不在 tags 中放项目代号（如 `kaigao`、`megrez-shop`）或实现细节（如 `bullmq`、`redis`）
+- 不使用中文 tag
+- 每页 tags 总数控制在 2–5 个
 
 ### 类别路径
 ```
@@ -362,4 +334,5 @@ review/*    — 待审核
 - 查看 wiki 结构：`wiki/index.md`
 - 查看操作历史：`wiki/log.md`
 - LLM 维护的所有页面：`wiki/`
-
+- 工作项目目录：`projects/YYYY-MM-short-name/`
+- Skills：`.claude/skills/wiki-ingest/`、`.claude/skills/wiki-lint/`、`.claude/skills/project-start/`、`.claude/skills/project-retro/`，全局 `~/.claude/skills/wiki-query/`

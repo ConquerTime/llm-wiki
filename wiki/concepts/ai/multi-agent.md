@@ -2,7 +2,7 @@
 title: Multi-Agent 系统与协议
 type: concept
 subtype: ai
-tags: [multi-agent, mcp, a2a, protocol, distributed-ai]
+tags: [ai, multi-agent, mcp]
 created: 2026-04-15
 updated: 2026-04-21
 sources:
@@ -75,6 +75,7 @@ MCP Server/Client 模型：
 | [[openclaw|OpenClaw]] | OpenClaw | 本地优先、多 Agent 隔离运行 | 270K+ GitHub Stars |
 | LangChain | LangChain | 企业级 RAG 和复杂 AI 流水线 | 成熟生态 |
 | openai-agents-python | OpenAI | A lightweight, powerful framework for multi-agent workflows | 905 Stars，2026-04-21 |
+| [[gsd|GSD（Get Shit Done）]] | TÂCHES | context engineering + spec-driven，Wave 并行执行，每 plan 独立上下文 | 56K+ Stars |
 
 ## Gartner 预测
 

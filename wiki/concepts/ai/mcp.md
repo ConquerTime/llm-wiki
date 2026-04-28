@@ -2,7 +2,7 @@
 title: MCP（Model Context Protocol）
 type: concept
 subtype: ai
-tags: [mcp, protocol, anthropic, tool-use, agent-infrastructure]
+tags: [ai, mcp, tool-use]
 created: 2026-04-15
 updated: 2026-04-15
 sources:

@@ -2,7 +2,7 @@
 title: Peter Steinberger
 type: entity
 subtype: person
-tags: [developer, ai-agent, open-source]
+tags: [person, developer, open-source]
 created: 2026-04-15
 updated: 2026-04-15
 sources:

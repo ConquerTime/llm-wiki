@@ -2,7 +2,7 @@
 title: "OpenClaw + AI Agent 面试八股文：背完这篇，你懂的比面试官还多！"
 type: source
 subtype: article
-tags: [ai-agent, openclaw, react, function-calling, multi-agent, mcp, a2a, interview]
+tags: [ai, ai-agent, multi-agent, mcp, function-calling]
 created: 2026-04-15
 updated: 2026-04-15
 sources:

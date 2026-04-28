@@ -2,7 +2,7 @@
 title: ReAct 框架
 type: concept
 subtype: ai
-tags: [react, reasoning, acting, agent, llm, cot]
+tags: [ai, ai-agent, llm]
 created: 2026-04-15
 updated: 2026-04-15
 sources:

@@ -1,0 +1,24 @@
+{
+  "id": "conv-1777269656065-ias06b8j1",
+  "providerId": "claude",
+  "title": "检索 github 仓库，找到优质的 react 设计模式和反模式的总结",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1777269656074,
+  "updatedAt": 1777308064770,
+  "lastResponseAt": 1777308064770,
+  "sessionId": "a2285ada-3d62-445f-8c0b-a8a6cfe379e5",
+  "providerState": {
+    "providerSessionId": "a2285ada-3d62-445f-8c0b-a8a6cfe379e5"
+  },
+  "currentNote": "wiki/concepts/programming/react-page-state-antipatterns.md",
+  "usage": {
+    "model": "opus",
+    "inputTokens": 1,
+    "cacheCreationInputTokens": 473,
+    "cacheReadInputTokens": 144317,
+    "contextWindow": 200000,
+    "contextTokens": 144791,
+    "percentage": 72,
+    "contextWindowIsAuthoritative": true
+  }
+}

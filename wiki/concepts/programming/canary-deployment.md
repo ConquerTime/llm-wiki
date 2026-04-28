@@ -2,7 +2,7 @@
 title: 金丝雀部署（Canary Deployment）
 type: concept
 subtype: programming
-tags: [deployment, canary, progressive-delivery, devops, llm-wiki]
+tags: [programming, deployment, devops]
 created: 2026-04-18
 updated: 2026-04-18
 sources: []

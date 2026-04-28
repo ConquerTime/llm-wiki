@@ -2,7 +2,7 @@
 title: SOLID 原则
 type: concept
 subtype: programming
-tags: [solid, oop, design-principles, clean-code]
+tags: [programming, solid, clean-code]
 created: 2026-04-16
 updated: 2026-04-16
 sources:

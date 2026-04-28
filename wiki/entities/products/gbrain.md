@@ -2,7 +2,7 @@
 title: "gbrain"
 type: entity
 subtype: product
-tags: [ai-agent, hermes-agent, openclaw, github-trending]
+tags: [tool, ai-agent, github-trending]
 created: 2026-04-15
 updated: 2026-04-15
 sources:

@@ -2,7 +2,7 @@
 title: LangChain
 type: entity
 subtype: product
-tags: [ai-framework, llm, rag, python, open-source]
+tags: [tool, ai, llm, rag, open-source]
 created: 2026-04-15
 updated: 2026-04-15
 sources:

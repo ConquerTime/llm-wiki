@@ -2,7 +2,7 @@
 title: 自主 ML 研究（Autonomous ML Research）
 type: concept
 subtype: ai
-tags: [ai-agent, ml-research, autonomous, experiment]
+tags: [ai, ai-agent, autonomous]
 created: 2026-04-16
 updated: 2026-04-16
 sources:

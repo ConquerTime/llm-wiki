@@ -2,7 +2,7 @@
 title: "工厂方法 — Refactoring Guru"
 type: source
 subtype: article
-tags: [design-pattern, programming, creation-pattern]
+tags: [programming, design-patterns]
 author: Refactoring Guru
 url: https://refactoringguru.cn/design-patterns/factory-method
 date: 2025-01-01

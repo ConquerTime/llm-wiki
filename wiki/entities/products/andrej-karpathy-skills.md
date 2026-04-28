@@ -4,7 +4,7 @@ created: 2026-04-16
 updated: 2026-04-16
 type: entity
 subtype: product
-tags: [claude-code, skill, behavior, open-source]
+tags: [tool, claude-code, ai-skill, open-source]
 sources:
   - ../../raw/morning-briefs/2026-04-16.md
 ---

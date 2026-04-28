@@ -1,6 +1,18 @@
 {
   "editor:open-link-in-new-leaf": {
-    "modifiers": ["Mod", "Shift"],
+    "modifiers": [
+      "Mod",
+      "Shift"
+    ],
     "key": "Enter"
-  }
+  },
+  "workspace:copy-path": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "C"
+    }
+  ]
 }

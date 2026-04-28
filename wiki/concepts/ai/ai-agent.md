@@ -2,7 +2,7 @@
 title: AI Agent
 type: concept
 subtype: ai
-tags: [ai-agent, llm, autonomous, planning, memory, tool-use]
+tags: [ai, ai-agent, llm, tool-use]
 created: 2026-04-15
 updated: 2026-04-15
 sources:

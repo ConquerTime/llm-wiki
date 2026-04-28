@@ -2,7 +2,7 @@
 title: "caveman"
 type: entity
 subtype: product
-tags: [ai, claude-code, skill, token-optimization, open-source, github-trending]
+tags: [tool, claude-code, ai-skill, open-source, github-trending]
 created: 2026-04-20
 updated: 2026-04-20
 sources:

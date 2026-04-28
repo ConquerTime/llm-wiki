@@ -2,7 +2,7 @@
 title: 整洁代码
 type: concept
 subtype: programming
-tags: [clean-code, code-quality, best-practices, solid]
+tags: [programming, clean-code, solid]
 created: 2026-04-16
 updated: 2026-04-16
 sources:

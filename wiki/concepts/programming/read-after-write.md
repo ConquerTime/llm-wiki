@@ -2,7 +2,7 @@
 title: 写后读问题（Read-After-Write Consistency）
 type: concept
 subtype: programming
-tags: [consistency, distributed-systems, database, replication, llm-wiki]
+tags: [programming, distributed-systems, backend]
 created: 2026-04-18
 updated: 2026-04-18
 sources: []

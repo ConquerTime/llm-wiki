@@ -2,7 +2,7 @@
 title: "LLM Wiki — Karpathy"
 type: source
 subtype: article
-tags: [llm, knowledge-base, wiki, rag]
+tags: [pkm, llm, knowledge-base, karpathy]
 author: Andrej Karpathy
 url: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
 date: 2026-04

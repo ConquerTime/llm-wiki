@@ -2,9 +2,9 @@
 title: 统一支付路由设计
 type: concept
 subtype: programming
-tags: [payment, architecture, route-design, ecommerce, horizon-web-commerce]
+tags: [programming, architecture, backend, horizon-web-commerce]
 created: 2026-04-16
-updated: 2026-04-16
+updated: 2026-04-27
 sources: []
 ---
 
@@ -118,7 +118,25 @@ interface PaymentLocationState {
 - 通用 hook `useBoltPayment` 和 `PaymentMethodSelector` 组件从 course 目录提升到 common 目录
 - 设计文档：`openspec/changes/unified-payment-page/`
 
+#### 2026-04-27 更新：白屏修复与状态机重构
+
+上线数月后暴露出新问题与结构债：
+
+- **bug**：微信 UA + 非授权态进入支付页 → `useWechatAuth` 触发 `window.location.replace` 跳 OAuth → 回跳后 `location.state` 丢失 → 白屏
+- **结构债**：`UnifiedPaymentPage` 膨胀至 312 行；`useBoltPayment` 参数 17 个；上下文字段逐字段三元选源
+
+clean-code 审查识别出四类反模式（详见 [[react-page-state-antipatterns|React 页面状态管理反模式与重构]]）：布尔语义过载、内存态单源、隐式状态机、字段级三源合并。
+
+落地为两个 OpenSpec change：
+
+- `fix-payment-oauth-redirect-whitescreen` — 最小修复：引入 `phase: 'entry'|'paying'` 字段穿透整页跳转，`fromPay` 拆为 `isReturningFromPayment` + `hasRestorableContext`
+- `refactor-payment-page-state-machine` — 结构重构：显式 phase 状态机 + `usePaymentContext` / `usePaymentFlow` / `useCancelOrder` / `PaymentLayout` 分层
+
+**对原决策 1（入参协议）的补充**：当时只讨论了 query / state / session 三源，没考虑"OAuth 整页跳转"这类链路——此时所有入参源都不可信，必须由页面在 mount 时写入 `phase='entry'` 的 session 作为锚点。sessionStorage 不只是"第三方回调兜底"，也是"穿越任何整页跳转"的通用锚。
+
 ## 相关概念
 
+- [[react-page-state-antipatterns|React 页面状态管理反模式与重构]] — 本页后续暴露的四类反模式与重构对策
 - [[open-redirect|Open Redirect]] — 统一支付路由中 returnPath/cancelPath 的安全防护
+- [[oauth-state-parameter|OAuth state 参数]] — 触发整页跳转的典型链路
 - [[message-queue|消息队列]] — 另一种系统间解耦模式

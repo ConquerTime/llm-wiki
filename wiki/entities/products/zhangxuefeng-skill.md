@@ -2,7 +2,7 @@
 title: "zhangxuefeng-skill"
 type: entity
 subtype: product
-tags: [career-planning, ai-skill, education, github-trending, chinese]
+tags: [tool, ai-skill, github-trending]
 created: 2026-04-15
 updated: 2026-04-20
 sources:

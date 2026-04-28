@@ -2,7 +2,7 @@
 title: "karpathy/autoresearch — 自主 ML 研究框架"
 type: source
 subtype: github
-tags: [ai-agent, ml-research, autonomous, karpathy]
+tags: [ai, ai-agent, autonomous, karpathy]
 created: 2026-04-16
 updated: 2026-04-16
 sources:

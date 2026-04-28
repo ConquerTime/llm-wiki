@@ -2,7 +2,7 @@
 title: "nuwa-skill"
 type: entity
 subtype: product
-tags: [mind-model, ai-skill, thinking-distillation, claude-code, multi-agent, chinese]
+tags: [tool, ai-skill, claude-code, multi-agent]
 created: 2026-04-15
 updated: 2026-04-20
 sources:

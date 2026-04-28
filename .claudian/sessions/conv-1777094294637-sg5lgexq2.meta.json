@@ -1,0 +1,23 @@
+{
+  "id": "conv-1777094294637-sg5lgexq2",
+  "providerId": "claude",
+  "title": "obsidian 怎么显示",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1777094294638,
+  "updatedAt": 1777102241435,
+  "lastResponseAt": 1777094327464,
+  "sessionId": "fe9e2140-e7b5-4e17-911b-dee8996d33da",
+  "providerState": {
+    "providerSessionId": "fe9e2140-e7b5-4e17-911b-dee8996d33da"
+  },
+  "usage": {
+    "model": "opus",
+    "inputTokens": 6,
+    "cacheCreationInputTokens": 5053,
+    "cacheReadInputTokens": 16991,
+    "contextWindow": 200000,
+    "contextTokens": 22050,
+    "percentage": 11,
+    "contextWindowIsAuthoritative": true
+  }
+}

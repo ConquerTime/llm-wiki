@@ -2,7 +2,7 @@
 title: 重构
 type: concept
 subtype: programming
-tags: [refactoring, code-quality, design-patterns, technical-debt]
+tags: [programming, refactoring, clean-code]
 created: 2026-04-16
 updated: 2026-04-16
 sources:

@@ -2,7 +2,7 @@
 title: 微服务架构
 type: concept
 subtype: programming
-tags: [microservices, api-gateway, service-mesh, distributed-systems, cqrs]
+tags: [programming, microservices, distributed-systems, architecture]
 created: 2026-04-16
 updated: 2026-04-16
 sources:

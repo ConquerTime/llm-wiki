@@ -2,7 +2,7 @@
 title: Karpathy Guidelines
 type: concept
 subtype: programming
-tags: [karpathy, guidelines, coding, best-practices]
+tags: [programming, clean-code, karpathy]
 created: 2026-04-14
 updated: 2026-04-15
 sources:

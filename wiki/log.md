@@ -16,6 +16,25 @@
 
 ## 历史记录
 
+## [2026-04-24] update | TanStack Query 学习笔记补充
+- 类型：update
+- 更新页面：
+  - entities/products/tanstack-query.md（新增"自动 refetch 触发时机"一节：挂载、窗口焦点、网络重连、轮询；以及 focusManager/onlineManager 可替换设计）
+  - concepts/programming/server-state-management.md（边界一节补充：服务端数据不应放 Zustand，QueryCache 天然全局无需抬升）
+- 备注：来自 super-tutor 苏格拉底对话，从 Redux + Axios 痛点出发推导出 TanStack Query 的设计原理
+
+## [2026-04-24] ingest | GSD（Get Shit Done）GitHub README
+- 类型：GitHub 仓库 README
+- 来源：raw/articles/get-shit-done-github.md
+- 新增页面：
+  - sources/articles/get-shit-done-github.md
+  - entities/products/gsd.md
+  - concepts/ai/context-engineering.md
+- 更新页面：
+  - concepts/ai/multi-agent.md（添加 GSD 到框架列表）
+  - wiki/index.md（新增 3 条目，统计更新）
+- 备注：本次 ingest 源于对话中深入探讨 GSD 上下文隔离实现原理；核心机制为 Claude Code `Task()` API + `isolation="worktree"`，状态通过文件传递而非对话；新建 context-engineering 概念页系统记录此模式
+
 ## [2026-04-23] learn | OAuth state 参数（微信网页授权）
 - 来源项目：megrez-shop
 - 页面：concepts/security/oauth-state-parameter.md
@@ -391,3 +410,81 @@
   - 超大页面（>200行）：0 ✅
   - frontmatter 缺失：0 ✅
 - 备注：健康
+
+## [2026-04-23] create | 电商支付弹窗 Excalidraw 原型图
+- 文件：wiki/assets/ecommerce-payment-modal.excalidraw
+- 操作：新增 Excalidraw 手绘风格原型图
+- 内容：电商支付弹窗，含标题栏、订单摘要、支付方式 Tab（银行卡/电子钱包/货到付款/花呗）、银行卡表单输入、确认支付按钮
+- 备注：使用 wiki/assets/ 目录存放图片和原型图资源
+
+## [2026-04-23] ingest | React Query vs SWR：服务端状态管理源码对比
+
+- 类型：article
+- 来源：raw/frontend/react/react-query-vs-swr-server-state-source-compare.md
+- 新增页面：
+  - sources/articles/react-query-vs-swr-server-state-source-compare.md
+  - concepts/programming/server-state-management.md
+  - entities/products/tanstack-query.md
+  - entities/products/swr.md
+- 备注：深度对比 TanStack Query v5 与 SWR v2 的缓存架构（Query/Observer 状态机 vs cache Map）、请求去重策略（Query 内聚 in-flight vs dedupingInterval 时间窗）、新鲜度语义（staleTime/gcTime vs dedupingInterval）、Mutation 能力差异；明确了两者均不适合管理 UI 状态
+
+## [2026-04-27] learn | React 页面状态管理反模式与重构
+
+- 来源项目：horizon-web-commerce
+- 页面：concepts/programming/react-page-state-antipatterns.md （新增）
+- 关联更新：concepts/programming/unified-payment-route.md （追加 2026-04-27 重构记录与项目标签）
+- 操作：新增概念页 + 更新关联页面
+- 备注：从支付页 OAuth 回跳白屏 debug 中提炼四类 React 页面状态反模式（布尔语义过载 / 内存态单源 / 隐式状态机 / 字段级三源合并），配对记录对应的重构模式（双布尔拆分 / sessionStorage + phase 字段 / 显式 phase 状态机集中转移 / usePaymentContext 整对象选源）。落地为两个 OpenSpec change：fix-payment-oauth-redirect-whitescreen（最小止血）+ refactor-payment-page-state-machine（结构重构）
+
+## [2026-04-27] ingest | Bulletproof React — 生产级 React 架构指南
+
+- 类型：article（GitHub 仓库文档）
+- 来源：raw/articles/bulletproof-react/（13 个 markdown 文件：README + application-overview + project-standards + project-structure + components-and-styling + api-layer + state-management + error-handling + testing + security + performance + deployment + additional-resources）
+- 新增页面：
+  - sources/articles/bulletproof-react-github.md
+  - entities/persons/alan-alickovic.md
+  - entities/products/bulletproof-react.md
+  - concepts/programming/feature-based-architecture.md
+- 关联更新：
+  - concepts/programming/server-state-management.md（追加 bulletproof-react 为 source）
+  - concepts/programming/react-page-state-antipatterns.md（追加 bulletproof-react 为 source，新增"上位框架：React 状态五分类"小节 + 交叉链接 feature-based-architecture）
+- 备注：ingest GitHub 35K+ 星的 React 架构指南。核心贡献：(1) feature-based 项目结构 + ESLint import/no-restricted-paths 强制单向依赖（shared → features → app）；(2) React 状态五分类框架（Component / Application / Server Cache / Form / URL），为既有的 react-page-state-antipatterns 提供上位分类；(3) 反 barrel file 主张，与多数样板建议相反。暂缓为"状态五分类"/"Error Boundary 多实例"/"JWT 存储策略"建独立概念页——照抄单一来源，等第二份资料再抽象。
+
+## [2026-04-28] ingest | React Bits — 组件层经典反模式词典
+
+- 类型：article（GitHub 仓库文档）
+- 来源：raw/articles/react-bits/（README + anti-patterns/*.md 8 篇 + gotchas/01.pure-render-checks.md）
+- 新增页面：
+  - sources/articles/react-bits-github.md
+  - concepts/programming/react-classic-antipatterns.md
+- 关联更新：
+  - concepts/programming/react-page-state-antipatterns.md（"相关概念"区追加 react-classic-antipatterns 作为互补的微观视角）
+- 备注：ingest GitHub 17K+ 星的 React 反模式词典。成书于 2017 Class 组件时代，7 个反模式中：3 个随 API 废弃已失效（findDOMNode / Mixins / componentWillMount），4 个在 Hooks 时代仍普遍存在（Props in Initial State → derived state / Mutating State / Index as Key / Spread Props on DOM），gotcha（Pure Render Checks）映射为现代 React.memo + useMemo/useCallback 的引用稳定性问题。在概念页中为每个反模式标注 Hooks 时代对等形态，让 Class 时代的词典可被现代代码复用。未建实体页——作者 vasanthk 只是 README 维护者，非该反模式分类体系的学术贡献者；react-bits 本身作为文档汇编未建 entity 产品页。与 react-page-state-antipatterns 形成"宏观页面层 + 微观组件层"的反模式全景。
+
+## [2026-04-28] refactor | 抽出独立概念页 "React 状态五分类"
+
+- 操作：从 react-page-state-antipatterns 的"上位框架"小节抽出
+- 新增页面：concepts/programming/react-state-categories.md
+- 关联更新：
+  - concepts/programming/react-page-state-antipatterns.md（"上位框架"小节精简为"反模式 → 状态类别"映射表；"相关概念"区追加 react-state-categories）
+  - concepts/programming/server-state-management.md（新增"相关概念"区，加 react-state-categories；追加 bulletproof-react 为 source）
+  - sources/articles/bulletproof-react-github.md（"提到的概念"区追加 react-state-categories）
+- 备注：上次 ingest bulletproof-react 时该分类被写在 react-page-state-antipatterns 页里作为"上位框架"小节，现抽离为独立概念页。理由：(1) 状态五分类是社区共识框架（TkDodo、Kent Dodds 等都独立讨论过），非 bulletproof-react 原创，但后者是较早把分类清晰化的公共文档；(2) 独立成页后，react-page-state-antipatterns / server-state-management / bulletproof-react 三处均可通过 wikilink 指向同一份"来源分类"权威解释，不再复述；(3) 展开后补充了五类各自的判断标准、分类边界困惑（登录用户/modal/wizard 算哪类）和常见误区。
+
+## [2026-04-28] refactor | 引入项目工作流（projects/）
+- 类型：refactor
+- 范围：wiki 架构扩展，新增第四类工作流 "Project"
+- 变更：
+  - CLAUDE.md 新增「项目工作流」章节（目录规范、命名 YYYY-MM-short-name、生命周期、知识回流机制、页面 frontmatter）
+  - 新增 skill：`.claude/skills/project-start/SKILL.md`（启动新项目）
+  - 新增 skill：`.claude/skills/project-retro/SKILL.md`（阶段性 / 终结性复盘 + 知识回流到 wiki/concepts、synthesis、entities）
+  - wiki/index.md 顶部新增「活跃项目」表格
+- 动机：wiki/ 是主题驱动的稳定知识博物馆，缺一个项目驱动、有时间边界、有交付物的"工作台"。projects/ 与 raw/ wiki/ 平级，让具体工作有地方落地，复盘后把可复用知识抽到 wiki。
+
+## [2026-04-28] project-start | 2026-04-kaigao
+- 类型：project-start
+- 目录：projects/2026-04-kaigao/
+- 目标：为外部代码仓 `/Users/zhouyangdong/Documents/projects/kaigao`（开稿 KaiGao — AI 论文写作助手）提供知识与产出管理台
+- 外部关联：/Users/zhouyangdong/Documents/projects/kaigao
+- 骨架：README / brief / log / retro / raw / notes / deliverables 全部就位
+- 备注：brief.md 的"目标 / 非目标 / 范围 / 交付物 / 里程碑"五节为占位，等待与用户首次讨论后补齐
