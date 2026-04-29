@@ -597,7 +597,7 @@
 - 发现并修复的断链：
   - `wiki/sources/` 前缀的 wikilink（共 7 处）→ 改为 `../../sources/` 相对路径
   - `raw/` 前缀的 wikilink（3 处 sources 页面）→ 改为正确的 `../../../raw/` 相对路径
-  - `[[products/tanstack-query\|...]]` Unicode 转义 → 修复为 `[[products/tanstack-query]]`
+  - `[[products/tanstack-query|...]]` Unicode 转义 → 修复为 `[[products/tanstack-query]]`
   - `[[raw/articles/...]]` 未使用 `../../raw/` 而非 `raw/` 的路径
   - index.md 中的 git merge conflict marker → 已清理
   - 修复 index.md 中的 `[[programming/X]]` → `[[concepts/programming/X]]` 路径修正
@@ -605,3 +605,24 @@
 - 新增页面：`concepts/programming/spec-driven-development.md`（GSD 工作流概念）
 - 大页面（>200行）：log.md(593), canary-deployment(334), message-queue(279), react-page-state-antipatterns(331), read-after-write(214)
 - CLAUDE.md Tag Taxonomy 已补充 `security` 和 `business` 大类
+
+## [2026-04-29] lint | 0 broken-links(actionable), 0 orphans, 0 missing-from-index, 0 stale, 5 large-pages
+- 类型：lint
+- 断链：4 条（0 条可操作）
+  - index.md → [[projects/2026-04-kaigao/README]]（跨目录，可接受）
+  - log.md → [[programming/X]]（历史条目，不操作）
+  - log.md → [[concepts/programming/X]]（同上）
+  - log.md → [[projects/2026-04-kaigao/README]]（同上）
+- 孤儿页：0（正常）
+- 未收录 index：0
+- 过期页（>90天）：0
+- 大页面（>200行）：log.md(607), canary-deployment(333), react-page-state-antipatterns(330), message-queue(278), read-after-write(213)
+
+## [2026-04-29] ingest | 晨报 2026-04-28, 2026-04-29
+- 类型：ingest
+- 新增页面：
+  - wiki/sources/morning-briefs/2026-04-28.md（晨报源摘要）
+  - wiki/sources/morning-briefs/2026-04-29.md（晨报源摘要）
+- 更新页面：
+  - wiki/index.md（新增 2 条晨报 + 修复 merge conflict marker + 新增 9 条缺失的编程/产品条目 + 修正 monolith-async-worker 格式错误）
+  - wiki/log.md（修复 \| Unicode 转义 1 处）
