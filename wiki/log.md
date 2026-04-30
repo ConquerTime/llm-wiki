@@ -626,3 +626,29 @@
 - 更新页面：
   - wiki/index.md（新增 2 条晨报 + 修复 merge conflict marker + 新增 9 条缺失的编程/产品条目 + 修正 monolith-async-worker 格式错误）
   - wiki/log.md（修复 \| Unicode 转义 1 处）
+
+## [2026-04-30] ingest | 晨报 2026-04-30
+- 类型：ingest
+- 新增页面：
+  - wiki/sources/morning-briefs/2026-04-30.md（晨报源摘要）
+- 更新页面：
+  - wiki/index.md（新增 1 条晨报源摘要 + 新增 3 条缺失的 entities/concepts 条目 + 更新页数统计）
+  - wiki/log.md（追加本条）
+- 备注：今日要点：Zed 1.0 发布（1788分）/ Copy Fail / OpenAI goblin 数据 / Zig 反 AI 贡献政策
+
+## [2026-04-30] lint | 0 orphans, 0 actionable broken-links, 0 missing-from-index, 5 large-pages
+- 类型：lint
+- 断链（0 可操作）：
+  - index.md → [[projects/2026-04-kaigao/README]]（跨目录，可接受）
+  - log.md → [[concepts/programming/X]]（历史条目，不操作）
+  - log.md → [[programming/X]]（历史条目，不操作）
+  - log.md → [[projects/2026-04-kaigao/README]]（历史条目，不操作）
+  - log.md → [[raw/articles/...]]（历史条目，不操作）
+  - sources/morning-briefs/2026-04-30.md → 外部 URL（已修复为 markdown 链接）
+- 孤儿页：0（正常）
+- 未收录 index（已补全 3 条）：
+  - entities/products/bulletproof-react.md
+  - entities/products/typescript-go.md
+  - concepts/programming/observer-pattern.md
+- 过期页（>90天）：0
+- 大页面（>200行）：log.md(643), canary-deployment(333), react-page-state-antipatterns(330), message-queue(278), read-after-write(213)

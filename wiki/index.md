@@ -1,6 +1,6 @@
 ># 知识库索引
 
->- 34 个概念 · 27 个实体 · 26 个源摘要 — 共 87 页 | 更新于 2026-04-29
+>- 34 个概念 · 27 个实体 · 27 个源摘要 — 共 88 页 | 更新于 2026-04-30
 
 ---
 
@@ -31,6 +31,7 @@
 - [[message-queue|消息队列（BullMQ）]] — 异步任务队列、Outbox Pattern、幂等性、SELECT FOR UPDATE SKIP LOCKED
 - [[unified-payment-route|统一支付路由设计]] — 从业务支付页抽取公共支付路由的架构模式与关键决策
 - [[design-patterns|设计模式]] — GoF 23种模式，创建型/结构型/行为型三大类
+- [[observer-pattern|观察者模式]] — GoF 行为型模式，订阅机制三要素、EventManager 委派、与 Mediator/Pub-Sub 对比
 - [[clean-code|整洁代码]] — SOLID原则、DRY/KISS/YAGNI 编程实践
 - [[refactoring|重构]] — 不改变外在行为的前提下改善代码内部结构
 - [[solid-principles|SOLID 原则]] — 面向对象设计五原则：S/O/L/I/D
@@ -76,7 +77,9 @@
 - [[zhangxuefeng-skill|zhangxuefeng-skill]] — 高考/考研/职业规划思维框架，6.2K Stars
 - [[khazix-skills|khazix-skills]] — 数字生命卡兹克的 AI Skills 合集，4.6K Stars
 - [[autoresearch|autoresearch]] — Karpathy 的自主 ML 研究框架，一夜跑 ~100 次实验
+- [[bulletproof-react|Bulletproof React]] — Feature-based 架构 / 状态五分类 / 单向依赖 / 测试倒金字塔等 13 篇架构文档
 - [[tanstack-query|TanStack Query（React Query）]] — 以 Query/Observer 状态机为核心的服务端状态管理库，支持复杂 mutation 与 DevTools 生态
+- [[typescript-go|typescript-go]] — 微软 TypeScript 转 Go 转译工具 (2026-04-27)
 - [[swr|SWR]] — Vercel 出品的极简 Stale-While-Revalidate 数据获取 hook 库
 - [[andrej-karpathy-skills|andrej-karpathy-skills]] — Claude Code 行为改进的 CLAUDE.md 文件，GitHub Trending
 - [[superpowers|superpowers]] — Agentic 技能框架与软件开发方法论，GitHub Trending
@@ -123,6 +126,7 @@
 - [[sources/morning-briefs/2026-04-27|晨报 2026-04-27]] — mattpocock/skills 开源 / PostHog 产品分析 / typescript-go 微软转译工具 (2026-04-27)
 - [[sources/morning-briefs/2026-04-28|晨报 2026-04-28]] — Microsoft 与 OpenAI 结束独家合作 / 4TB 语音样本被盗 / mattpocock/skills (2026-04-28)
 - [[sources/morning-briefs/2026-04-29|晨报 2026-04-29]] — Ghostty 离开 GitHub（2395分）/ Rust 安全性 / Codex skills (2026-04-29)
+- [[sources/morning-briefs/2026-04-30|晨报 2026-04-30]] — Zed 1.0 发布 / Copy Fail / OpenAI goblin 数据 / Zig 反 AI 政策 (2026-04-30)
 
 ---
 
