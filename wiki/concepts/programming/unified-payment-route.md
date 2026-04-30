@@ -4,7 +4,7 @@ type: concept
 subtype: programming
 tags: [programming, architecture, backend, horizon-web-commerce]
 created: 2026-04-16
-updated: 2026-04-27
+updated: 2026-04-29
 sources: []
 ---
 
@@ -134,9 +134,39 @@ clean-code 审查识别出四类反模式（详见 [[react-page-state-antipatter
 
 **对原决策 1（入参协议）的补充**：当时只讨论了 query / state / session 三源，没考虑"OAuth 整页跳转"这类链路——此时所有入参源都不可信，必须由页面在 mount 时写入 `phase='entry'` 的 session 作为锚点。sessionStorage 不只是"第三方回调兜底"，也是"穿越任何整页跳转"的通用锚。
 
+## 客户端支付路由器模式（前端变体）
+
+> 以下是前端场景下的"支付路由器"实现方式，与上述"统一支付页路由"是同一思想的不同层次应用。
+
+在多端 H5/小程序场景中，前端也需要一个统一的支付入口，屏蔽多平台（微信内H5 / 微信外H5 / App内 / 小程序）和多支付方式（微信支付 / 支付宝 / IAP / 0元）的差异：
+
+```ts
+// utils/pay.ts — 客户端支付路由器
+pay(data, payType, bizType, options)
+  ├── zeroPay → zeroPay(data, bizType, options)
+  ├── wxpay   → wechatPay(data, bizType, options)
+  ├── alipay  → aliPay(data, bizType, options)
+  └── iap     → iosIAPPay(data)
+```
+
+**设计要点**：
+- 调用方（下单 mixin）只传 `payType + bizType + options`，不感知底层平台差异
+- 内部按 `payType` 一级分发，再按 `bizType / env` 二级分发到具体实现
+- 新增支付方式只改路由器内部，不改调用方
+
+**与后端统一支付路由的对比**：
+
+| 维度 | 后端统一支付页（本页主要内容）| 前端支付路由器 |
+|------|--------------------------|-------------|
+| 层次 | 页面路由（URL 跳转）| 函数路由（代码内分发）|
+| 解决的问题 | 多业务线共用同一个支付页 | 多端/多支付方式的 API 调用差异 |
+| 典型场景 | SPA 中的公共支付页 | uni-app 多端项目 |
+
 ## 相关概念
 
 - [[react-page-state-antipatterns|React 页面状态管理反模式与重构]] — 本页后续暴露的四类反模式与重构对策
 - [[open-redirect|Open Redirect]] — 统一支付路由中 returnPath/cancelPath 的安全防护
 - [[oauth-state-parameter|OAuth state 参数]] — 触发整页跳转的典型链路
 - [[message-queue|消息队列]] — 另一种系统间解耦模式
+- [[validation-chain|校验链模式]] — 下单链路中支付前的多步骤前置校验
+- [[frontend-ecommerce-antipatterns|电商前端落地页反模式]] — env 魔法字符串（反模式2）是支付路由器的常见退化形式

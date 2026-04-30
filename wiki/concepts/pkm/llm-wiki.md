@@ -1,10 +1,10 @@
 ---
 title: LLM Wiki
 type: concept
-subtype: ai
+subtype: pkm
 tags: [pkm, llm, knowledge-base]
 created: 2026-04-14
-updated: 2026-04-15
+updated: 2026-04-29
 sources:
   - "[[raw/articles/llm-wiki-by-karpathy.md|llm-wiki-by-karpathy]]"
 ---
@@ -51,4 +51,6 @@ Raw Sources (不可变)  →  Wiki (LLM 维护)  →  Schema (CLAUDE.md)
 
 ## 相关概念
 
+- [[pkm/zettelkasten|Zettelkasten（卡片盒笔记法）]] — LLM Wiki 的思想原型，把手工维护的 Zettelkasten 交给 LLM 自动化
+- [[rag|RAG]] — 对比模式：每次重新推导 vs 编译一次持续维护
 - [[ai-skills|AI Skills 生态]] — Skills 是 LLM Wiki 能力封装化的延伸趋势

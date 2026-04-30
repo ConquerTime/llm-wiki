@@ -1,0 +1,14 @@
+views:
+  - type: table
+    name: 表格
+  - type: cards
+    name: 视图
+    filters:
+      and:
+        - file.path.contains("projects")
+    groupBy:
+      property: file.folder
+      direction: ASC
+  - type: cards
+    name: 视图 2
+    rowHeight: medium
