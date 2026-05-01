@@ -14,6 +14,36 @@
 
 ---
 
+## [2026-05-01] lint | 0 orphans, 0 actionable broken-links, 0 missing-from-index, 5 large-pages
+- 类型：lint
+- 断链（0 可操作，均为历史条目）：
+  - index.md → [[projects/2026-04-kaigao/README]]（跨目录，可接受）
+  - log.md → [[raw/articles/...]]（历史条目，不操作）
+  - log.md → [[programming/X]]（历史条目，不操作）
+  - log.md → [[concepts/programming/X]]（历史条目，不操作）
+  - log.md → [[projects/2026-04-kaigao/README]]（历史条目，不操作）
+- 孤儿页：0（正常）
+- 未收录 index：0
+- 过期页（>90天）：0
+- 大页面（>200行）：log.md(671), canary-deployment(333), react-page-state-antipatterns(330), message-queue(278), read-after-write(213)
+
+## [2026-05-01] ingest | Your Harness Your Memory + kaigao ECS 部署
+- 类型：ingest
+- 来源：
+  - raw/articles/Your harness, your memory.md（LangChain Blog，2026-04-12）
+  - raw/articles/kaigao-ecs-deployment.md（kaigao 项目文档，2026-04）
+- 新增页面：
+  - wiki/sources/articles/your-harness-your-memory.md（源摘要）
+  - wiki/concepts/ai/agent-harness.md（概念页 — Agent Harness 控制框架）
+  - wiki/sources/articles/kaigao-ecs-deployment.md（源摘要）
+  - wiki/concepts/programming/web-worker-pattern.md（概念页 — Web-Worker 架构模式）
+- 更新页面：
+  - wiki/index.md（+2 概念 +2 源摘要，页数统计更新至 91 页）
+  - wiki/log.md（追加本条）
+- 备注：work-summary-2026-04-14-17.md 为个人工作日志，不适合 wiki；software-engineering-knowledge.md 已有源摘要未重复摄入
+
+---
+
 ## 历史记录
 
 ## [2026-04-24] update | TanStack Query 学习笔记补充

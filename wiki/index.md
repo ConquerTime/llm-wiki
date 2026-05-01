@@ -1,6 +1,6 @@
 ># 知识库索引
 
->- 34 个概念 · 27 个实体 · 27 个源摘要 — 共 88 页 | 更新于 2026-04-30
+>- 35 个概念 · 27 个实体 · 29 个源摘要 — 共 91 页 | 更新于 2026-05-01
 
 ---
 
@@ -25,6 +25,7 @@
 - [[ai-skills|AI Skills 生态]] — 2026 年 AI Coding Skills 生态爆发，涵盖知识管理/职业规划/思维蒸馏
 - [[autonomous-research|自主 ML 研究]] — AI agent 无人值守自主运行 ML 实验的范式（autoresearch）
 - [[context-engineering|Context Engineering（上下文工程）]] — 主动管理 LLM 上下文窗口，通过 Task() + worktree 隔离解决 context rot
+- [[agent-harness|Agent Harness（控制框架）]] — Agent 的 harness 与 memory 不可分割，闭源 harness 造成供应商锁定
 
 ### 编程
 - [[karpathy-guidelines|Karpathy Guidelines]] — LLM 编程行为四准则：思考→简单→精准→验证
@@ -40,6 +41,7 @@
 - [[factory-method|工厂方法]] — 创建型模式，父类定义创建接口子类决定具体类型
 - [[backend-architecture|后端架构]] — 分层/Clean/Hexagonal/CQRS 等核心架构模式
 - [[cloud-deployment|云服务部署]] — Docker/K8s/IaC/CICD/可观测性
+- [[web-worker-pattern|Web-Worker Pattern]] — API + 异步 Worker 分离架构，同一镜像多角色启动
 - [[microservices|微服务架构]] — 服务拆分/通信/API Gateway/Saga 模式
 - [[concepts/programming/canary-deployment|金丝雀部署]] — 渐进式发布策略，新版本先推给少量用户验证
 - [[concepts/programming/read-after-write|写后读一致性]] — 分布式系统一致性陷阱，Read-After-Write 问题与解决方案
@@ -110,6 +112,8 @@
 
 ### GitHub 仓库（续）
 - [[sources/articles/karpathy-autoresearch|karpathy/autoresearch]] — 自主 ML 研究框架，三文件极简设计，固定时间预算 (2026-04)
+- [[sources/articles/your-harness-your-memory|Your Harness, Your Memory]] — LangChain CEO 论 harness 与 memory 不可分割，闭源造成供应商锁定 (2026-04-12)
+- [[sources/articles/kaigao-ecs-deployment|kaigao ECS 部署方案]] — SAE → ECS + docker-compose 迁移：ALB 单入口、同一镜像多角色、费用对比 (2026-04)
 
 ### 晨报
 - [[sources/morning-briefs/2026-04-15|晨报 2026-04-15]] — Hacker News / GitHub Trending 日报，Skills 生态爆发趋势
