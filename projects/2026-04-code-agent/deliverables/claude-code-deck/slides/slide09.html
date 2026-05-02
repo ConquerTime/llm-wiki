@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- s02 Tool Use · dispatch map · r34 -->
+<html lang="zh">
+<head><meta charset="UTF-8">
+<link rel="stylesheet" href="../themes/dark-teal.css">
+<style>
+p, h1, h2, h3, h4, h5, h6, ul, ol { margin: 0; padding: 0; }
+ul, ol { list-style: none; }
+html { background: var(--bg); }
+body {
+  width: var(--slide-w); height: var(--slide-h); margin: 0; padding: 0;
+  font-family: var(--font-sans); color: var(--fg); background: var(--bg);
+  position: relative;
+}
+.image-pane {
+  position: absolute; right: 0; top: 0;
+  width: var(--imgpane-w); height: var(--slide-h);
+  background: #0d1e1e;
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 20pt 16pt; box-sizing: border-box;
+}
+.code { font-family: "Courier New", Courier, monospace; font-size: 8pt; color: #a8d8d0; line-height: 1.7; }
+.kw { color: var(--accent); }
+.cm { color: #5a8a85; }
+.slide {
+  position: relative; z-index: 1;
+  width: var(--slide-w); height: var(--slide-h);
+  padding: var(--pad-r34); box-sizing: border-box;
+  display: flex; flex-direction: column; justify-content: space-between;
+}
+.eyebrow { font-weight: var(--fw-light); font-size: var(--fs-label); letter-spacing: 3pt; color: var(--accent); margin: 0 0 8pt 0; }
+.title { font-size: var(--fs-title); font-weight: var(--fw-bold); color: #FFFFFF; margin: 0 0 12pt 0; line-height: 1.2; }
+.title .accent { color: var(--accent); }
+.lede { font-size: var(--fs-lede); color: var(--accent-2); margin: 0 0 14pt 0; line-height: 1.5; }
+.bullets { list-style: none; padding: 0; margin: 0; }
+.bullets li { font-size: var(--fs-body); color: var(--fg); margin: 0 0 8pt 0; padding-left: 16pt; position: relative; line-height: 1.5; }
+.bullets li::before { content: '—'; position: absolute; left: 0; color: var(--accent); }
+.source { font-size: var(--fs-source); color: var(--faint); letter-spacing: 1pt; }
+</style></head>
+<body>
+<div class="image-pane">
+  <p class="code"><span class="cm"># Dispatch map</span></p>
+  <p class="code">TOOL_HANDLERS = {</p>
+  <p class="code">  "bash":  run_bash,</p>
+  <p class="code">  "read":  read_file,</p>
+  <p class="code">  "write": write_file,</p>
+  <p class="code">  "edit":  edit_file,</p>
+  <p class="code">}</p>
+  <p class="code"> </p>
+  <p class="code"><span class="kw">def</span> run_tools(blocks):</p>
+  <p class="code">  <span class="kw">for</span> b <span class="kw">in</span> blocks:</p>
+  <p class="code">    fn = TOOL_HANDLERS[b.name]</p>
+  <p class="code">    yield fn(b.input)</p>
+  <p class="code"> </p>
+  <p class="code"><span class="cm"># 新增工具 = 加一行</span></p>
+</div>
+<div class="slide">
+  <div>
+    <p class="eyebrow">PART A · s02 TOOL USE</p>
+    <h1 class="title">加一个工具，<span class="accent">加一行</span></h1>
+    <p class="lede">Dispatch map 替代 if/elif 链 — 可无限扩展</p>
+    <ul class="bullets">
+      <li>字典映射：tool name → handler function</li>
+      <li>safe_path() 防路径逃逸出工作区</li>
+      <li>cc-haha 对照：buildTool() 工厂 + Tool 接口 30+ 方法</li>
+    </ul>
+  </div>
+  <p class="source">s02 · learn-claude-code</p>
+</div>
+</body>
+</html>

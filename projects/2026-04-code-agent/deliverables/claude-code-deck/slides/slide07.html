@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- Agent Loop 代码图解 · l34 -->
+<html lang="zh">
+<head><meta charset="UTF-8">
+<link rel="stylesheet" href="../themes/dark-teal.css">
+<style>
+p, h1, h2, h3, h4, h5, h6, ul, ol { margin: 0; padding: 0; }
+ul, ol { list-style: none; }
+html { background: var(--bg); }
+body {
+  width: var(--slide-w); height: var(--slide-h); margin: 0; padding: 0;
+  font-family: var(--font-sans); color: var(--fg);
+  position: relative; background: var(--bg);
+}
+.image-pane {
+  position: absolute; left: 0; top: 0;
+  width: var(--imgpane-w); height: var(--slide-h);
+  background: #0d1e1e;
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 20pt 16pt; box-sizing: border-box;
+}
+.code { font-family: "Courier New", Courier, monospace; font-size: 8pt; color: #a8d8d0; line-height: 1.6; white-space: pre; }
+.kw { color: var(--accent); }
+.cm { color: #5a8a85; }
+.slide {
+  position: relative; z-index: 1;
+  width: var(--slide-w); height: var(--slide-h);
+  padding: var(--pad-l34); box-sizing: border-box;
+  display: flex; flex-direction: column; justify-content: space-between;
+}
+.eyebrow { font-weight: var(--fw-light); font-size: var(--fs-label); letter-spacing: 3pt; color: var(--accent); margin: 0 0 8pt 0; }
+.title { font-size: var(--fs-title); font-weight: var(--fw-bold); color: #FFFFFF; margin: 0 0 12pt 0; line-height: 1.2; }
+.title .accent { color: var(--accent); }
+.lede { font-size: var(--fs-lede); color: var(--accent-2); margin: 0 0 14pt 0; line-height: 1.5; }
+.bullets { list-style: none; padding: 0; margin: 0; }
+.bullets li { font-size: var(--fs-body); color: var(--fg); margin: 0 0 8pt 0; padding-left: 16pt; position: relative; line-height: 1.5; }
+.bullets li::before { content: '—'; position: absolute; left: 0; color: var(--accent); }
+.source { font-size: var(--fs-source); color: var(--faint); letter-spacing: 1pt; }
+</style></head>
+<body>
+<div class="image-pane">
+  <p class="code"><span class="kw">def</span> agent_loop(query):</p>
+  <p class="code">  messages = [{"role":"user",</p>
+  <p class="code">               "content": query}]</p>
+  <p class="code">  <span class="kw">while True</span>:</p>
+  <p class="code">    resp = client.messages.create(</p>
+  <p class="code">      model=MODEL,</p>
+  <p class="code">      tools=TOOLS,</p>
+  <p class="code">      messages=messages,</p>
+  <p class="code">    )</p>
+  <p class="code">    messages.append(resp.content)</p>
+  <p class="code">    <span class="kw">if</span> resp.stop_reason != "tool_use":</p>
+  <p class="code">      <span class="kw">return  </span><span class="cm"># done</span></p>
+  <p class="code">    results = run_tools(resp.content)</p>
+  <p class="code">    messages.append(results)</p>
+</div>
+<div class="slide">
+  <div>
+    <p class="eyebrow">CHAPTER 2 · LOOP ANATOMY</p>
+    <h1 class="title"><span class="accent">while True</span> 就是全部</h1>
+    <p class="lede">每次迭代：推理 → 工具调用 → 观察结果</p>
+    <ul class="bullets">
+      <li>stop_reason 控制退出：非 tool_use 即终止</li>
+      <li>messages[] 是唯一状态 — 模型靠它感知世界</li>
+      <li>run_tools() 是 harness 的核心接入点</li>
+    </ul>
+  </div>
+  <p class="source">s01 · learn-claude-code</p>
+</div>
+</body>
+</html>

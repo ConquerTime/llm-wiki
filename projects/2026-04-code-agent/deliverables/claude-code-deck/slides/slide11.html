@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- 章4封面 · Part B · 知识与记忆 · cover -->
+<html lang="zh">
+<head><meta charset="UTF-8">
+<link rel="stylesheet" href="../themes/dark-teal.css">
+<style>
+p, h1, h2, h3, h4, h5, h6, ul, ol { margin: 0; padding: 0; }
+ul, ol { list-style: none; }
+html { background: var(--bg); }
+body {
+  width: var(--slide-w); height: var(--slide-h); margin: 0; padding: 0;
+  font-family: var(--font-sans); color: var(--fg);
+  position: relative; background: var(--bg);
+}
+.slide {
+  position: relative; z-index: 1;
+  width: var(--slide-w); height: var(--slide-h);
+  padding: var(--pad-slide); box-sizing: border-box;
+  display: flex; flex-direction: column; justify-content: space-between;
+}
+.top { display: flex; justify-content: space-between; align-items: center; }
+.label { font-weight: var(--fw-light); font-size: var(--fs-label); letter-spacing: 3pt; color: var(--dim); }
+.section-no { font-weight: var(--fw-light); font-size: var(--fs-label); color: var(--accent); letter-spacing: 2pt; }
+.prelude { font-size: var(--fs-lede); color: var(--muted); letter-spacing: 2pt; margin: 0 0 10pt 0; }
+.hero { font-size: var(--fs-hero); font-weight: var(--fw-bold); color: #FFFFFF; line-height: 1.15; }
+.hero .accent { color: var(--accent); }
+.subtitle { font-size: var(--fs-subtitle); color: var(--accent-2); margin: 10pt 0 0 0; line-height: 1.4; }
+.bottom { display: flex; justify-content: space-between; align-items: flex-end; }
+.bottom-label { font-size: var(--fs-source); color: var(--dim); letter-spacing: 1pt; }
+</style></head>
+<body>
+<div class="slide">
+  <div class="top">
+    <p class="label">PART B · s04–s06</p>
+    <p class="section-no">KNOWLEDGE + MEMORY</p>
+  </div>
+  <div>
+    <p class="prelude">CONTEXT IS EVERYTHING</p>
+    <p class="hero"><span class="accent">知识</span>与记忆</p>
+    <p class="subtitle">上下文窗口是有限的 — 三课解决知识注入、隔离和压缩</p>
+  </div>
+  <div class="bottom">
+    <p class="bottom-label">s04 Subagent · s05 Skills</p>
+    <p class="bottom-label">s06 Context Compact</p>
+  </div>
+</div>
+</body>
+</html>

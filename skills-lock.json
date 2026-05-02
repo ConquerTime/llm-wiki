@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "skills": {
+    "ppt-classify": {
+      "source": "crazynomad/skills",
+      "sourceType": "github",
+      "skillPath": "ppt-classify/SKILL.md",
+      "computedHash": "be80cda0e174c2ef8de1d6003d40a98d5bbdd2613a74469596ff24bc4592c727"
+    },
+    "ppt-narrative-review": {
+      "source": "crazynomad/skills",
+      "sourceType": "github",
+      "skillPath": "ppt-narrative-review/SKILL.md",
+      "computedHash": "a7529011c0e3e923573a4da52a2de76b84c373ab394bd58409f30addfb9780aa"
+    },
+    "ppt-research-setup": {
+      "source": "crazynomad/skills",
+      "sourceType": "github",
+      "skillPath": "ppt-research-setup/SKILL.md",
+      "computedHash": "2e7235aad04eec8fcec9de90836dc7316cf0bba751a6e4bf1f2919e451d35338"
+    },
+    "visual-deck": {
+      "source": "crazynomad/skills",
+      "sourceType": "github",
+      "skillPath": "visual-deck/SKILL.md",
+      "computedHash": "441d9518cbd088999bbcdde3cbff83d082580fb1b5deac3f86761c370c21847e"
+    }
+  }
+}

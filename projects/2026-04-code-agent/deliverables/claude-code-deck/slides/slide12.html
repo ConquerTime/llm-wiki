@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- s04 Subagent + s05 Skills · r34 · 两课合并 -->
+<html lang="zh">
+<head><meta charset="UTF-8">
+<link rel="stylesheet" href="../themes/dark-teal.css">
+<style>
+p, h1, h2, h3, h4, h5, h6, ul, ol { margin: 0; padding: 0; }
+ul, ol { list-style: none; }
+html { background: var(--bg); }
+body {
+  width: var(--slide-w); height: var(--slide-h); margin: 0; padding: 0;
+  font-family: var(--font-sans); color: var(--fg); background: var(--bg);
+  position: relative;
+}
+.image-pane {
+  position: absolute; right: 0; top: 0;
+  width: var(--imgpane-w); height: var(--slide-h);
+  background: #0d1e1e;
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 16pt; box-sizing: border-box; gap: 10pt;
+}
+.box { padding: 10pt; background: #1a3535; }
+.box-title { font-size: 8pt; color: var(--accent); font-weight: bold; letter-spacing: 2pt; margin: 0 0 4pt 0; font-family: "Courier New", Courier, monospace; }
+.box-body { font-size: 8pt; color: #a8d8d0; line-height: 1.5; font-family: "Courier New", Courier, monospace; }
+.slide {
+  position: relative; z-index: 1;
+  width: var(--slide-w); height: var(--slide-h);
+  padding: var(--pad-r34); box-sizing: border-box;
+  display: flex; flex-direction: column; justify-content: space-between;
+}
+.eyebrow { font-weight: var(--fw-light); font-size: var(--fs-label); letter-spacing: 3pt; color: var(--accent); margin: 0 0 8pt 0; }
+.title { font-size: var(--fs-title); font-weight: var(--fw-bold); color: #FFFFFF; margin: 0 0 12pt 0; line-height: 1.2; }
+.title .accent { color: var(--accent); }
+.lede { font-size: var(--fs-lede); color: var(--accent-2); margin: 0 0 14pt 0; line-height: 1.5; }
+.bullets { list-style: none; padding: 0; margin: 0; }
+.bullets li { font-size: 11pt; color: var(--fg); margin: 0 0 7pt 0; padding-left: 16pt; position: relative; line-height: 1.5; }
+.bullets li::before { content: '—'; position: absolute; left: 0; color: var(--accent); }
+.source { font-size: var(--fs-source); color: var(--faint); letter-spacing: 1pt; }
+</style></head>
+<body>
+<div class="image-pane">
+  <div class="box">
+    <p class="box-title">SUBAGENT</p>
+    <p class="box-body">parent messages[]</p>
+    <p class="box-body">  fork</p>
+    <p class="box-body">child messages=[]  (clean)</p>
+    <p class="box-body">  ...30+ tool calls...</p>
+    <p class="box-body">return summary text only</p>
+  </div>
+  <div class="box">
+    <p class="box-title">SKILL LOADING (2-layer)</p>
+    <p class="box-body">Layer 1: name list (~100 tok)</p>
+    <p class="box-body">  in system prompt always</p>
+    <p class="box-body">Layer 2: load_skill(name)</p>
+    <p class="box-body">  full content (~2000 tok)</p>
+    <p class="box-body">  injected on demand only</p>
+  </div>
+</div>
+<div class="slide">
+  <div>
+    <p class="eyebrow">PART B · s04–s05</p>
+    <h1 class="title">隔离上下文，<span class="accent">按需注入</span>知识</h1>
+    <p class="lede">子 agent 和 skill 都是减少"无效 token"的机制</p>
+    <ul class="bullets">
+      <li>Subagent：独立 messages[]，父只保留摘要</li>
+      <li>禁止递归生成 — child 不持有 task 工具</li>
+      <li>Skill 两层：名称列表常驻，内容按需拉取</li>
+      <li>cc-haha：6 种 skill 来源，realpath 去重</li>
+    </ul>
+  </div>
+  <p class="source">s04–s05 · AgentTool · skills-02-implementation.md</p>
+</div>
+</body>
+</html>

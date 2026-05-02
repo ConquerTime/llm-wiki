@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- s09–s10 Agent Teams + FSM · l34 -->
+<html lang="zh">
+<head><meta charset="UTF-8">
+<link rel="stylesheet" href="../themes/dark-teal.css">
+<style>
+p, h1, h2, h3, h4, h5, h6, ul, ol { margin: 0; padding: 0; }
+ul, ol { list-style: none; }
+html { background: var(--bg); }
+body {
+  width: var(--slide-w); height: var(--slide-h); margin: 0; padding: 0;
+  font-family: var(--font-sans); color: var(--fg);
+  position: relative; background: var(--bg);
+}
+.image-pane {
+  position: absolute; left: 0; top: 0;
+  width: var(--imgpane-w); height: var(--slide-h);
+  background: #0d1e1e;
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 14pt; box-sizing: border-box; gap: 8pt;
+}
+.team-box { padding: 8pt; background: #1a3535; }
+.team-title { font-size: 7pt; color: var(--accent); font-weight: bold; letter-spacing: 1pt; margin: 0 0 5pt 0; font-family: "Courier New", Courier, monospace; }
+.team-row { display: flex; flex-direction: row; gap: 8pt; align-items: center; margin: 0 0 4pt 0; }
+.team-row p { font-size: 7pt; color: #a8d8d0; font-family: "Courier New", Courier, monospace; }
+.arrow { color: var(--accent); }
+.divider { height: 1pt; background: #2a4040; }
+.fsm-box { padding: 8pt; background: #1a3535; }
+.fsm-row { font-size: 7pt; color: #a8d8d0; font-family: "Courier New", Courier, monospace; line-height: 1.6; }
+.slide {
+  position: relative; z-index: 1;
+  width: var(--slide-w); height: var(--slide-h);
+  padding: var(--pad-l34); box-sizing: border-box;
+  display: flex; flex-direction: column; justify-content: space-between;
+}
+.eyebrow { font-weight: var(--fw-light); font-size: var(--fs-label); letter-spacing: 3pt; color: var(--accent); margin: 0 0 8pt 0; }
+.title { font-size: var(--fs-title); font-weight: var(--fw-bold); color: #FFFFFF; margin: 0 0 12pt 0; line-height: 1.2; }
+.title .accent { color: var(--accent); }
+.lede { font-size: var(--fs-lede); color: var(--accent-2); margin: 0 0 14pt 0; line-height: 1.5; }
+.bullets { list-style: none; padding: 0; margin: 0; }
+.bullets li { font-size: var(--fs-body); color: var(--fg); margin: 0 0 7pt 0; padding-left: 16pt; position: relative; line-height: 1.5; }
+.bullets li::before { content: '—'; position: absolute; left: 0; color: var(--accent); }
+.source { font-size: var(--fs-source); color: var(--faint); letter-spacing: 1pt; }
+</style></head>
+<body>
+<div class="image-pane">
+  <div class="team-box">
+    <p class="team-title">AGENT TEAM (JSONL 邮箱)</p>
+    <div class="team-row">
+      <p>orchestrator</p>
+      <p class="arrow">→ inbox/coder.jsonl</p>
+    </div>
+    <div class="team-row">
+      <p>coder</p>
+      <p class="arrow">→ inbox/reviewer.jsonl</p>
+    </div>
+    <div class="team-row">
+      <p>reviewer</p>
+      <p class="arrow">→ inbox/orchestrator.jsonl</p>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="fsm-box">
+    <p class="fsm-row">FSM Protocol (s10)</p>
+    <p class="fsm-row">pending → approved</p>
+    <p class="fsm-row">pending → rejected</p>
+    <p class="fsm-row">request_id 配对响应</p>
+    <p class="fsm-row">关机握手 / 计划审批</p>
+    <p class="fsm-row">结构完全相同</p>
+  </div>
+</div>
+<div class="slide">
+  <div>
+    <p class="eyebrow">PART D · s09–s10</p>
+    <h1 class="title">持久化队友，<span class="accent">统一协议</span></h1>
+    <p class="lede">从一次性 subagent 升级为长期存活的团队成员</p>
+    <ul class="bullets">
+      <li>s09：JSONL 邮箱 — append-only，drain-on-read</li>
+      <li>每线程独立 agent loop，每轮开头检查收件箱</li>
+      <li>s10：一个 FSM 驱动所有协议，request_id 配对</li>
+      <li>cc-haha：tmux / iTerm2 / in-process 三种执行后端</li>
+    </ul>
+  </div>
+  <p class="source">s09–s10 · cc-haha channel 文档</p>
+</div>
+</body>
+</html>

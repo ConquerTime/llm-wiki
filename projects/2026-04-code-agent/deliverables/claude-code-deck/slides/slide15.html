@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- s07–s08 任务系统 + 后台并发 · r34 -->
+<html lang="zh">
+<head><meta charset="UTF-8">
+<link rel="stylesheet" href="../themes/dark-teal.css">
+<style>
+p, h1, h2, h3, h4, h5, h6, ul, ol { margin: 0; padding: 0; }
+ul, ol { list-style: none; }
+html { background: var(--bg); }
+body {
+  width: var(--slide-w); height: var(--slide-h); margin: 0; padding: 0;
+  font-family: var(--font-sans); color: var(--fg); background: var(--bg);
+  position: relative;
+}
+.image-pane {
+  position: absolute; right: 0; top: 0;
+  width: var(--imgpane-w); height: var(--slide-h);
+  background: #0d1e1e;
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 14pt; box-sizing: border-box; gap: 8pt;
+}
+.dag { display: flex; flex-direction: column; gap: 5pt; }
+.dag-row { display: flex; flex-direction: row; gap: 6pt; align-items: center; }
+.dag-row p { font-size: 8pt; font-family: "Courier New", Courier, monospace; color: #a8d8d0; }
+.task-box { padding: 4pt 8pt; background: #1a3535; }
+.task-box p { font-size: 7pt; font-family: "Courier New", Courier, monospace; color: var(--accent); }
+.task-done { background: #153025; }
+.task-done p { color: #5a8a85; }
+.arrow { color: var(--dim); font-size: 10pt; }
+.divider { height: 1pt; background: #2a4040; margin: 6pt 0; }
+.bg-row { display: flex; flex-direction: row; gap: 6pt; align-items: center; }
+.bg-row p { font-size: 7pt; font-family: "Courier New", Courier, monospace; }
+.main-thread { color: var(--accent); }
+.bg-thread { color: var(--accent-2); }
+.slide {
+  position: relative; z-index: 1;
+  width: var(--slide-w); height: var(--slide-h);
+  padding: var(--pad-r34); box-sizing: border-box;
+  display: flex; flex-direction: column; justify-content: space-between;
+}
+.eyebrow { font-weight: var(--fw-light); font-size: var(--fs-label); letter-spacing: 3pt; color: var(--accent); margin: 0 0 8pt 0; }
+.title { font-size: var(--fs-title); font-weight: var(--fw-bold); color: #FFFFFF; margin: 0 0 12pt 0; line-height: 1.2; }
+.title .accent { color: var(--accent); }
+.lede { font-size: var(--fs-lede); color: var(--accent-2); margin: 0 0 14pt 0; line-height: 1.5; }
+.bullets { list-style: none; padding: 0; margin: 0; }
+.bullets li { font-size: 11pt; color: var(--fg); margin: 0 0 7pt 0; padding-left: 16pt; position: relative; line-height: 1.5; }
+.bullets li::before { content: '—'; position: absolute; left: 0; color: var(--accent); }
+.source { font-size: var(--fs-source); color: var(--faint); letter-spacing: 1pt; }
+</style></head>
+<body>
+<div class="image-pane">
+  <div class="dag">
+    <p style="font-size:7pt;color:#5a8a85;font-family:'Courier New',Courier,monospace;">.tasks/ DAG</p>
+    <div class="dag-row">
+      <div class="task-box task-done"><p>[done] task_1</p></div>
+      <p class="arrow">→</p>
+      <div class="task-box"><p>[running] task_2</p></div>
+    </div>
+    <div class="dag-row">
+      <div class="task-box task-done"><p>[done] task_1</p></div>
+      <p class="arrow">→</p>
+      <div class="task-box" style="background:#2a4040;"><p style="color:#6b6b6b;">[blocked] task_3</p></div>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div style="display:flex;flex-direction:column;gap:4pt;">
+    <p style="font-size:7pt;color:#5a8a85;font-family:'Courier New',Courier,monospace;">Background Tasks</p>
+    <div class="bg-row">
+      <p class="main-thread">main: LLM call ←→</p>
+    </div>
+    <div class="bg-row">
+      <p class="bg-thread">bg:   [test run]</p>
+    </div>
+    <div class="bg-row">
+      <p class="main-thread">main: drain notify queue</p>
+    </div>
+    <div class="bg-row">
+      <p class="bg-thread">bg:   [result ready]</p>
+    </div>
+  </div>
+</div>
+<div class="slide">
+  <div>
+    <p class="eyebrow">PART C · s07–s08</p>
+    <h1 class="title">磁盘 DAG + <span class="accent">后台并行</span></h1>
+    <p class="lede">大目标拆成有序任务，慢操作丢后台</p>
+    <ul class="bullets">
+      <li>s07：.tasks/*.json 持久化 — 崩溃可恢复</li>
+      <li>blockedBy 字段：完成即自动解锁后续任务</li>
+      <li>s08：后台线程 + 通知队列，每次 LLM 调用前排空</li>
+      <li>主循环保持单线程 — 只有 I/O 被并行化</li>
+    </ul>
+  </div>
+  <p class="source">s07–s08 · learn-claude-code</p>
+</div>
+</body>
+</html>

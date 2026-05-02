@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- 章6封面 · 对照生产源码 · cover -->
+<html lang="zh">
+<head><meta charset="UTF-8">
+<link rel="stylesheet" href="../themes/dark-teal.css">
+<style>
+p, h1, h2, h3, h4, h5, h6, ul, ol { margin: 0; padding: 0; }
+ul, ol { list-style: none; }
+html { background: var(--bg); }
+body {
+  width: var(--slide-w); height: var(--slide-h); margin: 0; padding: 0;
+  font-family: var(--font-sans); color: var(--fg);
+  position: relative; background: var(--bg);
+}
+.slide {
+  position: relative; z-index: 1;
+  width: var(--slide-w); height: var(--slide-h);
+  padding: var(--pad-slide); box-sizing: border-box;
+  display: flex; flex-direction: column; justify-content: space-between;
+}
+.top { display: flex; justify-content: space-between; align-items: center; }
+.label { font-weight: var(--fw-light); font-size: var(--fs-label); letter-spacing: 3pt; color: var(--dim); }
+.section-no { font-weight: var(--fw-light); font-size: var(--fs-label); color: var(--accent); letter-spacing: 2pt; }
+.prelude { font-size: var(--fs-lede); color: var(--muted); letter-spacing: 2pt; margin: 0 0 10pt 0; }
+.hero { font-size: var(--fs-hero); font-weight: var(--fw-bold); color: #FFFFFF; line-height: 1.15; }
+.hero .accent { color: var(--accent); }
+.subtitle { font-size: var(--fs-subtitle); color: var(--accent-2); margin: 10pt 0 0 0; line-height: 1.4; }
+.bottom { display: flex; justify-content: space-between; align-items: flex-end; }
+.bottom-label { font-size: var(--fs-source); color: var(--dim); letter-spacing: 1pt; }
+</style></head>
+<body>
+<div class="slide">
+  <div class="top">
+    <p class="label">CHAPTER 6</p>
+    <p class="section-no">PRODUCTION MAPPING</p>
+  </div>
+  <div>
+    <p class="prelude">PYTHON 30L → TYPESCRIPT PRODUCTION</p>
+    <p class="hero">对照<span class="accent">生产</span>源码</p>
+    <p class="subtitle">最小实现 → cc-haha TypeScript 的映射 — 精读三个核心模块</p>
+  </div>
+  <div class="bottom">
+    <p class="bottom-label">AgentTool · Skills · Memory</p>
+    <p class="bottom-label">cc-haha NanmiCoder</p>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- 封底 · quote · Agency 是学出来的 -->
+<html lang="zh">
+<head><meta charset="UTF-8">
+<link rel="stylesheet" href="../themes/dark-teal.css">
+<style>
+p, h1, h2, h3, h4, h5, h6, ul, ol { margin: 0; padding: 0; }
+ul, ol { list-style: none; }
+html { background: var(--bg); }
+body {
+  width: var(--slide-w); height: var(--slide-h); margin: 0; padding: 0;
+  font-family: var(--font-sans); color: var(--fg);
+  position: relative; background: var(--bg);
+}
+.slide {
+  position: relative; z-index: 1;
+  width: var(--slide-w); height: var(--slide-h);
+  padding: 50pt 80pt; box-sizing: border-box;
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+  text-align: center;
+}
+.mark { font-size: 64pt; font-weight: var(--fw-bold); color: var(--accent); line-height: 1; }
+.quote-text {
+  font-size: 36pt; font-weight: var(--fw-bold); color: #FFFFFF;
+  line-height: 1.35; max-width: 580pt;
+}
+.quote-text .accent { color: var(--accent); }
+.attribution { margin-top: 24pt; font-size: var(--fs-lede); color: var(--accent-2); letter-spacing: 1pt; }
+.bottom-bar {
+  position: absolute; bottom: 36pt; left: 48pt; right: 48pt;
+  display: flex; justify-content: space-between; align-items: flex-end;
+}
+.bottom-bar p { font-size: var(--fs-source); color: var(--dim); letter-spacing: 1pt; }
+</style></head>
+<body>
+<div class="slide">
+  <p class="mark">"</p>
+  <p class="quote-text">Agency 是<span class="accent">学出来</span>的，<br>不是编出来的。</p>
+  <p class="attribution">— 我们在建 Harness，信任模型</p>
+</div>
+<div class="bottom-bar">
+  <p>Claude Code 源码设计讲解</p>
+  <p>learn-claude-code · cc-haha · s01–s12</p>
+</div>
+</body>
+</html>

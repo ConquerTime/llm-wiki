@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- Python → TypeScript 映射表 · l34 -->
+<html lang="zh">
+<head><meta charset="UTF-8">
+<link rel="stylesheet" href="../themes/dark-teal.css">
+<style>
+p, h1, h2, h3, h4, h5, h6, ul, ol { margin: 0; padding: 0; }
+ul, ol { list-style: none; }
+html { background: var(--bg); }
+body {
+  width: var(--slide-w); height: var(--slide-h); margin: 0; padding: 0;
+  font-family: var(--font-sans); color: var(--fg);
+  position: relative; background: var(--bg);
+}
+.image-pane {
+  position: absolute; left: 0; top: 0;
+  width: var(--imgpane-w); height: var(--slide-h);
+  background: #0d1e1e;
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 14pt; box-sizing: border-box; gap: 5pt;
+}
+.map-header { display: flex; flex-direction: row; gap: 0; margin: 0 0 4pt 0; }
+.col-py { flex: 1; font-size: 7pt; color: var(--accent); font-weight: bold; letter-spacing: 1pt; font-family: "Courier New", Courier, monospace; }
+.col-ts { flex: 1; font-size: 7pt; color: var(--accent-2); font-weight: bold; letter-spacing: 1pt; font-family: "Courier New", Courier, monospace; }
+.map-row { display: flex; flex-direction: row; gap: 0; padding: 4pt 0; border-top: 1pt solid #2a4040; }
+.cell-py { flex: 1; font-size: 7pt; color: #a8d8d0; font-family: "Courier New", Courier, monospace; line-height: 1.4; }
+.cell-ts { flex: 1; font-size: 7pt; color: #d4c0a0; font-family: "Courier New", Courier, monospace; line-height: 1.4; }
+.slide {
+  position: relative; z-index: 1;
+  width: var(--slide-w); height: var(--slide-h);
+  padding: var(--pad-l34); box-sizing: border-box;
+  display: flex; flex-direction: column; justify-content: space-between;
+}
+.eyebrow { font-weight: var(--fw-light); font-size: var(--fs-label); letter-spacing: 3pt; color: var(--accent); margin: 0 0 8pt 0; }
+.title { font-size: var(--fs-title); font-weight: var(--fw-bold); color: #FFFFFF; margin: 0 0 12pt 0; line-height: 1.2; }
+.title .accent { color: var(--accent); }
+.lede { font-size: var(--fs-lede); color: var(--accent-2); margin: 0 0 14pt 0; line-height: 1.5; }
+.bullets { list-style: none; padding: 0; margin: 0; }
+.bullets li { font-size: var(--fs-body); color: var(--fg); margin: 0 0 8pt 0; padding-left: 16pt; position: relative; line-height: 1.5; }
+.bullets li::before { content: '—'; position: absolute; left: 0; color: var(--accent); }
+.source { font-size: var(--fs-source); color: var(--faint); letter-spacing: 1pt; }
+</style></head>
+<body>
+<div class="image-pane">
+  <div class="map-header">
+    <p class="col-py">Python (30L)</p>
+    <p class="col-ts">cc-haha TypeScript</p>
+  </div>
+  <div class="map-row">
+    <p class="cell-py">while True loop</p>
+    <p class="cell-ts">queryLoop() src/query/</p>
+  </div>
+  <div class="map-row">
+    <p class="cell-py">TOOL_HANDLERS{}</p>
+    <p class="cell-ts">buildTool() factory</p>
+  </div>
+  <div class="map-row">
+    <p class="cell-py">messages=[]</p>
+    <p class="cell-ts">AgentTool + runAgent.ts</p>
+  </div>
+  <div class="map-row">
+    <p class="cell-py">load_skill(name)</p>
+    <p class="cell-ts">6-source skill loader</p>
+  </div>
+  <div class="map-row">
+    <p class="cell-py">micro_compact()</p>
+    <p class="cell-ts">Snip / Context Collapse</p>
+  </div>
+  <div class="map-row">
+    <p class="cell-py">auto_compact()</p>
+    <p class="cell-ts">Auto + Session Memory</p>
+  </div>
+  <div class="map-row">
+    <p class="cell-py">.tasks/*.json</p>
+    <p class="cell-ts">TaskSystem (persistent)</p>
+  </div>
+  <div class="map-row">
+    <p class="cell-py">inbox/*.jsonl</p>
+    <p class="cell-ts">AsyncLocalStorage + tmux</p>
+  </div>
+</div>
+<div class="slide">
+  <div>
+    <p class="eyebrow">CHAPTER 6 · MAPPING</p>
+    <h1 class="title">每行 Python，<span class="accent">对应一个模块</span></h1>
+    <p class="lede">最小实现是地图，cc-haha 是实地</p>
+    <ul class="bullets">
+      <li>AgentTool：子 agent 派生的完整生产版</li>
+      <li>Skills：6 种来源 + realpath 去重 + 延迟解压</li>
+      <li>Memory：5 层压缩策略 + 自动记忆提取</li>
+    </ul>
+  </div>
+  <p class="source">cc-haha · NanmiCoder · agent-02 / skills-02 / memory-02</p>
+</div>
+</body>
+</html>

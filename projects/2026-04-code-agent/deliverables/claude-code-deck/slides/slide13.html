@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- s06 Context Compact · 三层压缩 · l34 + 表格 -->
+<html lang="zh">
+<head><meta charset="UTF-8">
+<link rel="stylesheet" href="../themes/dark-teal.css">
+<style>
+p, h1, h2, h3, h4, h5, h6, ul, ol { margin: 0; padding: 0; }
+ul, ol { list-style: none; }
+html { background: var(--bg); }
+body {
+  width: var(--slide-w); height: var(--slide-h); margin: 0; padding: 0;
+  font-family: var(--font-sans); color: var(--fg);
+  position: relative; background: var(--bg);
+}
+.image-pane {
+  position: absolute; left: 0; top: 0;
+  width: var(--imgpane-w); height: var(--slide-h);
+  background: #0d1e1e;
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 16pt 14pt; box-sizing: border-box; gap: 8pt;
+}
+.row { padding: 8pt 10pt; background: #1a3535; display: flex; flex-direction: column; gap: 3pt; }
+.row-tier { font-size: 8pt; color: var(--accent); font-weight: bold; letter-spacing: 1pt; }
+.row-trigger { font-size: 7pt; color: var(--accent-2); }
+.row-action { font-size: 7pt; color: #a8d8d0; }
+.divider { height: 1pt; background: #2a4040; }
+.cc-label { font-size: 7pt; color: #5a8a85; margin: 4pt 0 0 0; }
+.slide {
+  position: relative; z-index: 1;
+  width: var(--slide-w); height: var(--slide-h);
+  padding: var(--pad-l34); box-sizing: border-box;
+  display: flex; flex-direction: column; justify-content: space-between;
+}
+.eyebrow { font-weight: var(--fw-light); font-size: var(--fs-label); letter-spacing: 3pt; color: var(--accent); margin: 0 0 8pt 0; }
+.title { font-size: var(--fs-title); font-weight: var(--fw-bold); color: #FFFFFF; margin: 0 0 12pt 0; line-height: 1.2; }
+.title .accent { color: var(--accent); }
+.lede { font-size: var(--fs-lede); color: var(--accent-2); margin: 0 0 14pt 0; line-height: 1.5; }
+.bullets { list-style: none; padding: 0; margin: 0; }
+.bullets li { font-size: var(--fs-body); color: var(--fg); margin: 0 0 7pt 0; padding-left: 16pt; position: relative; line-height: 1.5; }
+.bullets li::before { content: '—'; position: absolute; left: 0; color: var(--accent); }
+.source { font-size: var(--fs-source); color: var(--faint); letter-spacing: 1pt; }
+</style></head>
+<body>
+<div class="image-pane">
+  <div class="row">
+    <p class="row-tier">MICRO COMPACT</p>
+    <p class="row-trigger">触发：每轮静默运行</p>
+    <p class="row-action">旧 tool_result → 占位符</p>
+  </div>
+  <div class="divider"></div>
+  <div class="row">
+    <p class="row-tier">AUTO COMPACT</p>
+    <p class="row-trigger">触发：token > 50k</p>
+    <p class="row-action">保存 transcript</p>
+    <p class="row-action">LLM 摘要全历史</p>
+  </div>
+  <div class="divider"></div>
+  <div class="row">
+    <p class="row-tier">MANUAL COMPACT</p>
+    <p class="row-trigger">触发：工具显式调用</p>
+    <p class="row-action">同 auto，用户控制</p>
+  </div>
+  <p class="cc-label">cc-haha: 5策略+熔断器保护</p>
+</div>
+<div class="slide">
+  <div>
+    <p class="eyebrow">PART B · s06 CONTEXT COMPACT</p>
+    <h1 class="title">上下文总会满，<span class="accent">三层腾地方</span></h1>
+    <p class="lede">激进程度递增，每层有不同触发条件</p>
+    <ul class="bullets">
+      <li>micro：无感压缩，3 轮前的结果变占位符</li>
+      <li>auto：token 超限时 LLM 自动摘要全历史</li>
+      <li>cc-haha 额外：Snip / Context Collapse / Session Memory</li>
+      <li>熔断器保护 — 防止压缩本身耗尽上下文</li>
+    </ul>
+  </div>
+  <p class="source">s06 · memory-02-implementation.md</p>
+</div>
+</body>
+</html>

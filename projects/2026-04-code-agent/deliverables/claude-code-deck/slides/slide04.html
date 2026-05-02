@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- Harness 五类组件 · 3col（拆成带badge的列）-->
+<html lang="zh">
+<head><meta charset="UTF-8">
+<link rel="stylesheet" href="../themes/dark-teal.css">
+<style>
+p, h1, h2, h3, h4, h5, h6, ul, ol { margin: 0; padding: 0; }
+ul, ol { list-style: none; }
+html { background: var(--bg); }
+body {
+  width: var(--slide-w); height: var(--slide-h); margin: 0; padding: 0;
+  font-family: var(--font-sans); color: var(--fg); background: var(--bg);
+}
+.slide {
+  width: var(--slide-w); height: var(--slide-h);
+  padding: 36pt 48pt 36pt 48pt; box-sizing: border-box;
+  display: flex; flex-direction: column;
+}
+.eyebrow { font-weight: var(--fw-light); font-size: var(--fs-label); letter-spacing: 3pt; color: var(--accent); margin: 0 0 6pt 0; }
+.title { font-size: 28pt; font-weight: var(--fw-bold); color: #FFFFFF; margin: 0 0 16pt 0; line-height: 1.2; }
+.title .accent { color: var(--accent); }
+.grid { display: flex; flex-direction: row; gap: 14pt; flex: 1; }
+.cell { flex: 1; display: flex; flex-direction: column; padding: 12pt; box-sizing: border-box; background: var(--panel); }
+.cell-badge { font-size: 11pt; font-weight: var(--fw-bold); color: var(--accent); margin: 0 0 4pt 0; letter-spacing: 2pt; }
+.cell-title { font-size: 14pt; font-weight: var(--fw-bold); color: #FFFFFF; margin: 0 0 6pt 0; line-height: 1.3; }
+.cell-desc { font-size: 10pt; color: var(--fg); line-height: 1.4; }
+.footer-row { display: flex; justify-content: space-between; align-items: flex-end; margin: 10pt 0 0 0; }
+.tagline { font-size: 11pt; color: var(--accent-2); }
+.source { font-size: var(--fs-source); color: var(--faint); letter-spacing: 1pt; }
+</style></head>
+<body>
+<div class="slide">
+  <p class="eyebrow">CHAPTER 1 · HARNESS</p>
+  <h1 class="title">Harness = 让模型<span class="accent">干活</span>的基础设施</h1>
+  <div class="grid">
+    <div class="cell">
+      <p class="cell-badge">TOOLS</p>
+      <p class="cell-title">工具</p>
+      <p class="cell-desc">文件读写<br>Shell · 网络<br>数据库 · 浏览器</p>
+    </div>
+    <div class="cell">
+      <p class="cell-badge">KNOWLEDGE</p>
+      <p class="cell-title">知识</p>
+      <p class="cell-desc">产品文档<br>领域资料<br>API 规范</p>
+    </div>
+    <div class="cell">
+      <p class="cell-badge">OBSERVATION</p>
+      <p class="cell-title">观察</p>
+      <p class="cell-desc">git diff<br>错误日志<br>浏览器状态</p>
+    </div>
+    <div class="cell">
+      <p class="cell-badge">ACTION</p>
+      <p class="cell-title">动作</p>
+      <p class="cell-desc">CLI 命令<br>API 调用<br>UI 交互</p>
+    </div>
+    <div class="cell">
+      <p class="cell-badge">PERMISSIONS</p>
+      <p class="cell-title">权限</p>
+      <p class="cell-desc">沙箱隔离<br>审批流程<br>信任边界</p>
+    </div>
+  </div>
+  <div class="footer-row">
+    <p class="tagline">模型是驾驶者，Harness 是载具</p>
+    <p class="source">notes/01-harness-philosophy.md</p>
+  </div>
+</div>
+</body>
+</html>

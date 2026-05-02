@@ -56,7 +56,10 @@
   "newFileLocation": "folder",
   "newFileFolderPath": "raw",
   "attachmentFolderPath": "raw",
-  "readableLineLength": false,
+  "readableLineLength": true,
   "showUnsupportedFiles": true,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "defaultViewMode": "preview",
+  "showLineNumber": true,
+  "uriCallbacks": true
 }

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- Claude Code 全景图 · r34 · 8模块 -->
+<html lang="zh">
+<head><meta charset="UTF-8">
+<link rel="stylesheet" href="../themes/dark-teal.css">
+<style>
+p, h1, h2, h3, h4, h5, h6, ul, ol { margin: 0; padding: 0; }
+ul, ol { list-style: none; }
+html { background: var(--bg); }
+body {
+  width: var(--slide-w); height: var(--slide-h); margin: 0; padding: 0;
+  font-family: var(--font-sans); color: var(--fg); background: var(--bg);
+  position: relative;
+}
+.image-pane {
+  position: absolute; right: 0; top: 0;
+  width: var(--imgpane-w); height: var(--slide-h);
+  background: var(--panel);
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+  padding: 16pt; box-sizing: border-box;
+}
+.stack { display: flex; flex-direction: column; gap: 6pt; width: 100%; }
+.layer { padding: 5pt 10pt; background: #1a3535; }
+.layer p { font-size: 9pt; color: var(--accent); font-weight: var(--fw-bold); letter-spacing: 1pt; }
+.slide {
+  position: relative; z-index: 1;
+  width: var(--slide-w); height: var(--slide-h);
+  padding: var(--pad-r34); box-sizing: border-box;
+  display: flex; flex-direction: column; justify-content: space-between;
+}
+.eyebrow { font-weight: var(--fw-light); font-size: var(--fs-label); letter-spacing: 3pt; color: var(--accent); margin: 0 0 8pt 0; }
+.title { font-size: var(--fs-title); font-weight: var(--fw-bold); color: #FFFFFF; margin: 0 0 12pt 0; line-height: 1.2; }
+.title .accent { color: var(--accent); }
+.lede { font-size: var(--fs-lede); color: var(--accent-2); margin: 0 0 14pt 0; line-height: 1.5; }
+.bullets { list-style: none; padding: 0; margin: 0; }
+.bullets li { font-size: 11pt; color: var(--fg); margin: 0 0 6pt 0; padding-left: 16pt; position: relative; line-height: 1.5; }
+.bullets li::before { content: '—'; position: absolute; left: 0; color: var(--accent); }
+.source { font-size: var(--fs-source); color: var(--faint); letter-spacing: 1pt; }
+</style></head>
+<body>
+<div class="image-pane">
+  <div class="stack">
+    <div class="layer"><p>Agent Loop</p></div>
+    <div class="layer"><p>Tools (bash/read/write...)</p></div>
+    <div class="layer"><p>Skill Loading</p></div>
+    <div class="layer"><p>Context Compact</p></div>
+    <div class="layer"><p>Task System (DAG)</p></div>
+    <div class="layer"><p>Background Tasks</p></div>
+    <div class="layer"><p>Agent Teams</p></div>
+    <div class="layer"><p>Worktree Isolation</p></div>
+  </div>
+</div>
+<div class="slide">
+  <div>
+    <p class="eyebrow">CHAPTER 1 · FULL PICTURE</p>
+    <h1 class="title">Claude Code<br><span class="accent">剥到本质</span></h1>
+    <p class="lede">一个 agent loop + 7 层 harness 机制</p>
+    <ul class="bullets">
+      <li>核心：while True + stop_reason 判断</li>
+      <li>工具系统赋予模型触碰世界的能力</li>
+      <li>上下文 / 任务 / 协作层是工程化的关键</li>
+      <li>每层机制独立可插拔，循环本身不变</li>
+    </ul>
+  </div>
+  <p class="source">cc-haha TypeScript 生产源码</p>
+</div>
+</body>
+</html>

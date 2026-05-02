@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- 学完你会有什么 · stats · 成果卡片 -->
+<html lang="zh">
+<head><meta charset="UTF-8">
+<link rel="stylesheet" href="../themes/dark-teal.css">
+<style>
+p, h1, h2, h3, h4, h5, h6, ul, ol { margin: 0; padding: 0; }
+ul, ol { list-style: none; }
+html { background: var(--bg); }
+body {
+  width: var(--slide-w); height: var(--slide-h); margin: 0; padding: 0;
+  font-family: var(--font-sans); color: var(--fg); background: var(--bg);
+}
+.slide {
+  width: var(--slide-w); height: var(--slide-h);
+  padding: 36pt 48pt 36pt 48pt; box-sizing: border-box;
+  display: flex; flex-direction: column;
+}
+.eyebrow { font-weight: var(--fw-light); font-size: var(--fs-label); letter-spacing: 3pt; color: var(--accent); margin: 0 0 6pt 0; }
+.title { font-size: 28pt; font-weight: var(--fw-bold); color: #FFFFFF; margin: 0 0 16pt 0; line-height: 1.2; }
+.title .accent { color: var(--accent); }
+.grid { display: flex; flex-direction: row; gap: 14pt; flex: 1; }
+.cell { flex: 1; padding: 14pt; box-sizing: border-box; background: var(--panel); display: flex; flex-direction: column; }
+.num { font-size: 36pt; font-weight: var(--fw-bold); color: var(--accent); line-height: 1; margin: 0 0 6pt 0; }
+.cell-title { font-size: 13pt; font-weight: var(--fw-bold); color: #FFFFFF; margin: 0 0 8pt 0; line-height: 1.3; }
+.cell-list { list-style: none; padding: 0; margin: 0; }
+.cell-list li { font-size: 9pt; color: var(--fg); margin: 0 0 3pt 0; padding-left: 10pt; position: relative; line-height: 1.4; }
+.cell-list li::before { content: '·'; position: absolute; left: 0; color: var(--accent); }
+.source { font-size: var(--fs-source); color: var(--faint); letter-spacing: 1pt; margin: 10pt 0 0 0; }
+</style></head>
+<body>
+<div class="slide">
+  <p class="eyebrow">CHAPTER 6 · WHAT YOU GET</p>
+  <h1 class="title">学完 s01–s12，你会有<span class="accent">什么</span></h1>
+  <div class="grid">
+    <div class="cell">
+      <p class="num">~1k</p>
+      <p class="cell-title">行可运行 Python</p>
+      <ul class="cell-list">
+        <li>完整 agent loop</li>
+        <li>4 个基础工具</li>
+        <li>权限沙箱</li>
+      </ul>
+    </div>
+    <div class="cell">
+      <p class="num">12</p>
+      <p class="cell-title">个独立可拆机制</p>
+      <ul class="cell-list">
+        <li>规划工具</li>
+        <li>子 agent 隔离</li>
+        <li>三层上下文压缩</li>
+      </ul>
+    </div>
+    <div class="cell">
+      <p class="num">1:1</p>
+      <p class="cell-title">映射生产源码</p>
+      <ul class="cell-list">
+        <li>任务 DAG</li>
+        <li>多 agent 团队</li>
+        <li>Worktree 并行</li>
+      </ul>
+    </div>
+  </div>
+  <p class="source">learn-claude-code · cc-haha</p>
+</div>
+</body>
+</html>
