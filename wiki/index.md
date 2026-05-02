@@ -1,6 +1,6 @@
 ># 知识库索引
 
->- 35 个概念 · 27 个实体 · 29 个源摘要 — 共 91 页 | 更新于 2026-05-01
+>- 35 个概念 · 27 个实体 · 30 个源摘要 — 共 92 页 | 更新于 2026-05-02
 
 ---
 
@@ -131,6 +131,7 @@
 - [[sources/morning-briefs/2026-04-28|晨报 2026-04-28]] — Microsoft 与 OpenAI 结束独家合作 / 4TB 语音样本被盗 / mattpocock/skills (2026-04-28)
 - [[sources/morning-briefs/2026-04-29|晨报 2026-04-29]] — Ghostty 离开 GitHub（2395分）/ Rust 安全性 / Codex skills (2026-04-29)
 - [[sources/morning-briefs/2026-04-30|晨报 2026-04-30]] — Zed 1.0 发布 / Copy Fail / OpenAI goblin 数据 / Zig 反 AI 政策 (2026-04-30)
+- [[sources/morning-briefs/2026-05-02|晨报 2026-05-02]] — Ask.com 关闭 / 梦境学习研究 / K3k (Kubernetes in Kubernetes) / OpenClaw 367K (2026-05-02)
 
 ---
 

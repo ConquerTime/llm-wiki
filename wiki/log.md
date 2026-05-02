@@ -14,6 +14,28 @@
 
 ---
 
+## [2026-05-02] lint | 0 orphans, 0 actionable broken-links, 0 missing-from-index, 5 large-pages
+- 类型：lint
+- 断链（0 可操作，均为历史条目）：
+  - index.md → [[projects/2026-04-kaigao/README]]（跨目录，可接受）
+  - log.md → [[raw/articles/...]]（历史条目，不操作）
+  - log.md → [[programming/X]]（历史条目，不操作）
+  - log.md → [[concepts/programming/X]]（历史条目，不操作）
+- 孤儿页：0（正常）
+- 未收录 index：0
+- 过期页（>90天）：0
+- 大页面（>200行）：log.md(684), canary-deployment(333), react-page-state-antipatterns(330), message-queue(278), read-after-write(213)
+
+## [2026-05-02] ingest | 晨报 2026-05-02
+- 类型：ingest
+- 来源：raw/morning-briefs/2026-05-02.md（晨报 2026-05-02）
+- 新增页面：
+  - wiki/sources/morning-briefs/2026-05-02.md（源摘要）
+- 更新页面：
+  - wiki/index.md（+1 源摘要，页数统计更新至 92 页）
+
+---
+
 ## [2026-05-01] lint | 0 orphans, 0 actionable broken-links, 0 missing-from-index, 5 large-pages
 - 类型：lint
 - 断链（0 可操作，均为历史条目）：
