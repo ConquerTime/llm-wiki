@@ -1,6 +1,6 @@
 ># 知识库索引
 
->- 35 个概念 · 27 个实体 · 30 个源摘要 — 共 92 页 | 更新于 2026-05-02
+>- 37 个概念 · 34 个实体 · 31 个源摘要 — 共 100 页 | 更新于 2026-05-03
 
 ---
 
@@ -26,6 +26,8 @@
 - [[autonomous-research|自主 ML 研究]] — AI agent 无人值守自主运行 ML 实验的范式（autoresearch）
 - [[context-engineering|Context Engineering（上下文工程）]] — 主动管理 LLM 上下文窗口，通过 Task() + worktree 隔离解决 context rot
 - [[agent-harness|Agent Harness（控制框架）]] — Agent 的 harness 与 memory 不可分割，闭源 harness 造成供应商锁定
+- [[multi-agent|Multi-Agent 系统]] — 多 Agent 协作完成复杂任务，TradingAgents/ruflo 等框架持续涌现
+- [[coding-agent|Coding Agent]] — 自主执行编程任务的 AI Agent，jcode/browserbase-skills 等工具兴起
 
 ### 编程
 - [[karpathy-guidelines|Karpathy Guidelines]] — LLM 编程行为四准则：思考→简单→精准→验证
@@ -90,8 +92,18 @@
 - [[mattpocock-skills|mattpocock/skills]] — Claude Code Skills 实操指南，GitHub Trending
 - [[posthog|PostHog]] — 开源产品分析平台，Analytics/Session Replay/Feature Flags
 - [[roo-code|Roo-Code]] — VS Code AI 多智能体开发团队，AI 代理编辑器内协同
+- [[vscode|VS Code Copilot Issue]] — Copilot 强制在未使用时插入 Co-Authored-by 署名，引发社区争议
+- [[tradingagents|TradingAgents]] — 多智能体 LLM 金融交易框架，GitHub Trending
+- [[ruflo|ruflo]] — Claude 编排平台，支持 multi-agent swarms，GitHub Trending
+- [[browserbase-skills|browserbase/skills]] — Claude Agent SDK with web browsing tool，GitHub Trending
+- [[dav2d|Dav2d]] — VideoLAN VapourSynth 解码器，HN 451分热门
 
 ---
+
+## 组织
+
+- [[organizations/ladybird|Ladybird]] — 独立浏览器项目，2026年4月月度更新发布
+- [[organizations/ibm|IBM]] — 发布 Granite 4.1 系列 AI 模型
 
 ## 源摘要
 
@@ -131,7 +143,8 @@
 - [[sources/morning-briefs/2026-04-28|晨报 2026-04-28]] — Microsoft 与 OpenAI 结束独家合作 / 4TB 语音样本被盗 / mattpocock/skills (2026-04-28)
 - [[sources/morning-briefs/2026-04-29|晨报 2026-04-29]] — Ghostty 离开 GitHub（2395分）/ Rust 安全性 / Codex skills (2026-04-29)
 - [[sources/morning-briefs/2026-04-30|晨报 2026-04-30]] — Zed 1.0 发布 / Copy Fail / OpenAI goblin 数据 / Zig 反 AI 政策 (2026-04-30)
-- [[sources/morning-briefs/2026-05-02|晨报 2026-05-02]] — Ask.com 关闭 / 梦境学习研究 / K3k (Kubernetes in Kubernetes) / OpenClaw 367K (2026-05-02)
+- [[sources/morning-briefs/2026-05-02|晨报 2026-05-02]] — Ask.com 关闭 / 梦境学习研究 / K3k / OpenClaw 367K (2026-05-02)
+- [[sources/morning-briefs/2026-05-03|晨报 2026-05-03]] — VS Code Copilot 强制署名争议 / 多智能体框架 TradingAgents/ruflo 热门 / IBM Granite 4.1 (2026-05-03)
 
 ---
 

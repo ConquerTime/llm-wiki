@@ -704,3 +704,32 @@
   - concepts/programming/observer-pattern.md
 - 过期页（>90天）：0
 - 大页面（>200行）：log.md(643), canary-deployment(333), react-page-state-antipatterns(330), message-queue(278), read-after-write(213)
+
+## [2026-05-03] ingest | 晨报 2026-05-03
+- 类型：ingest
+- 来源：raw/morning-briefs/2026-05-03.md（晨报 2026-05-03）
+- 新增页面：
+  - wiki/sources/morning-briefs/2026-05-03.md（源摘要）
+  - wiki/entities/products/vscode.md（Copilot 强制署名争议）
+  - wiki/entities/products/tradingagents.md（多智能体金融交易框架）
+  - wiki/entities/products/ruflo.md（Claude 编排平台）
+  - wiki/entities/products/browserbase-skills.md（Claude Agent SDK）
+  - wiki/entities/products/dav2d.md（VapourSynth 解码器）
+  - wiki/entities/organizations/ladybird.md（独立浏览器项目）
+  - wiki/entities/organizations/ibm.md（Granite 4.1 模型）
+  - wiki/concepts/ai/multi-agent.md（多智能体系统）
+  - wiki/concepts/ai/coding-agent.md（Coding Agent）
+- 更新页面：
+  - wiki/index.md（+7 实体 + 2 概念 + 1 源摘要，页数统计更新至 100 页）
+
+## [2026-05-03] lint | 0 orphans, 0 actionable broken-links, 0 missing-from-index, 4 large-pages
+- 类型：lint
+- 断链（0 可操作，均为历史条目）：
+  - index.md → [[projects/2026-04-kaigao/README]]（跨目录，可接受）
+  - log.md → [[raw/articles/...]]（历史条目，不操作）
+  - log.md → [[programming/X]]（历史条目，不操作）
+  - log.md → [[concepts/programming/X]]（历史条目，不操作）
+- 孤儿页：0（正常）
+- 未收录 index：0
+- 过期页（>90天）：0
+- 大页面（>200行）：canary-deployment(333), react-page-state-antipatterns(330), message-queue(278), read-after-write(213)
