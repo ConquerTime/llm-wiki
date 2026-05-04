@@ -6,7 +6,7 @@ tags: [tool]
 created: 2026-05-03
 updated: 2026-05-03
 sources:
-  - "[[raw/morning-briefs/2026-05-03.md|晨报 2026-05-03]]"
+  - "../../../raw/morning-briefs/2026-05-03.md"
 ---
 
 # Ladybird

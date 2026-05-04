@@ -4,10 +4,11 @@ type: entity
 subtype: product
 tags: [tool, ai, open-source, github-trending]
 created: 2026-04-15
-updated: 2026-04-20
+updated: 2026-05-04
 sources:
   - ../../raw/morning-briefs/2026-04-15.md
   - ../../raw/morning-briefs/2026-04-20.md
+  - ../../raw/morning-briefs/2026-05-04.md
 ---
 
 # MemPalace
@@ -17,7 +18,7 @@ sources:
 ## 基本信息
 
 - **GitHub**: MemPalace/mempalace
-- **Stars**: 48,000+ (2026-04-20)，较 2026-04-15 的 46,487 增长至 48K
+- **Stars**: 51,000+ (2026-05-04)，较 2026-04-20 的 48K 增长至 51K
 - **定位**: AI 记忆系统，为 AI Agent 提供持久化记忆能力
 - **特点**: Best-benchmarked open-source AI memory system，开源免费
 

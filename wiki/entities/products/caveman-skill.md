@@ -4,7 +4,7 @@ type: entity
 subtype: product
 tags: [tool, claude-code, ai-skill, open-source, github-trending]
 created: 2026-04-20
-updated: 2026-04-20
+updated: 2026-05-04
 sources:
   - ../../raw/morning-briefs/2026-04-20.md
 ---
@@ -16,7 +16,7 @@ sources:
 ## 基本信息
 
 - **GitHub**: JuliusBrussee/caveman
-- **Stars**: 39,000+ (2026-04-20)
+- **Stars**: 53,000+ (2026-05-04)，较 2026-04-20 的 39K 增长至 53K
 - **定位**: Claude Code 技能，通过" caveman 风格"语言大幅削减 token 消耗
 - **核心创新**: 用原始人语言风格重写 prompt，减少 65% token 用量
 

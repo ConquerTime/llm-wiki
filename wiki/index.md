@@ -1,6 +1,6 @@
 ># 知识库索引
 
->- 37 个概念 · 34 个实体 · 31 个源摘要 — 共 100 页 | 更新于 2026-05-03
+>- 37 个概念 · 37 个实体 · 32 个源摘要 — 共 108 页 | 更新于 2026-05-04
 
 ---
 
@@ -97,6 +97,8 @@
 - [[ruflo|ruflo]] — Claude 编排平台，支持 multi-agent swarms，GitHub Trending
 - [[browserbase-skills|browserbase/skills]] — Claude Agent SDK with web browsing tool，GitHub Trending
 - [[dav2d|Dav2d]] — VideoLAN VapourSynth 解码器，HN 451分热门
+- [[deepclaude|DeepClaude]] — Claude Code agent loop + DeepSeek V4 Pro，HN 408分
+- [[open-design|open-design]] — 开源 Claude Design 替代，71 个设计系统
 
 ---
 
@@ -104,6 +106,7 @@
 
 - [[organizations/ladybird|Ladybird]] — 独立浏览器项目，2026年4月月度更新发布
 - [[organizations/ibm|IBM]] — 发布 Granite 4.1 系列 AI 模型
+- [[organizations/videolan|VideoLAN]] — VLC 播放器及 Dav2d 解码器的开源组织
 
 ## 源摘要
 
@@ -145,6 +148,7 @@
 - [[sources/morning-briefs/2026-04-30|晨报 2026-04-30]] — Zed 1.0 发布 / Copy Fail / OpenAI goblin 数据 / Zig 反 AI 政策 (2026-04-30)
 - [[sources/morning-briefs/2026-05-02|晨报 2026-05-02]] — Ask.com 关闭 / 梦境学习研究 / K3k / OpenClaw 367K (2026-05-02)
 - [[sources/morning-briefs/2026-05-03|晨报 2026-05-03]] — VS Code Copilot 强制署名争议 / 多智能体框架 TradingAgents/ruflo 热门 / IBM Granite 4.1 (2026-05-03)
+- [[sources/morning-briefs/2026-05-04|晨报 2026-05-04]] — DeepClaude / BYOMesh / open-design 开源 Claude Design 替代 (2026-05-04)
 
 ---
 

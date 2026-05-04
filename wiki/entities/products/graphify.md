@@ -4,10 +4,11 @@ type: entity
 subtype: product
 tags: [tool, ai-skill, github-trending]
 created: 2026-04-15
-updated: 2026-04-20
+updated: 2026-05-04
 sources:
   - ../../raw/morning-briefs/2026-04-15.md
   - ../../raw/morning-briefs/2026-04-20.md
+  - ../../raw/morning-briefs/2026-05-04.md
 ---
 
 # graphify
@@ -17,7 +18,7 @@ sources:
 ## 基本信息
 
 - **GitHub**: safishamsi/graphify
-- **Stars**: 31,000+ (2026-04-20)，较早期的 27,227 增长
+- **Stars**: 42,000+ (2026-05-04)，较 2026-04-20 的 31K 增长至 42K
 - **定位**: AI Coding 助手技能
 - **功能**: 将任意文件夹（代码、文档、论文、图片、视频）转换为可查询的知识图谱
 - **特点**: 与 [[llm-wiki]] 解决类似问题的不同路径——graphify 用图结构，Wiki 用双向链接

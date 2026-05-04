@@ -6,7 +6,7 @@ tags: [ai]
 created: 2026-05-03
 updated: 2026-05-03
 sources:
-  - "[[raw/morning-briefs/2026-05-03.md|晨报 2026-05-03]]"
+  - "../../../raw/morning-briefs/2026-05-03.md"
 ---
 
 # IBM
@@ -25,4 +25,4 @@ sources:
 
 ## 相关条目
 
-- [[concepts/ai/llm|LLM]] — Granite 4.1 属于 IBM 的 LLM 产品线
+- [[concepts/ai/ai-agent|AI Agent]] — Granite 4.1 属于 IBM 的 AI 模型产品线

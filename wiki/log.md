@@ -733,3 +733,34 @@
 - 未收录 index：0
 - 过期页（>90天）：0
 - 大页面（>200行）：canary-deployment(333), react-page-state-antipatterns(330), message-queue(278), read-after-write(213)
+
+## [2026-05-04] ingest | 晨报 2026-05-04
+- 类型：ingest
+- 来源：raw/morning-briefs/2026-05-04.md（晨报 2026-05-04）
+- 新增页面：
+  - wiki/sources/morning-briefs/2026-05-04.md（源摘要）
+  - wiki/entities/products/deepclaude.md（Claude Code + DeepSeek V4 Pro）
+  - wiki/entities/products/open-design.md（开源 Claude Design 替代）
+  - wiki/entities/organizations/videolan.md（VideoLAN 组织）
+- 更新页面：
+  - wiki/entities/products/caveman-skill.md（53k stars）
+  - wiki/entities/products/mempalace.md（51k stars）
+  - wiki/entities/products/graphify.md（42k stars）
+  - wiki/index.md（+2 实体 + 1 源摘要，页数更新至 108 页）
+- 断链修复：
+  - 修复 2025-05-03 错误日期引用 → 2026-05-03
+  - 修复 frontmatter sources 路径格式（wikilink → 相对路径）
+  - 修复 concepts/ai/multi-agent-systems → concepts/ai/multi-agent
+  - 修复 entities/organizations/videolan 缺失页面
+
+## [2026-05-04] lint | 0 orphans, 0 actionable broken-links, 0 missing-from-index, 5 large-pages
+- 类型：lint
+- 断链（0 可操作，均为历史条目）：
+  - index.md → [[projects/2026-04-kaigao/README]]（跨目录，可接受）
+  - log.md → [[raw/articles/...]]（历史条目，不操作）
+  - log.md → [[programming/X]]（历史条目，不操作）
+  - log.md → [[concepts/programming/X]]（历史条目，不操作）
+- 孤儿页：0（正常）
+- 未收录 index：0
+- 过期页（>90天）：0
+- 大页面（>200行）：canary-deployment(333), react-page-state-antipatterns(330), message-queue(278), read-after-write(213), log.md(735)
