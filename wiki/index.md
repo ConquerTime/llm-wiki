@@ -1,6 +1,6 @@
 ># 知识库索引
 
->- 37 个概念 · 37 个实体 · 32 个源摘要 — 共 108 页 | 更新于 2026-05-04
+>- 37 个概念 · 37 个实体 · 33 个源摘要 — 共 109 页 | 更新于 2026-05-05
 
 ---
 
@@ -149,6 +149,7 @@
 - [[sources/morning-briefs/2026-05-02|晨报 2026-05-02]] — Ask.com 关闭 / 梦境学习研究 / K3k / OpenClaw 367K (2026-05-02)
 - [[sources/morning-briefs/2026-05-03|晨报 2026-05-03]] — VS Code Copilot 强制署名争议 / 多智能体框架 TradingAgents/ruflo 热门 / IBM Granite 4.1 (2026-05-03)
 - [[sources/morning-briefs/2026-05-04|晨报 2026-05-04]] — DeepClaude / BYOMesh / open-design 开源 Claude Design 替代 (2026-05-04)
+- [[sources/morning-briefs/2026-05-05|晨报 2026-05-05]] — Bun 从 Zig 迁移 Rust / ruflo 多智能体编排 / OpenAI 低延迟语音 AI (2026-05-05)
 
 ---
 

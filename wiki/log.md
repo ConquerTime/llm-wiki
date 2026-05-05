@@ -764,3 +764,21 @@
 - 未收录 index：0
 - 过期页（>90天）：0
 - 大页面（>200行）：canary-deployment(333), react-page-state-antipatterns(330), message-queue(278), read-after-write(213), log.md(735)
+
+## [2026-05-05] ingest | 晨报 2026-05-05
+- 类型：ingest
+- 来源：raw/morning-briefs/2026-05-05.md（晨报 2026-05-05）
+- 新增页面：
+  - wiki/sources/morning-briefs/2026-05-05.md（源摘要）
+- 更新页面：
+  - wiki/index.md（+1 源摘要，页数更新至 109 页）
+
+## [2026-05-05] lint | 0 orphans, 0 actionable broken-links, 0 missing-from-index, 5 large-pages
+- 类型：lint
+- 断链（0 可操作，均为历史条目/跨目录）：
+  - index.md → [[projects/2026-04-kaigao/README]]（跨目录，可接受）
+  - log.md → [[projects/2026-04-kaigao/README]]（历史条目，不操作）
+- 孤儿页：0（正常）
+- 未收录 index：0
+- 过期页（>90天）：0
+- 大页面（>200行）：canary-deployment(333), react-page-state-antipatterns(330), message-queue(278), read-after-write(213), log.md(766)
