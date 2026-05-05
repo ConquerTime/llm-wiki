@@ -4,10 +4,11 @@ type: concept
 subtype: ai
 tags: [ai, ai-skill]
 created: 2026-04-15
-updated: 2026-04-20
+updated: 2026-05-05
 sources:
   - "[[raw/morning-briefs/2026-04-15.md|晨报 2026-04-15]]"
   - "[[raw/morning-briefs/2026-04-20.md|晨报 2026-04-20]]"
+  - "[[raw/articles/greentrain-skills-readme.md|Green Train Skills README]]"
 ---
 
 # AI Skills 生态
@@ -42,6 +43,7 @@ AI Skills 是将特定能力/知识封装为可复用 AI 助手技能的趋势�
 | [[andrej-karpathy-skills]] | Claude Code 行为改进配置 | GitHub Trending |
 | [[superpowers]] | Agentic 技能框架 | GitHub Trending |
 | [[mattpocock-skills|mattpocock/skills]] | Agent Skills 目录开源 | GitHub Trending |
+| [[greentrain-skills]] | 媒体处理/文件管理/PPT 方法论三大插件 | 2026-05 |
 
 ## 与相关概念的关系
 
@@ -60,3 +62,4 @@ AI Skills 是将特定能力/知识封装为可复用 AI 助手技能的趋势�
 
 - [[../../raw/morning-briefs/2026-04-15.md|晨报 2026-04-15]]
 - [[../../raw/morning-briefs/2026-04-20.md|晨报 2026-04-20]]
+- [[../../raw/articles/greentrain-skills-readme.md|Green Train Skills README]]
