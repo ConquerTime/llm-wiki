@@ -21,13 +21,6 @@ Thumbs.db
 # Logs
 *.log
 
-# Obsidian Vault
-.obsidian/
-# Exception: keep core config files
-!.obsidian/app.json
-!.obsidian/community-plugins.json
-!.obsidian/hotkeys.json
-!.obsidian/.gitignore
 
 # Claudian
 .claudian/

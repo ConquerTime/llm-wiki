@@ -1,0 +1,16 @@
+{
+  "cssTheme": "Blue Topaz",
+  "accentColor": "#9a72f8",
+  "theme": "moonstone",
+  "translucency": false,
+  "enabledCssSnippets": [
+    "tag-pills",
+    "outliner-for-the-outline-and-file-explorer",
+    "smaller-scrollbar",
+    "custom-icons-for-frontmatter-tags",
+    "custom-icons-for-specific-folders",
+    "image-cards",
+    "enlarge-image-on-hover",
+    "media-grid"
+  ]
+}
