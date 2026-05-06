@@ -782,3 +782,35 @@
 - 未收录 index：0
 - 过期页（>90天）：0
 - 大页面（>200行）：canary-deployment(333), react-page-state-antipatterns(330), message-queue(278), read-after-write(213), log.md(766)
+
+---
+
+## [2026-05-06] ingest | 晨报 + 3 文章源摘要
+- 类型：ingest
+- 来源：
+  - raw/morning-briefs/2026-05-06.md（晨报 2026-05-06）
+  - raw/articles/Context, Not Control.md（VM0 AI Agent 设计哲学）
+  - raw/articles/Design-as-code how we rebuilt our entire platform in 12 days.md（VM0 设计-工程协作）
+- 新增页面：
+  - wiki/sources/morning-briefs/2026-05-06.md（源摘要）
+  - wiki/sources/articles/context-not-control.md（源摘要）
+  - wiki/sources/articles/design-as-code.md（源摘要）
+- 更新页面：
+  - wiki/sources/articles/observer-pattern.md（修复 sources wikilink 路径）
+  - wiki/sources/articles/greentrain-skills-readme.md（修复 sources wikilink 路径）
+  - wiki/entities/products/greentrain-skills.md（修复 sources wikilink 路径）
+  - wiki/index.md（+3 源摘要，页数更新至 112 页）
+
+## [2026-05-06] lint | 0 orphans, 0 actionable broken-links, 0 missing-from-index, 5 large-pages
+- 类型：lint
+- 断链（0 可操作，均为历史条目/跨目录）：
+  - index.md → [[projects/2026-04-kaigao/README]]（跨目录，可接受）
+  - log.md → [[projects/2026-04-kaigao/README]]（历史条目，不操作）
+  - log.md → [[raw/articles/...]]（历史条目，不操作）
+  - log.md → [[programming/X]]（历史条目，不操作）
+  - log.md → [[concepts/programming/X]]（历史条目，不操作）
+- 孤儿页：0（正常，3 个 wiki 页面预期无 inbound：local-ai-processing / synthesis 页）
+- 未收录 index：0
+- 过期页（>90天）：0
+- 大页面（>200行）：log.md(784), canary-deployment(333), react-page-state-antipatterns(330), backend-architecture-stack(306), message-queue(278)
+

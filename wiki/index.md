@@ -1,6 +1,6 @@
 ># 知识库索引
 
->- 37 个概念 · 37 个实体 · 33 个源摘要 — 共 109 页 | 更新于 2026-05-05
+>- 37 个概念 · 37 个实体 · 36 个源摘要 — 共 112 页 | 更新于 2026-05-06
 
 ---
 
@@ -120,6 +120,8 @@
 - [[sources/articles/react-query-vs-swr-server-state-source-compare|React Query vs SWR 源码对比]] — TanStack Query 与 SWR 缓存架构、订阅模型、去重、失效策略的深度源码对比 (2026-04)
 - [[sources/articles/get-shit-done-github|GSD（Get Shit Done）GitHub README]] — context engineering + spec-driven 开发系统，Wave 并行执行，上下文隔离原理 (2026-04)
 - [[sources/articles/bulletproof-react-github|Bulletproof React GitHub]] — Feature-based 架构 / 状态五分类 / 单向依赖 / 测试倒金字塔等 13 篇架构文档 (2026-04)
+- [[sources/articles/context-not-control|Context, Not Control — VM0]] — AI Agent 提示词应以"上下文"而非"规则"为核心，事实比观点更稳定 (2026-04)
+- [[sources/articles/design-as-code|Design-as-code — VM0]] — 设计师用 AI 直接输出 React 代码，12 天重建平台删除 26K 行遗留代码 (2026-04)
 - [[sources/articles/react-bits-github|React Bits GitHub]] — 7 个组件层经典反模式 + Pure Render Checks，Class 时代汇编但多数在 Hooks 时代仍适用 (2017)
 
 ### GitHub 仓库
@@ -150,6 +152,7 @@
 - [[sources/morning-briefs/2026-05-03|晨报 2026-05-03]] — VS Code Copilot 强制署名争议 / 多智能体框架 TradingAgents/ruflo 热门 / IBM Granite 4.1 (2026-05-03)
 - [[sources/morning-briefs/2026-05-04|晨报 2026-05-04]] — DeepClaude / BYOMesh / open-design 开源 Claude Design 替代 (2026-05-04)
 - [[sources/morning-briefs/2026-05-05|晨报 2026-05-05]] — Bun 从 Zig 迁移 Rust / ruflo 多智能体编排 / OpenAI 低延迟语音 AI (2026-05-05)
+- [[sources/morning-briefs/2026-05-06|晨报 2026-05-06]] — .de TLD DNSSEC 离线 / Gemma 4 多token预测 / Cloudflare Agents 自主部署 (2026-05-06)
 
 ---
 

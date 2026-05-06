@@ -8,7 +8,7 @@ tags:
 created: 2026-04-17
 updated: 2026-04-17
 sources:
-  - "[[观察者|观察者]]"
+  - "../../raw/articles/观察者.md"
 author: Refactoring.Guru
 url: https://refactoringguru.cn/design-patterns/observer
 date: 2025-01

@@ -6,7 +6,7 @@ tags: [tool, ai-skill]
 created: 2026-05-05
 updated: 2026-05-05
 sources:
-  - "[[raw/articles/greentrain-skills-readme.md|原文]]"
+  - "../../../raw/articles/greentrain-skills-readme.md"
 ---
 
 # greentrain-skills

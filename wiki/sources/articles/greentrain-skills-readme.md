@@ -9,7 +9,7 @@ author: crazynomad（绿皮火车）
 url: https://github.com/crazynomad/skills/blob/master/README.zh.md
 date: 2026-05
 sources:
-  - "[[raw/articles/greentrain-skills-readme.md|原文]]"
+  - "../../../raw/articles/greentrain-skills-readme.md"
 ---
 
 # Green Train Skills — README
@@ -45,10 +45,8 @@ sources:
 
 ## 提到的实体
 
-- [[wiki/entities/products/greentrain-skills|greentrain-skills]] — 本项目本身
-- [[wiki/entities/products/obsidian|Ollama]] — doc-mindmap 本地摘要依赖（Ollama 已在 wiki 中以工具形式出现）
+- [[../../entities/products/greentrain-skills|greentrain-skills]] — 本项目本身
 
 ## 提到的概念
 
-- [[wiki/concepts/ai/ai-skills|AI Skills 生态]] — 本资料是该生态的新成员案例
-- [[wiki/concepts/ai/local-ai-processing|本地 AI 处理]] — doc-mindmap + tts 均强调数据不离机的设计原则
+- [[../../concepts/ai/ai-skills|AI Skills 生态]] — 本资料是该生态的新成员案例
