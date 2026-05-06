@@ -253,7 +253,7 @@
               },
               "pinned": true,
               "icon": "terminal",
-              "title": "终端：✳ Claude Code"
+              "title": "终端：⠐ Claude Code"
             }
           },
           {
@@ -277,7 +277,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -302,7 +302,7 @@
       "claudian:Open Claudian": true
     }
   },
-  "active": "bfada7b2654a5d80",
+  "active": "74ff94a9904b7b8b",
   "lastOpenFiles": [
     "conflict-files-obsidian-git.md",
     "wiki/sources/morning-briefs/2026-05-04.md",
