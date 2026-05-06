@@ -8,7 +8,7 @@ trash/
 daily-notes/
 
 # Ignore plugins not in approved list
-plugins/
+
 
 # Cache
 cache/

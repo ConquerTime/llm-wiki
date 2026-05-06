@@ -12,48 +12,14 @@
             "type": "leaf",
             "pinned": true,
             "state": {
-              "type": "kanban",
-              "state": {
-                "file": "看板 - 开稿.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false,
-                    false
-                  ]
-                }
-              },
+              "type": "empty",
+              "state": {},
               "pinned": true,
-              "icon": "lucide-trello",
-              "title": "看板 - 开稿"
-            }
-          },
-          {
-            "id": "3d5249d200e932c8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "projects/2026-04-code-agent/notes/01-harness-philosophy.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
               "icon": "lucide-file",
-              "title": "01-harness-philosophy"
+              "title": "新标签页"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -217,7 +183,6 @@
           {
             "id": "74ff94a9904b7b8b",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "terminal:terminal",
               "state": {
@@ -251,9 +216,8 @@
                   "serial": null
                 }
               },
-              "pinned": true,
               "icon": "terminal",
-              "title": "终端：⠐ Claude Code"
+              "title": "终端：✳ Claude Code"
             }
           },
           {
@@ -304,45 +268,45 @@
   },
   "active": "74ff94a9904b7b8b",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "wiki/sources/morning-briefs/2026-05-04.md",
-    "wiki/sources/morning-briefs/2026-05-03.md",
-    "wiki/sources/morning-briefs/2026-05-02.md",
-    "wiki/sources/morning-briefs/2026-04-30.md",
-    "wiki/sources/morning-briefs/2026-04-29.md",
-    "wiki/sources/morning-briefs/2026-04-28.md",
-    "wiki/sources/articles/your-harness-your-memory.md",
-    "wiki/sources/articles/kaigao-ecs-deployment.md",
-    "wiki/entities/products/vscode.md",
-    "wiki/entities/products/tradingagents.md",
-    "wiki/entities/products/ruflo.md",
-    "wiki/entities/products/open-design.md",
-    "wiki/entities/products/deepclaude.md",
-    "wiki/entities/products/dav2d.md",
-    "wiki/entities/products/browserbase-skills.md",
-    "wiki/entities/organizations/videolan.md",
-    "wiki/entities/organizations/ladybird.md",
-    "wiki/entities/organizations/ibm.md",
-    "wiki/entities/organizations",
-    "wiki/concepts/programming/web-worker-pattern.md",
-    "wiki/concepts/ai/coding-agent.md",
-    "wiki/concepts/ai/agent-harness.md",
-    "raw/morning-briefs/2026-05-05.md",
-    "raw/morning-briefs/2026-05-04.md",
-    "raw/morning-briefs/2026-05-03.md",
-    "raw/morning-briefs/2026-05-02.md",
+    "wiki/sources/articles/greentrain-skills-readme.md",
+    "wiki/entities/products/greentrain-skills.md",
+    "wiki/concepts/ai/local-ai-processing.md",
+    "raw/articles/greentrain-skills-readme.md",
+    "projects/2026-05-lehe-scrm/notes/api-research-2026-05-04.md",
+    "projects/2026-05-lehe-scrm/deliverables/README.md",
+    "projects/2026-05-lehe-scrm/notes/README.md",
+    "projects/2026-05-lehe-scrm/raw/README.md",
+    "projects/2026-05-lehe-scrm/retro.md",
     "projects/2026-05-lehe-scrm/raw",
     "projects/2026-05-lehe-scrm/notes",
+    "projects/2026-05-lehe-scrm/log.md",
     "projects/2026-05-lehe-scrm/deliverables",
+    "projects/2026-05-lehe-scrm/brief.md",
+    "projects/2026-05-lehe-scrm/README.md",
     "projects/2026-05-lehe-scrm",
-    "\"raw/articles",
-    "\"raw",
-    "Reading/Articles",
-    "Reading",
-    "projects/未命名.base",
-    "未命名.canvas",
-    "raw/Pasted Image 20260501173442_819.png",
+    "看板 - 开稿.md",
+    "skills-lock.json",
+    "raw/articles/Design-as-code how we rebuilt our entire platform in 12 days.md",
+    "raw/articles/Context, Not Control.md",
     "raw/Pasted Image 20260501173510_308.png",
+    "raw/Pasted Image 20260501173442_819.png",
+    "projects/2026-05-ai-devflow/raw/README.md",
+    "projects/2026-05-ai-devflow/notes/README.md",
+    "projects/2026-05-ai-devflow/notes/06-sandbox-toolchain-feasibility.md",
+    "projects/2026-05-ai-devflow/notes/05-promotion-brief-structure.md",
+    "projects/2026-05-ai-devflow/notes/04-dual-space-sandbox.md",
+    "projects/2026-05-ai-devflow/notes/03-branch-ci-timing.md",
+    "projects/2026-05-ai-devflow/notes/02-fullstack-collab-framework.md",
+    "projects/2026-05-ai-devflow/notes/01-product-vs-designer-boundary.md",
+    "projects/2026-05-ai-devflow/deliverables/README.md",
+    "projects/2026-05-ai-devflow/retro.md",
+    "projects/2026-05-ai-devflow/raw",
+    "projects/2026-05-ai-devflow/notes",
+    "projects/2026-05-ai-devflow/log.md",
+    "projects/2026-05-ai-devflow/deliverables",
+    "projects/2026-05-ai-devflow",
+    "projects/2026-04-code-agent/raw/learn-claude-code",
+    "未命名.canvas",
     "projects/2026-04-code-agent/deliverables/claude-code-deck/node_modules/jszip/graph.svg",
     "projects/2026-04-code-agent/deliverables/claude-code-deck/node_modules/playwright-core/lib/vite/traceViewer/playwright-logo.svg",
     "projects/2026-04-code-agent/deliverables/claude-code-deck/node_modules/playwright-core/lib/vite/recorder/playwright-logo.svg",
