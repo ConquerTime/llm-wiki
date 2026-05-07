@@ -14,6 +14,28 @@
 
 ---
 
+## [2026-05-07] lint | 3 orphans, 0 actionable broken-links, 10 missing-from-index, 0 stale-pages
+- 类型：lint
+- 断链（0 可操作，均为历史条目或 wiki/ 前缀问题）：
+  - index.md → [[projects/2026-04-kaigao/README]]（跨目录，可接受）
+  - log.md → [[raw/articles/...]]（历史条目，不操作）
+  - synthesis/ → [[wiki/sources/...]]（历史 wiki/ 前缀问题，不操作）
+- 孤儿页：3（concepts/ai/local-ai-processing, synthesis/backend-architecture-stack, synthesis/react-architecture-stack）
+- 未收录 index：10（含 observer-pattern, validation-chain, config-driven-page, greentrain-skills, 2个synthesis页等）
+- 过期页（>90天）：0
+- 大页面（>200行）：log.md(816), canary-deployment(333), react-page-state-antipatterns(330), message-queue(278)
+
+## [2026-05-07] ingest | 晨报 2026-05-07
+- 类型：ingest
+- 来源：raw/morning-briefs/2026-05-07.md
+- 新增页面：
+  - wiki/sources/morning-briefs/2026-05-07.md（源摘要）
+  - wiki/entities/persons/simon-willison.md（Simon Willison — vibe coding 与 agentic engineering 趋势探讨）
+  - wiki/entities/products/ruflo.md（ruflo — Claude 编排平台）
+  - wiki/entities/products/deepseek-tui.md（DeepSeek-TUI — 终端 DeepSeek 编程助手）
+- 更新页面：
+  - wiki/index.md（+3 实体 +1 源摘要，统计更新至 116 页）
+
 ## [2026-05-02] lint | 0 orphans, 0 actionable broken-links, 0 missing-from-index, 5 large-pages
 - 类型：lint
 - 断链（0 可操作，均为历史条目）：

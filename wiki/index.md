@@ -1,6 +1,6 @@
 ># 知识库索引
 
->- 37 个概念 · 37 个实体 · 36 个源摘要 — 共 112 页 | 更新于 2026-05-06
+>- 37 个概念 · 40 个实体 · 37 个源摘要 — 共 116 页 | 更新于 2026-05-07
 
 ---
 
@@ -66,6 +66,7 @@
 - [[andrej-karpathy|Andrej Karpathy]] — AI 研究者，LLM Wiki 模式提出者
 - [[peter-steinberger|Peter Steinberger]] — OpenClaw 框架开发者
 - [[alan-alickovic|Alan Alickovic]] — Bulletproof React 作者，React 架构指南维护者
+- [[simon-willison|Simon Willison]] — AI 研究者，vibe coding 与 agentic engineering 融合趋势探讨者
 
 ### 产品
 - [[obsidian|Obsidian]] — 双向链接笔记工具，LLM Wiki 推荐的人类界面
@@ -98,6 +99,7 @@
 - [[browserbase-skills|browserbase/skills]] — Claude Agent SDK with web browsing tool，GitHub Trending
 - [[dav2d|Dav2d]] — VideoLAN VapourSynth 解码器，HN 451分热门
 - [[deepclaude|DeepClaude]] — Claude Code agent loop + DeepSeek V4 Pro，HN 408分
+- [[deepseek-tui|DeepSeek-TUI]] — 终端运行的 DeepSeek 编程助手，Rust 实现
 - [[open-design|open-design]] — 开源 Claude Design 替代，71 个设计系统
 
 ---
@@ -153,6 +155,7 @@
 - [[sources/morning-briefs/2026-05-04|晨报 2026-05-04]] — DeepClaude / BYOMesh / open-design 开源 Claude Design 替代 (2026-05-04)
 - [[sources/morning-briefs/2026-05-05|晨报 2026-05-05]] — Bun 从 Zig 迁移 Rust / ruflo 多智能体编排 / OpenAI 低延迟语音 AI (2026-05-05)
 - [[sources/morning-briefs/2026-05-06|晨报 2026-05-06]] — .de TLD DNSSEC 离线 / Gemma 4 多token预测 / Cloudflare Agents 自主部署 (2026-05-06)
+- [[sources/morning-briefs/2026-05-07|晨报 2026-05-07]] — Valve 开源 Steam Controller CAD / Simon Willison 谈 vibe coding 与 agentic engineering (2026-05-07)
 
 ---
 
