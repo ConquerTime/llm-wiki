@@ -38,4 +38,4 @@ build/
 # Node
 **/node_modules/
 
-./obsidian/workspace.json
+.obsidian/workspace.json
