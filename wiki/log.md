@@ -843,3 +843,15 @@
 - 目录：projects/2026-05-a-share-quant/
 - 目标：A 股量化策略研究与实盘开发，打通数据管道 + 可跑回测 + 首个策略
 - 外部关联：无（纯新起）
+
+## [2026-05-08] ingest | 晨报 2026-05-08
+- 类型：ingest
+- 来源：raw/morning-briefs/2026-05-08.md
+- 新增页面：
+  - wiki/sources/morning-briefs/2026-05-08.md（源摘要）
+  - wiki/entities/products/open-agents.md（open-agents — Vercel 开源云端 Agent 模板）
+  - wiki/entities/products/agent-skills.md（agent-skills — AI 编程 Agent 的生产级工程技能库）
+  - wiki/entities/products/canvas.md（Canvas — 遭 ShinyHunters 数据泄露威胁的学习管理系统）
+  - wiki/entities/organizations/cloudflare.md（Cloudflare — 2026年5月裁员约20%）
+- 更新页面：
+  - wiki/index.md（+5 实体 +1 源摘要，统计更新至 121 页）

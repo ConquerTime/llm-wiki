@@ -1,6 +1,6 @@
 ># 知识库索引
 
->- 37 个概念 · 40 个实体 · 37 个源摘要 — 共 116 页 | 更新于 2026-05-07
+>- 37 个概念 · 40 个实体 · 37 个源摘要 — 共 121 页 | 更新于 2026-05-08
 
 ---
 
@@ -30,6 +30,7 @@
 - [[multi-agent|Multi-Agent 系统]] — 多 Agent 协作完成复杂任务，TradingAgents/ruflo 等框架持续涌现
 - [[coding-agent|Coding Agent]] — 自主执行编程任务的 AI Agent，jcode/browserbase-skills 等工具兴起
 
+- [[concepts/ai/local-ai-processing|本地 AI 处理]]
 ### 编程
 - [[karpathy-guidelines|Karpathy Guidelines]] — LLM 编程行为四准则：思考→简单→精准→验证
 - [[message-queue|消息队列（BullMQ）]] — 异步任务队列、Outbox Pattern、幂等性、SELECT FOR UPDATE SKIP LOCKED
@@ -55,15 +56,21 @@
 - [[concepts/programming/react-classic-antipatterns|React 组件层经典反模式]] — 7 个组件层反模式与 Pure Render Checks
 - [[concepts/programming/feature-based-architecture|Feature-Based 架构]] — 按业务特性组织代码，单向依赖约束
 
+- [[concepts/programming/config-driven-page|配置驱动页面]]
+- [[concepts/programming/observer-pattern|观察者模式]]
+- [[concepts/programming/uniapp-multienv-build|UniApp 多环境构建]]
+- [[concepts/programming/validation-chain|验证链]]
 ### 安全
 - [[oauth-state-parameter|OAuth state 参数（微信网页授权）]] — OAuth2/微信回调透传参数，用于 CSRF 防护与短期上下文绑定
 - [[open-redirect|Open Redirect]] — URL 参数跳转目标未校验导致的重定向漏洞及防护方法
 
 ---
 
+- [[concepts/pkm/zettelkasten|Zettelkasten]]
 ## 实体
 
-### 人物
+#- [[entities/products/greentrain-skills|greentrain-skills]]
+## 人物
 - [[andrej-karpathy|Andrej Karpathy]] — AI 研究者，LLM Wiki 模式提出者
 - [[peter-steinberger|Peter Steinberger]] — OpenClaw 框架开发者
 - [[alan-alickovic|Alan Alickovic]] — Bulletproof React 作者，React 架构指南维护者
@@ -101,12 +108,17 @@
 - [[dav2d|Dav2d]] — VideoLAN VapourSynth 解码器，HN 451分热门
 - [[deepclaude|DeepClaude]] — Claude Code agent loop + DeepSeek V4 Pro，HN 408分
 - [[deepseek-tui|DeepSeek-TUI]] — 终端运行的 DeepSeek 编程助手，Rust 实现
+- [[agent-skills|agent-skills]] — AI 编程 Agent 的生产级工程技能库
+- [[open-agents|open-agents]] — Vercel 开源云端 Agent 构建模板
+- [[canvas|Canvas]] — 遭 ShinyHunters 数据泄露威胁的学习管理系统（LMS）
+- [[deepseek-tui|DeepSeek-TUI]] — 终端 DeepSeek 编程助手（Rust，晨报）
 - [[open-design|open-design]] — 开源 Claude Design 替代，71 个设计系统
 
 ---
 
 ## 组织
 
+- [[cloudflare|Cloudflare]] — 2026年5月宣布裁员约20%（1100+人）的互联网基础设施公司
 - [[organizations/ladybird|Ladybird]] — 独立浏览器项目，2026年4月月度更新发布
 - [[organizations/ibm|IBM]] — 发布 Granite 4.1 系列 AI 模型
 - [[organizations/videolan|VideoLAN]] — VLC 播放器及 Dav2d 解码器的开源组织
@@ -161,3 +173,6 @@
 ---
 
 *空类别（综合分析、问答存档）在有内容后自动出现。*
+- [[synthesis/backend-architecture-stack|后端架构栈]]
+- [[synthesis/frontend-ecommerce-antipatterns|前端电商反模式]]
+- [[synthesis/react-architecture-stack|React 架构栈]]
