@@ -312,7 +312,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
@@ -337,7 +337,7 @@
       "claudian:Open Claudian": true
     }
   },
-  "active": "bfada7b2654a5d80",
+  "active": "530284196c263e06",
   "lastOpenFiles": [
     "projects/2026-05-a-share-quant/brief.md",
     "projects/2026-05-a-share-quant/README.md",
