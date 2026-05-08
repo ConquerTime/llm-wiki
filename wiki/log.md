@@ -855,3 +855,17 @@
   - wiki/entities/organizations/cloudflare.md（Cloudflare — 2026年5月裁员约20%）
 - 更新页面：
   - wiki/index.md（+5 实体 +1 源摘要，统计更新至 121 页）
+
+## [2026-05-08] lint | 3 orphans, 0 actionable broken-links, 0 missing-from-index, 0 stale-pages
+- 类型：lint
+- 断链（0 可操作，均为历史条目/跨目录）：
+  - index.md → [[projects/2026-04-kaigao/README]]（跨目录，可接受）
+  - index.md → [[projects/2026-05-a-share-quant/README]]（跨目录，可接受）
+  - log.md → [[projects/2026-04-kaigao/README]]（历史条目，不操作）
+  - log.md → [[raw/articles/...]]（历史条目，不操作）
+  - log.md → [[programming/X]]（历史条目，不操作）
+  - log.md → [[concepts/programming/X]]（历史条目，不操作）
+- 孤儿页：3（concepts/ai/local-ai-processing / synthesis/backend-architecture-stack / synthesis/react-architecture-stack）
+- 未收录 index：0（已全部修复）
+- 过期页（>90天）：0
+- 大页面（>200行）：log.md(857), canary-deployment(333), react-page-state-antipatterns(330), message-queue(278), read-after-write(213)
