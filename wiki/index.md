@@ -9,6 +9,7 @@
 | 项目 | 目标 | 状态 | 启动 |
 |------|------|------|------|
 | [[projects/2026-04-kaigao/README|2026-04-kaigao]] | 开稿 KaiGao — AI 论文写作助手的知识与产出管理 | active | 2026-04-28 |
+| [[projects/2026-05-a-share-quant/README|2026-05-a-share-quant]] | A 股量化策略研究与实盘开发：数据管道 + 可跑回测 + 首个策略 | active | 2026-05-08 |
 
 ---
 

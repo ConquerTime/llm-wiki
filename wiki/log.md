@@ -836,3 +836,10 @@
 - 过期页（>90天）：0
 - 大页面（>200行）：log.md(784), canary-deployment(333), react-page-state-antipatterns(330), backend-architecture-stack(306), message-queue(278)
 
+---
+
+## [2026-05-08] project-start | A 股量化策略
+- 类型：project-start
+- 目录：projects/2026-05-a-share-quant/
+- 目标：A 股量化策略研究与实盘开发，打通数据管道 + 可跑回测 + 首个策略
+- 外部关联：无（纯新起）
