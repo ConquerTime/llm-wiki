@@ -1,0 +1,33 @@
+{
+  "args": {
+    "ts_code": "510300.SH",
+    "fast": 20,
+    "slow": 60,
+    "start": "20160101",
+    "end": null,
+    "cash": 1000000.0,
+    "adj": "none",
+    "benchmark": "000300.SH",
+    "benchmark_adj": "none",
+    "out": "data/hello_world_etf.json"
+  },
+  "metrics": {
+    "n_days": 2509,
+    "years": 9.96,
+    "cum_return": -0.0772694133499997,
+    "annual_return": -0.00804452281218615,
+    "annual_vol": 0.12872155772880456,
+    "sharpe": -0.21786966617721804,
+    "mdd": -0.41615310732458277,
+    "calmar": -0.019330680633153952,
+    "turnover_annual": 5.882493383205408,
+    "n_trades": 671,
+    "total_fee": 42573.813350000004,
+    "benchmark_annual_return": 0.03469737664208661,
+    "benchmark_mdd": -0.45602620484864703,
+    "excess_annual_return": -0.04274189945427276
+  },
+  "n_trades": 671,
+  "first_nav": 1.0,
+  "last_nav": 0.9227305866500003
+}

@@ -1,0 +1,109 @@
+# 存储赛道主题标的池 - M2-branch 策略专用
+# 定义：projects/2026-05-a-share-quant/notes/m2b-storage-strategy.md
+# 用途：本项目所有存储策略脚本统一从此加载池子，避免 hardcode
+
+universe: storage
+version: 1
+updated: 2026-05-08
+
+# 8 只标的 · 按角色分层
+stocks:
+  - ts_code: 688008.SH
+    name: 澜起科技
+    tier: core_growth        # 核心成长
+    role: ai_interface_chip  # AI 服务器接口芯片
+    elasticity: medium       # 弹性档
+    financial_health: 5      # 1-5 星
+    weight_aggressive: 0.05  # 配置 A 激进
+    weight_balanced:   0.20  # 配置 B 均衡
+    weight_defensive:  0.30  # 配置 C 防御
+
+  - ts_code: 000021.SZ
+    name: 深科技
+    tier: hbm_packaging
+    role: hbm_test_assembly
+    elasticity: medium
+    financial_health: 4
+    weight_aggressive: 0.00
+    weight_balanced:   0.15
+    weight_defensive:  0.20
+
+  - ts_code: 603986.SH
+    name: 兆易创新
+    tier: niche_dram
+    role: nor_flash_and_ddr3
+    elasticity: medium_high
+    financial_health: 4
+    weight_aggressive: 0.10
+    weight_balanced:   0.15
+    weight_defensive:  0.20
+
+  - ts_code: 300223.SZ
+    name: 北京君正
+    tier: automotive
+    role: issi_auto_storage
+    elasticity: medium_low
+    financial_health: 4
+    weight_aggressive: 0.00
+    weight_balanced:   0.10
+    weight_defensive:  0.10
+
+  - ts_code: 688110.SH
+    name: 东芯股份
+    tier: niche_nand
+    role: slc_nand_industrial
+    elasticity: high
+    financial_health: 3
+    weight_aggressive: 0.15
+    weight_balanced:   0.10
+    weight_defensive:  0.10
+
+  - ts_code: 001309.SZ
+    name: 德明利
+    tier: module_mainstream
+    role: consumer_ssd_with_enterprise
+    elasticity: very_high
+    financial_health: 2
+    weight_aggressive: 0.30
+    weight_balanced:   0.15
+    weight_defensive:  0.10
+
+  - ts_code: 301308.SZ
+    name: 江波龙
+    tier: module_mainstream
+    role: embedded_and_module
+    elasticity: very_high
+    financial_health: 2
+    weight_aggressive: 0.25
+    weight_balanced:   0.10
+    weight_defensive:  0.00
+
+  - ts_code: 688525.SH
+    name: 佰维存储
+    tier: module_mainstream
+    role: storage_module
+    elasticity: very_high
+    financial_health: 2
+    weight_aggressive: 0.15
+    weight_balanced:   0.05
+    weight_defensive:  0.00
+
+# 配置权重合计校验
+# aggressive:  5+0+10+0+15+30+25+15 = 100 ✓
+# balanced:   20+15+15+10+10+15+10+5 = 100 ✓
+# defensive:  30+20+20+10+10+10+0+0  = 100 ✓
+
+# 基准对照组
+benchmarks:
+  - name: universe_equal_weight
+    desc: 8 只等权持有（赛道 beta）
+  - name: current_holdings
+    desc: 德 70% + 江 30%（用户真实持仓）
+    stocks:
+      - ts_code: 001309.SZ
+        weight: 0.70
+      - ts_code: 301308.SZ
+        weight: 0.30
+  - name: csi300
+    ts_code: 000300.SH
+    desc: 沪深 300 市场 beta

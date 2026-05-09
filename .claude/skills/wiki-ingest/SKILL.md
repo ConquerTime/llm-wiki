@@ -34,8 +34,9 @@ description: >
   # 文件树
   gh api repos/{owner}/{repo}/git/trees/HEAD --jq '.tree[].path'
   ```
+  仓库落位到 `raw/repos/<repo-name>/`，保留相对目录结构，**只拉文本资产**（README / SKILL.md / plugin 定义 / 关键 markdown / 必要配置），不拉 `.git/`、`node_modules/`、图片 / 二进制。目录根下写一份 `_meta.md`，frontmatter 记录 `source_url` / `fetched_at` / `commit_sha`（详见项目根 CLAUDE.md §5 `raw/repos/` 快照规范）。
 - **网页 / 文章**：WebFetch 抓取时，prompt 明确要求"返回原文全文，不要摘要、不要翻译、保留原有标题层级"。
-- **写入位置**：根据类型放到 `raw/articles/`、`raw/papers/`、`raw/books/`。文件名用小写连字符。
+- **写入位置**：根据类型放到 `raw/articles/`、`raw/papers/`、`raw/books/`、`raw/repos/<repo-name>/`。文件名用小写连字符。
 
 输入已经是本地 `raw/` 文件时，跳过本步。
 
@@ -60,7 +61,9 @@ cat raw/<path>
 
 ### 步骤 3：创建源摘要页
 
-位置：`wiki/sources/<subtype>/<slug>.md`（subtype 如 `articles`、`papers`、`morning-briefs`）。
+位置：`wiki/sources/<subtype>/<slug>.md`（subtype 如 `articles`、`papers`、`books`、`repos`、`morning-briefs`）。
+
+**仓库类资料的特殊约定**：`sources/repos/<repo-name>.md` 的 `sources` 字段链到 `raw/repos/<repo-name>/` 下最核心的那份文件（通常是 README 或 SKILL.md），不必每个文件都链。如果仓库里有多份值得单独提炼的文档，可在同一源摘要页里列多个 wikilink。
 
 源摘要页是"冷冻的"——忠实提取原文，不做跨源综合。包含：
 
@@ -114,7 +117,7 @@ sources:
 
 ```markdown
 ## [YYYY-MM-DD] ingest | 文档标题
-- 类型：article | paper | book | morning-brief
+- 类型：article | paper | book | repo | morning-brief
 - 来源：raw/path/to/file.md
 - 新增页面：sources/..., entities/..., concepts/...
 - 备注：有冲突 / 新概念 / 跨引用等值得记下的一句话

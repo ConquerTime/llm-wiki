@@ -1,0 +1,29 @@
+{
+  "tag": "D",
+  "args": {
+    "which": "D",
+    "start": "20160101",
+    "end": null,
+    "mom_n": 20,
+    "cash": 1000000.0,
+    "top_k": 10,
+    "rebalance": 20
+  },
+  "metrics": {
+    "n_days": 2509,
+    "years": 9.96,
+    "cum_return": -0.3945241067500007,
+    "annual_return": -0.04914531164917979,
+    "annual_vol": 0.327393837009203,
+    "sharpe": -0.2111991853018178,
+    "mdd": -0.778952906602323,
+    "calmar": -0.06309150557450816,
+    "turnover_annual": 26.10388817400097,
+    "n_trades": 8915,
+    "total_fee": 109660.10675,
+    "benchmark_annual_return": 0.03469737664208661,
+    "benchmark_mdd": -0.45602620484864703,
+    "excess_annual_return": -0.0838426882912664
+  },
+  "n_trades": 8915
+}

@@ -71,3 +71,17 @@ def fetch_fina_indicator(ts_code: str, start_date: str, end_date: str) -> pd.Dat
     pro = _pro_api()
     df = pro.fina_indicator(ts_code=ts_code, start_date=start_date, end_date=end_date)
     return df
+
+
+def fetch_index_daily(ts_code: str, start_date: str, end_date: str) -> pd.DataFrame:
+    """指数日线（如 000300.SH 沪深 300）。返回列同 daily。"""
+    pro = _pro_api()
+    df = pro.index_daily(ts_code=ts_code, start_date=start_date, end_date=end_date)
+    return df
+
+
+def fetch_fund_daily(ts_code: str, start_date: str, end_date: str) -> pd.DataFrame:
+    """基金/ETF 日线（如 510300.SH 沪深 300 ETF）。"""
+    pro = _pro_api()
+    df = pro.fund_daily(ts_code=ts_code, start_date=start_date, end_date=end_date)
+    return df

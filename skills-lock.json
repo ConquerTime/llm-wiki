@@ -19,6 +19,12 @@
       "skillPath": "ppt-research-setup/SKILL.md",
       "computedHash": "2e7235aad04eec8fcec9de90836dc7316cf0bba751a6e4bf1f2919e451d35338"
     },
+    "tushare": {
+      "source": "waditu-tushare/skills",
+      "sourceType": "github",
+      "skillPath": "tushare/SKILL.md",
+      "computedHash": "419991537d57b8d11424aebf847af44f4f44ef3f304c759f310237d454c5b304"
+    },
     "visual-deck": {
       "source": "crazynomad/skills",
       "sourceType": "github",

@@ -14,6 +14,23 @@
 
 ---
 
+## [2026-05-09] update | 新增 practices/ 顶层目录 + quant-investing 种子
+- 类型：update（结构扩展）
+- CLAUDE.md：顶层四大 → 五大（加 `practices/`），新增 §8 Practices 规范（原 §8 Writing → §9，§9 Git → §10）
+- practices/ 承接"无终点的长期实践"，与 projects（有终点）明确分工
+- 新增 [[practices/quant-investing/README|practices/quant-investing]]：月度节奏，预热阶段，等 2026-05-a-share-quant project 交付后进入月度 review
+- wiki/index.md：新增「活跃 Practices」表格
+- 备注：目前只 1 个 practice；等积累到 2-3 个后视情况增补 journal 模板、review 模板
+
+## [2026-05-09] update | 新增 AI Toolkit curation 索引 + 结构规范更新
+- 类型：update（curation 索引 + CLAUDE.md 规范扩展）
+- CLAUDE.md：顶层目录扩为四大（加 `writing/`），`raw/` 新增 `repos/` 子目录并补快照规范，新增 §8 Writing 规范（原 §8 Git 顺延 §9）
+- wiki-ingest skill：步骤 0 / 3 / 7 加入 `repos` 类型支持
+- 新增 [[ai-toolkit|AI Toolkit]]：按使用场景分组的 AI 工具 curation 索引，覆盖 products/ 下 21 个 AI 类 entity
+- 新增 [[writing/ideas]]：选题池占位
+- index.md：活跃项目之后新增「Curation 索引」小节登记 ai-toolkit
+- 备注：现有 `wiki/sources/articles/*-github.md` 类历史页面不迁移（§3.3 不重构没坏的），新增 repo 资料按新规范走 `raw/repos/ + wiki/sources/repos/`
+
 ## [2026-05-07] lint | 3 orphans, 0 actionable broken-links, 10 missing-from-index, 0 stale-pages
 - 类型：lint
 - 断链（0 可操作，均为历史条目或 wiki/ 前缀问题）：
@@ -843,3 +860,17 @@
 - 目录：projects/2026-05-a-share-quant/
 - 目标：A 股量化策略研究与实盘开发，打通数据管道 + 可跑回测 + 首个策略
 - 外部关联：无（纯新起）
+
+## [2026-05-09] project-retro | 2026-05-a-share-quant (final)
+- 类型：project-retro (final)
+- 项目：projects/2026-05-a-share-quant/
+- 结果：策略不达 brief §六 验收线（H3 年化 4.35% / Sharpe 0.13），但产出完整 Spike 链方法论 + 可复用引擎；brief 里程碑 M1-M5 全部勾选
+- 回流页面：
+  - 综合：synthesis/quant-strategy-spike-methodology
+  - 概念：concepts/programming/backtest-engine-defense-checklist
+  - 实体：entities/products/quant-engine
+  - 实体：entities/products/tushare-pro
+  - 实体：entities/products/duckdb
+- 不回流：a-share-reversal-vs-momentum（需先 wiki-ingest 摄入 BigQuant/清华/申万/Zhihu 原文作为 sources 后才能建 concept）
+- index 活跃表格：已移除本项目；新增"已归档项目"章节并登记
+- README status：active → done

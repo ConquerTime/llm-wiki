@@ -1,0 +1,32 @@
+{
+  "tag": "G",
+  "args": {
+    "which": "G",
+    "top_industries": 10,
+    "top_per_industry": 1,
+    "atr_mult": 4.0,
+    "start": "20160101",
+    "end": null,
+    "mom_n": 20,
+    "cash": 1000000.0,
+    "top_k": 10,
+    "rebalance": 20
+  },
+  "metrics": {
+    "n_days": 2509,
+    "years": 9.96,
+    "cum_return": 0.51886179475,
+    "annual_return": 0.04287296070012636,
+    "annual_vol": 0.19823092006016602,
+    "sharpe": 0.11538543378189477,
+    "mdd": -0.45241738523115127,
+    "calmar": 0.0947641759571673,
+    "turnover_annual": 17.111207878694643,
+    "n_trades": 6498,
+    "total_fee": 216323.20525,
+    "benchmark_annual_return": 0.03469737664208661,
+    "benchmark_mdd": -0.45602620484864703,
+    "excess_annual_return": 0.008175584058039753
+  },
+  "n_trades": 6498
+}

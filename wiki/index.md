@@ -1,6 +1,6 @@
 ># 知识库索引
 
->- 37 个概念 · 40 个实体 · 37 个源摘要 — 共 116 页 | 更新于 2026-05-07
+>- 38 个概念 · 43 个实体 · 37 个源摘要 · 4 个综合 — 共 122 页 | 更新于 2026-05-09
 
 ---
 
@@ -9,7 +9,24 @@
 | 项目 | 目标 | 状态 | 启动 |
 |------|------|------|------|
 | [[projects/2026-04-kaigao/README|2026-04-kaigao]] | 开稿 KaiGao — AI 论文写作助手的知识与产出管理 | active | 2026-04-28 |
-| [[projects/2026-05-a-share-quant/README|2026-05-a-share-quant]] | A 股量化策略研究与实盘开发：数据管道 + 可跑回测 + 首个策略 | active | 2026-05-08 |
+
+## 已归档项目
+
+| 项目 | 目标 | 归档 | 结果 |
+|------|------|------|------|
+| [[projects/2026-05-a-share-quant/README|2026-05-a-share-quant]] | A 股量化策略研究 | 2026-05-09 | 策略不达验收线但产出方法论；引擎可跨 project 共享 |
+
+## 活跃 Practices
+
+| Practice | 领域 | 节奏 | 状态 |
+|----------|------|------|------|
+| [[practices/quant-investing/README|quant-investing]] | 量化投资实践，策略迭代与实盘追踪 | monthly | active（预热中，等 a-share-quant project 交付） |
+
+---
+
+## Curation 索引
+
+- [[ai-toolkit|AI Toolkit]] — 我收藏的 AI / Agent / Skill 工具，按使用场景分组
 
 ---
 
@@ -54,6 +71,7 @@
 - [[concepts/programming/react-page-state-antipatterns|React Page State 反模式]] — 跨组件传递 server state、用 localStorage 缓存等常见错误
 - [[concepts/programming/react-classic-antipatterns|React 组件层经典反模式]] — 7 个组件层反模式与 Pure Render Checks
 - [[concepts/programming/feature-based-architecture|Feature-Based 架构]] — 按业务特性组织代码，单向依赖约束
+- [[concepts/programming/backtest-engine-defense-checklist|回测引擎防御清单]] — T+1 / 停牌断点 / 复权跳变 / 前瞻偏差四条通用防御
 
 ### 安全
 - [[oauth-state-parameter|OAuth state 参数（微信网页授权）]] — OAuth2/微信回调透传参数，用于 CSRF 防护与短期上下文绑定
@@ -102,6 +120,9 @@
 - [[deepclaude|DeepClaude]] — Claude Code agent loop + DeepSeek V4 Pro，HN 408分
 - [[deepseek-tui|DeepSeek-TUI]] — 终端运行的 DeepSeek 编程助手，Rust 实现
 - [[open-design|open-design]] — 开源 Claude Design 替代，71 个设计系统
+- [[quant-engine|quant-engine]] — a-share-quant 自研 A 股回测引擎，`strategy(asof, bars, portfolio) -> weights` 五字协议
+- [[tushare-pro|Tushare Pro]] — 中文 A 股金融数据接口，按积分分级订阅
+- [[duckdb|DuckDB]] — 嵌入式列存 SQL 数据库，"SQLite for analytics"
 
 ---
 
@@ -160,4 +181,13 @@
 
 ---
 
-*空类别（综合分析、问答存档）在有内容后自动出现。*
+## 综合分析
+
+- [[synthesis/backend-architecture-stack|后端架构栈]] — 六层叠起来的后端架构栈
+- [[synthesis/frontend-ecommerce-antipatterns|前端电商反模式]] — 电商前端常见反模式整理
+- [[synthesis/react-architecture-stack|React 架构栈]] — Bulletproof React 架构整体视图
+- [[synthesis/quant-strategy-spike-methodology|量化策略 Spike 开发方法论]] — Spike 链 + 调研先行 + α/β/运气分层，含 7 条模式 + 5 个反直觉发现
+
+---
+
+*空类别（问答存档）在有内容后自动出现。*

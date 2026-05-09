@@ -67,17 +67,20 @@
 
 ## 5. 仓库结构
 
-顶层三大目录各有明确定位：
+顶层五大目录各有明确定位：
 
 - **`raw/`** — 原始资料（只读），LLM 绝不修改
 - **`wiki/`** — LLM 维护的知识库，博物馆（稳定知识）
-- **`projects/`** — 工作项目，车间（时间有边界的活跃工作）
+- **`projects/`** — 工作项目，车间（**有终点**的活跃工作）
+- **`practices/`** — 长期实践领域，道场（**无终点**的周期性承诺），详见 §8
+- **`writing/`** — 用户自己的创作（工作室），详见 §9
 
 ```
 raw/                          # 原始资料（只读）
 ├── articles/                 # 网络文章
 ├── papers/                   # 学术论文
-└── books/                    # 书籍摘录
+├── books/                    # 书籍摘录
+└── repos/                    # GitHub 仓库快照（skill / 工具 / 代码资料）
 
 wiki/                         # LLM 维护的知识库
 ├── index.md                 # 内容索引 + 活跃项目表格
@@ -85,7 +88,8 @@ wiki/                         # LLM 维护的知识库
 ├── sources/                 # 源摘要页：忠于原文的提取
 │   ├── articles/
 │   ├── papers/
-│   └── books/
+│   ├── books/
+│   └── repos/
 ├── concepts/                # 概念页：跨源的活知识
 │   ├── ai/
 │   ├── programming/
@@ -98,8 +102,20 @@ wiki/                         # LLM 维护的知识库
 ├── synthesis/               # 综合分析页：跨资料的主题分析
 └── questions/               # 优秀问答存档
 
-projects/                     # 工作项目沙盒
+projects/                     # 工作项目沙盒（有终点）
 └── YYYY-MM-short-name/      # 一个项目 = 一个目录
+
+practices/                    # 长期实践（无终点，详见 §8）
+└── <practice-name>/         # 无日期前缀
+    ├── README.md
+    ├── journal/             # 日 / 月 journal
+    ├── reviews/             # 周期复盘
+    └── resources/           # 本 practice 专属清单 / 模板
+
+writing/                      # 用户的独立创作（详见 §9）
+├── drafts/
+├── published/
+└── ideas.md
 ```
 
 ### 空目录规则
@@ -109,7 +125,26 @@ projects/                     # 工作项目沙盒
 
 ### 边界约束
 
-顶层 `raw/` 只收**通用性公共资料**（文章、论文、书籍）。项目专属资料（会议记录、截图、参考文档）放在项目自己的 `projects/*/raw/` 里，不进顶层 `raw/`。
+顶层 `raw/` 只收**通用性公共资料**（文章、论文、书籍、GitHub 仓库）。项目专属资料（会议记录、截图、参考文档）放在项目自己的 `projects/*/raw/` 里，不进顶层 `raw/`。
+
+### raw/repos/ 快照规范
+
+仓库快照用于缓存 skill / 工具的原文内容，以 `raw/repos/<repo-name>/` 组织：
+
+- **只拉文本资产**：README、SKILL.md、plugin/skill 定义文件、关键 markdown 文档、必要的配置 / 脚本
+- **不要整仓 clone**：排除 `.git/`、`node_modules/`、大图 / 二进制 / 构建产物
+- 保留仓库内的相对目录结构，便于对照
+- 目录根下放 `_meta.md`，用 frontmatter 记录快照时间与版本：
+
+```yaml
+---
+source_url: https://github.com/owner/repo
+fetched_at: YYYY-MM-DD
+commit_sha: abc1234    # 可选，能拿到就填
+---
+```
+
+**更新策略**：默认覆盖式（重新拉一份，Git history 就是版本记录）；只有对重大版本变化想做对照时才保留 `repo-v1/ repo-v2/` 并列快照。对应的源摘要页放在 `wiki/sources/repos/<repo-name>.md`。
 
 ## 6. Wiki 规范
 
@@ -269,7 +304,123 @@ updated: YYYY-MM-DD
 
 `wiki/index.md` 顶部维护"**活跃项目**"表格，只列 `status=active` 的项目。`done` 的项目从表格摘除，可在"已归档项目"小节以简短列表保留（按需）。
 
-## 8. Git 工作流
+## 8. Practices 规范
+
+`practices/` 承接**无明确终点的长期实践 / 领域承诺**——投资、年度复盘、日更写作、某领域的持续学习等。
+
+**核心区分**：
+- **Project 问："我要做完什么？"** → 有 brief、有 deliverables、有 done 时刻
+- **Practice 问："我要持续做什么？"** → 周而复始、没有结束状态、节奏驱动
+
+### 8.1 目录结构
+
+```
+practices/
+└── <practice-name>/        # 无 YYYY-MM 前缀，不与启动时间绑定
+    ├── README.md           # 定位 + 节奏 + status + 导航
+    ├── journal/            # practice 的实体活动（日 / 周 / 月 journal，看节奏）
+    ├── reviews/            # 周期复盘（月 / 季 / 年）
+    └── resources/          # 本 practice 专属的清单、模板、参考
+```
+
+**没有 `brief.md`**：practice 没有"成功判据"，README 就够了。
+**没有 `deliverables/`**：产物要么是周期 review（进 `reviews/`），要么是回流到 wiki 的知识。
+**没有独立 `raw/`**：外部资料放顶层 `raw/`，由多个 practice 共享。
+
+命名：小写连字符，名词短语（如 `quant-investing`、`annual-review`、`daily-reading`），**不带日期**。
+
+### 8.2 README.md 骨架
+
+```yaml
+---
+practice: <practice-name>
+status: active           # active | dormant | retired
+cadence: monthly         # daily | weekly | monthly | quarterly | yearly
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+---
+```
+
+正文至少说清三件事：
+1. **我为什么做这件事**（一段话，领域承诺）
+2. **节奏**（日 / 月 / 季 / 年做什么）
+3. **导航**（最近 journal / 最近 review / 关联的 project / 关联的 wiki 页）
+
+### 8.3 Lifecycle
+
+Practice 没有 `done`，只有三档状态：
+
+| 状态 | 含义 | 维护 |
+|------|------|------|
+| `active` | 当前在做 | 按节奏推进 journal / review |
+| `dormant` | 暂停，可能回来 | README 里写停的原因和触发恢复的信号 |
+| `retired` | 决定不再做 | 目录保留作历史档案，从 index.md 活跃表里摘掉 |
+
+### 8.4 与其他目录的四组关系
+
+1. **Practice 孕育 Project**：practice 里冒出一件具体要做完的事 → 启动 `projects/YYYY-MM-xxx/`
+   例：量化投资 practice 中要认真研究 A 股策略 → `2026-05-a-share-quant` project
+2. **Project 沉淀为 Practice**：项目交付后，相关的日常维护变成 practice
+   例：搭 llm-wiki 的 project 做完 → llm-wiki 的日常维护成 practice
+3. **Practice 回流 Wiki**：周期 review 时抽"离开本 practice 仍然有用"的方法论进 `wiki/concepts/` 或 `wiki/synthesis/`（规则同 §7.4）
+4. **Practice 反哺 Writing**：journal 片段可长成 `writing/drafts/` 里的博文
+
+### 8.5 索引登记
+
+`wiki/index.md` 在「活跃项目」表格之后维护「**活跃 Practices**」表格，只列 `status=active` 的。`dormant` / `retired` 从表格摘除。
+
+## 9. Writing 规范
+
+`writing/` 是用户自己的**独立创作**（博文、公众号、长文、年度总结等）。它既不是别人的资料（`raw/`），也不是 LLM 维护的知识（`wiki/`），更不是带边界的项目（`projects/`）。
+
+### 8.1 目录结构
+
+```
+writing/
+├── drafts/                 # 草稿，允许杂乱
+├── published/              # 已发布
+│   └── YYYY-MM-slug.md
+└── ideas.md                # 选题池（一行一个想法）
+```
+
+文件命名：`YYYY-MM-slug.md`，slug 小写连字符。
+
+### 8.2 边界：Writing vs Projects vs Wiki
+
+按"创作规模 / 产出意图"路由，不要混用：
+
+| 场景 | 去哪 |
+|------|------|
+| 零散随笔、博文、短评、观察 | `writing/drafts/` → `writing/published/` |
+| 认真的长文，需多次调研迭代 | 启动一个写作项目 `projects/YYYY-MM-xxx-post/`，成稿放 `deliverables/`，发布后拷贝到 `writing/published/` |
+| 跨多个资料的主题综合（wiki 内部加工） | `wiki/synthesis/` |
+
+**关键区分**：`writing/` 的目标读者是**外部**（发布 / 分享）；`wiki/synthesis/` 的目标读者是**未来的你自己**（知识沉淀）。
+
+### 8.3 Frontmatter
+
+```yaml
+---
+title: 文章标题
+status: draft            # draft | published
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+published_at: YYYY-MM-DD # published 才填
+published_url: https://...  # 可选，发布平台链接
+---
+```
+
+### 8.4 发布后的知识抽取
+
+**发布 ≠ 知识沉淀**。一篇文章发出去后，要主动问：里面哪些想法值得变成 wiki 的长期知识？
+
+- 新概念 → `wiki/concepts/`
+- 跨源的思考模式 / 方法论 → `wiki/synthesis/`
+- 新涉及的工具 / 人 → `wiki/entities/`
+
+抽取到 wiki 的页面必须遵守 §6 规范；在 `writing/published/` 的原文里用 wikilink 反向链接到这些 wiki 页面。**只抽"离开这篇文章仍然有用"的东西**，原文本身留在 writing/ 作为作品档案，不搬进 wiki。
+
+## 10. Git 工作流
 
 **提交规范**
 ```

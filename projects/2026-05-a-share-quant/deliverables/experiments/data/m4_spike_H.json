@@ -1,0 +1,32 @@
+{
+  "tag": "H",
+  "args": {
+    "which": "H",
+    "top_industries": 10,
+    "top_per_industry": 1,
+    "atr_mult": 2.0,
+    "start": "20160101",
+    "end": null,
+    "mom_n": 20,
+    "cash": 1000000.0,
+    "top_k": 10,
+    "rebalance": 20
+  },
+  "metrics": {
+    "n_days": 2509,
+    "years": 9.96,
+    "cum_return": 0.32973368850000084,
+    "annual_return": 0.0290363786548391,
+    "annual_vol": 0.19128556788956194,
+    "sharpe": 0.04724025316983779,
+    "mdd": -0.43781995047255207,
+    "calmar": 0.06632036439522519,
+    "turnover_annual": 16.76531778548957,
+    "n_trades": 6031,
+    "total_fee": 165074.3115,
+    "benchmark_annual_return": 0.03469737664208661,
+    "benchmark_mdd": -0.45602620484864703,
+    "excess_annual_return": -0.005660997987247507
+  },
+  "n_trades": 6031
+}

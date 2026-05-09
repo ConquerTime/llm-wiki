@@ -1,0 +1,32 @@
+{
+  "args": {
+    "ts_code": "600519.SH",
+    "fast": 20,
+    "slow": 60,
+    "start": "20160101",
+    "end": null,
+    "cash": 1000000.0,
+    "benchmark": "000300.SH",
+    "benchmark_adj": "none",
+    "out": "/Users/zhouyangdong/Documents/projects/llm-wiki/projects/2026-05-a-share-quant/deliverables/data-pipeline/data/hello_world.json"
+  },
+  "metrics": {
+    "n_days": 2509,
+    "years": 9.96,
+    "cum_return": 3.4502004178566947,
+    "annual_return": 0.16177551878749385,
+    "annual_vol": 0.21132595712958535,
+    "sharpe": 0.6708854923134546,
+    "mdd": -0.4101371888296322,
+    "calmar": 0.3944424529000567,
+    "turnover_annual": 5.1029701516619,
+    "n_trades": 61,
+    "total_fee": 157696.17638463722,
+    "benchmark_annual_return": 0.03469737664208661,
+    "benchmark_mdd": -0.45602620484864703,
+    "excess_annual_return": 0.12707814214540725
+  },
+  "n_trades": 61,
+  "first_nav": 1.0,
+  "last_nav": 4.450200417856695
+}

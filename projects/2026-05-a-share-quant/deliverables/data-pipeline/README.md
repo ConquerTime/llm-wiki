@@ -1,8 +1,29 @@
-# Quant Data Pipeline
+# Quant Data Pipeline + Backtest Engine
 
-A 股量化数据管道：Tushare Pro + AkShare → DuckDB。
+A 股量化**引擎**：Tushare Pro + AkShare → DuckDB + 自研回测 + 因子 + 样本池。
 
-对 M3 回测层提供统一读数 API。
+## 边界（2026-05-09 整理）
+
+这个目录是**"引擎"**——可跨策略复用的基础设施：
+
+| 在这里 | 放这里 |
+|---|---|
+| 数据管道（sources/ingest/storage）| ✓ |
+| 读数 API（api.py）| ✓ |
+| 回测引擎（backtest/）| ✓ |
+| 样本池过滤（universe/）| ✓ |
+| 因子计算（factors/）| ✓ |
+| 通用管道脚本（bootstrap / daily_update / healthcheck / ingest_benchmarks）| ✓ |
+| 共享数据（DuckDB / bootstrap.log / healthcheck.json）| ✓ |
+| **实验脚本**（hello_world / m4_spike / m4_foobar ...）| ✗ 去 `../experiments/scripts/` |
+| **实验产物**（*.csv / *.json 曲线数据、NAV）| ✗ 去 `../experiments/data/` |
+
+下一个 A 股策略 project 启动时：
+- 新 project 的 deliverables 里用 `pyproject.toml` path dependency 指回这里
+- 或直接 `PYTHONPATH=.../data-pipeline python -m ...`
+- DuckDB 和基础数据天然共享（真正"共享资源"）
+
+M5 后若有第二个实盘策略启动，可考虑把本目录升级为 `practices/quant-investing/engine/`。
 
 ## 决策
 

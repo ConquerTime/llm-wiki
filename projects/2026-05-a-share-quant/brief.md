@@ -2,7 +2,7 @@
 project: 2026-05-a-share-quant
 status: active
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-05-09
 ---
 
 # A 股量化策略 · 简报
@@ -37,17 +37,19 @@ updated: 2026-05-08
 不包含：见"非目标"。
 
 ## 交付物
-- [ ] **调研综述**：A 股量化主流策略思路对比 + 选型决策文档（deliverables/）
-- [ ] **数据管道**：可运行的数据获取与存储脚本 + 使用说明（deliverables/data-pipeline/）
-- [ ] **回测代码**：至少 1 个候选策略的完整回测工程（deliverables/backtest/）
-- [ ] **策略笔记/知识卡**：因子定义、回测陷阱、评价指标等可沉淀知识（notes/ → 回流 wiki/concepts/）
+- [x] **调研综述**：[[projects/2026-05-a-share-quant/deliverables/strategy-selection.md|strategy-selection.md]] + [[projects/2026-05-a-share-quant/notes/m4-prior-art.md|m4-prior-art.md]]
+- [x] **数据管道**：[[projects/2026-05-a-share-quant/deliverables/data-pipeline/|data-pipeline/]]（引擎可跨 project 共享）
+- [x] **回测代码**：[[projects/2026-05-a-share-quant/deliverables/data-pipeline/|data-pipeline/]]（backtest/ 引擎）+ [[projects/2026-05-a-share-quant/deliverables/experiments/|experiments/]] scripts/data
+- [x] **策略 v1 固化**：[[projects/2026-05-a-share-quant/deliverables/m4-strategy-v1.md|m4-strategy-v1.md]]
+- [x] **M4 回测报告**：[[projects/2026-05-a-share-quant/deliverables/m4-report.md|m4-report.md]]
+- [x] **策略笔记/知识卡**：notes/ 下 20+ 份 M1-M4 Spike 文档 → M5 回流 wiki
 
 ## 里程碑
-- [ ] M1 · 方向选型完成 — 预计 2026-05 月底
-- [ ] M2 · 数据管道跑通（能取到至少 5 年日频数据 + 基础财务） — 预计 2026-06 中
-- [ ] M3 · 回测框架选定并跑通 hello-world 策略 — 预计 2026-06 底
-- [ ] M4 · 首个候选策略回测结果出炉 + 复盘 — 预计 2026-07 中
-- [ ] M5 · 阶段复盘 + 知识回流 wiki — 随 M4 完成
+- [x] M1 · 方向选型完成 — 2026-05-08 实际完成（见 [[projects/2026-05-a-share-quant/deliverables/strategy-selection.md|strategy-selection]]）
+- [x] M2 · 数据管道跑通（能取到至少 5 年日频数据 + 基础财务） — 2026-05-09 实际完成（全市场 5838 只 × 10 年，daily_bar 1063 万行 / adj_factor 1105 万行 / daily_basic 1055 万行 / fina_indicator 11.2 万行；DuckDB 2.2 GB）
+- [x] M3 · 回测框架选定并跑通 hello-world 策略 — 2026-05-09 实际完成（自研引擎 ~330 行；茅台 SMA(20/60) 跑通 10 年 2509 交易日，年化 +16.18% / MDD -41% / Sharpe 0.67；见 [[projects/2026-05-a-share-quant/notes/m3-hello-world.md|m3-hello-world]]）
+- [x] M4 · 首个候选策略回测结果出炉 + 复盘 — 2026-05-09 实际完成（Spike A→H3 单日跑完 10+ 个单变量实验；最终 baseline = H3 多窗残差反转 + 行业两层 + 反向闸；累计 +52.83% / 10Y / Sharpe 0.13，**跑赢 HS300 +12.83pp 但不达 brief §六 验收线**；交付 [[projects/2026-05-a-share-quant/deliverables/m4-strategy-v1.md|m4-strategy-v1]] / [[projects/2026-05-a-share-quant/deliverables/m4-report.md|m4-report]] / [[projects/2026-05-a-share-quant/notes/m4-retrospective.md|m4-retrospective]]）
+- [x] M5 · 阶段复盘 + 知识回流 wiki — 2026-05-09 实际完成（retro.md 填写 final 复盘；5 条回流：synthesis/quant-strategy-spike-methodology + concepts/programming/backtest-engine-defense-checklist + entities/products/{quant-engine,tushare-pro,duckdb}；README status=done）
 
 ## 风险 / 未知
 - **数据质量**：A 股免费数据源（Tushare / AkShare / Baostock 等）在停复牌、分红除权、财报修正上的坑尚未评估。
