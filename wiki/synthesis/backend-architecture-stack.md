@@ -5,7 +5,7 @@ tags: [programming, backend, architecture]
 created: 2026-04-28
 updated: 2026-04-28
 sources:
-  - "[[wiki/sources/articles/backend-architecture-article.md|后端架构知识资料]]"
+  - "[[../sources/articles/backend-architecture-article.md|后端架构知识资料]]"
 ---
 
 # 后端架构栈
@@ -66,7 +66,7 @@ sources:
 | 团队 > 10 人，多个业务域需要独立发布节奏 | 微服务 |
 | 需要跨技术栈（Python 模型 + Node API） | 微服务 |
 
-**关联**：[[wiki/concepts/programming/monolith-async-worker.md|Monolith with Async Worker]] · [[wiki/concepts/microservices.md|微服务架构]]
+**关联**：[[../concepts/programming/monolith-async-worker.md|Monolith with Async Worker]] · [[../concepts/microservices.md|微服务架构]]
 
 **常见错误**：**过早拆微服务**。业务模型没稳定就按"领域"拆服务，拆完发现边界画错，跨服务调用漫天飞——这时调整边界的代价比单体内部重构高一个数量级。口诀：**Monolith First**。
 
@@ -83,7 +83,7 @@ sources:
 | **Clean Architecture** | 同心圆，外圈依赖内圈，内圈不知外圈 | 复杂业务 / 长生命周期 |
 | **CQRS** | 读写分离，Command 与 Query 用不同 model | 读远多于写 / 复杂查询 |
 
-**关联**：[[wiki/concepts/backend-architecture.md|后端架构]]
+**关联**：[[../concepts/backend-architecture.md|后端架构]]
 
 **L0 vs L1 的关系**：拓扑不能替代内部架构。
 - 单体里内部架构差 → 代码腐烂成泥球
@@ -113,7 +113,7 @@ sources:
 | 补偿扫描 | Poller + `SELECT FOR UPDATE SKIP LOCKED` |
 | 定时任务 | Repeatable Job（固定 jobId 防重） |
 
-**关联**：[[wiki/concepts/programming/message-queue.md|消息队列]]
+**关联**：[[../concepts/programming/message-queue.md|消息队列]]
 
 **关键洞见 —— Outbox 是"跨资源一致性"的通解**：
 
@@ -150,7 +150,7 @@ Outbox 的本质是**把"数据库写 + 消息发"合并成单一事务**——D
 - 同步复制（金融场景，牺牲写延迟）
 - 客户端乐观更新（前端 React Query / SWR 的 `mutate`）
 
-**关联**：[[wiki/concepts/programming/read-after-write.md|写后读问题]]
+**关联**：[[../concepts/programming/read-after-write.md|写后读问题]]
 
 ### 3.2 幂等消费（Idempotency）
 
@@ -163,7 +163,7 @@ Outbox 的本质是**把"数据库写 + 消息发"合并成单一事务**——D
 - **Choreography**：服务间通过事件自协调，去中心
 - **Orchestration**：中央编排器控制流程，可观测性好
 
-**关联**：[[wiki/concepts/microservices.md|微服务架构]]（Saga 章节）
+**关联**：[[../concepts/microservices.md|微服务架构]]（Saga 章节）
 
 **L2 vs L3 的关系**：L2 是**工具与模式**（队列、Outbox），L3 是**正确性保证**（一致性、幂等、事务）。选对了 L2 工具，L3 的保证才有落点；选错了 L2（比如用 Redis List 当队列，无 ACK 语义），L3 的正确性根本无从谈起。
 
@@ -181,7 +181,7 @@ Outbox 的本质是**把"数据库写 + 消息发"合并成单一事务**——D
 | CI/CD | GitHub Actions / GitLab CI / ArgoCD |
 | 发布策略 | 全量 / 蓝绿 / **金丝雀** / 滚动更新 / Feature Flag |
 
-**关联**：[[wiki/concepts/cloud-deployment.md|云服务部署]] · [[wiki/concepts/programming/canary-deployment.md|金丝雀部署]]
+**关联**：[[../concepts/cloud-deployment.md|云服务部署]] · [[../concepts/programming/canary-deployment.md|金丝雀部署]]
 
 **发布策略对比**：
 
@@ -220,7 +220,7 @@ Phase 3（完成后）：删除旧列 / 老 API
 
 统一标准：**OpenTelemetry**（metrics + logs + traces 统一规范，厂商中立）
 
-**关联**：[[wiki/concepts/cloud-deployment.md|云服务部署]]（可观测性章节）
+**关联**：[[../concepts/cloud-deployment.md|云服务部署]]（可观测性章节）
 
 **L5 在整栈中的作用**：
 - L0 拓扑越复杂，L5 投入越关键（单体出问题 tail 日志就能查；微服务出问题没有 Trace 根本找不到源头）
@@ -265,7 +265,7 @@ Phase 3（完成后）：删除旧列 / 老 API
 | 部署 | L4 金丝雀 / IaC | L0 SPA fallback |
 | 正确性纪律 | L5 可观测性 | L5 组件反模式 |
 
-**共同底层**：[[wiki/concepts/solid-principles.md|SOLID]]（单一职责、依赖反转）、[[wiki/concepts/clean-code.md|DRY/KISS/YAGNI]]、[[wiki/concepts/refactoring.md|重构]]。
+**共同底层**：[[../concepts/solid-principles.md|SOLID]]（单一职责、依赖反转）、[[../concepts/clean-code.md|DRY/KISS/YAGNI]]、[[../concepts/refactoring.md|重构]]。
 
 ## 什么时候不需要完整栈
 
@@ -288,19 +288,19 @@ Phase 3（完成后）：删除旧列 / 老 API
 
 - **Serverless（Lambda / Cloud Run）如何改写 L0 和 L4？** Serverless 让"拓扑 + 部署"两层合并——没有长驻进程、没有金丝雀实例的概念，取而代之的是版本别名 + 流量权重。L0/L4 的边界在重新绘制。
 - **Event Sourcing + CQRS 会吞并 L1 和 L2 吗？** Event Sourcing 让"业务事件"本身就是数据源，事件流天然跨越 L1 内部架构和 L2 异步边界。但复杂度高、调试难，目前只在特定领域（金融交易、审计）稳定落地。
-- **AI/Agent 服务的后端栈长什么样？** LLM 调用天然耗时（秒～分钟级）+ 高失败率，L2 异步 + L3 幂等成为**默认配置而非可选**。[[wiki/concepts/programming/message-queue.md|消息队列]]里的 kaigao 项目实践就是这类范式的实例。
+- **AI/Agent 服务的后端栈长什么样？** LLM 调用天然耗时（秒～分钟级）+ 高失败率，L2 异步 + L3 幂等成为**默认配置而非可选**。[[../concepts/programming/message-queue.md|消息队列]]里的 kaigao 项目实践就是这类范式的实例。
 - **Database per Service 真的是微服务铁律吗？** 严格执行会让 L3 一致性代价飙升（跨库查询、跨库事务都要走 Saga）。业界开始出现"共享数据库但强边界"的折衷（每个服务只读写自己 schema）。
 
 ## 相关页面
 
-- **L0 拓扑**：[[wiki/concepts/programming/monolith-async-worker.md|Monolith with Async Worker]] · [[wiki/concepts/microservices.md|微服务架构]]
-- **L1 内部**：[[wiki/concepts/backend-architecture.md|后端架构]]（Layered / Hexagonal / Clean / CQRS）
-- **L2 数据/异步**：[[wiki/concepts/programming/message-queue.md|消息队列]]（BullMQ / Outbox / 幂等 / SKIP LOCKED）
-- **L3 一致性**：[[wiki/concepts/programming/read-after-write.md|写后读问题]]
-- **L4 部署**：[[wiki/concepts/cloud-deployment.md|云服务部署]] · [[wiki/concepts/programming/canary-deployment.md|金丝雀部署]]
-- **跨层业务参考**：[[wiki/concepts/programming/unified-payment-route.md|统一支付路由设计]]（L1 内部结构 + L2 异步 + L3 一致性综合案例）
+- **L0 拓扑**：[[../concepts/programming/monolith-async-worker.md|Monolith with Async Worker]] · [[../concepts/microservices.md|微服务架构]]
+- **L1 内部**：[[../concepts/backend-architecture.md|后端架构]]（Layered / Hexagonal / Clean / CQRS）
+- **L2 数据/异步**：[[../concepts/programming/message-queue.md|消息队列]]（BullMQ / Outbox / 幂等 / SKIP LOCKED）
+- **L3 一致性**：[[../concepts/programming/read-after-write.md|写后读问题]]
+- **L4 部署**：[[../concepts/cloud-deployment.md|云服务部署]] · [[../concepts/programming/canary-deployment.md|金丝雀部署]]
+- **跨层业务参考**：[[../concepts/programming/unified-payment-route.md|统一支付路由设计]]（L1 内部结构 + L2 异步 + L3 一致性综合案例）
 - **前端对照**：[[wiki/synthesis/react-architecture-stack.md|React 架构栈]]
 
 ## 来源
 
-- [[wiki/sources/articles/backend-architecture-article.md|后端架构知识资料]] — 架构模式 / 微服务 / 云部署的基础综述
+- [[../sources/articles/backend-architecture-article.md|后端架构知识资料]] — 架构模式 / 微服务 / 云部署的基础综述

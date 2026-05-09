@@ -5,9 +5,9 @@ tags: [programming, react, architecture]
 created: 2026-04-28
 updated: 2026-04-28
 sources:
-  - "[[wiki/sources/articles/bulletproof-react-github.md|Bulletproof React]]"
-  - "[[wiki/sources/articles/react-bits-github.md|React Bits]]"
-  - "[[wiki/sources/articles/react-query-vs-swr-server-state-source-compare.md|React Query vs SWR 源码对比]]"
+  - "[[../sources/articles/bulletproof-react-github.md|Bulletproof React]]"
+  - "[[../sources/articles/react-bits-github.md|React Bits]]"
+  - "[[../sources/articles/react-query-vs-swr-server-state-source-compare.md|React Query vs SWR 源码对比]]"
 ---
 
 # React 架构栈
@@ -49,7 +49,7 @@ React 的卖点是渲染原语（component、state、effect），但它**刻意�
 - 开发：Vite `historyApiFallback` / Webpack dev-server
 - 生产：Nginx `try_files $uri /index.html` / CDN 配 200 回 `index.html` / Next.js 自带处理
 
-**关联**：[[wiki/concepts/programming/spa-history-fallback.md|SPA History 路由与服务端 Fallback]]
+**关联**：[[../concepts/programming/spa-history-fallback.md|SPA History 路由与服务端 Fallback]]
 
 **常见错误**：本地用 HashRouter 开发 → 上线切 BrowserRouter → 刷新立刻 404。
 
@@ -63,7 +63,7 @@ React 的卖点是渲染原语（component、state、effect），但它**刻意�
 - 用 ESLint `import/no-restricted-paths` **把架构约束变成可执行规则**（CI 能挂）
 - **反 barrel file**（Vite tree-shaking 失效 + 边界隐式化）
 
-**关联**：[[wiki/concepts/programming/feature-based-architecture.md|Feature-Based 架构]] · [[wiki/entities/products/bulletproof-react.md|Bulletproof React]]
+**关联**：[[../concepts/programming/feature-based-architecture.md|Feature-Based 架构]] · [[../entities/products/bulletproof-react.md|Bulletproof React]]
 
 **常见错误**：`src/components/` 长成第二个垃圾桶——任何"以后可能用到"的东西都扔进去。解药：**只有真正被 2+ features 引用**才能升到顶层。
 
@@ -77,11 +77,11 @@ React 的卖点是渲染原语（component、state、effect），但它**刻意�
 |------|------|---------|
 | Component State | 组件私有 | `useState` / `useReducer` |
 | Application State | 跨组件客户端 | Zustand / Jotai（小）/ Redux Toolkit（重）/ XState（状态机） |
-| Server Cache State | 远端 API | [[wiki/entities/products/tanstack-query.md\|TanStack Query]] / [[wiki/entities/products/swr.md\|SWR]] |
+| Server Cache State | 远端 API | [[../entities/products/tanstack-query.md\|TanStack Query]] / [[../entities/products/swr.md\|SWR]] |
 | Form State | 表单字段 | React Hook Form + zod |
 | URL State | URL path/query/hash | react-router / Next.js router |
 
-**关联**：[[wiki/concepts/programming/react-state-categories.md|React 状态五分类]]
+**关联**：[[../concepts/programming/react-state-categories.md|React 状态五分类]]
 
 **判断口诀**：
 - 值的权威来源在服务器 → **Server Cache**（即使是"当前登录用户"这种看起来全局的）
@@ -103,7 +103,7 @@ React 的卖点是渲染原语（component、state、effect），但它**刻意�
 | 想要 DevTools / 持久化 / 无限滚动 | Next.js 内轻量用 |
 | 把服务端状态层当团队基础设施 | 复杂度收口到框架层 |
 
-**关联**：[[wiki/concepts/programming/server-state-management.md|服务端状态管理]] · [[wiki/sources/articles/react-query-vs-swr-server-state-source-compare.md|React Query vs SWR 源码对比]]
+**关联**：[[../concepts/programming/server-state-management.md|服务端状态管理]] · [[../sources/articles/react-query-vs-swr-server-state-source-compare.md|React Query vs SWR 源码对比]]
 
 **常见错误**：
 - 把 API 数据放 Zustand / Redux → 重造 react-query 的轮子，而且没它好
@@ -123,7 +123,7 @@ React 的卖点是渲染原语（component、state、effect），但它**刻意�
 | 隐式状态机 | 显式 `phase` 枚举 + 单 hook 集中转移 |
 | 字段级三源合并 | 单 hook 按源优先级一次决定整对象 |
 
-**关联**：[[wiki/concepts/programming/react-page-state-antipatterns.md|React 页面状态管理反模式]]
+**关联**：[[../concepts/programming/react-page-state-antipatterns.md|React 页面状态管理反模式]]
 
 **与 L2 的关系**：四反模式本质是"多类 state 被混成一锅"。分清楚 URL / Application / Server Cache 之后，反模式 4 的解法自然出现。
 
@@ -141,7 +141,7 @@ React 的卖点是渲染原语（component、state、effect），但它**刻意�
 | 4 | Spreading Props on DOM | 非 DOM 属性渲染成无效 HTML 属性 |
 | 5 | Render 里新建引用 | `React.memo` / `useMemo` 的隐形杀手 |
 
-**关联**：[[wiki/concepts/programming/react-classic-antipatterns.md|React 经典反模式（组件层）]]
+**关联**：[[../concepts/programming/react-classic-antipatterns.md|React 经典反模式（组件层）]]
 
 **常见错误**：LLM 辅助编码会**放大这些反模式**——默认"照着 props 建 state"、"用 map index 当 key"、"render 里内联 `() => ...`"。给它们起名字之后 review 时能一眼抓出来。
 
@@ -178,13 +178,13 @@ React 的卖点是渲染原语（component、state、effect），但它**刻意�
 
 | React 栈 | 后端类比 |
 |---------|---------|
-| L1 Feature-Based | [[wiki/concepts/programming/microservices.md\|微服务架构]]（按业务边界切） |
-| L2 状态分层 | [[wiki/concepts/programming/backend-architecture.md\|Clean Architecture]] 的"按来源分层" |
+| L1 Feature-Based | [[../concepts/programming/microservices.md\|微服务架构]]（按业务边界切） |
+| L2 状态分层 | [[../concepts/programming/backend-architecture.md\|Clean Architecture]] 的"按来源分层" |
 | L3 TanStack Query | 后端的 ORM / Repository + 缓存层 |
 | L4 页面重构 | 后端的 service 层重构 |
-| L5 组件纪律 | [[wiki/concepts/programming/clean-code.md\|整洁代码]] 的"函数级"建议 |
+| L5 组件纪律 | [[../concepts/programming/clean-code.md\|整洁代码]] 的"函数级"建议 |
 
-**共同底层**：[[wiki/concepts/programming/solid-principles.md|SOLID]]（S 单一职责、D 依赖反转）、[[wiki/concepts/programming/clean-code.md|DRY/KISS/YAGNI]]。
+**共同底层**：[[../concepts/programming/solid-principles.md|SOLID]]（S 单一职责、D 依赖反转）、[[../concepts/programming/clean-code.md|DRY/KISS/YAGNI]]。
 
 ## 工具箱一览表
 
@@ -193,9 +193,9 @@ React 的卖点是渲染原语（component、state、effect），但它**刻意�
 | 层 | 工具实体 |
 |----|---------|
 | L0 | （基础设施侧，wiki 暂未建实体页） |
-| L1 | [[wiki/entities/products/bulletproof-react.md\|Bulletproof React]]（参考实现） |
+| L1 | [[../entities/products/bulletproof-react.md\|Bulletproof React]]（参考实现） |
 | L2 | —（方法论层，非工具） |
-| L3 | [[wiki/entities/products/tanstack-query.md\|TanStack Query]] · [[wiki/entities/products/swr.md\|SWR]] |
+| L3 | [[../entities/products/tanstack-query.md\|TanStack Query]] · [[../entities/products/swr.md\|SWR]] |
 | L4 | —（重构方法论） |
 | L5 | —（纪律层，Immer 可选） |
 
@@ -208,15 +208,15 @@ React 的卖点是渲染原语（component、state、effect），但它**刻意�
 
 ## 相关页面
 
-- **L0**：[[wiki/concepts/programming/spa-history-fallback.md|SPA History 路由与服务端 Fallback]]
-- **L1**：[[wiki/concepts/programming/feature-based-architecture.md|Feature-Based 架构]]
-- **L2**：[[wiki/concepts/programming/react-state-categories.md|React 状态五分类]]
-- **L3**：[[wiki/concepts/programming/server-state-management.md|服务端状态管理]]
-- **L4**：[[wiki/concepts/programming/react-page-state-antipatterns.md|React 页面状态管理反模式]]
-- **L5**：[[wiki/concepts/programming/react-classic-antipatterns.md|React 经典反模式（组件层）]]
+- **L0**：[[../concepts/programming/spa-history-fallback.md|SPA History 路由与服务端 Fallback]]
+- **L1**：[[../concepts/programming/feature-based-architecture.md|Feature-Based 架构]]
+- **L2**：[[../concepts/programming/react-state-categories.md|React 状态五分类]]
+- **L3**：[[../concepts/programming/server-state-management.md|服务端状态管理]]
+- **L4**：[[../concepts/programming/react-page-state-antipatterns.md|React 页面状态管理反模式]]
+- **L5**：[[../concepts/programming/react-classic-antipatterns.md|React 经典反模式（组件层）]]
 
 ## 来源
 
-- [[wiki/sources/articles/bulletproof-react-github.md|Bulletproof React]] — L1 / L2 / L3 的系统化参考
-- [[wiki/sources/articles/react-bits-github.md|React Bits]] — L5 的词典
-- [[wiki/sources/articles/react-query-vs-swr-server-state-source-compare.md|React Query vs SWR 源码对比]] — L3 的深入
+- [[../sources/articles/bulletproof-react-github.md|Bulletproof React]] — L1 / L2 / L3 的系统化参考
+- [[../sources/articles/react-bits-github.md|React Bits]] — L5 的词典
+- [[../sources/articles/react-query-vs-swr-server-state-source-compare.md|React Query vs SWR 源码对比]] — L3 的深入
