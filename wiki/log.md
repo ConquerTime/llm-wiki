@@ -874,3 +874,29 @@
 - 不回流：a-share-reversal-vs-momentum（需先 wiki-ingest 摄入 BigQuant/清华/申万/Zhihu 原文作为 sources 后才能建 concept）
 - index 活跃表格：已移除本项目；新增"已归档项目"章节并登记
 - README status：active → done
+
+## [2026-05-08] ingest | 晨报 2026-05-08
+- 类型：ingest
+- 来源：raw/morning-briefs/2026-05-08.md
+- 新增页面：
+  - wiki/sources/morning-briefs/2026-05-08.md（源摘要）
+  - wiki/entities/products/open-agents.md（open-agents — Vercel 开源云端 Agent 模板）
+  - wiki/entities/products/agent-skills.md（agent-skills — AI 编程 Agent 的生产级工程技能库）
+  - wiki/entities/products/canvas.md（Canvas — 遭 ShinyHunters 数据泄露威胁的学习管理系统）
+  - wiki/entities/organizations/cloudflare.md（Cloudflare — 2026年5月裁员约20%）
+- 更新页面：
+  - wiki/index.md（+5 实体 +1 源摘要，统计更新至 121 页）
+
+## [2026-05-08] lint | 3 orphans, 0 actionable broken-links, 0 missing-from-index, 0 stale-pages
+- 类型：lint
+- 断链（0 可操作，均为历史条目/跨目录）：
+  - index.md → [[projects/2026-04-kaigao/README]]（跨目录，可接受）
+  - index.md → [[projects/2026-05-a-share-quant/README]]（跨目录，可接受）
+  - log.md → [[projects/2026-04-kaigao/README]]（历史条目，不操作）
+  - log.md → [[raw/articles/...]]（历史条目，不操作）
+  - log.md → [[programming/X]]（历史条目，不操作）
+  - log.md → [[concepts/programming/X]]（历史条目，不操作）
+- 孤儿页：3（concepts/ai/local-ai-processing / synthesis/backend-architecture-stack / synthesis/react-architecture-stack）
+- 未收录 index：0（已全部修复）
+- 过期页（>90天）：0
+- 大页面（>200行）：log.md(857), canary-deployment(333), react-page-state-antipatterns(330), message-queue(278), read-after-write(213)
