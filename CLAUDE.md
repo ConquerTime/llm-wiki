@@ -327,6 +327,13 @@ practices/
 **没有 `deliverables/`**：产物要么是周期 review（进 `reviews/`），要么是回流到 wiki 的知识。
 **没有独立 `raw/`**：外部资料放顶层 `raw/`，由多个 practice 共享。
 
+**允许的扩展子目录**：practice 可以按需加非标准子目录，常见有：
+- `engine/` — 跨 project 共享的代码资产 / 工作台（如量化回测引擎、写作模板引擎）。与单个 project 的 `deliverables/` 不同：前者 practice 生命周期（长期），后者 project 生命周期（有限）。在 README 里显式说明为什么需要它
+- `tools/` — practice 专用的一次性脚本
+- 其他按实际需要
+
+新子目录必须在 README "目录" 章节里说明存在理由，避免 practice 目录无限膨胀。
+
 命名：小写连字符，名词短语（如 `quant-investing`、`annual-review`、`daily-reading`），**不带日期**。
 
 ### 8.2 README.md 骨架

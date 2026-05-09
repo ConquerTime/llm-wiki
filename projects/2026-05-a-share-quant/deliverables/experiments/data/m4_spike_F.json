@@ -15,18 +15,18 @@
   "metrics": {
     "n_days": 2509,
     "years": 9.96,
-    "cum_return": 0.7283729527500011,
-    "annual_return": 0.05649618111219534,
-    "annual_vol": 0.20301890232038286,
-    "sharpe": 0.1797674043897693,
-    "mdd": -0.4534953448973609,
-    "calmar": 0.12457940692860268,
-    "turnover_annual": 17.19263486827425,
-    "n_trades": 6657,
-    "total_fee": 233748.04725,
+    "cum_return": 0.6771492804999995,
+    "annual_return": 0.053308597642868216,
+    "annual_vol": 0.20219290663189401,
+    "sharpe": 0.16473672690955865,
+    "mdd": -0.45385135206994953,
+    "calmar": 0.11745827659152168,
+    "turnover_annual": 17.160475027166896,
+    "n_trades": 6622,
+    "total_fee": 227874.7195,
     "benchmark_annual_return": 0.03469737664208661,
     "benchmark_mdd": -0.45602620484864703,
-    "excess_annual_return": 0.021798804470108735
+    "excess_annual_return": 0.018611221000781608
   },
-  "n_trades": 6657
+  "n_trades": 6622
 }

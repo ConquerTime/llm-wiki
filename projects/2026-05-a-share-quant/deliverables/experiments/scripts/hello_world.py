@@ -18,7 +18,9 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent                             # experiments/
-ENGINE_ROOT = HERE.parent.parent / "data-pipeline"
+# 引擎 2026-05-09 迁至 practices/quant-investing/engine/
+VAULT_ROOT = HERE.parent.parent.parent.parent
+ENGINE_ROOT = VAULT_ROOT / "practices" / "quant-investing" / "engine"
 sys.path.insert(0, str(ENGINE_ROOT))
 
 import pandas as pd  # noqa: E402

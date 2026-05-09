@@ -4,24 +4,25 @@
 
 ## 边界
 
-- **本目录 = a-share-quant project 专属**，与 `../data-pipeline/`（引擎）边界清晰
-- 引擎：可复用基础设施（数据管道、回测引擎、因子、样本池）
-- 实验：本 project 的策略探索（hello-world、M4 Spike A-H ...）
+- **本目录 = a-share-quant project 专属**，不跨 project 共享
+- **引擎**（数据管道 / 回测 / 因子 / 样本池）已于 2026-05-09 迁到 `practices/quant-investing/engine/`，跨 project 共享
+- 实验：本 project 的策略探索（hello-world、M4 Spike A-H3）
 
 下一个 A 股策略 project 启动时：
 - 新 project 自己开 `experiments/` 放它的实验
-- 引擎仍从 `../../2026-05-a-share-quant/deliverables/data-pipeline/` 共享
+- 引擎从 `practices/quant-investing/engine/` 共享
+- 参见 [[quant-engine|quant-engine 实体页]]
 
 ## 运行
 
 ```bash
-# 从本目录启动（需要引擎已经 uv sync 过）
+# 从本目录启动
 cd deliverables/experiments
-../data-pipeline/.venv/bin/python -m scripts.m4_spike --which F
-../data-pipeline/.venv/bin/python -m scripts.hello_world --ts-code 600519.SH
+/Users/.../practices/quant-investing/engine/.venv/bin/python -m scripts.m4_spike --which F
+/Users/.../practices/quant-investing/engine/.venv/bin/python -m scripts.hello_world --ts-code 600519.SH
 ```
 
-脚本内部 `sys.path.insert(0, ENGINE_ROOT)` 会自动把 `data-pipeline/` 放进 import 路径。
+脚本内部自动解析 `VAULT_ROOT / practices / quant-investing / engine` 为 `ENGINE_ROOT` 并加 sys.path。
 
 ## 实验清单
 

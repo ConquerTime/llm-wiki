@@ -875,6 +875,19 @@
 - index 活跃表格：已移除本项目；新增"已归档项目"章节并登记
 - README status：active → done
 
+## [2026-05-09] update | 引擎迁移 project → practices（跨 project 共享）
+- 类型：update（目录结构调整）
+- 起因：原位置 `projects/2026-05-a-share-quant/deliverables/data-pipeline/` 随 project done 归档，新 A 股策略 project 维护困难
+- 动作：
+  - 代码 + DuckDB 数据（2.4GB）整体迁到 `practices/quant-investing/engine/`
+  - `.venv/.../_editable_impl_quant_data.pth` 改指新路径
+  - `projects/2026-05-a-share-quant/deliverables/experiments/scripts/*.py` 的 `ENGINE_ROOT` 改指 `VAULT_ROOT/practices/quant-investing/engine`
+  - 删除旧 `deliverables/data-pipeline/` 目录（单一来源）
+- 规范：CLAUDE.md §8.1 加"允许的扩展子目录"说明（engine/ / tools/ 等），避免 practice 目录违规
+- wiki 更新：quant-engine.md / duckdb.md 路径更新；practices/quant-investing/README.md 加"目录"章节
+- 验证：`cd projects/.../experiments && python -m scripts.m4_spike --which F` 跑通，全样本 Spike F 结果 +67.70% / 超额 +1.86% 与历史一致
+- 未改：project 内所有 notes/retro/log/brief 保持历史记录（§3.3 精准修改：只触碰必须改的）
+
 ## [2026-05-08] ingest | 晨报 2026-05-08
 - 类型：ingest
 - 来源：raw/morning-briefs/2026-05-08.md

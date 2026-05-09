@@ -18,13 +18,13 @@ import sys
 import time
 from pathlib import Path
 
-# 实验脚本住 experiments/scripts/，引擎住 ../../data-pipeline/
-# 2026-05-09 整理后结构：
-#   deliverables/data-pipeline/  (引擎 + DuckDB)
-#   deliverables/experiments/    (本脚本 + 实验产物)
+# 实验脚本住 project 的 experiments/scripts/，引擎 2026-05-09 迁至 practices/quant-investing/engine/
+# 实验产物仍落在本 project 的 experiments/data/（与 project 周期绑定，不污染 practice）
 HERE = Path(__file__).resolve().parent         # experiments/scripts
-ROOT = HERE.parent                             # experiments（实验产物落点）
-ENGINE_ROOT = HERE.parent.parent / "data-pipeline"
+ROOT = HERE.parent                             # experiments/（实验产物落点）
+# 从 experiments/scripts/ 上溯到 vault 根再进 practices/...
+VAULT_ROOT = HERE.parent.parent.parent.parent  # projects/X/deliverables/experiments/scripts -> vault
+ENGINE_ROOT = VAULT_ROOT / "practices" / "quant-investing" / "engine"
 sys.path.insert(0, str(ENGINE_ROOT))
 
 import numpy as np  # noqa: E402

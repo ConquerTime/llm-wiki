@@ -8,7 +8,7 @@ updated: 2026-05-09
 
 # 量化投资实践
 
-> 个人 A 股量化投资的长期实践容器：策略迭代、实盘追踪、月度复盘。当前处于**预热阶段**——等 [[projects/2026-05-a-share-quant/README|2026-05-a-share-quant]] 项目交付后正式进入节奏。
+> 个人 A 股量化投资的长期实践容器：策略迭代、实盘追踪、月度复盘。2026-05-09 吸收 a-share-quant project 的回测引擎，成为跨 project 共享代码的载体。
 
 ## 为什么做这件事
 
@@ -37,11 +37,33 @@ updated: 2026-05-09
 
 ## 当前状态
 
-**预热阶段（2026-05）**：
+**2026-05-09 首次吸纳代码资产**：
 
-- 策略容器暂空。待 [[projects/2026-05-a-share-quant/README|a-share-quant]] project 交付首个可运行策略后，搬到本 practice 开始月度追踪
+- `engine/` 子目录持有从 a-share-quant project 迁入的**可跨 project 共享的量化引擎** —— 数据管道 / 回测引擎 / 因子 / 样本池。见 [[quant-engine|quant-engine 实体页]]
+- 项目容器仍空。首个可运行策略（M4 v1 = H3）固化在 [[projects/2026-05-a-share-quant/deliverables/m4-strategy-v1.md|m4-strategy-v1]]，由引擎 + 该 project 的 `experiments/` 组合重现
 - 还没有实盘账户，review 先以"模拟盘 / 回测滚动"口径进行
-- `journal/` `reviews/` `resources/` 空目录按"§5 空目录规则"首次使用时再建
+- `journal/` `reviews/` 空目录按"§5 空目录规则"首次使用时再建
+
+## 目录（补充 CLAUDE.md §8.1 标准结构）
+
+```
+practices/quant-investing/
+├── README.md              # 本文件
+├── engine/                # ★ 非 §8.1 标准目录：跨 project 共享的量化代码
+│   ├── pyproject.toml     #   Python 包 "quant-data"
+│   ├── .venv/             #   uv 虚拟环境（与 engine 绑定）
+│   ├── quant_data/        #   sources / ingest / storage / api / backtest / universe / factors
+│   ├── scripts/           #   通用管道脚本（bootstrap / daily_update / healthcheck / ingest_benchmarks）
+│   └── data/              #   共享数据（quant.duckdb 2.2GB + 日志）
+├── journal/               # （首次触发时创建）
+└── reviews/               # （首次 review 时创建）
+```
+
+**为什么把 engine 放 practice 而不是 project**：
+- A 股量化引擎的生命周期 = practice 生命周期（长期）
+- 单个 project 生命周期 = 有限（project done 后不再维护代码）
+- 跨 project 共享：新策略 project 的 experiments 脚本直接 import `practices/quant-investing/engine/quant_data`
+- 这是对 §8.1 "practice 无 deliverables" 原则的**明确例外**：代码不是 deliverable 也不是 review，是**实践本身的工作台**
 
 ## 导航
 

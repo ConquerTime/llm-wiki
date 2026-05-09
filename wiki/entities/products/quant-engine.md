@@ -20,7 +20,7 @@ sources:
 
 ## 基本事实
 
-- **位置**：`projects/2026-05-a-share-quant/deliverables/data-pipeline/quant_data/backtest/`
+- **位置**：`practices/quant-investing/engine/quant_data/backtest/`（2026-05-09 从 `projects/2026-05-a-share-quant/deliverables/data-pipeline/` 迁入以实现跨 project 共享）
 - **代码量**：`engine.py` ~250 行 + `metrics.py` ~120 行
 - **Python**：3.11+，uv 管理
 - **依赖**：pandas / numpy / duckdb / tushare / matplotlib
@@ -118,16 +118,17 @@ def strategy(
 
 ## 跨 project 共享
 
-2026-05-09 整理后的边界：
-- 引擎（本实体）= `deliverables/data-pipeline/`
-- 实验（特定策略的 Spike 脚本 + 产出数据）= `deliverables/experiments/`
+2026-05-09 起的边界：
+- 引擎（本实体）= `practices/quant-investing/engine/` —— 跟 practice 生命周期，不随 project 归档消失
+- 实验（特定策略的 Spike 脚本 + 产出数据）= 各 project 的 `deliverables/experiments/`
 
-下一个 A 股策略 project 启动时：
-```toml
-dependencies = [
-  "quant-data @ file:///.../2026-05-a-share-quant/deliverables/data-pipeline",
-]
+下一个 A 股策略 project 启动时，其 experiments 脚本顶端添加：
+```python
+VAULT_ROOT = Path(__file__).resolve().parents[4]  # 上溯到 vault
+ENGINE_ROOT = VAULT_ROOT / "practices" / "quant-investing" / "engine"
+sys.path.insert(0, str(ENGINE_ROOT))
 ```
+
 DuckDB 文件天然共享（2.2 GB 重拉成本 3 小时）。
 
 ## 相关条目

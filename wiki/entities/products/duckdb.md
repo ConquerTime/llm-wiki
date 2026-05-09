@@ -39,13 +39,13 @@ sources:
 
 ## 项目内的使用（a-share-quant）
 
-- 文件：`projects/2026-05-a-share-quant/deliverables/data-pipeline/data/quant.duckdb`，**2.2 GB 存 7 张表**
+- 文件：`practices/quant-investing/engine/data/quant.duckdb`，**2.2 GB 存 7 张表**
 - 全市场 **5838 只 × 10 年 ≈ 1060 万行**
 - 典型查询性能：
   - 全市场一次读入：~3.5s
   - 按日期聚合：~1s
   - Rolling window join：~5s
-- 关键操作：[[quant-engine|quant-engine]] 的 `storage/duckdb_store.py` ~200 行封装了 schema + 幂等 upsert + 进度表
+- 关键操作：[[quant-engine|quant-engine]] 的 `quant_data/storage/duckdb_store.py` ~200 行封装了 schema + 幂等 upsert + 进度表
 
 ## 踩过的坑（来自 [[projects/2026-05-a-share-quant/notes/m2-decisions.md|M2 实战]]）
 
