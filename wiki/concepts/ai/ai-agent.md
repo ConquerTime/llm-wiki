@@ -4,9 +4,10 @@ type: concept
 subtype: ai
 tags: [ai, ai-agent, llm, tool-use]
 created: 2026-04-15
-updated: 2026-04-15
+updated: 2026-05-10
 sources:
-  - "[[raw/articles/OpenClaw + AI Agent 面试八股文：背完这篇，你懂的比面试官还多！.md|OpenClaw + AI Agent 面试八股文：背完这篇，你懂的比面试官还多！]]"
+  - "../../raw/articles/OpenClaw + AI Agent 面试八股文：背完这篇，你懂的比面试官还多！.md"
+  - "../../raw/articles/anthropic/Building Effective AI Agents.md"
 ---
 
 # AI Agent
@@ -51,6 +52,18 @@ sources:
 ## 核心风险：幻觉-行动放大
 
 Agent 的幻觉不只是"说错话"，而会通过工具调用**实际执行**错误操作（发送错误邮件、删除文件）。自主性越强，爆炸半径越大。
+
+## Anthropic 的 Agent 三原则（2026-05）
+
+Anthropic 在 [[../../sources/articles/anthropic-building-effective-ai-agents|Building Effective AI Agents]] 中提出的核心原则：
+
+1. **Simplicity** — 保持 Agent 设计简洁
+2. **Transparency** — 显式展示 Agent 规划步骤
+3. **ACI (Agent-Computer Interface)** — 通过充分文档和测试精心设计工具
+
+Anthropic 还强调了 Workflows vs Agents 的区分：
+- **Workflows**：预定义代码路径，适合可预测的固定任务
+- **Agents**：LLM 动态引导，适合需要灵活性的复杂任务
 
 ## 自主性的五个维度
 

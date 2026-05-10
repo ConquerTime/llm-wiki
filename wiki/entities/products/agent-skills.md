@@ -1,30 +1,28 @@
 ---
 title: "agent-skills"
-type: entity
 subtype: product
-tags: [tool, ai, coding-agent]
-created: 2026-05-08
-updated: 2026-05-08
-sources:
-  - "../../../raw/morning-briefs/2026-05-07.md"
-  - "../../../raw/morning-briefs/2026-05-08.md"
+tags: [tool, ai, agent, engineering]
+created: 2026-05-10
+updated: 2026-05-10
+sources: [../../sources/morning-briefs/2026-05-09.md]
 ---
 
-# agent-skills
+# agent-skills (addyosmani)
 
-> AI 编程 Agent 的生产级工程技能库
+> Production-grade engineering skills for AI coding agents, 1,893 GitHub Stars。
 
 ## 概述
 
-agent-skills 是addyosmani（Google Chrome team 工程师）维护的 GitHub 项目，提供面向 AI 编程 Agent 的生产级工程技能。目标是让 AI Agent 的代码输出达到专业工程标准。
+addyosmani/agent-skills 是一个为 AI 编程 Agent 提供生产级工程技能的 GitHub 仓库。它提供了一套可复用的 Agent 技能系统，帮助 AI Agent 在实际工程项目中更有效地工作。
 
-## 关键特性
+## 关键事实
 
-- **工程标准**：涵盖测试、安全、性能、可观测性等工程维度
-- **Skill 化**：以独立 Skill 形式提供给 AI Agent 调用
-- **持续更新**：跟随 AI Coding Agent 生态演进
+- **GitHub Stars**: 1,893 ⭐ (2026-05-09)
+- **作者**: addyosmani (Google Chrome 团队工程师)
+- **定位**: AI 编程 Agent 的生产级工程技能库
+- **出现在**: [[sources/morning-briefs/2026-05-09|晨报 2026-05-09]]
 
 ## 相关概念
 
-- [[../../concepts/ai/coding-agent.md|Coding Agent]] — 自主执行编程任务的 AI Agent
-- [[../../concepts/ai/ai-skills.md|AI Skills 生态]] — 2026 年 AI Coding Skills 生态爆发
+- [[coding-agent|Coding Agent]] — 自主执行编程任务的 AI Agent
+- [[ai-skills|AI Skills 生态]] — 2026 年 Skills 生态爆发

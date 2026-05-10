@@ -4,9 +4,10 @@ type: concept
 subtype: ai
 tags: [ai, context-engineering, multi-agent]
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-05-10
 sources:
-  - "[[raw/articles/get-shit-done-github.md|get-shit-done-github]]"
+  - "../../raw/articles/get-shit-done-github.md"
+  - "../../raw/articles/Lessons from building Claude Code Prompt caching is everything.md"
 ---
 
 # Context Engineering（上下文工程）
@@ -41,6 +42,12 @@ LLM 的上下文窗口随任务积累越来越"脏"：已完成的讨论、调�
 |------|------|
 | `Task()` API | spawn 一个全新 Agent 实例，上下文从零开始 |
 | `isolation="worktree"` | 为 Agent 创建独立 git worktree，文件系统完全隔离 |
+
+**Claude Code 的 Prompt Caching 优化**（2026-05）：Claude Code 团队围绕 prompt caching 前缀匹配约束设计整个系统：
+- 静态内容（system prompt + tools）放最前，动态内容（conversation messages）放最后，最大化缓存复用率
+- 用 `<system-reminder>` tag 而非修改 system prompt 传递更新，避免 cache miss
+- Plan Mode 用 EnterPlanMode/ExitPlanMode 工具而非切换工具集，保持缓存稳定
+- Compaction 使用与父对话完全相同的 system prompt + tool definitions，确保缓存安全 fork
 
 **状态传递方式**：不通过对话传递，而通过磁盘文件：
 ```

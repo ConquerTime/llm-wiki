@@ -1,6 +1,6 @@
 ># 知识库索引
 
->- 38 个概念 · 43 个实体 · 37 个源摘要 · 4 个综合 — 共 122 页 | 更新于 2026-05-09
+>- 40 个概念 · 45 个实体 · 39 个源摘要 · 4 个综合 — 共 128 页 | 更新于 2026-05-10
 
 ---
 
@@ -93,8 +93,10 @@
 - [[peter-steinberger|Peter Steinberger]] — OpenClaw 框架开发者
 - [[alan-alickovic|Alan Alickovic]] — Bulletproof React 作者，React 架构指南维护者
 - [[simon-willison|Simon Willison]] — AI 研究者，vibe coding 与 agentic engineering 融合趋势探讨者
-
 ### 产品
+
+- [[DeepSeek-TUI|DeepSeek-TUI]] — 终端运行的 DeepSeek 编程助手（Rust，3,731 ⭐）
+- [[agent-skills|agent-skills (addyosmani)]] — production-grade AI coding skills（1,893 ⭐）
 - [[obsidian|Obsidian]] — 双向链接笔记工具，LLM Wiki 推荐的人类界面
 - [[openclaw|OpenClaw]] — 开源本地优先的自主 AI Agent 框架，270K+ GitHub Stars
 - [[langchain|LangChain]] — AI 应用开发积木框架，适合企业级 RAG 和复杂 AI 流水线
@@ -147,6 +149,8 @@
 ## 源摘要
 
 ### 文章
+- [[sources/articles/claude-code-prompt-caching|Lessons from Claude Code: Prompt caching]] — Claude Code 团队优化 prompt caching 的反直觉经验 (2026-05-08)
+- [[sources/articles/anthropic-building-effective-ai-agents|Building Effective AI Agents — Anthropic]] — Anthropic 的 Workflows vs Agents、五种模式、三原则 (2026-05-08)
 - [[sources/articles/llm-wiki-by-karpathy|LLM Wiki — Karpathy]] — Karpathy 的 LLM Wiki Gist (2026-04)
 - [[sources/articles/openclaw-ai-agent-interview|OpenClaw + AI Agent 面试八股文]] — OpenClaw 架构、ReAct、Function Calling、MCP/A2A 全面讲解 (2026-03)
 - [[sources/articles/software-engineering-knowledge|软件工程知识资料]] — 代码质量/重构/设计模式/SOLID/DDD 优质资源整理 (2026-04)

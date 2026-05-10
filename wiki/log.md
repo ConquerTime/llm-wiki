@@ -33,3 +33,30 @@
 - 过期页（>90天）：0
 - 大页面：8（含 log.md 915 行已轮转）
 
+---
+
+## [2026-05-10] ingest | 3 new sources + 2 entities + 2 concept updates
+- 类型：ingest
+- 新增源摘要（3）：
+  - wiki/sources/morning-briefs/2026-05-09.md — 晨报（HN Top + GitHub Trending）
+  - wiki/sources/articles/claude-code-prompt-caching.md — Claude Code prompt caching 优化实践
+  - wiki/sources/articles/anthropic-building-effective-ai-agents.md — Anthropic Building Effective AI Agents
+- 新增实体页（2）：
+  - wiki/entities/products/deepseek-tui.md — 终端 DeepSeek 编程助手（3,731 ⭐）
+  - wiki/entities/products/agent-skills.md — addyosmani 的生产级 AI coding skills（1,893 ⭐）
+- 更新概念页（2）：
+  - concepts/ai/context-engineering.md — 新增 Claude Code Prompt Caching 优化案例
+  - concepts/ai/ai-agent.md — 新增 Anthropic Workflows vs Agents 区分 + Agent 三原则
+- 新增 index 实体：DeepSeek-TUI、agent-skills（2 → 45）
+- 新增 index 源摘要：claude-code-prompt-caching、anthropic-building-effective-ai-agents（37 → 39）
+- Lint：140 页，孤儿 1（log-2026.md 归档文件），断链 225 均为已知情况（ai-toolkit 占位符 + 跨目录链接 + 历史日志占位符）
+
+## [2026-05-10] lint | 140 pages, 1 orphan, 225 known-broken-links
+- 孤儿页：1（log-2026.md 归档日志，预期无 inbound 链接）
+- 断链：225（均为已知可接受情况）
+  - ai-toolkit.md → [[条目]]（用户自定义占位符，非错误）
+  - index.md/log-2026.md → projects/practices/writing/（跨 wiki 目录链接，acceptable known limitation）
+  - log-2026.md → raw/articles/...、wiki/sources/...（历史日志占位符，不操作）
+- 未收录 index：0
+- 过期页（>90天）：待检查（需对比 raw 文件时间）
+
