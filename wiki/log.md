@@ -60,3 +60,19 @@
 - 未收录 index：0
 - 过期页（>90天）：待检查（需对比 raw 文件时间）
 
+
+## [2026-05-11] lint | 140 pages, 38 orphans, 371 broken-links
+- 孤儿页：38（含 index.md/log.md/log-2026.md 预期无 inbound 链接）
+- 断链：371 可分类为：
+  - `raw/absolute` 路径（38）：概念页引用 `raw/articles/...` 应改为 `../../../raw/articles/...`
+  - `sources/absolute` 路径（31）：概念页引用 `sources/articles/...` 应改为 `../../sources/articles/...`
+  - `wiki/concepts/` 绝对路径（25）：应改为 `../concepts/...` 或仅用 basename
+  - `wiki/sources/` 前缀（14）：应去掉 `wiki/` 前缀
+  - `index.md` 中的 concept 链接（111）：指向不存在页面（子概念未建立）
+  - `sources/page` 孤立引用（68）：来源摘要页引用实体/概念的简称（如 `[[claude-code]]`）未解析
+  - 跨目录链接（projects/practices/writing，70）：acceptable known limitation
+  - ai-toolkit 占位符（1）：`[[条目]]` 用户自定义格式，非错误
+  - 历史日志占位符（20）：log-2026.md 中的历史记录，不操作
+- 未收录 index：68（主要为 sources/ 页面）
+- 过期页（>90天）：0
+- 大页面（>200行）：8（含 log-2026.md 915行已归档）
