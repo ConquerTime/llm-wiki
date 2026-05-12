@@ -76,3 +76,27 @@
 - 未收录 index：68（主要为 sources/ 页面）
 - 过期页（>90天）：0
 - 大页面（>200行）：8（含 log-2026.md 915行已归档）
+## [2026-05-12] lint | 140 pages, 38 orphans, 373 known-broken-links, 9 large-pages
+- 孤儿页：38（均为预期情况）
+  - 35× sources/ 页面（frontmatter sources 字段引用，无 wikilink inbound）
+  - index.md、log.md、log-2026.md（预期无 inbound 链接）
+- 断链：373，可分类为已知情况（均不操作）
+  - 84 other（index.md unresolved concept links + historical log placeholders）
+  - 79 sources-absolute-path（index.md → sources/articles/ 无相对路径前缀）
+  - 59 sources-relative-path（sources 页引用 [[pagename]] 未解析）
+  - 47 raw-absolute-path（log-2026.md 历史日志占位符）
+  - 44 cross-wiki-dir（index.md → projects/practices/writing，acceptable known limitation）
+  - 43 unresolved-concept-link（index.md 引用尚未创建的 concept 页面）
+  - 13 wiki-prefix（legacy wiki/concepts/ 前缀残留）
+  - 4 ai-toolkit-placeholder（用户自定义 [[条目]] 格式，非错误）
+- 未收录 index：4（log-2026.md 归档日志 + 2 morning-briefs + greentrain-skills-readme）
+- 过期页（>90天）：0
+- 大页面（>200行）：9
+  - log-2026.md: 916行（归档，预期）
+  - concepts/programming/canary-deployment.md: 334行
+  - concepts/programming/react-page-state-antipatterns.md: 331行
+  - synthesis/backend-architecture-stack.md: 307行
+  - concepts/programming/message-queue.md: 279行
+  - 另 4 个 200-300 行页面
+- Frontmatter：3 个缺失（index.md、log.md、log-2026.md，预期无 frontmatter）
+
