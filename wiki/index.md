@@ -1,6 +1,6 @@
 ># 知识库索引
 
->- 40 个概念 · 45 个实体 · 39 个源摘要 · 4 个综合 — 共 128 页 | 更新于 2026-05-10
+>- 40 个概念 · 48 个实体 · 41 个源摘要 · 4 个综合 — 共 137 页 | 更新于 2026-05-13
 
 ---
 
@@ -89,10 +89,14 @@
 
 #- [[entities/products/greentrain-skills|greentrain-skills]]
 ## 人物
-- [[andrej-karpathy|Andrej Karpathy]] — AI 研究者，LLM Wiki 模式提出者
-- [[peter-steinberger|Peter Steinberger]] — OpenClaw 框架开发者
-- [[alan-alickovic|Alan Alickovic]] — Bulletproof React 作者，React 架构指南维护者
-- [[simon-willison|Simon Willison]] — AI 研究者，vibe coding 与 agentic engineering 融合趋势探讨者
+|- [[andrej-karpathy|Andrej Karpathy]] — AI 研究者，LLM Wiki 模式提出者
+|- [[peter-steinberger|Peter Steinberger]] — OpenClaw 框架开发者
+|- [[alan-alickovic|Alan Alickovic]] — Bulletproof React 作者，React 架构指南维护者
+|- [[simon-willison|Simon Willison]] — AI 研究者，vibe coding 与 agentic engineering 融合趋势探讨者
+### 组织
+|- [[entities/organizations/ibm|IBM]] — 蓝色巨人，AI 混合云与 Watson 产品线
+|- [[entities/organizations/ladybird|Ladybird]] — 独立浏览器项目，专注隐私与标准合规
+|- [[entities/organizations/videolan|VideoLAN]] — VLC 媒体播放器维护组织
 ### 产品
 
 - [[DeepSeek-TUI|DeepSeek-TUI]] — 终端运行的 DeepSeek 编程助手（Rust，3,731 ⭐）
@@ -170,6 +174,7 @@
 ### GitHub 仓库（续）
 - [[sources/articles/karpathy-autoresearch|karpathy/autoresearch]] — 自主 ML 研究框架，三文件极简设计，固定时间预算 (2026-04)
 - [[sources/articles/your-harness-your-memory|Your Harness, Your Memory]] — LangChain CEO 论 harness 与 memory 不可分割，闭源造成供应商锁定 (2026-04-12)
+- [[sources/articles/greentrain-skills-readme|Green Train Skills README]] — AI Skills 生态资源整理，包含 OpenClaw/nuwa-skill/gbrain 等工具集成 (2026-04)
 - [[sources/articles/kaigao-ecs-deployment|kaigao ECS 部署方案]] — SAE → ECS + docker-compose 迁移：ALB 单入口、同一镜像多角色、费用对比 (2026-04)
 
 ### 晨报
@@ -194,6 +199,8 @@
 - [[sources/morning-briefs/2026-05-05|晨报 2026-05-05]] — Bun 从 Zig 迁移 Rust / ruflo 多智能体编排 / OpenAI 低延迟语音 AI (2026-05-05)
 - [[sources/morning-briefs/2026-05-06|晨报 2026-05-06]] — .de TLD DNSSEC 离线 / Gemma 4 多token预测 / Cloudflare Agents 自主部署 (2026-05-06)
 - [[sources/morning-briefs/2026-05-07|晨报 2026-05-07]] — Valve 开源 Steam Controller CAD / Simon Willison 谈 vibe coding 与 agentic engineering (2026-05-07)
+- [[sources/morning-briefs/2026-05-08|晨报 2026-05-08]] — Morning Brief 第 8 期
+- [[sources/morning-briefs/2026-05-09|晨报 2026-05-09]] — Morning Brief 第 9 期
 
 ---
 
