@@ -87,3 +87,12 @@
 
 - Frontmatter：3 个缺失（index.md、log.md、log-2026.md，预期无 frontmatter）
 
+---
+
+## [2026-05-14] ingest | 晨报 2026-05-01 + lint
+- 类型：ingest + lint
+- 新增源摘要（1）：
+  - wiki/sources/morning-briefs/2026-05-01.md — 晨报（HN: NSA监控/车辆数据收集争议/Linux漏洞；GH: Warp终端AI开发环境）
+- index 更新：源摘要 41→42，总页数 137→138
+- Lint：140 pages，孤儿 1（log-2026.md 归档），断链 228 均为已知情况
+

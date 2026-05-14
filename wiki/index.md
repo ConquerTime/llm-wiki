@@ -1,6 +1,6 @@
 ># 知识库索引
 
->- 40 个概念 · 48 个实体 · 41 个源摘要 · 4 个综合 — 共 137 页 | 更新于 2026-05-13
+>- 40 个概念 · 48 个实体 · 42 个源摘要 · 4 个综合 — 共 138 页 | 更新于 2026-05-14
 
 ---
 
@@ -193,6 +193,7 @@
 - [[sources/morning-briefs/2026-04-28|晨报 2026-04-28]] — Microsoft 与 OpenAI 结束独家合作 / 4TB 语音样本被盗 / mattpocock/skills (2026-04-28)
 - [[sources/morning-briefs/2026-04-29|晨报 2026-04-29]] — Ghostty 离开 GitHub（2395分）/ Rust 安全性 / Codex skills (2026-04-29)
 - [[sources/morning-briefs/2026-04-30|晨报 2026-04-30]] — Zed 1.0 发布 / Copy Fail / OpenAI goblin 数据 / Zig 反 AI 政策 (2026-04-30)
+- [[sources/morning-briefs/2026-05-01|晨报 2026-05-01]] — Room 641A NSA 监控曝光 / 车辆数据收集争议 / Linux 漏洞无预警 / Warp 终端 AI 开发环境 (2026-05-01)
 - [[sources/morning-briefs/2026-05-02|晨报 2026-05-02]] — Ask.com 关闭 / 梦境学习研究 / K3k / OpenClaw 367K (2026-05-02)
 - [[sources/morning-briefs/2026-05-03|晨报 2026-05-03]] — VS Code Copilot 强制署名争议 / 多智能体框架 TradingAgents/ruflo 热门 / IBM Granite 4.1 (2026-05-03)
 - [[sources/morning-briefs/2026-05-04|晨报 2026-05-04]] — DeepClaude / BYOMesh / open-design 开源 Claude Design 替代 (2026-05-04)
