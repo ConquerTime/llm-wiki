@@ -29,5 +29,5 @@ Simon Willison 是一位知名的 AI 技术博主和研究者。他于 2026年5�
 
 ## 相关概念
 
-- [[../../concepts/ai/coding-agent.md|Coding Agent]] — 自主执行编程任务的 AI Agent
-- [[../../concepts/ai/ai-agent.md|AI Agent]] — 具备规划/记忆/工具调用能力的 AI 系统
+- [[../../concepts/ai/coding-agent|Coding Agent]] — 自主执行编程任务的 AI Agent
+- [[../../concepts/ai/ai-agent|AI Agent]] — 具备规划/记忆/工具调用能力的 AI 系统

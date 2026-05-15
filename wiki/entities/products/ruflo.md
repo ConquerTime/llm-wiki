@@ -29,5 +29,5 @@ ruflo 出现在 Morning Brief 2026-05-07，与 TradingAgents（多智能体 LLM 
 
 ## 相关概念
 
-- [[../../concepts/ai/multi-agent.md|Multi-Agent 系统]] — 多 Agent 协作完成复杂任务
-- [[../../concepts/ai/mcp.md|MCP（Model Context Protocol）]] — Agent-工具连接标准协议
+- [[../../concepts/ai/multi-agent|Multi-Agent 系统]] — 多 Agent 协作完成复杂任务
+- [[../../concepts/ai/mcp|MCP（Model Context Protocol）]] — Agent-工具连接标准协议

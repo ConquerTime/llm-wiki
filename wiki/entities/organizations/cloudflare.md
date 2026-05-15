@@ -26,4 +26,4 @@ Cloudflare（NYSE: NET）是一家提供内容分发网络（CDN）、DDoS 防�
 
 ## 相关概念
 
-- [[../../concepts/security/oauth-state-parameter.md|安全]] — 互联网安全基础设施相关
+- [[concepts/security/oauth-state-parameter|安全]] — 互联网安全基础设施相关

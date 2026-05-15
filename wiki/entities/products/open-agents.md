@@ -25,5 +25,5 @@ open-agents 是 Vercel Labs 开源的多 Agent 构建模板，托管在 GitHub�
 
 ## 相关概念
 
-- [[../../concepts/ai/multi-agent.md|Multi-Agent 系统]] — 多 Agent 协作完成复杂任务
-- [[../../concepts/ai/coding-agent.md|Coding Agent]] — 自主执行编程任务的 AI Agent
+- [[../../concepts/ai/multi-agent|Multi-Agent 系统]] — 多 Agent 协作完成复杂任务
+- [[../../concepts/ai/coding-agent|Coding Agent]] — 自主执行编程任务的 AI Agent

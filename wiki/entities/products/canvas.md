@@ -26,4 +26,4 @@ Canvas 是 Instructure 公司开发的学习管理系统（LMS），被全球大
 
 ## 相关概念
 
-- [[../../concepts/security/oauth-state-parameter.md|安全]] — 数据泄露、安全事件相关
+- [[concepts/security/oauth-state-parameter|安全]] — 数据泄露、安全事件相关

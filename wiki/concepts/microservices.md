@@ -6,7 +6,7 @@ tags: [programming, microservices, distributed-systems, architecture]
 created: 2026-04-16
 updated: 2026-04-16
 sources:
-  - "[[wiki/sources/articles/backend-architecture-article.md|后端架构知识资料]]"
+  - "[[sources/articles/backend-architecture-article|后端架构知识资料]]"
 ---
 
 # 微服务架构

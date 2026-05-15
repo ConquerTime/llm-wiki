@@ -6,7 +6,7 @@ tags: [programming, clean-code, solid]
 created: 2026-04-16
 updated: 2026-04-16
 sources:
-  - "[[wiki/sources/articles/software-engineering-knowledge.md|软件工程知识资料]]"
+  - "[[sources/articles/software-engineering-knowledge|软件工程知识资料]]"
 ---
 
 # 整洁代码

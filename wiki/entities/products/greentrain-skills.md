@@ -30,9 +30,9 @@ sources:
 ## 与本 wiki 的关联
 
 - **AI Skills 生态**：与 nuwa-skill、khazix-skills、mattpocock-skills 等同属 2026 年 Claude Code Skills 爆发浪潮，特点是功能聚焦在本地工具链（文件处理、媒体处理），而非 AI 能力封装
-- **本地 AI 处理**：doc-mindmap（Ollama）和 tts（Vox CLI/Qwen3-TTS）均强调数据不离机，是 [[wiki/concepts/ai/local-ai-processing|本地 AI 处理]] 概念的典型实践
+- **本地 AI 处理**：doc-mindmap（Ollama）和 tts（Vox CLI/Qwen3-TTS）均强调数据不离机，是 [[concepts/ai/local-ai-processing|本地 AI 处理]] 概念的典型实践
 - **PPT 方法论**：greentrain-planning 三件套（ppt-classify / ppt-research-setup / ppt-narrative-review）与本 wiki 自身的同名 skills 来源一致
 
 ## 出现在哪些源摘要中
 
-- [[wiki/sources/articles/greentrain-skills-readme|Green Train Skills README (2026-05)]]
+- [[sources/articles/greentrain-skills-readme|Green Train Skills README (2026-05)]]

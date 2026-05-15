@@ -96,3 +96,19 @@
 - index 更新：源摘要 41→42，总页数 137→138
 - Lint：140 pages，孤儿 1（log-2026.md 归档），断链 228 均为已知情况
 
+
+## [2026-05-15] lint | 141 pages, 1 orphan, 40 broken (9 pre-existing), 6 large pages fixed
+- 类型：lint + broken-link fix
+- 修复断链（15处）：
+  - synthesis/ 页面：`../concepts/` → `concepts/` 路径修正（monolith-async-worker, microservices, clean-code, backend-architecture, solid-principles, factory-method, observer-pattern, cloud-deployment 等）
+  - entities/ 页面：`wiki/sources/` 前缀修正为相对路径（greentrain-skills, swr, tanstack-query, cloudflare, canvas）
+  - entities/persons simon-willison：`.md` 后缀去除
+  - entities/products open-agents/ruflo：`.md` 后缀去除
+  - sources/morning-briefs 2026-05-07/08：`.md` 后缀去除（9处）
+- Lint 结果：
+  - 孤儿页：1（log-2026.md 归档，预期无 inbound 链接）
+  - 断链：40（sources/ 页面预存在 9 个：claude-code/warp/free-claude-code/ml-intern/CloakBrowser/addyosmani-agent-skills/local-deep-research 无对应 entity 页；已知可接受 31 个：projects/practices/ai-toolkit 等）
+  - 未收录 index：0（log-2026.md 归档预期）
+  - 过期页（>90天）：0
+  - 大页面（>200行）：6（synthesis x2, concepts/programming x4）
+- ingest：0（无新 raw 文件）
