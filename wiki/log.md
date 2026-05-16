@@ -14,8 +14,6 @@
 
 ---
 
-
-
 ## [2026-05-09] lint | 89 broken-links fixed + log rotation
 - 类型：lint + fix
 - 断链修复（89条）：
@@ -49,7 +47,9 @@
   - concepts/ai/ai-agent.md — 新增 Anthropic Workflows vs Agents 区分 + Agent 三原则
 - 新增 index 实体：DeepSeek-TUI、agent-skills（2 → 45）
 - 新增 index 源摘要：claude-code-prompt-caching、anthropic-building-effective-ai-agents（37 → 39）
-- Lint：140 页，孤儿 1（log-2026.md 归档文件），断链 225 均为已知情况（ai-toolkit 占位符 + 跨目录链接 + 历史日志占位符）
+- Lint：140 页，孤儿 1（log-2026.md 归档文件），断链 225 均为已知情况
+
+---
 
 ## [2026-05-10] lint | 140 pages, 1 orphan, 225 known-broken-links
 - 孤儿页：1（log-2026.md 归档日志，预期无 inbound 链接）
@@ -58,8 +58,9 @@
   - index.md/log-2026.md → projects/practices/writing/（跨 wiki 目录链接，acceptable known limitation）
   - log-2026.md → raw/articles/...、wiki/sources/...（历史日志占位符，不操作）
 - 未收录 index：0
-- 过期页（>90天）：待检查（需对比 raw 文件时间）
+- 过期页（>90天）：待检查
 
+---
 
 ## [2026-05-11] lint | 140 pages, 38 orphans, 371 broken-links
 - 孤儿页：38（含 index.md/log.md/log-2026.md 预期无 inbound 链接）
@@ -76,6 +77,9 @@
 - 未收录 index：68（主要为 sources/ 页面）
 - 过期页（>90天）：0
 - 大页面（>200行）：8（含 log-2026.md 915行已归档）
+
+---
+
 ## [2026-05-13] lint | 140 pages, 1 orphan, 230 known-broken-links, 5 missing-from-index fixed
 - 孤儿页：1（log-2026.md 归档日志，预期无 inbound 链接）
 - 断链：230，均为已知情况（ai-toolkit 占位符 + 跨目录链接 + 历史日志占位符）
@@ -84,7 +88,6 @@
 - 大页面（>200行）：8（log-2026.md 归档 + 7 个概念/综合页）
 - ingest：0（无新 raw 文件）
 - index 更新：实体 45→48，源摘要 39→41，总页数 128→139
-
 - Frontmatter：3 个缺失（index.md、log.md、log-2026.md，预期无 frontmatter）
 
 ---
@@ -96,6 +99,7 @@
 - index 更新：源摘要 41→42，总页数 137→138
 - Lint：140 pages，孤儿 1（log-2026.md 归档），断链 228 均为已知情况
 
+---
 
 ## [2026-05-15] lint | 141 pages, 1 orphan, 40 broken (9 pre-existing), 6 large pages fixed
 - 类型：lint + broken-link fix
@@ -112,3 +116,19 @@
   - 过期页（>90天）：0
   - 大页面（>200行）：6（synthesis x2, concepts/programming x4）
 - ingest：0（无新 raw 文件）
+
+---
+
+## [2026-05-16] lint | 141 pages, 1 orphan, 79 known-broken-links, 0 new-ingest
+- 类型：lint
+- ingest：0（无新 raw 文件；Claude Code Prompt Caching 和 Building Effective AI Agents 已于 2026-05-10 摄入）
+- Lint 结果：
+  - 孤儿页：1（log-2026.md 归档日志，预期无 inbound 链接）
+  - 断链：79，均为已知可接受情况：
+    - ai-toolkit.md → `[[条目]]` 占位符（用户自定义，非错误）
+    - log.md/log-2026.md → `[[条目]]` 占位符 + `[[programming/X]]` 历史日志占位符
+    - sources/ 页面 → 无对应 entity 页的简称引用（claude-code, anthropic, warp, free-claude-code, ml-intern, CloakBrowser, addyosmani/agent-skills, local-deep-research）
+    - cross-dir 链接（projects/practices/writing/）→ acceptable known limitation
+  - 未收录 index：0
+  - 过期页（>90天）：0
+  - 大页面（>200行）：8（log-2026.md 归档 + synthesis x2 + concepts x4 + projects x1）
