@@ -132,3 +132,21 @@
   - 未收录 index：0
   - 过期页（>90天）：0
   - 大页面（>200行）：8（log-2026.md 归档 + synthesis x2 + concepts x4 + projects x1）
+
+---
+
+## [2026-05-17] lint | 141 pages, 1 orphan, 82 known-broken-links, 0 new-ingest
+- 类型：lint
+- ingest：0（无新 raw 文件；raw/morning-briefs/ 最新到 2026-05-09，与 wiki/sources/morning-briefs/ 对应，无新增）
+- Lint 结果：
+  - 孤儿页：1（log-2026.md 归档日志，预期无 inbound 链接）
+  - 断链：82，均为已知可接受情况：
+    - ai-toolkit.md → `[[条目]]` 占位符（用户自定义，非错误）
+    - log.md/log-2026.md → `[[条目]]` 占位符 + `[[concepts/programming/X]]` 历史日志占位符
+    - sources/ 页面 → 无对应 entity 页的简称引用（claude-code, anthropic, warp, free-claude-code, ml-intern, CloakBrowser, addyosmani/agent-skills, local-deep-research）
+    - entities/products/quant-engine.md + tushare-pro.md → projects/（跨目录链接，acceptable known limitation）
+    - concepts/pkm/zettelkasten.md → `[[wikilink]]`（用户自定义占位符，非错误）
+  - 未收录 index：0
+  - 过期页（>90天）：0
+  - 大页面（>200行）：8（log-2026.md 归档 + synthesis x2 + concepts x4 + projects x1）
+
