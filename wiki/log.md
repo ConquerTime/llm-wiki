@@ -150,3 +150,17 @@
   - 过期页（>90天）：0
   - 大页面（>200行）：8（log-2026.md 归档 + synthesis x2 + concepts x4 + projects x1）
 
+
+## [2026-05-18] lint | 141 pages, 0 orphans, 19 broken-links fixed, 0 new-ingest
+- 类型：lint + broken-link fix
+- ingest：0（无新 raw 文件；raw/morning-briefs 最新到 2026-05-09，与 wiki/sources/morning-briefs/ 对应）
+- 修复断链（19处）：sources frontmatter 中的 wikilink → 纯相对路径
+  - concepts/ai/ai-skills.md（2处）
+  - entities/products/ 下 12 个产品页的 sources frontmatter（17处）
+  - 修复：`[[raw/morning-briefs/...|晨报...]]` → `../../../raw/morning-briefs/...`
+- Lint 结果：
+  - 孤儿页：0
+  - 断链：1（log.md 历史描述中的 `claude-code`，非真实链接）
+  - 未收录 index：0
+  - 过期页（>90天）：0
+  - 大页面（>200行）：8（log-2026.md 915行已归档 + synthesis x2 + concepts x4 + index.md 217行）

@@ -6,7 +6,7 @@ tags: [tool, ai-agent, vscode, multi-agent]
 created: 2026-04-26
 updated: 2026-04-26
 sources:
-  - "[[raw/morning-briefs/2026-04-26.md|晨报 2026-04-26]]"
+  - "../../../raw/morning-briefs/2026-04-26.md"
 ---
 
 # Roo-Code

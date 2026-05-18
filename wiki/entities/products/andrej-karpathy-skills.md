@@ -6,7 +6,7 @@ type: entity
 subtype: product
 tags: [tool, claude-code, ai-skill, open-source]
 sources:
-  - "[[raw/morning-briefs/2026-04-16.md|晨报 2026-04-16]]"
+  - "../../../raw/morning-briefs/2026-04-16.md"
 ---
 
 # andrej-karpathy-skills

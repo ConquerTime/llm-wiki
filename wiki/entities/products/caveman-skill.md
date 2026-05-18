@@ -6,7 +6,7 @@ tags: [tool, claude-code, ai-skill, open-source, github-trending]
 created: 2026-04-20
 updated: 2026-05-04
 sources:
-  - "[[raw/morning-briefs/2026-04-20.md|晨报 2026-04-20]]"
+  - "../../../raw/morning-briefs/2026-04-20.md"
 ---
 
 # caveman
