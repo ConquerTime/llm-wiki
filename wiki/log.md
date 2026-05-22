@@ -212,3 +212,16 @@
   - 过期页（>90天）：0
   - 大页面（>200行）：8（log-2026.md 915行 + synthesis x2 + concepts x4 + index.md 217行）
   - Frontmatter：3（index.md/log.md/log-2026.md 预期无 frontmatter）
+## [2026-05-22] lint | 141 pages, 0 orphans, 88 broken-links (all known), 0 new-ingest
+- 类型：lint
+- ingest：0（无新 raw 文件；raw/morning-briefs 最新到 2026-05-09，与 wiki/sources/morning-briefs/ 对应，无新增）
+- Lint 结果：
+  - 孤儿页：0
+  - 断链：88，均为已知可接受情况：
+    - `[[条目]]` 占位符（11处，用户自定义，非错误）
+    - `projects/` 跨目录链接（42处，acceptable known limitation）
+    - `wiki/sources/...` 历史日志占位符（1处，log-2026.md）
+    - practices/writing/ 等目录外链接（34处，Obsidian title/basename 解析，acceptable known limitation）
+  - 未收录 index：0
+  - 过期页（>90天）：0
+  - 大页面（>200行）：9（log-2026.md 915行已归档 + concepts x4 + synthesis x2 + index.md 217行）
