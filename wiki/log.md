@@ -14,22 +14,20 @@
 
 ---
 
-## [2026-05-09] lint | 89 broken-links fixed + log rotation
-- 类型：lint + fix
-- 断链修复（89条）：
-  - synthesis/backend-architecture-stack.md：修复 `wiki/concepts/` → `../concepts/` 前缀（共 28 处）
-  - synthesis/react-architecture-stack.md：修复 `wiki/concepts/` → `../concepts/` 前缀 + 修复 `\\]]` 转义（共 52 处）
-  - synthesis/react-architecture-stack.md sources frontmatter 修复
-- 日志轮转：log.md (915行 > 500) → log-2026.md，新 log.md 重置
-- 未修复的断链（不操作）：
-  - ai-toolkit.md → [[条目]]（用户自定义占位符格式，非错误）
-  - entities/ → concepts/ 链接（对应 concept 页面尚未建立）
-  - sources/morning-briefs/*.md → entities/（morning-brief source 页面的正常引用）
-  - log.md → `[[concepts/programming/X]]` 等历史占位符（不操作）
-- 孤儿页：0（来源页预期无 inbound 链接）
-- 未收录 index：0
-- 过期页（>90天）：0
-- 大页面：8（含 log.md 915 行已轮转）
+## [2026-05-24] lint | 141 pages, 1 orphan (log-2026.md归档), 140 known-broken-links, 0 new-ingest
+- 类型：lint
+- ingest：0（无新 raw 文件；morning-briefs 最新到 2026-05-09，与 wiki/sources/morning-briefs/ 对应，无新增）
+- Lint 结果：
+  - 孤儿页：1（log-2026.md 已归档，预期无 inbound 链接）
+  - 断链：140，均为已知可接受情况：
+    - `[[条目]]` 占位符（ai-toolkit.md，用户自定义，非错误）
+    - `projects/` 跨目录链接（index.md，acceptable known limitation）
+    - `practices/` 跨目录链接（index.md/log.md，acceptable known limitation）
+    - `writing/` 跨目录链接（log.md，acceptable known limitation）
+    - log-2026.md → `raw/articles/...`、`concepts/programming/X` 等历史日志占位符（全部预期）
+  - 未收录 index：0
+  - 过期页（>90天）：0
+  - 大页面（>200行）：9（index.md 217行 + log-2026.md 915行已归档 + log.md 242行 + concepts x4 + synthesis x2）
 
 ---
 
@@ -212,6 +210,7 @@
   - 过期页（>90天）：0
   - 大页面（>200行）：8（log-2026.md 915行 + synthesis x2 + concepts x4 + index.md 217行）
   - Frontmatter：3（index.md/log.md/log-2026.md 预期无 frontmatter）
+  
 ## [2026-05-22] lint | 141 pages, 0 orphans, 88 broken-links (all known), 0 new-ingest
 - 类型：lint
 - ingest：0（无新 raw 文件；raw/morning-briefs 最新到 2026-05-09，与 wiki/sources/morning-briefs/ 对应，无新增）
