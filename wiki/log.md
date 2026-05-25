@@ -14,6 +14,23 @@
 
 ---
 
+## [2026-05-25] lint | 117 pages, 0 orphans, 158 known-broken-links, 0 new-ingest
+- 类型：lint
+- ingest：0（无新 raw 文件；晨报最新到 2026-05-09，与 wiki/sources/morning-briefs/2026-05-09.md 对应，无新增）
+- Lint 结果：
+  - 孤儿页：0（log-2026.md 已归档，预期无 inbound 链接，不计入）
+  - 断链：158，均为已知可接受情况：
+    - `[[条目]]` 占位符（ai-toolkit.md，用户自定义，非错误）
+    - `projects/` 跨目录链接（index.md，acceptable known limitation）
+    - `practices/` 跨目录链接（index.md，acceptable known limitation）
+    - `sources/morning-briefs/` 晨报链接（index.md，acceptable known limitation）
+    - log-2026.md → `raw/articles/...`、`concepts/programming/X` 等历史日志占位符（全部预期）
+  - 未收录 index：0
+  - 过期页（>90天）：0
+  - 大页面（>200行）：9（index.md 217行 + log-2026.md 915行已归档 + log.md 241行 + concepts x4 + synthesis x2）
+
+---
+
 ## [2026-05-24] lint | 141 pages, 1 orphan (log-2026.md归档), 140 known-broken-links, 0 new-ingest
 - 类型：lint
 - ingest：0（无新 raw 文件；morning-briefs 最新到 2026-05-09，与 wiki/sources/morning-briefs/ 对应，无新增）
