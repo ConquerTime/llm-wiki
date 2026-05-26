@@ -256,3 +256,17 @@
   - 未收录 index：0
   - 过期页（>90天）：0
   - 大页面（>200行）：8（index.md 217行 + log-2026.md 915行已归档 + log.md 227行 + concepts x4 + synthesis x2）
+## [2026-05-26] lint | 141 pages, 1 orphan (log-2026.md归档), 140 known-broken-links, 0 new-ingest
+- 类型：lint
+- ingest：0（无新 raw 文件；repo 已与 origin/main 同步，无变更）
+- Lint 结果：
+  - 孤儿页：1（log-2026.md，已归档日志，预期无 inbound 链接）
+  - 断链：140，均为已知可接受情况：
+    - `[[条目]]` 占位符（用户自定义，非错误）
+    - `projects/` 跨目录链接（acceptable known limitation）
+    - `practices/` 跨目录链接（acceptable known limitation）
+    - `raw/articles/...` 历史日志占位符（全部预期）
+  - 未收录 index：0
+  - 过期页（>90天）：0
+  - 大页面（>200行）：9（index.md 217行 + log-2026.md 915行已归档 + log.md 258行 + concepts x4 + synthesis x2）
+  - Frontmatter：0
