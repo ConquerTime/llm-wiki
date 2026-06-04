@@ -392,3 +392,18 @@
   - 过期页（>90天）：0
   - 大页面（>200行）：9（log-2026.md 915行已归档 + log.md 379行 + concepts x4 + synthesis x2 + index.md 217行）
   - Frontmatter：0
+
+## [2026-06-04] lint | 141 pages, 0 orphans, 119 known-broken-links, 0 new-ingest
+- 类型：lint
+- ingest：0（无新 raw 文件；晨报最新到 2026-05-09，与 wiki/sources/morning-briefs/ 对应，无新增）
+- Lint 结果：
+  - 孤儿页：0（所有 wiki 页面均有 inbound 链接）
+  - 断链：119，均为已知可接受情况：
+    - `[[raw/articles/...]]` 占位符（log-2026.md，50处，历史日志占位符，预期）
+    - `projects/` / `practices/` / `writing/` 跨目录链接（index.md + log-2026.md，45处，acceptable known limitation）
+    - `[[concepts/programming/X]]` / `[[programming/X]]` 占位符（log-2026.md，17处，历史日志占位符，预期）
+    - sources/ 页面 → 无对应 entity 页的简称引用（claude-code, anthropic, warp, free-claude-code, CloakBrowser, addyosmani/agent-skills，7处，均为已知情况）
+  - 未收录 index：0（index/log/log-2026 三个系统文件预期不在索引中）
+  - 过期页（>90天）：0
+  - 大页面（>200行）：9（log-2026.md 915行已归档 + log.md 394行 + concepts x4 + synthesis x2 + index.md 217行）
+  - Frontmatter：0
