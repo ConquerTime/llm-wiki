@@ -439,3 +439,20 @@
   - 过期页（>90天）：0
   - 大页面（>200行）：9（log-2026.md 915行已归档 + log.md 425行 + index.md 217行 + concepts x4 + synthesis x2）
   - Frontmatter：0（sources/articles/observer-pattern.md 缺少 tags 字段为唯一问题，可接受）
+
+---
+
+## [2026-06-07] lint | 141 pages, 0 orphans, 178 known-broken-links, 0 new-ingest
+- 类型：lint
+- ingest：0（无新 raw 文件；晨报最新到 2026-05-09，与 wiki/sources/morning-briefs/ 对应，无新增）
+- Lint 结果：
+  - 孤儿页：0（所有 wiki 页面均有 inbound 链接）
+  - 断链：178，均为已知可接受情况：
+    - `[[条目]]` 占位符（ai-toolkit.md，用户自定义，非错误）
+    - `projects/` / `practices/` / `writing/` 跨目录链接（index.md + log.md，acceptable known limitation）
+    - `raw/articles/...` / `concepts/programming/X` 等历史日志占位符（log-2026.md，预期）
+    - `[[../observer-pattern]]` 等相对路径（log-2026.md，Obsidian 解析行为，非错误）
+  - 未收录 index：0
+  - 过期页（>90天）：0
+  - 大页面（>200行）：9（log-2026.md 915行已归档 + log.md 441行 + index.md 217行 + concepts x4 + synthesis x2）
+  - Frontmatter：0（index/log/log-2026 系统文件无 frontmatter 为预期；entities/products/agent-skills.md 和 deepseek-tui.md 缺 type 字段为唯一非系统问题）
