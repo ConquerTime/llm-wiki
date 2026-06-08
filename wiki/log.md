@@ -456,3 +456,18 @@
   - 过期页（>90天）：0
   - 大页面（>200行）：9（log-2026.md 915行已归档 + log.md 441行 + index.md 217行 + concepts x4 + synthesis x2）
   - Frontmatter：0（index/log/log-2026 系统文件无 frontmatter 为预期；entities/products/agent-skills.md 和 deepseek-tui.md 缺 type 字段为唯一非系统问题）
+
+---
+## [2026-06-08] lint | 141 pages, 0 orphans, 35 known-broken-links, 0 new-ingest
+- 类型：lint
+- ingest：0（无新 raw 文件；晨报最新到 2026-05-09，与 wiki/sources/morning-briefs/ 对应，无新增）
+- Lint 结果：
+  - 孤儿页：0（log-2026.md 已归档，预期无 inbound 链接，不计入）
+  - 断链：35，均为已知可接受情况：
+    - projects/practices/writing 跨目录链接（index.md/log.md，acceptable known limitation）
+    - 历史日志 raw/concepts/sources 占位符（log-2026.md，预期）
+    - [[条目]] 占位符（ai-toolkit.md，用户自定义，非错误）
+    - sources/morning-briefs/ 链接（index.md，acceptable known limitation）
+  - 未收录 index：72（主要为 sources/ 页面，预期行为；index.md 用 title-only 链接）
+  - 过期页（>90天）：0
+  - 大页面（>200行）：9（index.md 217行 + log-2026.md 915行已归档 + log.md 458行 + concepts x4 + synthesis x2）
